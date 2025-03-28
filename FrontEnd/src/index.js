@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import InputFiled from './Components/Atoms/InputField';
+import { IoArrowForward } from "react-icons/io5";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React>
-
-  </React>
+  <>
+    <InputFiled
+    type="text"
+    placeholder="Enter your name"
+    hasButton={true}
+    hasIcon={true}
+    buttonContent={<button>Submit</button>}
+    iconContent={<IoArrowForward/>}/>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
