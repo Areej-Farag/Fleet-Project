@@ -8,7 +8,7 @@ export default function InputField({
   type,
   iconContent,
   buttonContent,
-  large ,
+  large,
 }) {
   return (
     <div
