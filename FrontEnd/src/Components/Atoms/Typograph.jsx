@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Typograph = ({ variant, children, className, color }) => {
-const Typograph = ({ variant, children, className, color }) => {
   const variants = {
     h1: "h1 display-1",
     h2: "h2 display-2",
@@ -17,7 +16,6 @@ const Typograph = ({ variant, children, className, color }) => {
     muted: "text-muted",
     blockquote: "blockquote",
     button: "btn",
-    button: "btn",
   };
 
   const Tag = variants[variant] ? variant : "p"; // التأكد من أن الـ variant موجود
@@ -25,7 +23,6 @@ const Typograph = ({ variant, children, className, color }) => {
   const classes = `${variants[variant] || ""} ${className || ""}`.trim(); // إصلاح الـ className
 
   return (
-    <Tag className={classes} style={styles}>
     <Tag className={classes} style={styles}>
       {children}
     </Tag>
@@ -46,18 +43,15 @@ Typograph.propTypes = {
     "muted",
     "blockquote",
     "button",
-    "button",
   ]),
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  color: PropTypes.string, // تحديد اللون كـ prop اختيارية
   color: PropTypes.string, // تحديد اللون كـ prop اختيارية
 };
 
 Typograph.defaultProps = {
   variant: "p",
   className: "",
-  color: "", // افتراضيًا بدون لون
   color: "", // افتراضيًا بدون لون
 };
 
