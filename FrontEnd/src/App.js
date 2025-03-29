@@ -1,6 +1,6 @@
 import React from "react";
 import Typograph from "./Components/Atoms/Typograph";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const App = () => {
   return (
