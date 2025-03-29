@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Typograph = ({ variant, children, bold, color, className }) => {
+const Typograph = ({ variant, children, className, color }) => {
   const variants = {
     h1: "h1 display-1",
     h2: "h2 display-2",
@@ -15,24 +15,15 @@ const Typograph = ({ variant, children, bold, color, className }) => {
     small: "small",
     muted: "text-muted",
     blockquote: "blockquote",
-  };
-
-  const grayShades = {
-    dark: "#333333", // رمادي غامق جدًا
-    medium: "#777E90", // رمادي متوسط
-    light: "#B1B5C3", // رمادي فاتح
-    black: "#000000", // أسود
+    button: "btn",
   };
 
   const Tag = variant in variants ? variant : "p";
-  const textColor = grayShades[color] || color || "#000"; // الافتراضي أسود
-  const fontWeight = bold ? "bold" : "normal"; // تحديد الـ Bold
+  const styles = color ? { color } : {}; // تطبيق اللون إذا كان موجودًا
+  const classes = `${variants[variant]} ${className}`;
 
   return (
-    <Tag
-      className={`${variants[variant]} ${className}`}
-      style={{ color: textColor, fontWeight: fontWeight }}
-    >
+    <Tag className={classes} style={styles}>
       {children}
     </Tag>
   );
@@ -51,20 +42,17 @@ Typograph.propTypes = {
     "small",
     "muted",
     "blockquote",
+    "button",
   ]),
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOfType([
-    PropTypes.oneOf(["dark", "medium", "light", "black"]),
-    PropTypes.string, // لدعم إدخال ألوان مباشرة مثل HEX أو RGB
-  ]),
   className: PropTypes.string,
+  color: PropTypes.string, // تحديد اللون كـ prop اختيارية
 };
 
 Typograph.defaultProps = {
   variant: "p",
-  color: "black",
-  bold: false,
   className: "",
+  color: "", // افتراضيًا بدون لون
 };
 
 export default Typograph;
