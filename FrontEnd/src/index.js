@@ -7,20 +7,7 @@ import InputField from "./Components/Atoms/InputField";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <>
-    <App></App>
-    <InputField
-      labelTitle={"Name"}
-      hasIcon={true}
-      placeholder={"Enter your name"}
-      hasButton={true}
-      type={"text"}
-      iconContent={"@"}
-      buttonContent={"Edit"}
-    />
-  </>
-);
+root.render(<></>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
