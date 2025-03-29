@@ -1,19 +1,17 @@
 import React from "react";
-import "../../Styles/atoms.css";
+import "../../Styles/atoms.module.css";
 
 export default function InputField({
   hasIcon,
-  placeholder ,
-  hasButton ,
+  placeholder,
+  hasButton,
   type,
   iconContent,
   buttonContent,
   large,
 }) {
   return (
-    <div
-      className={`input-field ${large ? "large" : ""}`}
-    >
+    <div className={`input-field ${large ? "large" : ""}`}>
       <input type={type} placeholder={placeholder} />
       <div className="input-buttons">
         {hasIcon && <span className="input-icon">{iconContent}</span>}
