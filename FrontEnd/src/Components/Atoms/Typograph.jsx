@@ -19,8 +19,8 @@ const Typograph = ({ variant, children, bold, color, className }) => {
 
   const grayShades = {
     dark: "#333333", // رمادي غامق جدًا
-    medium: "#666666", // رمادي متوسط
-    light: "#999999", // رمادي فاتح
+    medium: "#777E90", // رمادي متوسط
+    light: "#B1B5C3", // رمادي فاتح
     black: "#000000", // أسود
   };
 

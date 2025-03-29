@@ -2,11 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import InputField from './Components/Atoms/InputField';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
+  <InputField
+  labelTitle={"Name"}
+  hasIcon={true}
+  placeholder={"Enter your name"}
+  hasButton={true}
+  type={"text"}
+  iconContent={"@"}
+  buttonContent={"Edit"}
+  />
 
   </>
 );

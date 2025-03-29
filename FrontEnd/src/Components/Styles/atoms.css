@@ -1,0 +1,76 @@
+@import "./global.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+/* inputs Styles */
+.input-field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 80%;
+  margin: 5px auto;
+  position: relative;
+}
+/* .input-field label{
+  display: block;
+} */
+.large {
+  height: 70px !important;
+}
+.success {
+  border: 1px solid var(--color-primary-4) !important;
+  color: var(--color-primary-4) !important;
+}
+.input-field input{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--color-neutral-5);
+  outline: none;
+}
+.rounded input{
+    border-radius: 30px;
+}
+.input-field input:focus {
+  border: 2px solid var(--color-primary-1);
+}
+.input-field input::placeholder {
+  color: var(--color-neutral-4);
+}
+.input-field label{
+  color: var(--color-neutral-4);
+  padding: 10px 10px;
+}
+.error {
+  color: var(--color-primary-3) !important;
+  border: 1px solid var(--color-primary-3) !important;
+}
+.input-field input:focus + label,
+.input-field input:not(:placeholder-shown) + label {
+  top: -10px;
+  
+}
+.input-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.input-buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.input-buttons span {
+  color: var(--color-neutral-4);
+}
