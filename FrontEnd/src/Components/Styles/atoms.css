@@ -77,3 +77,101 @@
 .error {
   color: blue;
 }
+
+
+
+/*button style*/
+
+.button {
+  padding: 16px 24px;
+  font-size: 16px;
+  width: fit-content; 
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+  height: 48px; 
+}
+
+
+.button.small {
+  width: fit-content !important; 
+}
+
+.button.default {
+  
+  width: 262px;
+}
+
+.button.large {
+  width: 352px; 
+}
+
+
+.button.small-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+.button.large-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+.button.blue {
+  background-color: var(--color-primary-1);
+}
+
+.button.blue:hover {
+  background-color: var(--color-hover-blue);
+
+}
+
+.button.trans {
+  background-color: transparent;
+  border: 2px solid var(--color-stroke);
+  
+  transition: all 0.3s ease;
+}
+
+.button.trans:hover {
+  background-color:  var(--color-neutral-4);
+
+}
+
+.button.white {
+  background-color: var(--color-neutral-8);
+
+  transition: all 0.3s ease;
+}
+
+.button.white:hover {
+  background-color:var(--color-neutral-4);
+
+}
+
+.button.black {
+  background-color:  var(--color-neutral-1);
+
+  transition: all 0.3s ease;
+}
+
+.button.black:hover {
+  background-color:var(--color-neutral-4);
+  
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
