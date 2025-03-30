@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
-import Typography from "./Typograph";
+
 
 const Button = ({ children, color = "blue", shape = "default", size = "small", icon, iconSize = 24, iconPosition = "left", onClick, disabled }) => {
   return (
@@ -13,7 +13,7 @@ const Button = ({ children, color = "blue", shape = "default", size = "small", i
       {icon && iconPosition === "left" && (
         <span className="icon" style={{ fontSize: `${iconSize}px` }}>{icon}</span>
       )}
-      <Typography>{children}</Typography> 
+        {children} 
       {icon && iconPosition === "right" && (
         <span className="icon" style={{ fontSize: `${iconSize}px` }}>{icon}</span>
       )}
