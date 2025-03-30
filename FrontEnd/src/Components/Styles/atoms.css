@@ -74,18 +74,12 @@
   color: var(--color-neutral-4);
 }
 
-.error {
-  color: blue;
-}
-
-
-
 /*button style*/
 
 .button {
   padding: 16px 24px;
   font-size: 16px;
-  width: fit-content; 
+  width: fit-content;
   border: none;
   border-radius: 90px;
   cursor: pointer;
@@ -93,24 +87,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px; 
-  height: 48px; 
+  gap: 12px;
+  height: 48px;
 }
 
-
 .button.small {
-  width: fit-content !important; 
+  width: fit-content !important;
 }
 
 .button.default {
-  
   width: 262px;
 }
 
 .button.large {
-  width: 352px; 
+  width: 352px;
 }
-
 
 .button.small-circle {
   width: 32px;
@@ -119,7 +110,6 @@
   padding: 0;
 }
 
-
 .button.large-circle {
   width: 48px;
   height: 48px;
@@ -127,26 +117,23 @@
   padding: 0;
 }
 
-
 .button.blue {
   background-color: var(--color-primary-1);
 }
 
 .button.blue:hover {
   background-color: var(--color-hover-blue);
-
 }
 
 .button.trans {
   background-color: transparent;
   border: 2px solid var(--color-stroke);
-  
+
   transition: all 0.3s ease;
 }
 
 .button.trans:hover {
-  background-color:  var(--color-neutral-4);
-
+  background-color: var(--color-neutral-4);
 }
 
 .button.white {
@@ -156,22 +143,149 @@
 }
 
 .button.white:hover {
-  background-color:var(--color-neutral-4);
-
+  background-color: var(--color-neutral-4);
 }
 
 .button.black {
-  background-color:  var(--color-neutral-1);
+  background-color: var(--color-neutral-1);
 
   transition: all 0.3s ease;
 }
 
 .button.black:hover {
-  background-color:var(--color-neutral-4);
-  
+  background-color: var(--color-neutral-4);
 }
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ====== Avatar ====== */
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar.small {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar.medium {
+  width: 60px;
+  height: 60px;
+}
+
+.avatar.large {
+  width: 80px;
+  height: 80px;
+}
+
+/* ====== Loader (Spinner) ====== */
+.loader {
+  border: 4px solid var(--color-neutral-5);
+  border-top: 4px solid var(--color-neutral-8);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ====== Badge ====== */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.blue {
+  background-color: var(--color-primary-1);
+}
+.badge.lightblue {
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-8);
+}
+.badge.purpleblue {
+  background-color: var(--color-primary-3);
+  color: var(--color-neutral-8);
+}
+.badge.red {
+  background-color: var(--color-secondary-5);
+}
+
+.badge.green {
+  background-color: var(--color-primary-4);
+}
+
+.badge.yellow {
+  background-color: var(--color-secondary-3);
+  color: var(--color-neutral-1);
+}
+.badge.grey {
+  background-color: var(--color-neutral-6);
+  color: var(--color-neutral-1);
+}
+.badge.black {
+  background-color: var(--color-neutral-1);
+  color: var(--color-neutral-8);
+}
+.badge.white {
+  background-color: var(--color-neutral-8);
+  color: var(--color-neutral-1);
+}
+
+/* ====== Image ====== */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wallpaper {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.img-top-rounded img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.img-fully-rounded img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img-circular img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.badge-custom {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
 }
