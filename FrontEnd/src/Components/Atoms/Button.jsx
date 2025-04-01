@@ -3,7 +3,18 @@ import PropTypes from "prop-types";
 import "../Styles/atoms.css";
 
 
-const Button = ({ children, color = "blue", shape = "default", size = "small", icon, iconSize = 24, iconPosition = "left", onClick, disabled }) => {
+const Button = ({ 
+  children, 
+  color = "blue", 
+  shape = "default", 
+  size = "small", 
+  icon, 
+  iconSize = 24, 
+  iconPosition = "left", 
+  iconcolor = "white", 
+  onClick, 
+  disabled 
+}) => {
   return (
     <button
       className={`button ${color} ${shape} ${size}`}  
@@ -11,24 +22,27 @@ const Button = ({ children, color = "blue", shape = "default", size = "small", i
       disabled={disabled}
     >
       {icon && iconPosition === "left" && (
-        <span className="icon" style={{ fontSize: `${iconSize}px` }}>{icon}</span>
+        <span className="icon" style={{ fontSize: `${iconSize}px`, color: iconcolor }}>{icon}</span>
       )}
-        {children} 
+
+      {children}
+
       {icon && iconPosition === "right" && (
-        <span className="icon" style={{ fontSize: `${iconSize}px` }}>{icon}</span>
+        <span className="icon" style={{ fontSize: `${iconSize}px`, color: iconcolor }}>{icon}</span>
       )}
     </button>
   );
 };
 
 Button.propTypes = {
-  children: PropTypes.node,
-  color: PropTypes.oneOf(["blue", "trans", "white","black"]),
-  shape: PropTypes.oneOf(["default", "small-circle","large-circle"]),
+  children: PropTypes.node, 
+  color: PropTypes.oneOf(["blue", "trans", "white", "black"]),
+  shape: PropTypes.oneOf(["default", "small-circle", "large-circle"]),
   size: PropTypes.oneOf(["small", "default", "large"]),
   icon: PropTypes.node,
   iconSize: PropTypes.number, 
   iconPosition: PropTypes.oneOf(["left", "right"]), 
+  iconcolor: PropTypes.string,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
 };
@@ -39,9 +53,9 @@ Button.defaultProps = {
   size: "small",
   iconSize: 24, 
   iconPosition: "left",
+  iconcolor: "white",
   onClick: () => {},
   disabled: false,
-  children: null,
 };
 
 export default Button;
