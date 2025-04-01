@@ -289,3 +289,15 @@
   border-radius: 10px;
   font-weight: bold;
 }
+/* ====== Icon ====== */
+
+.IconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.IconText{
+  margin-left: 10px;
+  width: 70%;
+}
