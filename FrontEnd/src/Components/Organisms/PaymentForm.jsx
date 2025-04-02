@@ -25,7 +25,7 @@ export default function PaymentForm() {
           Your trip
         </Typograph>
         <div className="detailsIcons">
-          <Icon size={24} color={colors.Neutrals[3]} IconContetnt={<CiEdit />} direction="row-reverse" >
+          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse" >
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Date
             </Typograph>
@@ -33,7 +33,7 @@ export default function PaymentForm() {
               May 15 - 22, 2021
             </Typograph>
           </Icon>
-          <Icon size={24} color={colors.Neutrals[3]} IconContetnt={<CiEdit />} direction="row-reverse">
+          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse">
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Guests
             </Typograph>
