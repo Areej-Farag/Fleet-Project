@@ -43,8 +43,11 @@
   color: var(--color-neutral-4);
 }
 .input-field label {
-  color: var(--color-neutral-4);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-neutral-5);
   padding: 10px 10px;
+  text-transform: uppercase;
 }
 .error {
   color: var(--color-primary-3) !important;
@@ -79,7 +82,7 @@
 .button {
   padding: 16px 24px;
   font-size: 16px;
-  width: fit-content; 
+  width: fit-content;
   border: none;
   border-radius: 90px;
   cursor: pointer;
@@ -87,26 +90,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0px; 
-  height: 48px; 
+  gap: 0px;
+  height: 48px;
 }
-
 
 .button.small {
   width: fit-content !important;
-   
 }
 
 .button.default {
-  
   width: 262px;
 }
 
 .button.large {
-  width: 352px; 
+  width: 352px;
   height: 48px !important;
 }
-
 
 .button.small-circle {
   width: 32px;
@@ -114,7 +113,6 @@
   border-radius: 50%;
   padding: 0;
 }
-
 
 .button.large-circle {
   width: 48px;
@@ -125,14 +123,13 @@
   overflow: hidden;
 }
 
-
 .button.blue {
   background-color: var(--color-primary-1);
+  color: var(--color-neutral-8);
 }
 
 .button.blue:hover {
   background-color: var(--color-hover-blue);
-
 }
 
 .button.trans {
@@ -142,8 +139,7 @@
 }
 
 .button.trans:hover {
-  background-color:  var(--color-neutral-4);
-
+  background-color: var(--color-neutral-4);
 }
 .button.trans-no-border {
   background-color: transparent;
@@ -151,8 +147,7 @@
 }
 
 .button.trans-no-border:hover {
-  background-color:  var(--color-neutral-4);
-
+  background-color: var(--color-neutral-4);
 }
 .button.white {
   background-color: var(--color-neutral-8);
@@ -161,26 +156,24 @@
 }
 
 .button.white:hover {
-  background-color:var(--color-neutral-4);
-
+  background-color: var(--color-neutral-4);
 }
 
 .button.black {
-  background-color:  var(--color-neutral-1);
+  background-color: var(--color-neutral-1);
   border: 2px solid var(--color-stroke);
   transition: all 0.3s ease;
   color: var(--color-neutral-8);
 }
 
 .button.black:hover {
-  background-color:var(--color-neutral-2);
+  background-color: var(--color-neutral-2);
 }
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 /* ====== Avatar ====== */
 .avatar {
@@ -312,16 +305,16 @@
 }
 /* ====== Icon ====== */
 
-.IconContainer{
+.IconContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
 }
-.icon:hover{
+.icon:hover {
   color: var(--color-neutral-3);
 }
-.IconText{
+.IconText {
   margin-left: 10px;
   width: 70%;
 }
@@ -331,4 +324,78 @@
   width: 95%;
   border-top: 2px solid var(--color-neutral-5);
   margin: 8px auto;
+}
+
+/* ====== Select ====== */
+.select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.select-box-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-neutral-5);
+  text-transform: uppercase;
+}
+
+.select-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-neutral-8);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.select-box-value {
+  font-size: 16px;
+  color: var(--color-neutral-2);
+}
+
+.select-box-icon {
+  font-size: 15px;
+  color: var(--color-neutral-4);
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-neutral-5);
+  border-radius: 50%;
+}
+
+.select-box-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--color-neutral-8);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+}
+
+.select-box-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.select-box-option:hover {
+  background: var(--color-neutral-6);
+}
+.select-box-option.selected {
+  color: var(--color-primary-1);
+  font-weight: bold;
 }

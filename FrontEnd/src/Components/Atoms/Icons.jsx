@@ -4,7 +4,7 @@ import "../Styles/atoms.css";
 
 const Icon = ({ size = 24, color, IconContetnt, children , direction ="row"}) => {
   return (
-    <div className="IconContainer" style={{flexDirection: { direction }}}>
+    <div className="IconContainer" style={{flexDirection:{direction}}}>
       <span className={`icon`} style={{ fontSize: size, color }}>
         {IconContetnt}
       </span>
