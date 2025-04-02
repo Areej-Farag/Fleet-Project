@@ -96,6 +96,33 @@ padding: 5px 10px;
     margin-right: 10px;
 }
 
+/* payment-confirmation-detailes */
+.payment-confirmation-detailes{
+    margin-top: 100px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.payment-confirmation-detailes .TextedIcons-container .IconContainer{
+    width: 48%;
+    padding-left: 10px;
+}
+.payment-confirmation-detailes .TextedIcons-container .IconContainer:first-child{
+    border-right: 1px solid var(--color-neutral-5) ;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .payment-form{
         width: 100vw;
