@@ -19,6 +19,12 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.payment-form .detailsIcons .IconContainer{
+background-color: var(--color-neutral-7);
+width: 48%;
+border-radius: 10px;
+padding: 5px 10px;
+}
 .payment-form .detailsIcons .IconText {
     width: 85%;
 }
@@ -88,4 +94,11 @@
 .credit-card-form .card-expiration input{
     width: 90%;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-form{
+        width: 100vw;
+    }
+    
 }
