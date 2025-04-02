@@ -11,6 +11,24 @@
     height: 100vh;
     padding: 20px;
 }
+.payment-form .detailsIcons{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.payment-form .detailsIcons .IconText {
+    width: 85%;
+}
+.payment-form .detailsIcons .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+
+}
 
 /* CreditCardInfoForm Styles */
 .credit-card-form {
@@ -37,10 +55,19 @@
 }
 .checkbox .input-container{
     height: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 .credit-card-form .checkbox label{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--color-neutral-4);
+    font-weight: 600;
     margin-left: 10px;
-    width: 90%;
+    width: fit-content;
     text-align: left;
 }
 

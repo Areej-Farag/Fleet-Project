@@ -8,6 +8,7 @@ import TextWithBtn from "../Molecules/TextWithBtn";
 import { CiEdit } from "react-icons/ci";
 import Button from "../Atoms/Button";
 import CreditCardInfoForm from "./CreditCardInfoForm";
+import Select from "../Atoms/Select";
 
 
 export default function PaymentForm() {
@@ -24,7 +25,7 @@ export default function PaymentForm() {
           Your trip
         </Typograph>
         <div className="detailsIcons">
-          <Icon size={24} color={colors.Neutrals[2]} IconContetnt={<CiEdit />}>
+          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse" >
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Date
             </Typograph>
@@ -32,7 +33,7 @@ export default function PaymentForm() {
               May 15 - 22, 2021
             </Typograph>
           </Icon>
-          <Icon size={24} color={colors.Neutrals[2]} IconContetnt={<CiEdit />}>
+          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse">
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Guests
             </Typograph>
@@ -52,10 +53,10 @@ export default function PaymentForm() {
           btnContent={
             <>
               {" "}
-              <Button color="white" shape="default">
+              <Button color="white" shape="default"  size="small">
                 Paypal
               </Button>
-              <Button color="black" shape="default">
+              <Button color="black" shape="default" size="small">
                 Credit Card
               </Button>
             </>
@@ -63,12 +64,8 @@ export default function PaymentForm() {
           direction="row-reverse"
         />
         <div className="selection-Area">
-        <Typograph variant="small" color={colors.Neutrals[4]}>saved contact info</Typograph>
-        <select className="payment-select">
-          <option>Visa</option>
-          <option>MasterCard</option>
-          <option>PayPal</option>
-        </select>
+        {/* <Typograph variant="lead" color={colors.Neutrals[4]}>saved contact info</Typograph> */}
+        <Select label={"Saved contact info"} options={["Visa", "MasterCard", "PayPal"]}></Select>
         </div> 
       </div>
       <Line/>

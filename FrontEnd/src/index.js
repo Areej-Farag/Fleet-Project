@@ -14,6 +14,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import Typography from "./Components/Atoms/Typograph";
 
 
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
