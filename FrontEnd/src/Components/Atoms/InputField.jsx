@@ -10,13 +10,14 @@ export default function InputField({
   iconContent,
   buttonContent,
   large= false,
-  rounded = true
+  rounded = true,
+  ChangeHandler
 }) {
   return (
     <div className={`input-field ${large ? "large" : ""} ${rounded ? "rounded" : ""}`}>
       <label className="input-label" >{labelTitle}</label>
       <div className="input-container">
-      <input type={type} placeholder={placeholder} />
+      <input type={type} placeholder={placeholder} onChange={ChangeHandler}/>
       <div className="input-buttons">
         {hasIcon && <span className="input-icon">{iconContent}</span>}
         {hasButton && <button className="input-button">{buttonContent}</button>}

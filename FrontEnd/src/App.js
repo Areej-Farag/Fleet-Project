@@ -14,10 +14,8 @@ function App() {
 }
 
 import React from "react";
-import Icon from "./Components/Atoms/Icons";
-import Colors from "./Components/Atoms/Colors";
-import Typography from "./Components/Atoms/Typograph";
-import { CiAlarmOn } from "react-icons/ci";
+import PaymentForm from "./Components/Organisms/PaymentForm";
+
 
 const App = () => {
   return (
@@ -40,5 +38,8 @@ const App = () => {
       </div>
     </>
   );
+  return( <>
+  <PaymentForm/>
+  </>);
 };
 export default App;
