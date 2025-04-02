@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   height: 70px;
-  width: 80%;
+  width: 100%;
   margin: 5px auto;
   position: relative;
 }
@@ -169,11 +169,11 @@
   background-color:  var(--color-neutral-1);
   border: 2px solid var(--color-stroke);
   transition: all 0.3s ease;
+  color: var(--color-neutral-8);
 }
 
 .button.black:hover {
-  background-color:var(--color-neutral-4);
-  
+  background-color:var(--color-neutral-2);
 }
 .icon {
   display: flex;
@@ -318,6 +318,9 @@
   justify-content: space-between;
   padding: 5px;
 }
+.icon:hover{
+  color: var(--color-neutral-3);
+}
 .IconText{
   margin-left: 10px;
   width: 70%;
@@ -326,6 +329,6 @@
 
 .line {
   width: 95%;
-  border-top: 1px solid var(--color-neutral-6);
+  border-top: 2px solid var(--color-neutral-5);
   margin: 8px auto;
 }
