@@ -1,5 +1,6 @@
 import React from "react";
-import "../Styles/atoms.css"; // استيراد ملف الـ CSS
+import "../Styles/atoms.css";
+import proptypes from "prop-types";
 
 const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => {
   const typeClasses = {
@@ -20,6 +21,13 @@ const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => 
     </div>
   );
 };
+
+ImageComponent.propTypes = {
+  src: proptypes.string.isRequired,
+  title: proptypes.string.isRequired,
+  type: proptypes.oneOf(["wallpaper", "topRounded", "fullyRounded", "circular"]),
+  badgeContent: proptypes.node
+}
 
 export default ImageComponent;
 
