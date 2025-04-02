@@ -19,6 +19,12 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.payment-form .detailsIcons .IconContainer{
+background-color: var(--color-neutral-7);
+width: 48%;
+border-radius: 10px;
+padding: 5px 10px;
+}
 .payment-form .detailsIcons .IconText {
     width: 85%;
 }
@@ -88,4 +94,38 @@
 .credit-card-form .card-expiration input{
     width: 90%;
     margin-right: 10px;
+}
+
+/* payment-confirmation-detailes */
+.payment-confirmation-detailes{
+    margin-top: 100px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.payment-confirmation-detailes .TextedIcons-container .IconContainer{
+    width: 48%;
+    padding-left: 10px;
+}
+.payment-confirmation-detailes .TextedIcons-container .IconContainer:first-child{
+    border-right: 1px solid var(--color-neutral-5) ;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .payment-form{
+        width: 100vw;
+    }
+    
 }

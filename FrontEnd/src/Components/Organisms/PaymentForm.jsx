@@ -13,7 +13,7 @@ import Select from "../Atoms/Select";
 
 export default function PaymentForm() {
   return (
-    <div className="payment-form">
+    <div className="payment-form col-12 ">
       <div className="title-container">
         <Typograph variant="h4" color={colors.Neutrals[2]}>
           Confirm and pay
@@ -25,7 +25,7 @@ export default function PaymentForm() {
           Your trip
         </Typograph>
         <div className="detailsIcons">
-          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse" >
+          <Icon size={24} color={colors.Neutrals[3]} IconContetnt={<CiEdit />} direction="row-reverse" >
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Date
             </Typograph>

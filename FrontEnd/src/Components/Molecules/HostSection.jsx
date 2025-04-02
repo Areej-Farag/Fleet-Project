@@ -6,6 +6,7 @@ import "../Styles/molecules.css";
 import Line from "../Atoms/Lines";
 
 
+
 export default function HostSection({AvatarSrc, HostName, AvatarSize , PropertyName , childern}) {
   return (
     <>
