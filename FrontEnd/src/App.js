@@ -1,12 +1,13 @@
 
 import React from "react";
-import PaymentForm from "./Components/Organisms/PaymentForm";
+import HostSection from "./Components/Molecules/HostSection";
+import img1 from './Images/avatar.png'
 
 
 const App = () => {
   return (
     <>
-      <PaymentForm />  
+      <HostSection AvatarSrc={img1} HostName={"John Doe"} AvatarSize={"small"} PropertyName={"Bungalow"}/>
     </>
   );
 };
