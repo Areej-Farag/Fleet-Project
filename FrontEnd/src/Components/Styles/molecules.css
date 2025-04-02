@@ -3,3 +3,18 @@
     display: flex;
     justify-content: space-between;
 }
+/* HostSection */
+.host-section{
+    display: flex;
+    align-items: center;
+}
+.host-section img{
+    margin: 0px 7px;
+}
+.host-section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
