@@ -1,1 +1,5 @@
 @import "./global.css";
+.text-with-btn-container{
+    display: flex;
+    justify-content: space-between;
+}
