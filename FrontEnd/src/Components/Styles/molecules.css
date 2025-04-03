@@ -1,20 +1,42 @@
 @import "./global.css";
-.text-with-btn-container{
-    display: flex;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.text-with-btn-container {
+  display: flex;
+  justify-content: space-between;
 }
 /* HostSection */
-.host-section{
-    display: flex;
-    align-items: center;
+.host-section {
+  display: flex;
+  align-items: center;
 }
-.host-section img{
-    margin: 0px 7px;
+.host-section img {
+  margin: 0px 7px;
 }
-.host-section-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+.host-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+/* BookSection */
+.booking-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.booking-details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-icon {
+  font-size: 24px;
+  color: var(--neutral-4);
+  margin-right: 10px;
 }

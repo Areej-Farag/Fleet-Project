@@ -10,8 +10,29 @@ import colors from "../Atoms/Colors";
 import Icon from "../Atoms/Icons";
 import { SlCalender } from "react-icons/sl";
 import { IoPersonOutline } from "react-icons/io5";
+import BookingDetails from "../Molecules/BookingDetails";
 
-export default function PaymentConfirmationDetailes() {
+const bookingData = [
+  {
+    title: "$119 x 7 nights",
+    value: "$833",
+  },
+  {
+    title: "10% campaign discount",
+    value: "-$125",
+  },
+  {
+    title: "Service fee",
+    value: "$103",
+  },
+  {
+    title: "Total",
+    value: "$833",
+  },
+];
+export default function PaymentConfirmationDetailes({
+  BookingData = bookingData,
+}) {
   return (
     <div className="payment-confirmation-detailes">
       <div className="Photo-and-host-sec d-flex">
@@ -26,13 +47,24 @@ export default function PaymentConfirmationDetailes() {
             PropertyName={"Villa in the Forest"}
             childern={
               <>
-                <Rate rating={"4.8"} />
+                <div>
                 <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                  (12 reviews)
-                </Typograph>
+                  {" "}
+                  1 bedroom , 1 private bath
+                  </Typograph>
+                </div>
               </>
             }
           />
+           <div className="d-flex">
+                <Rate rating={"4.8"}/>
+                <div className="review-count">
+                <Typograph variant={"small"} color={colors.Neutrals[4]}>
+                  (12 reviews)
+                </Typograph>
+                </div>
+               
+                </div>
         </div>
       </div>
       <div className="TextedIcons-container d-flex p-2 flex-wrap">
@@ -58,7 +90,7 @@ export default function PaymentConfirmationDetailes() {
           <Typograph variant="small" color={colors.Neutrals[4]}>
             Check Out
           </Typograph>
-          <Typograph variant="h6" color={colors.Neutrals[2]}>
+          <Typograph variant="p" color={colors.Neutrals[2]}>
             May 22 - 22, 2021
           </Typograph>
         </Icon>
@@ -71,17 +103,29 @@ export default function PaymentConfirmationDetailes() {
           <Typograph variant="small" color={colors.Neutrals[4]}>
             Guests
           </Typograph>
-          <Typograph variant="h6" color={colors.Neutrals[2]}>
+          <Typograph variant="p" color={colors.Neutrals[2]} >
             2 guests
           </Typograph>
         </Icon>
       </div>
-      <div className="paymment-details">
-        <p>GGGG</p>
-        <p>GGg</p>
-        <p>GGG</p>
-        <p>g</p>
-        <p>RRR</p>
+   
+      <div className="price-details-container" >
+      <Typograph variant={"h5"} color={colors.Neutrals[2]} bold={true}>
+          Price details{" "}
+        </Typograph>
+        <div className="paymment-details">
+          <div>
+          {BookingData.map((item, index) => (
+            <BookingDetails
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              value={item.value}
+            />
+          ))}
+          </div>
+      
+        </div>
       </div>
       <Typograph variant={"small"} color={colors.Neutrals[2]}>
         {" "}

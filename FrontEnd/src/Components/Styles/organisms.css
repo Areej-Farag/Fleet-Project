@@ -1,131 +1,145 @@
 @import "global.css";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 /* PaymentForm Styles */
-.payment-form{
-    width: 35%;
-    height: 100vh;
-    padding: 20px;
+.payment-form {
+  width: 35%;
+  height: 100vh;
+  padding: 20px;
 }
-.payment-form .detailsIcons{
-    display: flex;
-    width: 90%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.payment-form .detailsIcons {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.payment-form .detailsIcons .IconContainer{
-background-color: var(--color-neutral-7);
-width: 48%;
-border-radius: 10px;
-padding: 5px 10px;
+.payment-form .detailsIcons .IconContainer {
+  background-color: var(--color-neutral-7);
+  width: 48%;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 .payment-form .detailsIcons .IconText {
-    width: 85%;
+  width: 85%;
 }
-.payment-form .detailsIcons .icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-
+.payment-form .detailsIcons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
 }
 
 /* CreditCardInfoForm Styles */
 .credit-card-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.credit-card-form .input-field{
+.credit-card-form .input-field {
   margin-bottom: 25px;
 }
-.credit-card-form .checkbox{
-    width: 60%;
-    height: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+.credit-card-form .checkbox {
+  width: 60%;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-.credit-card-form .checkbox .input-field{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    vertical-align: baseline;
+.credit-card-form .checkbox .input-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: baseline;
 }
-.checkbox .input-container{
-    height: 20px;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.checkbox .input-container {
+  height: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-.credit-card-form .checkbox label{
-    font-size: 15px;
-    text-transform: capitalize;
-    color: var(--color-neutral-4);
-    font-weight: 600;
-    margin-left: 10px;
-    width: fit-content;
-    text-align: left;
+.credit-card-form .checkbox label {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--color-neutral-4);
+  font-weight: 600;
+  margin-left: 10px;
+  width: fit-content;
+  text-align: left;
 }
 
-.credit-card-form .checkbox input{
-    width: 20px;
-    height: 20px;
+.credit-card-form .checkbox input {
+  width: 20px;
+  height: 20px;
 }
-.credit-card-form textarea{
-    border: 1px solid var(--color-neutral-6);
-    border-radius: 10px;
-    outline: none;
-    margin: 20px 0;
-    padding: 5px;
+.credit-card-form textarea {
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 10px;
+  outline: none;
+  margin: 20px 0;
+  padding: 5px;
 }
-.credit-card-form textarea:focus{
-    border: 1px solid var(--color-neutral-4);
+.credit-card-form textarea:focus {
+  border: 1px solid var(--color-neutral-4);
 }
-.credit-card-form .card-expiration input{
-    width: 90%;
-    margin-right: 10px;
+.credit-card-form .card-expiration input {
+  width: 90%;
+  margin-right: 10px;
 }
 
 /* payment-confirmation-detailes */
-.payment-confirmation-detailes{
-    margin-top: 100px;
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.payment-confirmation-detailes {
+  margin-top: 100px;
+  width: 35%;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 20px;
+  padding: 20px 15px;
 }
-.payment-confirmation-detailes .TextedIcons-container .IconContainer{
-    width: 48%;
-    padding-left: 10px;
+.payment-confirmation-detailes .TextedIcons-container .IconContainer {
+  width: 50%;
+  padding-left: 10px;
 }
-.payment-confirmation-detailes .TextedIcons-container .IconContainer:first-child{
-    border-right: 1px solid var(--color-neutral-5) ;
+.TextedIcons-container{
+    background-color: var(--color-neutral-7);
+    border-radius: 10px;
+    padding: 5px 10px;
 }
-
-
-
-
-
-
-
+.payment-confirmation-detailes
+  .TextedIcons-container
+  .IconContainer:first-child {
+  border-right: 1px solid var(--color-neutral-5);
+}
+.price-details-container{
+    width: 100%;
+}
+.paymment-details {
+  /* width: 90%; */
+  padding: 10px;
+}
+.payment-confirmation-detailes  .review-count{
+    width: 100px;
+    vertical-align: baseline;
+    font-size: 14px;
+    margin-left: 15px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    .payment-form{
-        width: 100vw;
-    }
-    
+  .payment-form {
+    width: 100vw;
+  }
 }

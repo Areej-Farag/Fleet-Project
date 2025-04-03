@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Typograph = ({ variant, children, className, color }) => {
+const Typograph = ({ variant, children, className, color, bold }) => {
   const variants = {
     h1: "h1 display-1",
     h2: "h2 display-2",
@@ -18,9 +18,14 @@ const Typograph = ({ variant, children, className, color }) => {
     button: "btn",
   };
 
-  const Tag = variants[variant] ? variant : "p"; // التأكد من أن الـ variant موجود
-  const styles = color ? { color } : {}; // تطبيق اللون إذا كان موجودًا
-  const classes = `${variants[variant] || ""} ${className || ""}`.trim(); // إصلاح الـ className
+  const Tag = variants[variant] ? variant : "p";
+  const styles = {
+    color: color || "inherit",
+    fontWeight: bold ? "bold" : "normal",
+    fontFamily: "Poppins, sans-serif",
+  };
+
+  const classes = `${variants[variant] || ""} ${className || ""}`.trim();
 
   return (
     <Tag className={classes} style={styles}>
@@ -46,13 +51,15 @@ Typograph.propTypes = {
   ]),
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  color: PropTypes.string, // تحديد اللون كـ prop اختيارية
+  color: PropTypes.string,
+  bold: PropTypes.bool,
 };
 
 Typograph.defaultProps = {
   variant: "p",
   className: "",
-  color: "", // افتراضيًا بدون لون
+  color: "",
+  bold: false,
 };
 
 export default Typograph;
