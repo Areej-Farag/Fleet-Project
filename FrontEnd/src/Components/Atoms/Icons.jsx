@@ -2,25 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
 
-const Icon = ({
-  size = 24,
-  color,
-  IconContetnt,
-  children,
-  direction = "row",
-  bold,
-}) => {
+const Icon = ({ size = 24, color, IconContetnt, children , direction ="row"}) => {
   return (
-    <div className="IconContainer" style={{ flexDirection: { direction } }}>
-      <span
-        className={`icon`}
-        style={{
-          fontSize: size,
-          color,
-          fontWeight: bold ? "700" : "normal",
-        }}
-      >
-        {IconContetnt }
+    <div className="IconContainer" style={{flexDirection:{direction}}}>
+      <span className={`icon`} style={{ fontSize: size, color }}>
+        {IconContetnt}
       </span>
       <div className="IconText">{children}</div>
     </div>
