@@ -2,9 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
 
-const Icon = ({ size = 24, color, IconContetnt, children , direction ="row"}) => {
+const Icon = ({
+  size = 24,
+  color,
+  IconContetnt,
+  children,
+  direction = "row",
+}) => {
   return (
-    <div className="IconContainer" style={{flexDirection:{direction}}}>
+    <div className="IconContainer" style={{ flexDirection: { direction } }}>
       <span className={`icon`} style={{ fontSize: size, color }}>
         {IconContetnt}
       </span>
@@ -18,7 +24,12 @@ Icon.propTypes = {
   size: PropTypes.number,
   color: PropTypes.string,
   children: PropTypes.node,
-  direction: PropTypes.oneOf(["row" , "column" , "row-reverse" , "column-reverse"]),
+  direction: PropTypes.oneOf([
+    "row",
+    "column",
+    "row-reverse",
+    "column-reverse",
+  ]),
 };
 
 export default Icon;
