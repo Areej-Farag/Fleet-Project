@@ -165,7 +165,11 @@
 }
 
 .button.black:hover {
+<<<<<<<<< Temporary merge branch 1
+  background-color: var(--color-neutral-2);
+=========
   background-color: var(--color-neutral-4);
+>>>>>>>>> Temporary merge branch 2
 }
 .icon {
   display: flex;
@@ -298,6 +302,7 @@
   border-radius: 10px;
   font-weight: bold;
 }
+/* ====== Icon ====== */
 
 .price-box {
   display: flex;
@@ -306,7 +311,7 @@
   width: 48px;
   height: 44px;
   border-radius: 4px;
-  border: 2px solid #58c27d;
+  border: 2px solid #58C27D;
   padding: 8px 8px 6px 8px;
   gap: 6px;
 }
@@ -316,14 +321,14 @@
 }
 
 .old-price {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  color: #b1b5c3;
+  color:#B1B5C3;
   width: 32px;
   height: 12px;
   position: relative; /* إضافة الموضع النسبي */
@@ -339,21 +344,21 @@
 .dash-line {
   width: 31px;
   height: 1px;
-  background-color: #b1b5c3;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  background-color: #B1B5C3;
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .new-price {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  color: #58c27d;
+  color: #58C27D;
   width: 32px;
   height: 12px;
 }
@@ -361,52 +366,59 @@
 .rate-box {
   display: flex;
   align-items: center;
-  width: 35px; /* من Figma */
-  height: 20px; /* من Figma */
-  gap: 4px; /* من Figma */
-  border: none; /* إخفاء الحدود */
+  width: 35px; 
+  height: 20px; 
+  gap: 4px; 
+  border: none; 
 }
 
 .star-box {
-  width: 12px; /* من Figma */
-  height: 11.25px; /* من Figma */
+  width: 12px; 
+  height: 11.25px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.star-icon {
-  color: #FFD166; /* من Figma */
-  font-size: 12px; /* أو حجم الأيقونة المناسب */
+.star {
+  color: #FFD166;
+  font-size: 12px; 
 }
 
 .rating-box {
-  width: 19px; /* من Figma */
-  height: 20px; /* من Figma */
+  width: 19px;
+  height: 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .rating {
-  font-family: 'Poppins', sans-serif; /* من Figma */
-  font-weight: 600; /* من Figma */
-  font-size: 12px; /* من Figma */
-  line-height: 20px; /* من Figma */
-  letter-spacing: 0%; /* من Figma */
-  color: #23262F; /* من Figma */
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600; 
+  font-size: 12px; 
+  line-height: 20px; 
+  letter-spacing: 0%; 
+  color: #23262F;
 }
 
 .review-count {
   font-size: 12px;
   color: #999; /* أو اللون المناسب */
 }
+>>>>>>>>> Temporary merge branch 2
 .IconContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
 }
+<<<<<<<<< Temporary merge branch 1
+.icon:hover {
+  color: var(--color-neutral-3);
+}
+=========
+>>>>>>>>> Temporary merge branch 2
 .IconText {
   margin-left: 10px;
   width: 70%;
@@ -417,3 +429,80 @@
   border-top: 2px solid var(--color-neutral-5);
   margin: 8px auto;
 }
+<<<<<<<<< Temporary merge branch 1
+
+/* ====== Select ====== */
+.select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.select-box-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-neutral-5);
+  text-transform: uppercase;
+}
+
+.select-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-neutral-8);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.select-box-value {
+  font-size: 16px;
+  color: var(--color-neutral-2);
+}
+
+.select-box-icon {
+  font-size: 15px;
+  color: var(--color-neutral-4);
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-neutral-5);
+  border-radius: 50%;
+}
+
+.select-box-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--color-neutral-8);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+}
+
+.select-box-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.select-box-option:hover {
+  background: var(--color-neutral-6);
+}
+.select-box-option.selected {
+  color: var(--color-primary-1);
+  font-weight: bold;
+}
+=========
+>>>>>>>>> Temporary merge branch 2
