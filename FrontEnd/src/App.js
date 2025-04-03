@@ -1,13 +1,11 @@
-
 import React from "react";
-import HostSection from "./Components/Molecules/HostSection";
-import img1 from './Images/avatar.png'
+import PaymentConfirmationDetailes from "./Components/Organisms/PaymentConfirmationDetailes";
 
 
 const App = () => {
   return (
     <>
-      <HostSection AvatarSrc={img1} HostName={"John Doe"} AvatarSize={"small"} PropertyName={"Bungalow"}/>
+    <PaymentConfirmationDetailes/>
     </>
   );
 };
