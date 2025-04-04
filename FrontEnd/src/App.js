@@ -1,11 +1,11 @@
 import React from "react";
-import PaymentConfirmationDetailes from "./Components/Organisms/PaymentConfirmationDetailes";
+import PaymentTemplate from "./Components/Templates/PaymentTemplate";
 
 
 const App = () => {
   return (
     <>
-    <PaymentConfirmationDetailes/>
+    <PaymentTemplate/>
     </>
   );
 };
