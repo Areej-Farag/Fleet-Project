@@ -9,6 +9,7 @@ import { CiEdit } from "react-icons/ci";
 import Button from "../Atoms/Button";
 import CreditCardInfoForm from "./CreditCardInfoForm";
 import Select from "../Atoms/Select";
+// import { FaBold } from "react-icons/fa";
 
 
 export default function PaymentForm() {
@@ -25,19 +26,19 @@ export default function PaymentForm() {
           Your trip
         </Typograph>
         <div className="detailsIcons">
-          <Icon size={24} color={colors.Neutrals[3]} IconContetnt={<CiEdit />} direction="row-reverse" >
+          <Icon size={24} color={colors.Neutrals[4]} IconContetnt={<CiEdit />} direction="row-reverse" >
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Date
             </Typograph>
-            <Typograph variant="h6" color={colors.Neutrals[2]}>
+            <Typograph variant="p" color={colors.Neutrals[2] }>
               May 15 - 22, 2021
             </Typograph>
           </Icon>
-          <Icon size={24} color={colors.Neutrals[5]} IconContetnt={<CiEdit />} direction="row-reverse">
+          <Icon size={24} color={colors.Neutrals[4]} IconContetnt={<CiEdit />} direction="row-reverse">
             <Typograph variant="small" color={colors.Neutrals[4]}>
               Guests
             </Typograph>
-            <Typograph variant="h6" color={colors.Neutrals[2]}>
+            <Typograph variant="p" color={colors.Neutrals[2]}>
               2 guests
             </Typograph>
           </Icon>

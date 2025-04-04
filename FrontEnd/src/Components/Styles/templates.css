@@ -1,0 +1,68 @@
+@import "./global.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.payment-template-container {
+    width: 85%;
+    justify-content: space-between;
+    margin: 50px auto;
+
+}
+.payment-form-container{
+    width: 48%;
+}
+.payment-confirmation-container {
+width: 48%;
+}
+
+/* Media Queries For Mobile */
+@media screen and (max-width: 768px) {
+    .payment-template-container{
+        flex-direction: column-reverse;
+        width: 90%;
+        /* justify-content: space-between; */
+    }
+   .payment-form-container{
+        width: 100%
+    
+    }
+    .payment-confirmation-container {
+    width: 100%;
+    }
+    
+}
+
+/* Media Queries For Tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .payment-template-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px; 
+        /* gap: 20px;  */
+    }
+    .payment-form-container  {
+        width: 50%; 
+        display: flex;
+        flex-direction: column;
+        /* gap: 15px;  */
+    }
+    .payment-form-container .payment-form{
+        width: 100%;
+    }
+    .payment-confirmation-container{
+        width: 50%; 
+    }
+    .payment-confirmation-detailes {
+        width: 100%;
+    }
+    .payment-form-container .payment-form .trip-details .detailsIcons .IconContainer{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

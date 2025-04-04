@@ -50,7 +50,7 @@ export default function CreditCardInfoForm() {
      
       </div>
         <Typograph variant="h5">Message the host</Typograph>
-        <textarea placeholder="Additional Notes" cols={60} rows={7}></textarea>
+        <textarea placeholder="Additional Notes" cols={40} rows={7}></textarea>
         <Button color="blue" size="default" shape="default">
           {" "}
           Confirm and pay
