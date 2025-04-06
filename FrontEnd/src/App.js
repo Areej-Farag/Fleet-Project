@@ -1,12 +1,13 @@
 import React from "react";
-import PaymentConfirmationDetailes from "./Components/Organisms/PaymentConfirmationDetailes";
 
+import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmationTemplate";
 
-const App = () => {
+function App() {
   return (
-    <>
-    <PaymentConfirmationDetailes/>
-    </>
+    <div className="App container mt-5">
+      <BookingConfirmationTemplate />
+    </div>
   );
-};
+}
+
 export default App;
