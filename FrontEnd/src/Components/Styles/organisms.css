@@ -143,6 +143,68 @@
   font-size: 14px;
   margin-left: 15px;
 }
+/* Sign Forms */
+.sign-up-overlay{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-button{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 30;
+  color: var(--color-neutral-4);
+  background-color: var(--color-neutral-7);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sign-up-form{
+  padding: 30px;
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 450px;
+  height: 370px;
+  z-index: 25;
+  background-color: var(--color-neutral-7);
+  border-radius: 20px;
+}
+.sign-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom:15px;
+}
+.sign-buttons button{
+  width: 45%;
+}
+.sign-up-form form{
+  width: 80%;
+  margin: 0 20px;
+}
+.sign-up-form form .input-buttons{
+  justify-content: flex-end;
+}
 
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
@@ -186,7 +248,21 @@
     width: 100%;
     margin-bottom: 5px;
 }
+/* .sign-up-form */
+.sign-up-form{
+  padding: 20px 0;
+  width: 95vw;
+  height: 80vh;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% , -40%);
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+.sign-buttons{
+  width: 80%;
+}}
 
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
