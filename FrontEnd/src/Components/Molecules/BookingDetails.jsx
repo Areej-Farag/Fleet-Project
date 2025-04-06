@@ -1,7 +1,7 @@
 import React from "react";
-import Typograph from "../Atoms/Typograph"; // تأكد من أن المسار صحيح
+import Typograph from "../Atoms/Typograph";
 import colors from "../Atoms/Colors";
-import "../Styles/molecules.css"; // ملف CSS يحتوي على التنسيقات
+import "../Styles/molecules.css";
 
 const BookingDetails = ({ icon, title, value }) => {
   return (
@@ -13,11 +13,10 @@ const BookingDetails = ({ icon, title, value }) => {
         </Typograph>
       </div>
       <div>
-      <Typograph variant="h6" color={colors.Neutrals[2]}>
-        {value}
-      </Typograph>
+        <Typograph variant="h6" color={colors.Neutrals[2]}>
+          {value}
+        </Typograph>
       </div>
-   
     </div>
   );
 };
