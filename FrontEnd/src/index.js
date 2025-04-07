@@ -12,7 +12,8 @@ import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import Typography from "./Components/Atoms/Typograph";
-
+import Card from "./Components/Molecules/Card";
+import { FaWifi, FaUtensils } from "react-icons/fa";
 
 
 
@@ -20,8 +21,9 @@ import Typography from "./Components/Atoms/Typograph";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-      <App />
-      {/* <DemoApp /> */}
+    
+      <DemoApp/>
+      {/*  <App />  */}
     </>
   );
   
@@ -107,6 +109,24 @@ function DemoApp() {
       <Button color="blue" size="default"   shape="small-circle" icon={<FaArrowRight />} iconSize={14} >
       
       </Button>
+      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+        <Card
+         imageSrc="https://wallpaperaccess.com/full/1093978.jpg"
+         badgeText="Superhost"
+         badgeColor="white"          // Set the badge background color
+         badgeTextColor="black"    // Set the badge text color
+         title="Entire serviced classy mountain house"
+         priceBefore="200"
+         priceNow="150"
+         totalPrice="200"
+         rating="4.50"
+         reviewCount="15"
+         amenities={[
+         { icon: <FaWifi />, text: "Free wifi" },
+         { icon: <FaUtensils />, text: "Breakfast included" },
+         ]}
+        />
+     </div>
     </div>
   );
 }
