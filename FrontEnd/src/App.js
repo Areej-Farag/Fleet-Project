@@ -3,7 +3,11 @@ import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmat
 
 function App() {
   return (
-    <div className="App container mt-5">
+
+  
+
+
+<div className="App container mt-5">
       <BookingConfirmationTemplate />
     </div>
   );
