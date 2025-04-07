@@ -1,12 +1,12 @@
 import React from "react";
-import PaymentTemplate from "./Components/Templates/PaymentTemplate";
+import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmationTemplate";
 
-
-const App = () => {
+function App() {
   return (
     <>
-    {/* <PaymentTemplate /> */}
+    <PaymentTemplate/>
     </>
   );
-};
+}
+
 export default App;
