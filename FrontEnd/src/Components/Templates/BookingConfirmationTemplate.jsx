@@ -7,9 +7,9 @@ import "../Styles/templates.css";
 
 export default function BookingConfirmationTemplate() {
   return (
-    <div className="booking-confirmation d-flex gap-5 p-4">
-      <div className="col-md-6 col-12 p-2">
-        <div className="image-container">
+    <div className="booking-confirmation d-flex flex-column flex-md-row gap-4 p-3 p-md-4">
+      <div className="col-12 col-md-6 p-2">
+        <div className="image-container w-100 ">
           <ImageComponent
             src={Photo}
             title="Queenstown view"
@@ -25,7 +25,9 @@ export default function BookingConfirmationTemplate() {
           </div>
         </div>
       </div>
-      <BookingConfirmation />
+      <div className="col-12 col-md-6 p-2">
+        <BookingConfirmation />
+      </div>
     </div>
   );
 }
