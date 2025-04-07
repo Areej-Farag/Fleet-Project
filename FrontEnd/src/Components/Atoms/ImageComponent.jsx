@@ -17,7 +17,7 @@ const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => 
           {badgeContent} 
         </div>
       )}
-      <img src={src} alt={title} className="img-fluid" />
+      <img src={src} alt={title} className="img-fluid d-block" />
     </div>
   );
 };

@@ -35,11 +35,11 @@ export default function PaymentConfirmationDetailes({
 }) {
   return (
     <div className="payment-confirmation-detailes">
-      <div className="Photo-and-host-sec d-flex">
-        <div className="photo-container w-50 p-2">
+      <div className="Photo-and-host-sec row d-flex">
+        <div className="photo-container col-12  p-2">
           <ImageComponent src={LocationPhoto} title={"Image Title"} />
         </div>
-        <div className="host-container w-50 p-2">
+        <div className="host-container col-12 p-2">
           <HostSection
             AvatarSrc={AvatarPhoto}
             HostName={"Anastasia"}
@@ -47,24 +47,23 @@ export default function PaymentConfirmationDetailes({
             PropertyName={"Villa in the Forest"}
             childern={
               <>
-                <div>
-                <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                  {" "}
-                  1 bedroom , 1 private bath
+                <div className="d-flex justify-content-center w-100">
+                  <Typograph variant={"small"} color={colors.Neutrals[4]}>
+                    {" "}
+                    1 bedroom , 1 private bath
                   </Typograph>
                 </div>
               </>
             }
           />
-           <div className="d-flex">
-                <Rate rating={"4.8"}/>
-                <div className="review-count">
-                <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                  (12 reviews)
-                </Typograph>
-                </div>
-               
-                </div>
+          <div className="d-flex rate-container">
+            <Rate rating={"4.8"} />
+            <div className="d-flex review-count">
+              <Typograph variant={"small"} color={colors.Neutrals[4]}>
+                (12 reviews)
+              </Typograph>
+            </div>
+          </div>
         </div>
       </div>
       <div className="TextedIcons-container d-flex p-2 flex-wrap">
@@ -103,28 +102,27 @@ export default function PaymentConfirmationDetailes({
           <Typograph variant="small" color={colors.Neutrals[4]}>
             Guests
           </Typograph>
-          <Typograph variant="p" color={colors.Neutrals[2]} >
+          <Typograph variant="p" color={colors.Neutrals[2]}>
             2 guests
           </Typograph>
         </Icon>
       </div>
-   
-      <div className="price-details-container" >
-      <Typograph variant={"h5"} color={colors.Neutrals[2]} bold={true}>
+
+      <div className="price-details-container">
+        <Typograph variant={"h5"} color={colors.Neutrals[2]} bold={true}>
           Price details{" "}
         </Typograph>
         <div className="paymment-details">
-          <div>
-          {BookingData.map((item, index) => (
-            <BookingDetails
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              value={item.value}
-            />
-          ))}
+          <div className="Price-details">
+            {BookingData.map((item, index) => (
+              <BookingDetails
+                key={index}
+                icon={item.icon}
+                title={item.title}
+                value={item.value}
+              />
+            ))}
           </div>
-      
         </div>
       </div>
       <Typograph variant={"small"} color={colors.Neutrals[2]}>
