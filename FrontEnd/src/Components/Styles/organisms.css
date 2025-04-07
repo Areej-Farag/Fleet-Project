@@ -1,0 +1,328 @@
+@import "global.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+/* PaymentForm Styles */
+.payment-form {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+}
+.payment-form .detailsIcons {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.payment-form .detailsIcons .IconContainer {
+  background-color: var(--color-neutral-7);
+  width: 48%;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.payment-form .detailsIcons .IconText {
+  width: 85%;
+}
+.payment-form .detailsIcons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+}
+
+/* CreditCardInfoForm Styles */
+.credit-card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.credit-card-form .input-field {
+  margin-bottom: 25px;
+}
+.credit-card-form .checkbox {
+  width: 60%;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.credit-card-form .checkbox .input-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: baseline;
+}
+.checkbox .input-container {
+  height: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.credit-card-form .checkbox label {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--color-neutral-4);
+  font-weight: 600;
+  margin-left: 10px;
+  width: fit-content;
+  text-align: left;
+}
+
+.credit-card-form .checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.credit-card-form textarea {
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 10px;
+  outline: none;
+  margin: 20px 0;
+  padding: 5px;
+}
+.credit-card-form textarea:focus {
+  border: 1px solid var(--color-neutral-4);
+}
+.credit-card-form .card-expiration input {
+  width: 90%;
+  margin-right: 10px;
+}
+
+/* payment-confirmation-detailes */
+.payment-confirmation-detailes {
+  margin-top: 100px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 20px;
+  padding: 20px 15px;
+}
+.photo-container,
+.host-container {
+  width: 50%;
+}
+.payment-confirmation-detailes .TextedIcons-container .IconContainer {
+  width: 50%;
+  padding-left: 10px;
+}
+.TextedIcons-container {
+  background-color: var(--color-neutral-7);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.payment-confirmation-detailes
+  .TextedIcons-container
+  .IconContainer:first-child {
+  border-right: 1px solid var(--color-neutral-5);
+}
+.price-details-container {
+  width: 100%;
+}
+.paymment-details {
+  /* width: 90%; */
+  padding: 10px;
+}
+.Price-details {
+  justify-content: space-between !important;
+}
+.payment-confirmation-detailes .review-count {
+  width: 100px;
+  vertical-align: baseline;
+  font-size: 14px;
+  margin-left: 15px;
+}
+/* Sign Forms */
+.sign-up-overlay{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-button{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 30;
+  color: var(--color-neutral-4);
+  background-color: var(--color-neutral-7);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sign-up-form{
+  padding: 30px;
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 450px;
+  height: 370px;
+  z-index: 25;
+  background-color: var(--color-neutral-7);
+  border-radius: 20px;
+}
+.sign-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom:15px;
+}
+.sign-buttons button{
+  width: 45%;
+}
+.sign-up-form form{
+  width: 80%;
+  margin: 0 20px;
+}
+.sign-up-form form .input-buttons{
+  justify-content: flex-end;
+}
+
+/* Media Queries For Mobile */
+@media screen and (max-width: 768px) {
+  .payment-form {
+    width: 90vw;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  .payment-confirmation-detailes {
+    width: 90vw;
+    height: fit-content;
+    margin: 30px auto;
+  }
+  .photo-container,
+  .host-container {
+    width: 100%;
+  }
+  .payment-confirmation-detailes .photo-container img {
+    margin: auto;
+    height: 180px;
+    width: 90%;
+    object-fit: fill;
+  }
+  .payment-confirmation-detailes
+    .TextedIcons-container
+    .IconContainer:first-child {
+    border-right: none;
+  }
+  .booking-details {
+    justify-content: center;
+  }
+  .rate-container {
+    justify-content: center;
+  }
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-confirmation-detailes .TextedIcons-container .IconContainer,
+  .payment-form .trip-details .detailsIcons .IconContainer {
+    width: 100%;
+    margin-bottom: 5px;
+
+  }
+
+}
+/* .sign-up-form */
+.sign-up-form{
+  padding: 20px 0;
+  width: 95vw;
+  height: 80vh;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% , -40%);
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+.sign-buttons{
+  width: 80%;
+}
+
+/* Media Queries For Tablet */
+@media screen and (min-width: 769px) and (max-width: 1030px) {
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-form .trip-details .detailsIcons .IconContainer {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/*Booking Confirmation*/
+@media (max-width: 576px) {
+  .booking-confirmation-container {
+    padding: 1rem;
+  }
+  .mt-4.d-flex {
+    flex-wrap: wrap;
+    justify-content: space-between; /* تباعد الأزرار بشكل مناسب */
+  }
+
+  .mt-4.d-flex .w-100 {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+
+  .mt-4.d-flex .w-md-auto {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+
+  /* تحديد الحالة للأزرار عند الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .congratulations-text {
+      text-align: center; /* محاذاة النص في المنتصف */
+    }
+    .mt-4.d-flex .w-100,
+    .mt-4.d-flex .w-md-auto {
+      width: 100%; /* تجعل الأزرار تأخذ عرض كامل عند الشاشات الصغيرة */
+    }
+  }
+}
+/* إضافة هذه التنسيقات لضبط التوزيع في BookingDetails */
+.booking-details-container {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر بين الجانبين */
+  align-items: center;
+  width: 100%;
+}
+
+.booking-details-container .details-left {
+  display: flex;
+  align-items: center; /* محاذاة الـ icon مع الـ title */
+}
+
+.booking-details-container .details-right {
+  text-align: right; /* محاذاة القيمة إلى اليمين */
+}
