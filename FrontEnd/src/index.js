@@ -13,19 +13,16 @@ import { MdOutlineHouse } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import Typography from "./Components/Atoms/Typograph";
+import CityOverview from "./Components/Templates/CityOverview";
 import Card from "./Components/Molecules/Card";
 import DetailedCard from "./Components/Molecules/DetailedCard";
 import { FaWifi, FaUtensils } from "react-icons/fa";
 
-
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-    
-      <DemoApp/>
-      {/*  <App />  */}
+      {/*<App />*/}
+      <DemoApp />
     </>
   );
   
@@ -35,118 +32,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
-
-function DemoApp() {
-  return (
-    <div>
-      <h1>Welcome to My App!</h1>
-
-        {/* ✅ بوتن صغير */}
-      <Button color="white" size="small" icon={<MdOutlinePhotoSizeSelectActual />} iconcolor="black" iconSize={16} onClick={() => alert("")}>
-      <Typography color="var(--color-neutral-2)" variant="button">
-            Show all photos
-          </Typography>
-      </Button>
-
-      {/* ✅ بوتن عادي */}
-      <Button color="trans-no-border" size="small" onClick={() => alert("")}>
-          <Typography color="var(--color-neutral-4)" variant="button">
-            Language
-          </Typography>
-      </Button>
-     
-      {/* ✅ بوتن كبير */}
-      <Button color="blue" size="large" onClick={() => alert("")}>
-          <Typography color="var(--color-neutral-8)" variant="button">
-            Sign In
-          </Typography>
-      </Button>
-
-      {/* ✅ بوتن صغير */}
-      <Button color="black" size="small" icon={<FaApple />} iconcolor="white" iconSize={13} >
-          <Typography color="var(--color-neutral-7)" variant="button">
-             Apple
-          </Typography>
-      </Button>
-
-      <Button color="blue" size="default" >
-          <Typography color="var(--color-neutral-7)" variant="button">
-             Continue
-          </Typography>
-      </Button>
-
- 
-      <Button color="blue" size="default" shape="large-circle" icon={<IoSearch />} iconcolor="white" iconSize={24} />
-          
-      
-
-      <Button color="blue" size="large">
-          <Typography color="var(--color-neutral-7)" variant="button">
-             Continue
-          </Typography>
-      </Button>
-
-      
-      
-      <Button color="trans" size="small" icon={<FiLoader />} iconcolor="black" iconSize={16}>
-          <Typography color="var(--color-neutral-2)" variant="button">
-             Show more
-          </Typography>
-      </Button>
-
-     
-      <Button color="blue" size="default" icon={<IoSearch />} iconSize={16}iconcolor="white" iconPosition="right" >
-          <Typography color="var(--color-neutral-7)" variant="button">
-            Reserve
-          </Typography>
-      </Button>
-
-     
-      <Button color="trans" size="small"  icon={<IoIosArrowBack />} iconcolor="black" iconSize={16} >
-          <Typography color="var(--color-neutral-2)" variant="button">
-          Go home
-          </Typography>
-      </Button>
-      <Button color="blue" size="default"   shape="small-circle" icon={<FaArrowRight />} iconSize={14} >
-      
-      </Button>
-      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
-        <DetailedCard
-         imageSrc="https://wallpaperaccess.com/full/1094090.jpg"
-         badgeText="20% OFF"
-         badgeColor="white"          
-         badgeTextColor="black"    
-         title="Mountain House"
-         amenities={[
-         { icon: <MdOutlineHouse />, text: "650200" }
-         
-         ]}
-        />
-     </div>
-
-
-      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
-        <Card
-         imageSrc="https://wallpaperaccess.com/full/1093978.jpg"
-         badgeText="Superhost"
-         badgeColor="white"          // Set the badge background color
-         badgeTextColor="black"    // Set the badge text color
-         title="Entire serviced classy mountain house"
-         priceBefore="200"
-         priceNow="150"
-         totalPrice="200"
-         rating="4.50"
-         reviewCount="15"
-         amenities={[
-         { icon: <FaWifi />, text: "Free wifi" },
-         { icon: <FaUtensils />, text: "Breakfast included" },
-         ]}
-        />
-     </div>
-    </div>
-  );
-}
-
-export default DemoApp;
 
