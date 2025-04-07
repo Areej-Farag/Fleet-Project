@@ -246,9 +246,9 @@
   .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
     margin-bottom: 5px;
-<<<<<<< HEAD
+
   }
-=======
+
 }
 /* .sign-up-form */
 .sign-up-form{
@@ -261,11 +261,11 @@
   border-radius: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
->>>>>>> 614535a0d1c98f44e757ab68564be8824f596a8f
+
 }
 .sign-buttons{
   width: 80%;
-}}
+}
 
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
