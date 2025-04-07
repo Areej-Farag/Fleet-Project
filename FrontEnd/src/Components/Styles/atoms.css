@@ -340,6 +340,10 @@
   text-transform: uppercase;
   color: var(--color-neutral-5);
   width:auto;
+<<<<<<< HEAD
+=======
+<<<<
+>>>>>>> 2809d785fbe6b33ed2f6e03a81c495148209d887
   height:auto;
   position: relative; /* إضافة الموضع النسبي */
 }
@@ -369,8 +373,15 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primary-4);
+<<<<<<< HEAD
   width:auto;
   height:auto;
+=======
+
+  width: auto;
+  height: auto;
+
+>>>>>>> 2809d785fbe6b33ed2f6e03a81c495148209d887
 }
 /* ==== Rate Box ==== */
 
