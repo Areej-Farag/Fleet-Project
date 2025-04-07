@@ -9,10 +9,12 @@ import { IoSearch } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaApple } from "react-icons/fa";
 import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
+import { MdOutlineHouse } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import Typography from "./Components/Atoms/Typograph";
 import Card from "./Components/Molecules/Card";
+import DetailedCard from "./Components/Molecules/DetailedCard";
 import { FaWifi, FaUtensils } from "react-icons/fa";
 
 
@@ -109,6 +111,21 @@ function DemoApp() {
       <Button color="blue" size="default"   shape="small-circle" icon={<FaArrowRight />} iconSize={14} >
       
       </Button>
+      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+        <DetailedCard
+         imageSrc="https://wallpaperaccess.com/full/1094090.jpg"
+         badgeText="20% OFF"
+         badgeColor="white"          
+         badgeTextColor="black"    
+         title="Mountain House"
+         amenities={[
+         { icon: <MdOutlineHouse />, text: "650200" }
+         
+         ]}
+        />
+     </div>
+
+
       <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
         <Card
          imageSrc="https://wallpaperaccess.com/full/1093978.jpg"
