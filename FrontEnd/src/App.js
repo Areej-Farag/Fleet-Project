@@ -1,12 +1,17 @@
 import React from "react";
-import PaymentTemplate from "./Components/Templates/PaymentTemplate";
+import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmationTemplate";
+import PaymentTemplate from "./Components/Templates/PaymentTemplate"; // تأكد من استيراد المكون
 
-
-const App = () => {
+function App() {
   return (
     <>
-    {/*<PaymentTemplate/>*/}
+      <div className="App container mt-5">
+        <BookingConfirmationTemplate />
+      </div>
+      <PaymentTemplate />
     </>
   );
-};
+}
+
 export default App;
+
