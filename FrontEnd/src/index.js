@@ -12,7 +12,7 @@ import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import Typography from "./Components/Atoms/Typograph";
-
+import CityOverview from "./Components/Templates/CityOverview";
 
 
 
@@ -20,8 +20,8 @@ import Typography from "./Components/Atoms/Typograph";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-      <App />
-      {/* <DemoApp /> */}
+      {/*<App />*/}
+      <DemoApp />
     </>
   );
   
@@ -107,6 +107,13 @@ function DemoApp() {
       <Button color="blue" size="default"   shape="small-circle" icon={<FaArrowRight />} iconSize={14} >
       
       </Button>
+      <div>
+      <CityOverview  
+        description= "“Explore Northland’s stunning beaches, lush forests, and rich Māori heritage. Sail through the Bay of Islands, visit ancient Kauri trees, and soak in endless adventures. Experience the magic of New Zealand’s Winterless North!”"
+        videoUrl="https://youtu.be/au8hr-0c92I?si=KXwKQyAUtyigWnKY"
+      />
+      
+    </div>
     </div>
   );
 }

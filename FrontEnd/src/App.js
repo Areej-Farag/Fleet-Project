@@ -5,7 +5,7 @@ import PaymentTemplate from "./Components/Templates/PaymentTemplate";
 const App = () => {
   return (
     <>
-    <PaymentTemplate/>
+    {/*<PaymentTemplate/>*/}
     </>
   );
 };
