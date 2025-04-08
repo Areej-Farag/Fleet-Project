@@ -397,7 +397,7 @@
 
 .rating-box {
   width: 19px;
-  height: 20px;
+  height: 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +415,8 @@
 .review-count {
   font-size: 12px;
   margin-left: 2px;
-  color: var(--color-neutral-5);
+  color: var(--color-neutral-5); /* أو اللون المناسب */
+
 }
 
 
