@@ -317,7 +317,6 @@
   align-items: flex-start;
   width: auto;
   height: auto;
-
   border-radius: 4px;
   border: 2px solid var(--color-primary-4);
   padding: 8px 8px 6px 8px;
@@ -366,6 +365,8 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primary-4);
+  width:auto;
+  height:auto;
 }
 /* ==== Rate Box ==== */
 
