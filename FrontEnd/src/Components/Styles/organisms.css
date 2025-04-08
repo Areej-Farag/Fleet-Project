@@ -144,7 +144,7 @@
   margin-left: 15px;
 }
 /* Sign Forms */
-.sign-up-overlay{
+.sign-up-overlay , .Sign-In-overlay{
   position: relative;
   top: 0;
   left: 0;
@@ -172,7 +172,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.sign-up-form{
+.sign-up-form ,.sign-in-form{
   padding: 30px;
   position: absolute;
   display:flex;
@@ -188,13 +188,14 @@
   background-color: var(--color-neutral-7);
   border-radius: 20px;
 }
-.sign-buttons{
+.sign-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 70%;
   margin-bottom:15px;
 }
+
 .sign-buttons button{
   width: 45%;
 }
@@ -202,10 +203,16 @@
   width: 80%;
   margin: 0 20px;
 }
-.sign-up-form form .input-buttons{
+.sign-up-form form .input-buttons , .sign-in-form  .input-buttons{
   justify-content: flex-end;
 }
+.sign-in-form  .input-buttons button{
+  border: none;
+}
+.sign-in-form  .input-buttons button:hover{
+  background-color: transparent;
 
+}
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -249,18 +256,35 @@
     margin-bottom: 5px;
 }
 /* .sign-up-form */
-.sign-up-form{
+.sign-up-form , .sign-in-form{
   padding: 20px 0;
   width: 95vw;
   height: 80vh;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50% , -40%);
+  bottom: 10px;
+  /* left: 50%; */
+  /* transform: translate(-50% ); */
   border-radius: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.sign-in-form {
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+  /* bottom: 0; */
+  transform: translate(-50% ,0);
+}
 .sign-buttons{
+  width: 80%;
+}
+
+.sign-in-form .btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form .btn-container button {
   width: 80%;
 }}
 
