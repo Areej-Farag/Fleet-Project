@@ -253,15 +253,8 @@
   .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
     margin-bottom: 5px;
-<<<<<<< HEAD
-
-  }
-
-=======
-  }
->>>>>>> 84b4087aac5125e92fc44ebf5110cdb77d292463
 }
-/* .sign-up-form */
+ .sign-up-form */
 .sign-up-form , .sign-in-form{
   padding: 20px 0;
   width: 95vw;
@@ -271,24 +264,19 @@
   /* transform: translate(-50% ); */
   border-radius: 0;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-
-<<<<<<< HEAD
-=======
-}
+  border-top-right-radius: 20px;}
 .sign-in-form {
   padding: 20px;
   height: 300px;
   border-radius: 20px;
   /* bottom: 0; */
   transform: translate(-50% ,0);
->>>>>>> 84b4087aac5125e92fc44ebf5110cdb77d292463
+
 }
 .sign-buttons{
   width: 80%;
 }
-<<<<<<< HEAD
-=======
+
 
 .sign-in-form .btn-container{
   width: 100%;
@@ -299,7 +287,7 @@
 .sign-in-form .btn-container button {
   width: 80%;
 }
->>>>>>> 84b4087aac5125e92fc44ebf5110cdb77d292463
+
 
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
@@ -359,4 +347,4 @@
 
 .booking-details-container .details-right {
   text-align: right; /* محاذاة القيمة إلى اليمين */
-}
+}}
