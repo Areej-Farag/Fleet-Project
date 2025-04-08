@@ -310,7 +310,6 @@
   border: 3px solid var(--color-neutral-8);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 /* ==== Price Box ==== */
 .price-box {
   display: flex;
@@ -338,7 +337,6 @@
   text-transform: uppercase;
   color: var(--color-neutral-5);
   width:auto;
-  height:auto;
   position: relative; /* إضافة الموضع النسبي */
 }
 
@@ -353,9 +351,9 @@
   width: 31px;
   height: 1px;
   background-color: var(--color-neutral-5);
-  position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .new-price {
@@ -369,21 +367,20 @@
   color: var(--color-primary-4);
   width:auto;
   height:auto;
-
 }
 /* ==== Rate Box ==== */
 
 .rate-box {
   display: flex;
   align-items: center;
-  width: auto; 
-  height: auto; 
-  gap: 4px; 
-  border: none; 
+  width: auto;
+  height: auto;
+  gap: 4px;
+  border: none;
 }
 
 .star-box {
-  width: 12px; 
+  width: 12px;
   height: 11.25px;
   display: flex;
   align-items: center;
@@ -392,7 +389,7 @@
 
 .star-icon {
   color: var(--color-secondary-3);
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 .rating-box {
@@ -404,11 +401,11 @@
 }
 
 .rating {
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 600; 
-  font-size: 12px; 
-  line-height: 20px; 
-  letter-spacing: 0%; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
   color: #23262F;
 }
 
@@ -416,7 +413,9 @@
   font-size: 12px;
   margin-left: 2px;
   color: var(--color-neutral-5); /* أو اللون المناسب */
+
 }
+
 
 /* ====== Icon ====== */
 

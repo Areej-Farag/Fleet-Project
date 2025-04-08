@@ -254,7 +254,7 @@
     width: 100%;
     margin-bottom: 5px;
 }
-/* .sign-up-form */
+
 .sign-up-form , .sign-in-form{
   padding: 20px 0;
   width: 95vw;
@@ -264,7 +264,7 @@
   /* transform: translate(-50% ); */
   border-radius: 0;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 20px;}
 }
 .sign-in-form {
   padding: 20px;
@@ -276,6 +276,18 @@
 .sign-buttons{
   width: 80%;
   }
+
+.sign-in-form .btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form .btn-container button {
+  width: 80%;
+}
+
+
 
 .sign-in-form .btn-container{
   width: 100%;
@@ -346,4 +358,4 @@
 
 .booking-details-container .details-right {
   text-align: right; /* محاذاة القيمة إلى اليمين */
-}
+}}

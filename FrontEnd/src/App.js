@@ -2,12 +2,14 @@ import React from "react";
 
 import PaymentTemplate  from "./Components/Templates/PaymentTemplate";
 import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmationTemplate";
-import PaymentTemplate from "./Components/Templates/PaymentTemplate"; // تأكد من استيراد المكون
+import SignUpForm from "./Components/Organisms/SignUpForm";
 
 function App() {
   return (
-    <>
 
+    <>
+    <PaymentTemplate/>
+    <BookingConfirmationTemplate />
     </>
   );
 }
