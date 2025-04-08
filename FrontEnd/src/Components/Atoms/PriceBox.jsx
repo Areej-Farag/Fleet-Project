@@ -1,16 +1,16 @@
 import React from 'react';
 import '../Styles/atoms.css';
 
-const PriceBox = () => {
+const PriceBox = ({ priceBefore, priceNow }) => {
     return (
         <div className="price-box">
             <div className="old-price-container">
-                <OldPrice price="$699" />
+                <OldPrice price={`${priceBefore}EGP`} />
                 <div className="dash-line-container">
                     <DashLine />
                 </div>
             </div>
-            <NewPrice price="$548" />
+            <NewPrice price={`${priceNow}EGP`} />
         </div>
     );
 };
