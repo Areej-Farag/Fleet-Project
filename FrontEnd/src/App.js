@@ -2,13 +2,13 @@ import React from "react";
 
 import PaymentTemplate from "./Components/Templates/PaymentTemplate";
 
-import SignInForm from "./Components/Organisms/SignInForm";
+import SignUpForm from "./Components/Organisms/SignUpForm";
 
 function App() {
   return (
 
     <>
-    <SignInForm />
+    <SignUpForm />
     </>
   );
 }

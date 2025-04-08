@@ -249,11 +249,13 @@
   .payment-form .trip-details .detailsIcons {
     flex-direction: column;
   }
-  .payment-confirmation-detailes
-  .TextedIcons-container
-  .IconContainer , .payment-form .trip-details .detailsIcons .IconContainer{
+  .payment-confirmation-detailes .TextedIcons-container .IconContainer,
+  .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
     margin-bottom: 5px;
+<<<<<<< HEAD
+  }
+=======
 }
 /* .sign-up-form */
 .sign-up-form , .sign-in-form{
@@ -266,6 +268,7 @@
   border-radius: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+>>>>>>> 614535a0d1c98f44e757ab68564be8824f596a8f
 }
 .sign-in-form {
   padding: 20px;
@@ -296,8 +299,54 @@
   .payment-form .trip-details .detailsIcons {
     flex-direction: column;
   }
- .payment-form  .trip-details .detailsIcons .IconContainer{
+  .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
     margin-bottom: 5px;
+  }
 }
+
+/*Booking Confirmation*/
+@media (max-width: 576px) {
+  .booking-confirmation-container {
+    padding: 1rem;
+  }
+  .mt-4.d-flex {
+    flex-wrap: wrap;
+    justify-content: space-between; /* تباعد الأزرار بشكل مناسب */
+  }
+
+  .mt-4.d-flex .w-100 {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+
+  .mt-4.d-flex .w-md-auto {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+
+  /* تحديد الحالة للأزرار عند الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .congratulations-text {
+      text-align: center; /* محاذاة النص في المنتصف */
+    }
+    .mt-4.d-flex .w-100,
+    .mt-4.d-flex .w-md-auto {
+      width: 100%; /* تجعل الأزرار تأخذ عرض كامل عند الشاشات الصغيرة */
+    }
+  }
+}
+/* إضافة هذه التنسيقات لضبط التوزيع في BookingDetails */
+.booking-details-container {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر بين الجانبين */
+  align-items: center;
+  width: 100%;
+}
+
+.booking-details-container .details-left {
+  display: flex;
+  align-items: center; /* محاذاة الـ icon مع الـ title */
+}
+
+.booking-details-container .details-right {
+  text-align: right; /* محاذاة القيمة إلى اليمين */
 }
