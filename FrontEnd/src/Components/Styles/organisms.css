@@ -144,7 +144,8 @@
   margin-left: 15px;
 }
 /* Sign Forms */
-.sign-up-overlay , .Sign-In-overlay{
+.sign-up-overlay,
+.Sign-In-overlay {
   position: relative;
   top: 0;
   left: 0;
@@ -156,7 +157,7 @@
   justify-content: center;
   align-items: center;
 }
-.close-button{
+.close-button {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -172,16 +173,17 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.sign-up-form ,.sign-in-form{
+.sign-up-form,
+.sign-in-form {
   padding: 30px;
   position: absolute;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   width: 450px;
   height: 370px;
   z-index: 25;
@@ -193,26 +195,25 @@
   flex-direction: row;
   justify-content: space-between;
   width: 70%;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
-.sign-buttons button{
+.sign-buttons button {
   width: 45%;
 }
-.sign-up-form form{
+.sign-up-form form {
   width: 80%;
   margin: 0 20px;
 }
-.sign-up-form form .input-buttons , .sign-in-form  .input-buttons{
+.sign-up-form form .input-buttons,
+.sign-in-form .input-buttons {
   justify-content: flex-end;
 }
-.sign-in-form  .input-buttons button{
+.sign-in-form .input-buttons button {
   border: none;
 }
-.sign-in-form  .input-buttons button:hover{
-  background-color: transparent;
-
-}
+.sign-in-form .input-buttons button:hover {
+  background-color: transparent;}
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -252,10 +253,12 @@
   .payment-confirmation-detailes .TextedIcons-container .IconContainer,
   .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 5px;}
 }
 
-.sign-up-form , .sign-in-form{
+/* .sign-up-form */
+.sign-up-form,
+.sign-in-form {
   padding: 20px 0;
   width: 95vw;
   height: 80vh;
@@ -265,28 +268,20 @@
   border-radius: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;}
-}
+
 .sign-in-form {
   padding: 20px;
   height: 300px;
   border-radius: 20px;
   /* bottom: 0; */
+  transform: translate(-50%, 0);
+}
+.sign-buttons {
+  width: 80%;}
+
+.sign-in-form .btn-container {
   transform: translate(-50% ,0);
 }
-.sign-buttons{
-  width: 80%;
-  }
-
-.sign-in-form .btn-container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sign-in-form .btn-container button {
-  width: 80%;
-}
-
 
 
 .sign-in-form .btn-container{
@@ -357,5 +352,5 @@
 }
 
 .booking-details-container .details-right {
-  text-align: right; /* محاذاة القيمة إلى اليمين */
-}}
+  text-align: right;
+}
