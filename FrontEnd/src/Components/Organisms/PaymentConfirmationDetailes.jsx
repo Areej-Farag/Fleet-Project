@@ -1,9 +1,9 @@
 import React from "react";
 import "../Styles/organisms.css";
 import ImageComponent from "../Atoms/ImageComponent";
-import LocationPhoto from "../../Images/primary img.png";
+import LocationPhoto from "../../assets/Images/primary img.png";
 import HostSection from "../Molecules/HostSection";
-import AvatarPhoto from "../../Images/avatar.png";
+import AvatarPhoto from "../../assets/Images/avatar.png";
 import Rate from "../Atoms/Rate";
 import Typograph from "../Atoms/Typograph";
 import colors from "../Atoms/Colors";

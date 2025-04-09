@@ -2,7 +2,7 @@ import React from "react";
 import BookingConfirmation from "../Organisms/BookingConfirmation";
 import ImageComponent from "../Atoms/ImageComponent";
 import Button from "../Atoms/Button";
-import Photo from "../../Images/primary img.png";
+import Photo from "../../assets/Images/primary img.png";
 import "../Styles/templates.css";
 
 export default function BookingConfirmationTemplate() {
