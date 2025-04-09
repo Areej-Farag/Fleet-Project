@@ -146,7 +146,8 @@
 /* Sign Forms */
 .sign-up-overlay,
 .Sign-In-overlay,
-.security-overlay {
+.security-overlay,
+.user-confirmation-overlay {
   position: relative;
   top: 0;
   left: 0;
@@ -176,7 +177,8 @@
 }
 .sign-up-form,
 .sign-in-form,
-.security-container {
+.security-container,
+.user-confirmation {
   padding: 30px;
   position: absolute;
   display: flex;
@@ -191,12 +193,6 @@
   z-index: 25;
   background-color: var(--color-neutral-7);
   border-radius: 20px;
-}
-/* security-container  */
-.security-container {
-  height: 250px;
-  width: 350px;
-  text-align: center;
 }
 .sign-buttons {
   display: flex;
@@ -222,6 +218,23 @@
 }
 .sign-in-form .input-buttons button:hover {
   background-color: transparent;
+}
+/* User Confirmation */
+.ant-radio-group label {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-neutral-5);
+}
+.ant-radio-group label:last-child {
+  border: none;
+}
+.user-confirmation {
+  text-align: center;
+}
+/* security-container  */
+.security-container {
+  height: 250px;
+  width: 350px;
+  text-align: center;
 }
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
@@ -265,47 +278,55 @@
     margin-bottom: 5px;
   }
 
-/* .sign-up-form */
-.sign-up-form,
-.sign-in-form
-{
-  padding: 20px 0;
-  width: 95vw;
-  height: 80vh;
-  bottom: 10px;
-  /* left: 50%; */
-  /* transform: translate(-50% ); */
-  border-radius: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
+  /* .sign-up-form */
+  .sign-up-form,
+  .sign-in-form,
+  .user-confirmation {
+    padding: 20px 0;
+    width: 95vw;
+    height: 60vh;
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translate(0 , 0 ); */
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 
-.sign-in-form {
-  padding: 20px;
-  height: 300px;
-  border-radius: 20px;
-  /* bottom: 0; */
-  transform: translate(-50%, 0);
-}
-.sign-buttons {
-  width: 80%;
-}
-.sign-in-form .btn-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sign-in-form .btn-container button {
-  width: 80%;
-}
-/* security-container */
-.security-container {
-  height: 250px;
-  width: 90%;
-  transform: translate(-50%, 0);
+  .sign-in-form {
+    padding: 20px;
+    height: 300px;
+    border-radius: 20px;
+    bottom: 0;
+    /* transform: translate(-50%, 0); */
+  }
+  .sign-buttons {
+    width: 80%;
+  }
+  .sign-in-form .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-in-form .btn-container button {
+    width: 80%;
+  }
+  /* security-container */
+  .security-container {
+    height: 250px;
+    width: 90%;
+    bottom: 0;
+    /* transform: translate(-50%, 0); */
+  }
+  /* user-confirmation */
+  .user-confirmation {
+    height: 320px;
+    width: 90%;
+    bottom: 0;
+    /* transform: translate(-50%, -10px); */
 
-}
+  }
 }
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
