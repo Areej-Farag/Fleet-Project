@@ -30,7 +30,7 @@ export default function BookingConfirmation() {
         {/*  Info HostSection */}
         <div className="mt-3">
           <HostSection
-            AvatarSrc={require("../../Images/avatar.png")}
+            AvatarSrc={require("../../assets/Images/avatar.png")}
             HostName="Zoe Towne"
             AvatarSize="small"
             PropertyName="Spectacular views of Queenstown"
