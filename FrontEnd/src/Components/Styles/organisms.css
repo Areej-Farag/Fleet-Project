@@ -145,7 +145,8 @@
 }
 /* Sign Forms */
 .sign-up-overlay,
-.Sign-In-overlay {
+.Sign-In-overlay,
+.security-overlay {
   position: relative;
   top: 0;
   left: 0;
@@ -174,7 +175,8 @@
   cursor: pointer;
 }
 .sign-up-form,
-.sign-in-form {
+.sign-in-form,
+.security-container {
   padding: 30px;
   position: absolute;
   display: flex;
@@ -189,6 +191,12 @@
   z-index: 25;
   background-color: var(--color-neutral-7);
   border-radius: 20px;
+}
+/* security-container  */
+.security-container {
+  height: 250px;
+  width: 350px;
+  text-align: center;
 }
 .sign-buttons {
   display: flex;
@@ -213,7 +221,8 @@
   border: none;
 }
 .sign-in-form .input-buttons button:hover {
-  background-color: transparent;}
+  background-color: transparent;
+}
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -253,12 +262,13 @@
   .payment-confirmation-detailes .TextedIcons-container .IconContainer,
   .payment-form .trip-details .detailsIcons .IconContainer {
     width: 100%;
-    margin-bottom: 5px;}
-}
+    margin-bottom: 5px;
+  }
 
 /* .sign-up-form */
 .sign-up-form,
-.sign-in-form {
+.sign-in-form
+{
   padding: 20px 0;
   width: 95vw;
   height: 80vh;
@@ -267,7 +277,8 @@
   /* transform: translate(-50% ); */
   border-radius: 0;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;}
+  border-top-right-radius: 20px;
+}
 
 .sign-in-form {
   padding: 20px;
@@ -277,14 +288,9 @@
   transform: translate(-50%, 0);
 }
 .sign-buttons {
-  width: 80%;}
-
-.sign-in-form .btn-container {
-  transform: translate(-50% ,0);
+  width: 80%;
 }
-
-
-.sign-in-form .btn-container{
+.sign-in-form .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -293,8 +299,14 @@
 .sign-in-form .btn-container button {
   width: 80%;
 }
+/* security-container */
+.security-container {
+  height: 250px;
+  width: 90%;
+  transform: translate(-50%, 0);
 
-
+}
+}
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
   .payment-form .trip-details .detailsIcons {
