@@ -236,6 +236,66 @@
   width: 350px;
   text-align: center;
 }
+/* إضافة هذه التنسيقات لضبط التوزيع في BookingDetails */
+.booking-details-container {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر بين الجانبين */
+  align-items: center;
+  width: 100%;
+}
+
+.booking-details-container .details-left {
+  display: flex;
+  align-items: center; /* محاذاة الـ icon مع الـ title */
+}
+
+.booking-details-container .details-right {
+  text-align: right;
+}
+/* trip-comments */
+.trip-comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  height: fit-content;
+  padding: 20px;
+  border: 1px solid var(--color-neutral-6);
+}
+
+.trip-comments-container .trip-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.trip-comments-container .comment-container-input .input-buttons{
+  /* justify-content: flex-end;   */
+  width: 18% !important;
+  align-items: start;
+  /* margin-bottom: 20px; */
+}
+.trip-comments-container .comment-container-input .input-buttons button{
+  height:fit-content;
+  padding:4px  5px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  text-align: center;
+}
+.trip-comments-container .comment-container-input .input-buttons button svg{
+  padding: 2px;
+  font-size: 15px;
+
+}
+.trip-comments-container .reviews-container{
+  margin-top: 10px;
+  width: 100%;
+}
+.reviews-container .comment-footer{
+  width:300px;
+}
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -277,7 +337,6 @@
     width: 100%;
     margin-bottom: 5px;
   }
-
   /* .sign-up-form */
   .sign-up-form,
   .sign-in-form,
@@ -325,9 +384,25 @@
     width: 90%;
     bottom: 0;
     /* transform: translate(-50%, -10px); */
+  }
+  .congratulations-text {
+    text-align: center; /* محاذاة النص في المنتصف */
+  }
+  .mt-4.d-flex .w-100,
+  .mt-4.d-flex .w-md-auto {
+    width: 100%; /* تجعل الأزرار تأخذ عرض كامل عند الشاشات الصغيرة */
+  }
 
+  /* trip-comments */
+  .trip-comments-container{
+    width: 95%;
+    margin: auto;
+  }
+  .trip-comments-container .comment-container-input .input-buttons button small{
+    display: none;
   }
 }
+
 /* Media Queries For Tablet */
 @media screen and (min-width: 769px) and (max-width: 1030px) {
   .payment-form .trip-details .detailsIcons {
@@ -340,6 +415,22 @@
     width: 100%;
     margin-bottom: 5px;
   }
+    /* trip-comments */
+    .trip-comments-container{
+      width: 50%;
+      /* margin: auto; */
+    }
+    .reviews-container .comment-footer{
+      width: 280px;
+    }
+    .trip-comments-container .comment-container-input .input-buttons{
+      width: fit-content !important;
+      margin-right: 0px;
+    }
+    .trip-comments-container .comment-container-input .input-buttons button{
+      /* display: none; */
+      width: fit-content;
+    }
 }
 
 /*Booking Confirmation*/
@@ -358,32 +449,4 @@
 
   .mt-4.d-flex .w-md-auto {
     width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
-  }
-
-  /* تحديد الحالة للأزرار عند الشاشات الصغيرة */
-  @media (max-width: 768px) {
-    .congratulations-text {
-      text-align: center; /* محاذاة النص في المنتصف */
-    }
-    .mt-4.d-flex .w-100,
-    .mt-4.d-flex .w-md-auto {
-      width: 100%; /* تجعل الأزرار تأخذ عرض كامل عند الشاشات الصغيرة */
-    }
-  }
-}
-/* إضافة هذه التنسيقات لضبط التوزيع في BookingDetails */
-.booking-details-container {
-  display: flex;
-  justify-content: space-between; /* توزيع العناصر بين الجانبين */
-  align-items: center;
-  width: 100%;
-}
-
-.booking-details-container .details-left {
-  display: flex;
-  align-items: center; /* محاذاة الـ icon مع الـ title */
-}
-
-.booking-details-container .details-right {
-  text-align: right;
-}
+  }}
