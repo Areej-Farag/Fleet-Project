@@ -9,7 +9,7 @@ import '../Styles/molecules.css'
 import { FaHeart } from "react-icons/fa";
 import Button from '../Atoms/Button'
 
-export default function Comment(userProfile , comment , date , rating , userName, ...props) {
+export default function Comment({userProfile , comment , date , rating , userName , ...props}) {
   return (
     <div className="comment-container">
         <div className="avatar-holder">

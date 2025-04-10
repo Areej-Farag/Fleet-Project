@@ -176,7 +176,8 @@
   display: flex;
   gap: 10px;
   width: 100%;
-  height: 200px;
+  height: fit-content;
+  padding: 10px;
 }
 .comment-container .avatar-holder{
   width: 50px;
