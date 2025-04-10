@@ -268,15 +268,15 @@
   flex-direction: column;
   gap: 10px;
 }
-.trip-comments-container .comment-container-input .input-buttons{
+.trip-comments-container .comment-container-input .input-buttons {
   /* justify-content: flex-end;   */
   width: 18% !important;
   align-items: start;
   /* margin-bottom: 20px; */
 }
-.trip-comments-container .comment-container-input .input-buttons button{
-  height:fit-content;
-  padding:4px  5px;
+.trip-comments-container .comment-container-input .input-buttons button {
+  height: fit-content;
+  padding: 4px 5px;
   font-size: 13px;
   font-weight: 600;
   display: flex;
@@ -284,18 +284,88 @@
   align-items: center;
   text-align: center;
 }
-.trip-comments-container .comment-container-input .input-buttons button svg{
+.trip-comments-container .comment-container-input .input-buttons button svg {
   padding: 2px;
   font-size: 15px;
-
 }
-.trip-comments-container .reviews-container{
+.trip-comments-container .reviews-container {
   margin-top: 10px;
   width: 100%;
 }
-.reviews-container .comment-footer{
-  width:300px;
+.reviews-container .comment-footer {
+  width: 300px;
 }
+
+/* hostcard */
+.hostcard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 25%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  height: auto;
+  min-height: 550px;
+  padding: 10px;
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.hostcard-contactinfo
+.hostcard-header {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.hostcard-container .host-review {
+  background-color: var(--color-neutral-7);
+  width: 90%;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.hostcard-container .hostcard-contactinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.hostcard-container .hostcard-contactinfo .website-section{
+  width: 60%;
+}
+.hostcard-container .hostcard-contactinfo .website-section a{
+  color: var(--color-neutral-3);
+  font-weight: 600;
+  text-decoration: none;
+}
+.hostcard-container .hostcard-contactinfo .socialmedia-links button{
+  border: none;
+}
+.hostcard-container .hostcard-contactinfo .socialmedia-links button:hover{
+  background-color: transparent;
+  transform: scale(1.1 , 1.1);
+}
+.hostcard-container .hostcard-contactinfo .contactbtns button:hover svg {
+  color: var(--color-neutral-7);
+}
+
+.hostcard-container .hostcard-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.hostcard-container .hostcard-footer .IconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center ;
+  width: 65% !important;
+}
+
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -394,12 +464,21 @@
   }
 
   /* trip-comments */
-  .trip-comments-container{
+  .trip-comments-container {
     width: 95%;
     margin: auto;
   }
-  .trip-comments-container .comment-container-input .input-buttons button small{
+  .trip-comments-container
+    .comment-container-input
+    .input-buttons
+    button
+    small {
     display: none;
+  }
+  /* hostcard-container */
+  .hostcard-container { 
+    width: 95%;
+    margin: auto;
   }
 }
 
@@ -415,22 +494,27 @@
     width: 100%;
     margin-bottom: 5px;
   }
-    /* trip-comments */
-    .trip-comments-container{
-      width: 50%;
-      /* margin: auto; */
-    }
-    .reviews-container .comment-footer{
-      width: 280px;
-    }
-    .trip-comments-container .comment-container-input .input-buttons{
-      width: fit-content !important;
-      margin-right: 0px;
-    }
-    .trip-comments-container .comment-container-input .input-buttons button{
-      /* display: none; */
-      width: fit-content;
-    }
+  /* trip-comments */
+  .trip-comments-container {
+    width: 50%;
+    /* margin: auto; */
+  }
+  .reviews-container .comment-footer {
+    width: 280px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons {
+    width: fit-content !important;
+    margin-right: 0px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons button {
+    /* display: none; */
+    width: fit-content;
+  }
+   /* hostcard-container */
+   .hostcard-container { 
+    width: 35%;
+    /* margin: auto; */
+  }
 }
 
 /*Booking Confirmation*/
@@ -449,4 +533,5 @@
 
   .mt-4.d-flex .w-md-auto {
     width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
-  }}
+  }
+}
