@@ -146,6 +146,7 @@
 
 .button.trans:hover {
   background-color: var(--color-neutral-4);
+  color: var(--color-neutral-8);
 }
 .button.trans-no-border {
   background-color: transparent;
