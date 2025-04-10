@@ -11,7 +11,8 @@ export const companies = [
         website: "https://niletravel.com"
       },
       trips: [
-        { id: "T001", name: "Trip to Luxor from Cairo" }
+        { id: "T001", name: "Trip to Luxor from Cairo" },
+        { id: "T017", name: "Trip to Sharm El Sheikh" }
       ]
     },
     {
