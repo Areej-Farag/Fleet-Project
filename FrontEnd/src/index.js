@@ -17,13 +17,13 @@ root.render(
     <App />
     <Routes>
       <Route index element={<Home />} />
-      <Route path="/Trip/:tripId" element={<Trip />} />
+      <Route path="/trip/:tripId" element={<Trip />} />
       <Route
-        path="/PaymentConfirmation/:bookingId"
+        path="/paymentConfirmation/:bookingId"
         element={<PaymentConfirmation />}
       />
-      <Route path="/Payment/:bookingId" element={<Payment />} />
-      <Route path="/Governate/:governateId" element={<Governate />} />
+      <Route path="/payment/:bookingId" element={<Payment />} />
+      <Route path="/governate/:governateId" element={<Governate />} />
       <Route path="*" element={<h1>404 Page Not Found</h1>} />
     </Routes>
   </BrowserRouter>
