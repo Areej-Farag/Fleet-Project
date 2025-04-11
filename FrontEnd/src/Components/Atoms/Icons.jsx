@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
-
+import "../Styles/Navbar.css"
 const Icon = ({ size = 24, color, IconContetnt, children , direction ="row"}) => {
   return (
     <div className="IconContainer" style={{flexDirection:{direction}}}>
