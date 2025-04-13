@@ -563,5 +563,35 @@ export const trips = [
       }
     ],
     category: "Family"
+  },
+  {
+    id: "T017",
+    name: "Trip to Sharm El Sheikh",
+    governate: "Sharm El Sheikh",
+    company: "Nile Travel",
+    description: "A relaxing beach trip to Sharm El Sheikh.",
+    image: "sharm_trip.jpg",
+    program: [
+      "Day 1: Arrival",
+      "Day 2: Beach and snorkeling",
+      "Day 3: Return"
+    ],
+    features: ["4-star hotel", "Free breakfast"],
+    duration: "3 days / 2 nights",
+    availableDates: [
+      { date: "April 25-27, 2025", availableSeats: 15 }
+    ],
+    price: 3000,
+    discount: 2800,
+    rating: 4,
+    reviews: [
+      {
+        userId: "U003",
+        comment: "Great beach trip, loved the snorkeling!",
+        rating: 4,
+        date: "April 13, 2025"
+      }
+    ],
+    category: "Youth"
   }
 ];
