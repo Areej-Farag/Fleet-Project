@@ -239,3 +239,14 @@ button.outline {
   color: #007bff;
   border-color: #007bff;
 }
+.notification-dropdown {
+  z-index: 1050;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.notification-dropdown li:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
