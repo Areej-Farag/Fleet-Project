@@ -36,7 +36,7 @@ const Button = ({
 
 Button.propTypes = {
   children: PropTypes.node, 
-  color: PropTypes.oneOf(["blue", "trans", "white", "black"]),
+  color: PropTypes.oneOf(["blue", "trans", "white", "black", "trans-no-border "]),
   shape: PropTypes.oneOf(["default", "small-circle", "large-circle"]),
   size: PropTypes.oneOf(["small", "default", "large"]),
   icon: PropTypes.node,
