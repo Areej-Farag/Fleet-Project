@@ -1,16 +1,16 @@
 import React from "react";
+import Navbar from "./Components/Organisms/Navbar";
+import Comment from "./Components/Molecules/Comment";
+import { trips } from "./Mocks/Trips";
+import TripComments from "./Components/Organisms/TripComments";
+import HostCard from "./Components/Organisms/HostCard";
 
-import PaymentTemplate  from "./Components/Templates/PaymentTemplate";
-import BookingConfirmationTemplate from "./Components/Templates/BookingConfirmationTemplate";
-import SignUpForm from "./Components/Organisms/SignUpForm";
-import DigitedInput from "./Components/Atoms/DigitedInput";
 function App() {
   return (
-
     <>
-    <DigitedInput />
-    <PaymentTemplate/>
-    <BookingConfirmationTemplate />
+      <Navbar />
+      {/* <TripComments /> */}
+      <HostCard />
     </>
   );
 }
