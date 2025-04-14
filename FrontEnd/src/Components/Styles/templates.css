@@ -255,3 +255,120 @@
     border-radius: 12px;
   }
 }
+
+
+/*-------------card temp--------------*/
+
+.trip-template {
+  width: 100%;
+  padding: 80px 140px 136px 140px;
+  direction: ltr;
+}
+
+
+.card-head {
+  display: flex;
+  justify-content: center; /* Align content to the left (start of the row) */
+
+  align-items: center;
+  margin-bottom: 10px; /* Space between the title and the cards */
+  position: relative;
+  z-index: 5;
+}
+.section-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/*--------------nearby govern----------------*/
+
+.nearby-governorates-section {
+  padding: 0px 0px 136px 0px;
+  max-width: 1146.4px;
+  margin: 0 auto;
+  direction: ltr;
+  position: relative; /* Ensure proper stacking context */
+  overflow: visible !important; /* Ensure no clipping */
+}
+
+.section-header {
+  display: flex;
+  flex: 1;
+  padding: 0 10px 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* نقلّل المسافة بين العنوان والكاروسيل */
+  /*position: relative;*/
+  z-index: 5;
+}
+
+.section-title-detailed {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 8px ;
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 10px;
+
+}
+
+.custom-arrow {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-arrow:hover {
+  background: #ddd;
+}
+
+.custom-arrow span {
+  font-size: 20px;
+  color: #333;
+}
+
+.mobile-arrows {
+  display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1225px) {
+  .nearby-governorates-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nearby-governorates-section {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  .desktop-arrows {
+    display: none; /* Hide desktop arrows in mobile */
+  }
+
+  .mobile-arrows {
+    padding-left:10px ;
+    display: flex; /* Show mobile arrows */
+    justify-content: flex-start; /* Align arrows to the left */
+    margin-top: 20px; /* Space between carousel and arrows */
+  }
+
+}
