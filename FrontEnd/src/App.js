@@ -4,6 +4,7 @@ import Comment from "./Components/Molecules/Comment";
 import { trips } from "./Mocks/Trips";
 import TripComments from "./Components/Organisms/TripComments";
 import HostCard from "./Components/Organisms/HostCard";
+import Footer from "./Components/Organisms/Footer";
 
 function App() {
   return (
@@ -11,9 +12,11 @@ function App() {
       <Navbar />
       {/* <TripComments /> */}
       <HostCard />
+      
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
 
 export default App;
-
