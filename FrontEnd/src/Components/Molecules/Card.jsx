@@ -54,7 +54,7 @@ const Card = ({
 
         <div className="card-footer">
           <Typograph variant="p" className="card-total-price">
-            <strong>${totalPrice} total</strong> 
+            <strong>{totalPrice} EGP total</strong> 
           </Typograph>
           
           <Rate rating={rating} reviewCount={reviewCount} />
