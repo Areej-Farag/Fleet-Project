@@ -409,7 +409,8 @@
   }
 }
 
-/*--------------card carousel------------ */
+/*------------card carousal--------------------*/
+
 .card-carousel {
   max-width: 1200px;
   margin: 0px !important;
@@ -421,6 +422,63 @@
   z-index: 1;
 }
 
-.booking-details-container .details-right {
-  text-align: right; /* محاذاة القيمة إلى اليمين */
+.slick-slider {
+  height: auto !important;
+  overflow: visible !important;
+  z-index: 2;
+}
+
+.slick-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  margin: 20px 0 !important;
+  height: auto !important;
+}
+.slick-slide .slick-active .slick-cloned {
+  margin: 0 !important;
+}
+
+.slick-slide {
+  margin: 0 0px !important;
+  float: none !important;
+}
+
+.carousel-card-wrapper {
+  width: 288px !important;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card-wrapper:hover {
+  transform: translateY(-10px);
+  z-index: 50 !important;
+}
+
+.carousel-card-wrapper .detailed-card {
+  width: 100% !important;
+}
+
+.no-governorates {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+}
+
+/* Responsive Adjustments: Keep the same width */
+@media screen and (min-width: 600px) and (max-width: 1225px) {
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
+  .card-carousel {
+    margin-bottom: 40px;
+  }
 }

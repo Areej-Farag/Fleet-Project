@@ -154,7 +154,6 @@
   }
 }
 /*------detailed card---------*/
-/*------detailed card---------*/
 
 .custom-detailed-card {
   width: 256px;
@@ -178,14 +177,7 @@
 .detailed-card-content {
   padding: 21px 0px;
 }
-/*
-.detailed-card-header {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0px;
- 
-}
-*/
+
 .detailed-card-title {
   font-weight: 500;
   margin-bottom: 8px;
@@ -217,6 +209,7 @@
     margin-top: 5px;
   }
 }
+
 /* comment */
 .comment-container {
   display: flex;
