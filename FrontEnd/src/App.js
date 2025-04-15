@@ -1,22 +1,19 @@
+// App.jsx
 import React from "react";
 import Navbar from "./Components/Organisms/Navbar";
-import Comment from "./Components/Molecules/Comment";
-import { trips } from "./Mocks/Trips";
-import TripComments from "./Components/Organisms/TripComments";
-import HostCard from "./Components/Organisms/HostCard";
 import Footer from "./Components/Organisms/Footer";
+import Governate from "./Components/Pages/Governate"
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <TripComments /> */}
-      <HostCard />
-      
-      {/* Footer */}
+      <Governate /> 
       <Footer />
     </>
   );
 }
 
 export default App;
+

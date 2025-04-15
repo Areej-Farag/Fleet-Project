@@ -542,10 +542,8 @@
   }
 }
 
-/*------------card section----------*/
 
-
-
+/*-------------card section----------------*/
 
 .card-section {
   width: 100%;
@@ -599,7 +597,10 @@
   }
 }
 
-/*--------------card carousel------------ */
+
+
+/*------------card carousal--------------------*/
+
 .card-carousel {
   max-width: 1200px;
   margin: 0px !important;
@@ -657,7 +658,7 @@
   padding: 20px;
 }
 
-/* Responsive Adjustments: Keep the same width */
+
 @media screen and (min-width: 600px) and (max-width: 1225px) {
   .carousel-card-wrapper {
     width: 280px !important;
@@ -671,4 +672,93 @@
   .card-carousel{
     margin-bottom: 40px;
   }
+}
+
+
+/*-------------navigation bar-------------------*/
+
+.navigation-bar .go-home-link {
+  text-decoration: none; 
+}
+
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  margin:38px 150px;
+}
+
+.navigation-bar .breadcrumbs {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.navigation-bar .breadcrumbs a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.navigation-bar .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.navigation-bar .breadcrumbs span {
+  color: #6c757d;
+}
+
+
+/* --------------FilterSection------------ */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom:var( --color-neutral-2) ;
+}
+
+.filter-section .filter-title {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.filter-section .select-box {
+  width: 256px;
+  height: 48px;
+  border-radius: 50px;
+}
+
+@media (max-width: 769px) {
+  
+  .navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px ;
+    margin-right: 60px ;
+  }
+  .navigation-bar .breadcrumbs {
+    display: none;
+  }
+
+  
+  .filter-section {
+    margin-left: 60px ;
+    margin-right: 60px ;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;  
+  }
+
+  
+  .filter-section .select-box {
+    width: 100%; 
+    max-width: 300px; 
+  }
+
+
 }

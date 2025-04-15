@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import DetailedCard from "../Molecules/DetailedCard";
-import "../Styles/organisms.css"; // Ensure this path is correct
+import "../Styles/organisms.css"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img1 from "../../assets/Images/primary img.png";
@@ -16,26 +16,26 @@ const CardCarousel = ({ governorates, sliderRef }) => {
 
   const sliderSettings = {
     dots: false,
-    infinite: true, // Always enable infinite loop
+    infinite: true, 
     speed: 500,
-    slidesToShow: Math.min(randomGovernorates.length, 4), // Show up to 4 cards
+    slidesToShow: Math.min(randomGovernorates.length, 4), 
     slidesToScroll: 1,
     arrows: false,
-    ltr: true, // Fix direction to match CSS (was ltr)
+    ltr: true, 
     swipeToSlide: true, 
     variableWidth: true, 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: Math.min(randomGovernorates.length, 2), // 2 cards on tablet
+          slidesToShow: Math.min(randomGovernorates.length, 2), 
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1, // 1 card on mobile
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },

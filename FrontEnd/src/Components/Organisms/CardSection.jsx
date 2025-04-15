@@ -1,7 +1,9 @@
+
 import { useState } from "react";
 import Card from "../Molecules/Card";
 import Button from "../Atoms/Button";
-import "../Styles/pages.css";
+import "../Styles/organisms.css";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
@@ -17,13 +19,17 @@ const CardSection = ({ trips }) => {
     amenities: trip.features?.length > 0
       ? [
           {
-            icon: "✔️",
+            icon: <AiOutlineCheck style={{ color: "green" ,size:"20px"}} />,
+            
             text: trip.features.reduce((shortest, current) =>
               current.length < shortest.length ? current : shortest
             ),
           },
         ]
       : [],
+    badgeText: trip.category,
+    badgeColor:"white", 
+    badgeTextColor: "red",
   }));
 
   const cardsToShow = staysData.slice(0, visibleCards);

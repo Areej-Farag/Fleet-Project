@@ -140,6 +140,9 @@
     justify-content: center !important;
   }
 }
+
+
+/*-----------city overview--------------*/
 .city-overview {
   display: flex;
   justify-content: space-between;
@@ -147,7 +150,7 @@
   border-radius: 12px;
   max-width: 1126px;
   gap: 133px;
-  margin: auto;
+  margin: 0px 150px 112px 150px;
   flex-wrap: wrap;
 }
 
@@ -204,10 +207,13 @@
 }
 
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1225px) {
   .city-overview {
     flex-direction: row;
     align-items: center;
+    gap:48px;
+    margin-left: 50px;
+    margin-right: 50px;
     
   }
 
@@ -221,6 +227,7 @@
     
   }
 
+
   .video-iframe {
     height: 440px;
     width: 416px;
@@ -228,11 +235,13 @@
   }
 }
 
-@media (max-width: 960px) and (min-width: 200px) {
+@media (max-width: 768px)  {
   .city-overview {
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    margin-left: 50px;
+    margin-right: 50px;
     height: auto; 
   }
   .overview-left{
@@ -264,40 +273,15 @@
 }
 
 
-/*-------------card temp--------------*/
-
-.trip-template {
-  width: 100%;
-  padding: 80px 140px 136px 140px;
-  direction: ltr;
-}
-
-
-.card-head {
-  display: flex;
-  justify-content: center; /* Align content to the left (start of the row) */
-
-  align-items: center;
-  margin-bottom: 10px; /* Space between the title and the cards */
-  position: relative;
-  z-index: 5;
-}
-.section-title {
-  margin-bottom: 24px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-/*--------------nearby govern----------------*/
+/*--------random governates card---------------*/
 
 .nearby-governorates-section {
   padding: 0px 0px 136px 0px;
   max-width: 1146.4px;
   margin: 0 auto;
   direction: ltr;
-  position: relative; /* Ensure proper stacking context */
-  overflow: visible !important; /* Ensure no clipping */
+  position: relative; 
+  overflow: visible !important; 
 }
 
 .section-header {
@@ -306,8 +290,7 @@
   padding: 0 10px 0 10px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px; /* نقلّل المسافة بين العنوان والكاروسيل */
-  /*position: relative;*/
+  margin-bottom: 10px; 
   z-index: 5;
 }
 
@@ -368,14 +351,42 @@
     position: relative;
   }
   .desktop-arrows {
-    display: none; /* Hide desktop arrows in mobile */
+    display: none; 
   }
 
   .mobile-arrows {
     padding-left:10px ;
-    display: flex; /* Show mobile arrows */
-    justify-content: flex-start; /* Align arrows to the left */
-    margin-top: 20px; /* Space between carousel and arrows */
+    display: flex; 
+    justify-content: flex-start; 
+    margin-top: 20px; 
   }
 
+  .trip-template {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/*---------card temp----------*/
+
+.trip-template {
+  width: 100%;
+  padding: 80px 140px 136px 140px;
+  direction: ltr;
+}
+
+
+.card-head {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-bottom: 10px; 
+  position: relative;
+  z-index: 5;
+}
+.section-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }

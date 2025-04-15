@@ -155,7 +155,6 @@
   }
 }
 /*------detailed card---------*/
-/*------detailed card---------*/
 
 .custom-detailed-card {
   width: 256px;
@@ -180,14 +179,7 @@
   padding: 21px 0px;
   text-align: left;
 }
-/*
-.detailed-card-header {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0px;
- 
-}
-*/
+
 .detailed-card-title {
   font-weight:500;
   margin-bottom:8px;
@@ -207,8 +199,8 @@
 
 @media (max-width: 1024px) {
   .custom-detailed-card {
-    width: 236px;  /* Width for tablets and smaller screens */
-    height: 329px; /* Adjust height */
+    width: 236px;  
+    height: 329px; 
   }
   .detailed-card-title{
     width: 138px;
@@ -219,6 +211,7 @@
     margin-top: 5px;
   }
 }
+
 /* comment */
 .comment-container{
   display: flex;

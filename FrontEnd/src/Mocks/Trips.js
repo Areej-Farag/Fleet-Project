@@ -6,7 +6,7 @@ export const trips = [
     governate: "Cairo",
     company: "Nile Travel",
     description: "Explore the iconic Giza Pyramids and the Great Sphinx with a guided tour.",
-    image: "cairo_pyramids.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "8:00 AM: Departure from Cairo",
       "9:00 AM: Visit Giza Pyramids",
@@ -45,7 +45,7 @@ export const trips = [
     governate: "Cairo",
     company: "Pharaoh Tours",
     description: "Discover the treasures of the Egyptian Museum in Tahrir Square.",
-    image: "egyptian_museum.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -82,7 +82,7 @@ export const trips = [
     governate: "Cairo",
     company: "Cairo Adventures",
     description: "Shop and explore the historic Khan El Khalili market.",
-    image: "khan_el_khalili.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Explore the bazaar",
@@ -119,7 +119,7 @@ export const trips = [
     governate: "Cairo",
     company: "Nile Travel",
     description: "Visit the historic sites of Old Cairo, including the Coptic Museum.",
-    image: "old_cairo.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Hanging Church",
@@ -157,7 +157,7 @@ export const trips = [
     governate: "Cairo",
     company: "Cairo Adventures",
     description: "Enjoy a panoramic view of Cairo from the top of Cairo Tower.",
-    image: "cairo_tower.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "3:00 PM: Departure",
       "4:00 PM: Cairo Tower visit",
@@ -193,7 +193,7 @@ export const trips = [
     governate: "Cairo",
     company: "Nile Luxury",
     description: "A luxurious dinner cruise on the Nile River with live entertainment.",
-    image: "nile_cruise_cairo.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "6:00 PM: Board the cruise",
       "7:00 PM: Dinner and entertainment",
@@ -229,7 +229,7 @@ export const trips = [
     governate: "Cairo",
     company: "Pharaoh Tours",
     description: "Visit the new museum in Fustat and see the royal mummies.",
-    image: "nmec_cairo.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -266,7 +266,7 @@ export const trips = [
     governate: "Cairo",
     company: "Cairo Adventures",
     description: "Relax at Azhar Park with a beautiful view of Cairo and enjoy dinner.",
-    image: "azhar_park.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Explore Azhar Park",
@@ -303,7 +303,7 @@ export const trips = [
     governate: "Cairo",
     company: "Nile Breeze",
     description: "A traditional felucca ride on the Nile with stunning views of Cairo.",
-    image: "felucca_cairo.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "3:00 PM: Start the felucca ride",
       "4:00 PM: Enjoy the views",
@@ -339,7 +339,7 @@ export const trips = [
     governate: "Cairo",
     company: "Nile Travel",
     description: "Explore the historic Islamic Cairo and visit the Sultan Hassan Mosque.",
-    image: "islamic_cairo.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Sultan Hassan Mosque",
@@ -378,7 +378,7 @@ export const trips = [
     governate: "Giza",
     company: "Pharaoh Tours",
     description: "A detailed tour of the Great Pyramids and the Sphinx in Giza.",
-    image: "giza_pyramids.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Great Pyramids",
@@ -785,7 +785,7 @@ export const trips = [
       governate: "Alexandria",
       company: "Alexandria Adventures",
       description: "Relax in the beautiful Montazah Palace Gardens with stunning sea views.",
-      image: "montazah_gardens.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "10:00 AM: Departure",
         "11:00 AM: Explore Montazah Gardens",
@@ -1153,7 +1153,7 @@ export const trips = [
       governate: "Suez",
       company: "Canal Adventures",
       description: "Explore the Suez National Museum and learn about the region's history.",
-      image: "suez_museum.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "9:00 AM: Departure",
         "10:00 AM: Museum tour",
@@ -1519,7 +1519,7 @@ export const trips = [
       governate: "North Sinai",
       company: "Sinai Adventures",
       description: "Relax on the beautiful beaches of North Sinai.",
-      image: "north_sinai_beaches.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "8:00 AM: Departure",
         "9:00 AM: Arrive at the beach",
@@ -1815,7 +1815,7 @@ export const trips = [
     governate: "Sharm El Sheikh",
     company: "Sinai Adventures",
     description: "Experience an exhilarating desert safari with quad biking and a Bedouin tea stop.",
-    image: "sharm_safari.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "2:00 PM: Departure",
       "3:00 PM: Quad biking in the desert",
@@ -1928,7 +1928,7 @@ export const trips = [
     governate: "Dahab",
     company: "Dahab Divers",
     description: "Snorkel in the crystal-clear waters of Dahab and explore its coral reefs.",
-    image: "dahab_snorkeling.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Snorkeling session",
@@ -2042,7 +2042,7 @@ export const trips = [
     governate: "South Sinai",
     company: "Sinai Spiritual",
     description: "Visit the historic St. Catherine Monastery at the base of Mount Sinai.",
-    image: "st_catherine_monastery.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Monastery tour",
@@ -2116,7 +2116,7 @@ export const trips = [
     governate: "Fayoum",
     company: "Oasis Tours",
     description: "Visit the stunning Wadi El Rayan Waterfalls and surrounding lakes.",
-    image: "wadi_el_rayan.jpg",
+    image: "https://wallpaperaccess.com/full/676889.jpg",
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Wadi El Rayan",
@@ -2412,7 +2412,7 @@ export const trips = [
       governate: "Minya",
       company: "Nile Heritage Tours",
       description: "Visit Tuna El Gebel, an ancient necropolis with catacombs and the Tomb of Petosiris.",
-      image: "tuna_el_gebel.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "9:00 AM: Departure",
         "10:00 AM: Explore Tuna El Gebel",
@@ -2524,7 +2524,7 @@ export const trips = [
       governate: "Asyut",
       company: "Nile Spiritual Tours",
       description: "Visit the historic Deir El Muharraq Monastery, a significant Coptic site.",
-      image: "deir_el_muharraq.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "8:00 AM: Departure",
         "9:00 AM: Monastery tour",
@@ -2675,7 +2675,7 @@ export const trips = [
       governate: "Qena",
       company: "Nile Heritage Tours",
       description: "Explore the Hathor Temple within the Dendera complex, known for its zodiac ceiling.",
-      image: "hathor_temple.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "9:00 AM: Departure",
         "10:00 AM: Hathor Temple tour",
@@ -2751,7 +2751,7 @@ export const trips = [
       governate: "Aswan",
       company: "Nile Adventures",
       description: "A traditional felucca ride on the Nile with stunning views of Aswan.",
-      image: "felucca_aswan.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "3:00 PM: Departure",
         "3:30 PM: Felucca ride",
@@ -2861,7 +2861,7 @@ export const trips = [
       governate: "Aswan",
       company: "Nile Heritage Tours",
       description: "A day trip to the iconic Abu Simbel temples, a UNESCO World Heritage site.",
-      image: "abu_simbel.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "4:00 AM: Departure from Aswan",
         "7:00 AM: Arrive at Abu Simbel",
@@ -3083,7 +3083,7 @@ export const trips = [
       governate: "Luxor",
       company: "Nile Heritage Tours",
       description: "Visit the beautifully lit Luxor Temple, located on the east bank of the Nile.",
-      image: "luxor_temple.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "6:00 PM: Departure",
         "6:30 PM: Arrive at Luxor Temple",
@@ -3414,7 +3414,7 @@ export const trips = [
       governate: "Hurghada",
       company: "Red Sea Divers",
       description: "Spend a relaxing day on Giftun Island, enjoying its white sandy beaches and clear waters.",
-      image: "giftun_island.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "8:00 AM: Departure",
         "9:00 AM: Arrive at Giftun Island",
@@ -3637,7 +3637,7 @@ export const trips = [
       governate: "El Gouna",
       company: "Red Sea Adventures",
       description: "A tour of El Gouna, exploring its lagoons, marina, and luxurious resorts.",
-      image: "el_gouna_city.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
       program: [
         "9:00 AM: Departure",
         "9:30 AM: Explore the lagoons",
@@ -3677,7 +3677,7 @@ export const trips = [
         governate: "Red Sea",
         company: "Red Sea Adventures",
         description: "Spend a relaxing day at Makadi Bay, enjoying its sandy beaches and clear waters.",
-        image: "makadi_bay.jpg",
+        image: "https://wallpaperaccess.com/full/676889.jpg",
         program: [
           "8:00 AM: Departure",
           "9:00 AM: Arrive at Makadi Bay",
@@ -3716,7 +3716,7 @@ export const trips = [
         governate: "New Valley",
         company: "Desert Explorers",
         description: "Explore the Kharga Oasis, known for its historical sites and natural beauty.",
-        image: "kharga_oasis.jpg",
+        image: "https://wallpaperaccess.com/full/676889.jpg",
         program: [
           "8:00 AM: Departure",
           "9:00 AM: Arrive at Kharga Oasis",
@@ -4090,7 +4090,7 @@ export const trips = [
         governate: "Matrouh",
         company: "Mediterranean Tours",
         description: "Visit Agiba Beach, a small cove with stunning views and clear waters.",
-        image: "agiba_beach.jpg",
+        image: "https://wallpaperaccess.com/full/676889.jpg",
         program: [
           "9:00 AM: Departure",
           "9:30 AM: Arrive at Agiba Beach",
