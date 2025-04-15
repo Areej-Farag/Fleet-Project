@@ -4,28 +4,16 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
-import Trip from "./Components/Pages/Trip";
-import PaymentConfirmation from "./Components/Pages/PaymentConfirmation";
-import Payment from "./Components/Pages/Payment";
-import Governate from "./Components/Pages/Governate";
-import Home from "./Components/Pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./Components/Organisms/Navbar";
+import Footer from "./Components/Organisms/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <Navbar />
     <App />
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path="/trip/:tripId" element={<Trip />} />
-      <Route
-        path="/paymentConfirmation/:bookingId"
-        element={<PaymentConfirmation />}
-      />
-      <Route path="/payment/:bookingId" element={<Payment />} />
-      <Route path="/governate/:governateId" element={<Governate />} />
-      <Route path="*" element={<h1>404 Page Not Found</h1>} />
-    </Routes>
+    <Footer />
   </BrowserRouter>
 );
 

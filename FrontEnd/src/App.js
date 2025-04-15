@@ -1,24 +1,28 @@
 import React from "react";
-import GovernorateSelect from "./Components/Molecules/GovernorateSelect";
-import Typograph from "./Components/Atoms/Typograph";
-import colors from "./Components/Atoms/Colors";
-
+import { Route, Routes } from "react-router-dom";
+import Trip from "./Components/Pages/Trip";
+import PaymentConfirmation from "./Components/Pages/PaymentConfirmation";
+import Payment from "./Components/Pages/Payment";
+import Governate from "./Components/Pages/Governate";
+import Home from "./Components/Pages/Home";
+import Wishlist from "./Components/Pages/Wishlist";
+import TripPaymentDetailes from "./Components/Organisms/TripPaymentDetailes";
 function App() {
-  const handleGovernorateChange = (gov) => {
-    console.log("✅ المحافظة المختارة:", gov);
-  };
-
   return (
-    <div className="App" style={{ padding: "20px" }}>
-      <Typograph
-        variant="h4"
-        color={colors.Primary[500]}
-        style={{ textAlign: "center", marginBottom: "20px" }}
-      >
-        Your Trip in Egypt
-      </Typograph>
-      <GovernorateSelect onGovernorateChange={handleGovernorateChange} />
-    </div>
+    <>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/trip/:tripId" element={<Trip />} />
+        <Route
+          path="/paymentConfirmation/:bookingId"
+          element={<PaymentConfirmation />}
+        />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/payment/:bookingId" element={<Payment />} />
+        <Route path="/governate/:governateId" element={<Governate />} />
+        <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      </Routes>
+    </>
   );
 }
 

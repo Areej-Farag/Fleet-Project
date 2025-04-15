@@ -215,6 +215,15 @@
 .sign-in-form .input-buttons button:hover {
   background-color: transparent;
 }
+/* TripCard PAyment Confirmation */
+.payment-confirmation-detailes .buttonsCont {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.TextedIcons-container .select-container{
+ background-color: var(--color-neutral-5);
+}
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
