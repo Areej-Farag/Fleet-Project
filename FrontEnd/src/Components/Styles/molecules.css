@@ -271,8 +271,8 @@
     height: 20px;
   }
   .custom-detailed-card {
-    width: 236px; /* Width for tablets and smaller screens */
-    height: 329px; /* Adjust height */
+    width: 236px; 
+    height: 329px; 
   }
   .detailed-card-title {
     width: 138px;

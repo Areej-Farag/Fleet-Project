@@ -390,3 +390,13 @@
   font-weight: bold;
   font-size: 24px;
 }
+
+
+
+.trip-details-template {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin: 0 auto 80px auto;
+  gap: 48px; 
+}
