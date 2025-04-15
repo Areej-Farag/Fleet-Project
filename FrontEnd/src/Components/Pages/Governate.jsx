@@ -10,7 +10,8 @@ import FilterSection from "../Organisms/FilterSection";
  
 
 
-const TripsPage = () => {
+const Governate = () => {
+  console.log("Governate page loaded!");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const handleFilterChange = (category) => {
@@ -36,4 +37,4 @@ const TripsPage = () => {
   );
 };
 
-export default TripsPage;
+export default Governate;

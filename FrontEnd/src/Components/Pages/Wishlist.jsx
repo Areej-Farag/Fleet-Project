@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Trip() {
+export default function Wishlist() {
   return (
     <div>
-      <h1>Trip</h1>
+      
     </div>
   )
 }

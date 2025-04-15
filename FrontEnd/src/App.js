@@ -1,20 +1,27 @@
 import React from "react";
-import Navbar from "./Components/Organisms/Navbar";
-import Comment from "./Components/Molecules/Comment";
-import { trips } from "./Mocks/Trips";
-import TripComments from "./Components/Organisms/TripComments";
-import HostCard from "./Components/Organisms/HostCard";
-
+import { Route, Routes } from "react-router-dom";
+import Trip from "./Components/Pages/Trip";
+import PaymentConfirmation from "./Components/Pages/PaymentConfirmation";
+import Payment from "./Components/Pages/Payment";
+import Governate from "./Components/Pages/Governate";
+import Home from "./Components/Pages/Home";
+import Wishlist from "./Components/Pages/Wishlist";
+import TripPaymentDetailes from "./Components/Organisms/TripPaymentDetailes";
 function App() {
-  const handleGovernorateChange = (gov) => {
-    console.log("✅ المحافظة المختارة:", gov);
-  };
-
   return (
     <>
-      <Navbar />
-      {/* <TripComments /> */}
-      <HostCard />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/trip/:tripId" element={<Trip />} />
+        <Route
+          path="/paymentConfirmation/:bookingId"
+          element={<PaymentConfirmation />}
+        />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/payment/:bookingId" element={<Payment />} />
+        <Route path="/governate/:governateId" element={<Governate />} />
+        <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      </Routes>
     </>
   );
 }

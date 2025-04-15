@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/organisms.css";
 import ImageComponent from "../Atoms/ImageComponent";
 import LocationPhoto from "../../assets/Images/primary img.png";
@@ -11,6 +11,10 @@ import Icon from "../Atoms/Icons";
 import { SlCalender } from "react-icons/sl";
 import { IoPersonOutline } from "react-icons/io5";
 import BookingDetails from "../Molecules/BookingDetails";
+import Select from "../Atoms/Select";
+import { trips } from "../../Mocks/Trips";
+import Button from "../Atoms/Button";
+import { Link } from "react-router-dom";
 
 const bookingData = [
   {
@@ -32,7 +36,22 @@ const bookingData = [
 ];
 export default function TripPaymentDetailes({
   BookingData = bookingData,
+  trip = trips[0],
 }) {
+  const [selectedDate, setSelectedDate] = useState("");
+  const [availableSeats, setAvailableSeats] = useState(0);
+  const [selectedGuests, setSelectedGuests] = useState("");
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    const found = trip.availableDates.find((d) => d.date === date);
+    setAvailableSeats(found ? found.availableSeats : 0);
+    setSelectedGuests(""); // إعادة تعيين الضيوف لما التاريخ يتغير
+  };
+
+  const handleGuestChange = (guests) => {
+    setSelectedGuests(guests);
+  };
   return (
     <div className="payment-confirmation-detailes">
       <div className="Photo-and-host-sec row d-flex">
@@ -45,16 +64,6 @@ export default function TripPaymentDetailes({
             HostName={"Anastasia"}
             AvatarSize={"small"}
             PropertyName={"Villa in the Forest"}
-            childern={
-              <>
-                <div className="d-flex justify-content-center w-100">
-                  <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                    {" "}
-                    1 bedroom , 1 private bath
-                  </Typograph>
-                </div>
-              </>
-            }
           />
           <div className="d-flex rate-container">
             <Rate rating={"4.8"} />
@@ -73,25 +82,12 @@ export default function TripPaymentDetailes({
           IconContetnt={<SlCalender />}
           direction="row-reverse"
         >
-          <Typograph variant="small" color={colors.Neutrals[4]}>
-            Check In
-          </Typograph>
-          <Typograph variant="h6" color={colors.Neutrals[2]}>
-            May 15 - 22, 2021
-          </Typograph>
-        </Icon>
-        <Icon
-          size={24}
-          color={colors.Neutrals[3]}
-          IconContetnt={<SlCalender />}
-          direction="row-reverse"
-        >
-          <Typograph variant="small" color={colors.Neutrals[4]}>
-            Check Out
-          </Typograph>
-          <Typograph variant="p" color={colors.Neutrals[2]}>
-            May 22 - 22, 2021
-          </Typograph>
+          <Select
+            label="Select a date"
+            value={selectedDate}
+            options={trip.availableDates.map((dateObj) => dateObj.date)}
+            onChange={handleDateChange}
+          />
         </Icon>
         <Icon
           size={24}
@@ -99,12 +95,23 @@ export default function TripPaymentDetailes({
           IconContetnt={<IoPersonOutline />}
           direction="row-reverse"
         >
-          <Typograph variant="small" color={colors.Neutrals[4]}>
-            Guests
-          </Typograph>
-          <Typograph variant="p" color={colors.Neutrals[2]}>
-            2 guests
-          </Typograph>
+          {selectedDate ? (
+            <>
+              <Select
+                label="Number of Guests"
+                value={selectedGuests}
+                options={Array.from(
+                  { length: availableSeats },
+                  (_, i) => `${i + 1}`
+                )}
+                onChange={handleGuestChange}
+              />
+            </>
+          ) : (
+            <Typograph variant="tiny" color={colors.Neutrals[2]}>
+              Select a date first
+            </Typograph>
+          )}
         </Icon>
       </div>
 
@@ -125,11 +132,18 @@ export default function TripPaymentDetailes({
           </div>
         </div>
       </div>
-      <Typograph variant={"small"} color={colors.Neutrals[2]}>
-        {" "}
-        Free cancellation until 3:00 PM on May 15, 2021
-      </Typograph>
+      <div className="buttonsCont">
+        <Link to={`/payment/${trip.id}`}>
+          <Button color="blue" size="default" shape="default">
+            {" "}
+            Book{" "}
+          </Button>
+        </Link>
+        <Button color="black" size="default" shape="default">
+          {" "}
+          + Save{" "}
+        </Button>
+      </div>
     </div>
   );
 }
-
