@@ -145,9 +145,7 @@
 }
 /* Sign Forms */
 .sign-up-overlay,
-.Sign-In-overlay,
-.security-overlay,
-.user-confirmation-overlay {
+.Sign-In-overlay {
   position: relative;
   top: 0;
   left: 0;
@@ -176,9 +174,7 @@
   cursor: pointer;
 }
 .sign-up-form,
-.sign-in-form,
-.security-container,
-.user-confirmation {
+.sign-in-form {
   padding: 30px;
   position: absolute;
   display: flex;
@@ -219,156 +215,6 @@
 .sign-in-form .input-buttons button:hover {
   background-color: transparent;
 }
-/* User Confirmation */
-.ant-radio-group label {
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--color-neutral-5);
-}
-.ant-radio-group label:last-child {
-  border: none;
-}
-.user-confirmation {
-  text-align: center;
-}
-/* security-container  */
-.security-container {
-  height: 250px;
-  width: 350px;
-  text-align: center;
-}
-/* إضافة هذه التنسيقات لضبط التوزيع في BookingDetails */
-.booking-details-container {
-  display: flex;
-  justify-content: space-between; /* توزيع العناصر بين الجانبين */
-  align-items: center;
-  width: 100%;
-}
-
-.booking-details-container .details-left {
-  display: flex;
-  align-items: center; /* محاذاة الـ icon مع الـ title */
-}
-
-.booking-details-container .details-right {
-  text-align: right;
-}
-/* trip-comments */
-.trip-comments-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  height: fit-content;
-  padding: 20px;
-  border: 1px solid var(--color-neutral-6);
-}
-
-.trip-comments-container .trip-comments {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.trip-comments-container .comment-container-input .input-buttons {
-  /* justify-content: flex-end;   */
-  width: 18% !important;
-  align-items: start;
-  /* margin-bottom: 20px; */
-}
-.trip-comments-container .comment-container-input .input-buttons button {
-  height: fit-content;
-  padding: 4px 5px;
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  text-align: center;
-}
-.trip-comments-container .comment-container-input .input-buttons button svg {
-  padding: 2px;
-  font-size: 15px;
-}
-.trip-comments-container .reviews-container {
-  margin-top: 10px;
-  width: 100%;
-}
-.reviews-container .comment-footer {
-  width: 300px;
-}
-
-/* hostcard */
-.hostcard-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
-  height: auto;
-  min-height: 550px;
-  padding: 10px;
-  border: 1px solid var(--color-neutral-6);
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-}
-.hostcard-contactinfo
-.hostcard-header {
-  width: 100%;
-  justify-content: space-evenly;
-}
-.hostcard-container .host-review {
-  background-color: var(--color-neutral-7);
-  width: 90%;
-  margin: auto;
-  padding: 5px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-.hostcard-container .hostcard-contactinfo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-.hostcard-container .hostcard-contactinfo .website-section{
-  width: 60%;
-}
-.hostcard-container .hostcard-contactinfo .website-section a{
-  color: var(--color-neutral-3);
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: -15px;
-
-}
-.hostcard-container .hostcard-contactinfo .socialmedia-links button{
-  border: none;
-}
-.hostcard-container .hostcard-contactinfo .socialmedia-links button:hover{
-  background-color: transparent;
-  transform: scale(1.1 , 1.1);
-}
-.hostcard-container .hostcard-contactinfo .contactbtns button:hover svg {
-  color: var(--color-neutral-7);
-}
-
-.hostcard-container .hostcard-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100% !important;
-}
-.hostcard-container .hostcard-footer .IconContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center ;
-  width: 65% !important;
-}
-
 /* Media Queries For Mobile */
 @media screen and (max-width: 768px) {
   .payment-form {
@@ -410,79 +256,49 @@
     width: 100%;
     margin-bottom: 5px;
   }
-  /* .sign-up-form */
+
   .sign-up-form,
-  .sign-in-form,
-  .user-confirmation {
+  .sign-in-form {
     padding: 20px 0;
     width: 95vw;
-    height: 60vh;
-    bottom: 0;
+    height: 80vh;
+    bottom: 10px;
     /* left: 50%; */
-    /* transform: translate(0 , 0 ); */
+    /* transform: translate(-50% ); */
     border-radius: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+}
+.sign-in-form {
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+  /* bottom: 0; */
+  transform: translate(-50%, 0);
+}
+.sign-buttons {
+  width: 80%;
+}
 
-  .sign-in-form {
-    padding: 20px;
-    height: 300px;
-    border-radius: 20px;
-    bottom: 0;
-    /* transform: translate(-50%, 0); */
-  }
-  .sign-buttons {
-    width: 80%;
-  }
-  .sign-in-form .btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sign-in-form .btn-container button {
-    width: 80%;
-  }
-  /* security-container */
-  .security-container {
-    height: 250px;
-    width: 90%;
-    bottom: 0;
-    /* transform: translate(-50%, 0); */
-  }
-  /* user-confirmation */
-  .user-confirmation {
-    height: 320px;
-    width: 90%;
-    bottom: 0;
-    /* transform: translate(-50%, -10px); */
-  }
-  .congratulations-text {
-    text-align: center; /* محاذاة النص في المنتصف */
-  }
-  .mt-4.d-flex .w-100,
-  .mt-4.d-flex .w-md-auto {
-    width: 100%; /* تجعل الأزرار تأخذ عرض كامل عند الشاشات الصغيرة */
-  }
+.sign-in-form .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form .btn-container button {
+  width: 80%;
+}
 
-  /* trip-comments */
-  .trip-comments-container {
-    width: 95%;
-    margin: auto;
-  }
-  .trip-comments-container
-    .comment-container-input
-    .input-buttons
-    button
-    small {
-    display: none;
-  }
-  /* hostcard-container */
-  .hostcard-container { 
-    width: 95%;
-    margin: auto;
-  }
+.sign-in-form .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form .btn-container button {
+  width: 80%;
 }
 
 /* Media Queries For Tablet */
@@ -499,12 +315,12 @@
   }
   /* trip-comments */
   .trip-comments-container
-  .comment-container-input
-  .input-buttons
-  button
-  small {
-  display: none;
-}
+    .comment-container-input
+    .input-buttons
+    button
+    small {
+    display: none;
+  }
   .reviews-container .comment-footer {
     width: 280px;
   }
@@ -516,8 +332,8 @@
     /* display: none; */
     width: fit-content;
   }
-   /* hostcard-container */
-   .hostcard-container { 
+  /* hostcard-container */
+  .hostcard-container {
     /* width: 35%; */
     /* margin: auto; */
   }
@@ -544,31 +360,25 @@
 
 /*------------card section----------*/
 
-
-
-
 .card-section {
   width: 100%;
   margin-top: 24px;
   margin-bottom: 40px;
 }
 
-
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px !important; 
+  gap: 32px !important;
   width: 100%;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-
 .cards-wrapper > div {
-  flex: 0 0 auto; 
-  width: fit-content; 
+  flex: 0 0 auto;
+  width: fit-content;
 }
-
 
 .bttn {
   display: flex;
@@ -579,9 +389,9 @@
 }
 
 /* Responsive  */
-@media screen and (min-width: 600px) and (max-width: 1225px)  {
+@media screen and (min-width: 600px) and (max-width: 1225px) {
   .cards-wrapper {
-    justify-content: center;  
+    justify-content: center;
   }
 
   .trip-template {
@@ -591,7 +401,7 @@
 
 @media (max-width: 599px) {
   .cards-wrapper {
-    justify-content: center; 
+    justify-content: center;
   }
 
   .trip-template {
@@ -611,64 +421,6 @@
   z-index: 1;
 }
 
-.slick-slider {
-  height: auto !important;
-  overflow: visible !important;
-  z-index: 2;
-}
-
-.slick-track {
-  display: flex !important;
-  flex-wrap: nowrap !important; 
-  align-items: center;
-  margin: 20px 0 !important;
-  height: auto!important;
-  
-}
-.slick-slide .slick-active .slick-cloned{
-  margin: 0 !important;
-}
-
-.slick-slide {
-  margin: 0 0px !important; 
-  float: none !important;
-}
-
-.carousel-card-wrapper {
-  width: 288px !important; 
-  box-sizing: border-box;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-.carousel-card-wrapper:hover {
-  transform: translateY(-10px);
-  z-index: 50 !important;
-}
-
-.carousel-card-wrapper .detailed-card {
-  width: 100% !important;
-}
-
-.no-governorates {
-  text-align: center;
-  font-size: 16px;
-  color: #666;
-  padding: 20px;
-}
-
-/* Responsive Adjustments: Keep the same width */
-@media screen and (min-width: 600px) and (max-width: 1225px) {
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
-}
-
-@media (max-width: 599px) {
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
-  .card-carousel{
-    margin-bottom: 40px;
-  }
+.booking-details-container .details-right {
+  text-align: right; /* محاذاة القيمة إلى اليمين */
 }
