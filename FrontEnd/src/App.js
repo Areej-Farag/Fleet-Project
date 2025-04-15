@@ -1,21 +1,24 @@
 import React from "react";
-import Navbar from "./Components/Organisms/Navbar";
-import Comment from "./Components/Molecules/Comment";
-import { trips } from "./Mocks/Trips";
-import TripComments from "./Components/Organisms/TripComments";
-import HostCard from "./Components/Organisms/HostCard";
-import Footer from "./Components/Organisms/Footer";
+import GovernorateSelect from "./Components/Molecules/GovernorateSelect";
+import Typograph from "./Components/Atoms/Typograph";
+import colors from "./Components/Atoms/Colors";
 
 function App() {
+  const handleGovernorateChange = (gov) => {
+    console.log("✅ المحافظة المختارة:", gov);
+  };
+
   return (
-    <>
-      <Navbar />
-      {/* <TripComments /> */}
-      <HostCard />
-      
-      {/* Footer */}
-      <Footer />
-    </>
+    <div className="App" style={{ padding: "20px" }}>
+      <Typograph
+        variant="h4"
+        color={colors.Primary[500]}
+        style={{ textAlign: "center", marginBottom: "20px" }}
+      >
+        Your Trip in Egypt
+      </Typograph>
+      <GovernorateSelect onGovernorateChange={handleGovernorateChange} />
+    </div>
   );
 }
 
