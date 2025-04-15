@@ -85,6 +85,10 @@
   color: var(--color-neutral-4);
 }
 
+
+/*---------button--------------*/
+
+
 .button {
   padding: 16px 24px;
   font-size: 16px;
@@ -145,8 +149,9 @@
 }
 
 .button.trans:hover {
-  background-color: var(--color-neutral-4);
-  color: var(--color-neutral-8);
+
+  background-color: var(--color-neutral-6);
+
 }
 .button.trans-no-border {
   background-color: transparent;
@@ -154,7 +159,7 @@
 }
 
 .button.trans-no-border:hover {
-  background-color: var(--color-neutral-4);
+  background-color: var(--color-neutral-6);
 }
 .button.white {
   background-color: var(--color-neutral-8);
@@ -174,7 +179,7 @@
 }
 
 .button.black:hover {
-  background-color: var(--color-neutral-2);
+  background-color: var(--color-neutral-3);
 }
 .icon {
   display: flex;
@@ -315,17 +320,23 @@
 .price-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: auto;
-  height: auto;
+  align-items: center; 
+  justify-content: center; 
+  width: 80px; 
+  height: auto; 
+  min-height: 47.2px; 
   border-radius: 4px;
   border: 2px solid var(--color-primary-4);
-  padding: 8px 8px 6px 8px;
+  padding: 4px;
   gap: 6px;
+  position: relative;
 }
 
 .old-price-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .old-price {
@@ -337,8 +348,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-neutral-5);
-  width:auto;
-  position: relative; /* إضافة الموضع النسبي */
+  white-space: nowrap; 
 }
 
 .dash-line-container {
@@ -346,6 +356,8 @@
   top: 50%;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .dash-line {
@@ -366,8 +378,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primary-4);
-  width:auto;
-  height:auto;
+  white-space: nowrap; 
 }
 /* ==== Rate Box ==== */
 
@@ -436,7 +447,7 @@
 
 /* ===== Line ====== */
 .line {
-  width: 95%;
+  width: 80%;
   border-top: 2px solid var(--color-neutral-5);
   margin: 8px auto;
 }

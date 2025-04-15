@@ -4,17 +4,19 @@ import Comment from "./Components/Molecules/Comment";
 import { trips } from "./Mocks/Trips";
 import TripComments from "./Components/Organisms/TripComments";
 import HostCard from "./Components/Organisms/HostCard";
-import TripPaymentDetailes from "./Components/Organisms/TripPaymentDetailes";
 
 function App() {
+  const handleGovernorateChange = (gov) => {
+    console.log("✅ المحافظة المختارة:", gov);
+  };
+
   return (
     <>
       <Navbar />
-          <TripPaymentDetailes />
+      {/* <TripComments /> */}
       <HostCard />
     </>
   );
 }
 
 export default App;
-

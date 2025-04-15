@@ -7,7 +7,7 @@ import "../Styles/templates.css";
 
 export default function BookingConfirmationTemplate() {
   return (
-    <div className="booking-confirmation d-flex flex-column flex-md-row gap-4 p-3 p-md-4">
+    <div className="booking-confirmation d-flex flex-column container flex-md-row gap-4 p-3 p-md-4">
       <div className="col-12 col-md-6 p-2">
         <div className="image-container w-100 ">
       

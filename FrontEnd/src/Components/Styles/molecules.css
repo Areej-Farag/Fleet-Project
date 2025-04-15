@@ -1,5 +1,5 @@
 @import "./global.css";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 .text-with-btn-container {
   display: flex;
@@ -61,15 +61,15 @@
   height: 240px;
 }
 
-.img{
-  position: absolute; 
-  width: 100%;  
+.img {
+  position: absolute;
+  width: 100%;
   height: 100%;
 }
 
 .card-content {
   padding: 24px;
-  height: auto;
+  height: 177px;
 }
 
 .badge-over-image {
@@ -87,12 +87,13 @@
 }
 
 .card-title-wrapper {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .card-title {
   font-weight: bold;
   margin: 0;
+  width: fit-content !important;
 }
 
 .card-amenities {
@@ -114,7 +115,7 @@
 .card-footer {
   display: flex;
   justify-content: space-between;
-  margin: 16px 0px 0px ;
+  margin: 16px 0px 0px;
   gap: 8px;
 }
 
@@ -123,15 +124,45 @@
   color: black;
   margin: 0px;
 }
+
+@media (max-width: 1024px) {
+  .custom-card {
+    width: 266px;
+    height: 441px;
+  }
+  .card-content {
+    height: 201px;
+  }
+  .card-title {
+    width: 138px;
+
+    font-size: medium;
+  }
+  .card-header {
+    width: 218px;
+    height: 48px;
+  }
+  .card-amenities {
+    height: auto;
+    gap: 2px;
+    margin: 8px 0px 16px 0px !important;
+  }
+  .card-footer {
+    width: 218px;
+    height: 20px;
+    margin: 20px 0px 0px;
+  }
+}
 /*------detailed card---------*/
 
 .custom-detailed-card {
   width: 256px;
   height: 326px;
   overflow: hidden;
-  gap:21px;
+  gap: 21px;
   transition: transform 0.3s ease-in-out;
   padding-bottom: 0px;
+  direction: ltr;
 }
 
 .custom-detailed-card:hover {
@@ -145,25 +176,17 @@
 
 .detailed-card-content {
   padding: 21px 0px;
-  
 }
-/*
-.detailed-card-header {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0px;
- 
-}
-*/
+
 .detailed-card-title {
-  font-weight:500;
-  margin-bottom:8px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .detailed-card-amenities {
   display: flex;
   font-weight: 500;
-  color:var(--color-neutral-4);
+  color: var(--color-neutral-4);
 }
 
 .detailed-amenity {
@@ -171,42 +194,58 @@
   align-items: center;
   gap: 5px;
 }
+
+@media (max-width: 1024px) {
+  .custom-detailed-card {
+    width: 236px; /* Width for tablets and smaller screens */
+    height: 329px; /* Adjust height */
+  }
+  .detailed-card-title {
+    width: 138px;
+    font-size: medium;
+  }
+  .detailed-card-amenities {
+    height: auto;
+    margin-top: 5px;
+  }
+}
+
 /* comment */
-.comment-container{
+.comment-container {
   display: flex;
   gap: 10px;
   width: 100%;
   height: fit-content;
   padding: 10px;
 }
-.comment-container .avatar-holder{
+.comment-container .avatar-holder {
   width: 50px;
   padding: 5px;
 }
-.comment-content{
+.comment-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: calc(100% - 70px);
   padding: 10px;
 }
-.comment-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.comment-footer{
+.comment-footer {
   width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.comment-footer button{
+.comment-footer button {
   border: none !important;
 }
-.comment-footer button:hover{
- background-color: transparent !important;
- color: var(--color-neutral-4) !important;
+.comment-footer button:hover {
+  background-color: transparent !important;
+  color: var(--color-neutral-4) !important;
 }
 
 @media (max-width: 1024px) {
@@ -232,14 +271,14 @@ align-items: center;
     height: 20px;
   }
   .custom-detailed-card {
-    width: 236px;  /* Width for tablets and smaller screens */
+    width: 236px; /* Width for tablets and smaller screens */
     height: 329px; /* Adjust height */
   }
-  .detailed-card-title{
+  .detailed-card-title {
     width: 138px;
     font-size: medium;
   }
-  .detailed-card-amenities{
+  .detailed-card-amenities {
     height: auto;
     margin-top: 5px;
   }
@@ -247,7 +286,13 @@ align-items: center;
 
 /* Media queries for mobile */
 @media screen and (max-width: 768px) {
-  .comment-footer{
+  .comment-footer {
     width: 90%;
   }
+}
+/*governorate-select*/
+.governorate-select-wrapper {
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 16px;
 }

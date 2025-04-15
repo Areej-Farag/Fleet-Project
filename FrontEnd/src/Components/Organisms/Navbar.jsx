@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect, useRef } from "react";
 import { FaBars, FaBell } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -6,13 +7,33 @@ import { Link } from "react-router-dom";
 import Avatar from "../Atoms/Avatar";
 import Button from "../Atoms/Button";
 import Badge from "../Atoms/Badge";
-import Icon from "../Atoms/Icons";
 import logo from "../../assets/Images/logo.png";
 import "../Styles/Navbar.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [notifications] = useState(0);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const bellRef = useRef(null);
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        bellRef.current &&
+        !bellRef.current.contains(event.target)
+      ) {
+        setShowNotifications(false);
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -49,23 +70,45 @@ const Navbar = () => {
             <Link to="/language" className="text-decoration-none text-dark">Language</Link>
           </div>
 
-          {/* List Your Property */}
-          <div className="d-none d-md-block">
-            <Button color="white">List your property</Button>
-          </div>
+         {/* List Your Property */}
+<Link to="/list-your-property" className="d-none d-md-block text-decoration-none">
+  <Button color="white">List your property</Button>
+</Link>
 
-          {/* Notification + Green Dot */}
-          <div className="position-relative">
-            <Button color="trans" shape="small-circle">
-              <FaBell size={18} color="#666" />
-            </Button>
-            {notifications > 0 && (
-              <Badge text={notifications.toString()} color="red" />
-            )}
-          </div>
 
-          {/* Green dot */}
-          <span className="bg-success rounded-circle d-inline-block" style={{ width: 8, height: 8 }} />
+        {/* Notification + Badge */}
+<div className="position-relative" ref={bellRef}>
+  <Button
+    color="trans"
+    shape="small-circle"
+    onClick={() => setShowNotifications(!showNotifications)}
+  >
+    <FaBell size={18} color="#666" />
+  </Button>
+
+  {notifications > 0 && (
+    <Badge text={notifications.toString()} color="red" />
+  )}
+
+  {/* Notification Dropdown */}
+  {showNotifications && (
+    <div
+      className="notification-dropdown position-absolute bg-white shadow-sm p-2 rounded"
+      style={{ top: "100%", right: 0, minWidth: 200 }}
+      ref={dropdownRef}
+    >
+      {notifications === 0 ? (
+        <div className="text-muted text-center py-2">No notifications</div>
+      ) : (
+        <ul className="list-unstyled mb-0">
+          <li className="py-1 px-2">🔔 You have new booking</li>
+          <li className="py-1 px-2">📩 Message from admin</li>
+        </ul>
+      )}
+    </div>
+  )}
+</div>
+
 
           {/* Avatar */}
           <Avatar src="/assets/Images/avatar.png" alt="User" size="small" />
