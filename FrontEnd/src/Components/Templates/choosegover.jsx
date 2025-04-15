@@ -18,7 +18,7 @@ const GovernatesPage = () => {
     const governateId = e.target.value;
     setSelectedGovernate(governateId);
     if (governateId) {
-      navigate(`/trips/${governateId}`);
+      navigate(`/governate/${governateId}`);
     }
   };
 

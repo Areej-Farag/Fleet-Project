@@ -1,7 +1,7 @@
 // src/Components/Templates/TripDetailsTemplate.js
 import React from "react";
 import TripDetails from "../Organisms/TripDetails";
-import TripPaymentDetailes from "../Organisms/TripPaymentDetails";
+import TripPaymentDetailes from "../Organisms/TripPaymentDetailes";
 import "../Styles/templates.css";
 
 const TripDetailsTemplate = ({ trip }) => {
