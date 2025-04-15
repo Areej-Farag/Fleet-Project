@@ -4,13 +4,17 @@ import '../Styles/atoms.css';
 const PriceBox = ({ priceBefore, priceNow }) => {
     return (
         <div className="price-box">
-            <div className="old-price-container">
-                <OldPrice price={`${priceBefore}EGP`} />
-                <div className="dash-line-container">
-                    <DashLine />
+
+            {priceBefore && priceNow !== priceBefore && (
+                <div className="old-price-container">
+                    <OldPrice price={`${priceBefore} EGP`} />
+                    <div className="dash-line-container">
+                        <DashLine />
+                    </div>
                 </div>
-            </div>
-            <NewPrice price={`${priceNow}EGP`} />
+            )}
+
+            <NewPrice price={`${priceNow} EGP`} />
         </div>
     );
 };
