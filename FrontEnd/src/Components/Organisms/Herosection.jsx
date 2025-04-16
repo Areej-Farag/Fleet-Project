@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/Herosection.css';
+import '../Styles/organisms.css';
 import phoneImage from '../../assets/Images/Group 2.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
