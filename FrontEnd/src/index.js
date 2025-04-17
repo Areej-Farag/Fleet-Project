@@ -3,33 +3,42 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
+import TripsPage from "./Components/Pages/Governate";
 import Trip from "./Components/Pages/Trip";
 import PaymentConfirmation from "./Components/Pages/PaymentConfirmation";
 import Payment from "./Components/Pages/Payment";
 import Governate from "./Components/Pages/Governate";
-import Home from "./Components/Pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import GovernatesPage from "./Components/Templates/choosegover";
+import SignInForm from "./Components/Organisms/SignInForm";
+import SignUpForm from "./Components/Organisms/SignUpForm";
+import UserConfirmation from "./Components/Organisms/UserConfirmation";
+import SecurityCode from "./Components/Organisms/SecurityCode";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
     <Routes>
-      <Route index element={<Home />} />
-      <Route path="/trip/:tripId" element={<Trip />} />
-      <Route
-        path="/paymentConfirmation/:bookingId"
-        element={<PaymentConfirmation />}
-      />
-      <Route path="/payment/:bookingId" element={<Payment />} />
-      <Route path="/governate/:governateId" element={<Governate />} />
-      <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      <Route path="/" element={<App />}>
+        <Route index element={<Navigate to="/governates" />} />
+        <Route path="signin" element={<SignInForm />} />
+        <Route path="signup" element={<SignUpForm />} />
+        <Route path="userConfirmation" element={<UserConfirmation />} />
+        <Route path="securityCode" element={<SecurityCode />} />
+        <Route path="governates" element={<GovernatesPage />} />
+        <Route path="trips/:governateId" element={<TripsPage />} />
+        <Route path="trip/:tripId" element={<Trip />} />
+        <Route
+          path="paymentConfirmation/:bookingId"
+          element={<PaymentConfirmation />}
+        />
+        <Route path="payment/:bookingId" element={<Payment />} />
+        <Route path="governate/:governateId" element={<Governate />} />
+
+        <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      </Route>
     </Routes>
   </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

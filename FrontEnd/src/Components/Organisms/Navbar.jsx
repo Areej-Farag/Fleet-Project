@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { FaBars, FaBell } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
-
+import ava from "../../assets/Images/avatar.png";
 import Avatar from "../Atoms/Avatar";
 import Button from "../Atoms/Button";
 import Badge from "../Atoms/Badge";
@@ -111,7 +111,7 @@ const Navbar = () => {
 
 
           {/* Avatar */}
-          <Avatar src="/assets/Images/avatar.png" alt="User" size="small" />
+        <Link> <Avatar src={ava} alt="User" size="small" /> </Link>  
           {/* Mobile Menu */}
           <div className="d-md-none" onClick={toggleMobileMenu}>
             <FaBars size={22} color="#333" />

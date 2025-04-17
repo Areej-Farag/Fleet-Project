@@ -17,6 +17,7 @@
 .payment-confirmation-container {
   width: 48%;
 }
+
 /* trips-comments-section */
 .trips-comments-section {
   display: flex;
@@ -84,6 +85,25 @@
     justify-content: center;
     padding: 10px;
     /* gap: 20px;  */
+
+    .image-grid-template {
+      flex-direction: column;
+    }
+
+    .main-image-container,
+    .side-images {
+      width: 100%;
+    }
+
+    .side-images {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: none;
+      gap: 10px;
+    }
+
+    .image-wrapper {
+      aspect-ratio: 4 / 3;
+    }
   }
   .payment-form-container {
     width: 50%;
@@ -141,7 +161,6 @@
   }
 }
 
-
 /*-----------city overview--------------*/
 .city-overview {
   display: flex;
@@ -160,33 +179,30 @@
   overflow-y: hidden;
 }
 
-
 .overview-title {
   font-weight: 500;
-  color: var( --color-primary-2) !important ;
+  color: var(--color-primary-2) !important ;
   position: sticky;
   top: 0;
-  margin-bottom: 48pX;
+  margin-bottom: 48px;
   z-index: 10;
 }
 .overview-description {
-  font-weight: 500; 
-  overflow: hidden;  
+  font-weight: 500;
+  overflow: hidden;
   display: block;
   line-height: 1.7;
-  color: var( --color-neutral-4);
+  color: var(--color-neutral-4);
   white-space: pre-line;
   box-sizing: border-box;
-  word-wrap: break-word; 
-  word-break: break-word; 
-
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .overview-right {
   flex: 1;
   display: flex;
   height: 440px;
-
 }
 
 .video-container {
@@ -206,60 +222,54 @@
   border: none;
 }
 
-
 @media screen and (min-width: 769px) and (max-width: 1225px) {
   .city-overview {
     flex-direction: row;
     align-items: center;
-    gap:48px;
+    gap: 48px;
     margin-left: 50px;
     margin-right: 50px;
-    
   }
 
-  .overview-left, .overview-right {
-    width: 416px ;
+  .overview-left,
+  .overview-right {
+    width: 416px;
     max-width: 100%;
   }
 
   .video-container {
     max-height: unset;
-    
   }
-
 
   .video-iframe {
     height: 440px;
     width: 416px;
-   
   }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
   .city-overview {
     flex-direction: column;
     align-items: center;
     gap: 48px;
     margin-left: 50px;
     margin-right: 50px;
-    height: auto; 
+    height: auto;
   }
-  .overview-left{
-   height: 406px;
+  .overview-left {
+    height: 406px;
   }
-  
-.overview-title {
 
-  margin-bottom: 32PX;
-
-}
-  .overview-left, .overview-right {
-    width: 311px;  
+  .overview-title {
+    margin-bottom: 32px;
+  }
+  .overview-left,
+  .overview-right {
+    width: 311px;
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
   }
 
- 
   .video-container {
     height: 360px;
     width: 311px;
@@ -272,7 +282,6 @@
   }
 }
 
-
 /*--------random governates card---------------*/
 
 .nearby-governorates-section {
@@ -280,8 +289,8 @@
   max-width: 1146.4px;
   margin: 0 auto;
   direction: ltr;
-  position: relative; 
-  overflow: visible !important; 
+  position: relative;
+  overflow: visible !important;
 }
 
 .section-header {
@@ -290,20 +299,19 @@
   padding: 0 10px 0 10px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   z-index: 5;
 }
 
 .section-title-detailed {
   font-weight: bold;
   font-size: 32px;
-  margin-bottom: 8px ;
+  margin-bottom: 8px;
 }
 
 .carousel-arrows {
   display: flex;
   gap: 10px;
-
 }
 
 .custom-arrow {
@@ -351,14 +359,14 @@
     position: relative;
   }
   .desktop-arrows {
-    display: none; 
+    display: none;
   }
 
   .mobile-arrows {
-    padding-left:10px ;
-    display: flex; 
-    justify-content: flex-start; 
-    margin-top: 20px; 
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
   }
 
   .trip-template {
@@ -374,13 +382,12 @@
   direction: ltr;
 }
 
-
 .card-head {
   display: flex;
   justify-content: center;
 
   align-items: center;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   position: relative;
   z-index: 5;
 }
@@ -389,4 +396,52 @@
   text-align: center;
   font-weight: bold;
   font-size: 24px;
+}
+
+.trip-details-template {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  gap: 48px;
+}
+
+/*image grid template*/
+.image-grid-template {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-image-container {
+  flex: 2;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.side-images {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.small-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
 }

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import TripTemplate from "../Templates/CardTemp";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
@@ -31,7 +30,6 @@ const TripsPage = () => {
         description="“Explore Northland’s stunning beaches, lush forests, and rich Māori heritage. Sail through the Bay of Islands, visit ancient Kauri trees, and soak in endless adventures. Experience the magic of New Zealand’s Winterless North!”"
         videoUrl="https://youtu.be/au8hr-0c92I?si=aBbrDfO5WEKFJgtZ"
       />
-
     </div>
   );
 };

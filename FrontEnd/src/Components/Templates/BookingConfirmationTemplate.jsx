@@ -10,11 +10,7 @@ export default function BookingConfirmationTemplate() {
     <div className="booking-confirmation d-flex flex-column container flex-md-row gap-4 p-3 p-md-4">
       <div className="col-12 col-md-6 p-2">
         <div className="image-container w-100 ">
-          <ImageComponent
-            src={Photo}
-            title="Queenstown view"
-            type="fullyRounded"
-          />
+          <ImageComponent src={Photo} title={"Image Title"} />
           <div className="d-flex justify-content-center gap-2 mt-3">
             <Button color="trans" shape="small-circle" size="default">
               ←

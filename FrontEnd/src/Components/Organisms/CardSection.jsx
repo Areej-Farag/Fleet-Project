@@ -1,14 +1,17 @@
-
+// src/Components/Organisms/CardSection.js
 import { useState } from "react";
+import { Link } from "react-router-dom"; // استيراد Link
 import Card from "../Molecules/Card";
 import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
+import Typograph from "../Atoms/Typograph";
 import { AiOutlineCheck } from "react-icons/ai";
 
 const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
 
   const staysData = trips.map((trip) => ({
+    id: trip.id, // إضافة الـ id لكل كارد
     imageSrc: trip.image,
     title: trip.name,
     totalPrice: trip.price,
@@ -19,8 +22,7 @@ const CardSection = ({ trips }) => {
     amenities: trip.features?.length > 0
       ? [
           {
-            icon: <AiOutlineCheck style={{ color: "green" ,size:"20px"}} />,
-            
+            icon: <AiOutlineCheck style={{ color: "green", size: "20px" }} />,
             text: trip.features.reduce((shortest, current) =>
               current.length < shortest.length ? current : shortest
             ),
@@ -28,7 +30,7 @@ const CardSection = ({ trips }) => {
         ]
       : [],
     badgeText: trip.category,
-    badgeColor:"white", 
+    badgeColor: "white",
     badgeTextColor: "red",
   }));
 
@@ -46,10 +48,10 @@ const CardSection = ({ trips }) => {
     <>
       <section className="card-section">
         <div className="cards-wrapper">
-          {cardsToShow.map((stay, i) => (
-            <div key={i}>
+          {cardsToShow.map((stay) => (
+            <Link key={stay.id} to={`/trip/${stay.id}`} className="card-link">
               <Card {...stay} />
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -57,14 +59,14 @@ const CardSection = ({ trips }) => {
         {staysData.length > visibleCards && (
           <div>
             <Button color="trans" size="small" onClick={handleShowMore}>
-              Show More
+             <Typograph variant="button"> Show More </Typograph>
             </Button>
           </div>
         )}
         {visibleCards > 9 && (
           <div>
             <Button color="black" size="small" onClick={handleShowLess}>
-              Show Less
+              <Typograph variant="button">Show Less </Typograph>
             </Button>
           </div>
         )}
