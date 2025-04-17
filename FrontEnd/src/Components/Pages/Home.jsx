@@ -1,14 +1,11 @@
 import React from 'react'
 import HeroSection from '../Organisms/Herosection'
-import GovernatesPage from '../Templates/choosegover'
-
-
+import AirSleepDreamSection from "./Components/Organisms/AirSleepDreamSection";
 
 export default function Home() {
   return (
     <div>
-    <GovernatesPage/>
-
+    <AirSleepDreamSection />
     <HeroSection />
     </div>
   )
