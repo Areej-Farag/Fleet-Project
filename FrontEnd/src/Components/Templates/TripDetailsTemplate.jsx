@@ -11,7 +11,7 @@ const TripDetailsTemplate = ({ trip }) => {
         <TripDetails trip={trip} />
       </div>
       <div className="trip-details-right">
-        <TripPaymentDetailes />
+        <TripPaymentDetailes trip={trip} />
       </div>
     </div>
   );

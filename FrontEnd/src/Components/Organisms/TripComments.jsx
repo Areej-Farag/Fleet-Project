@@ -22,12 +22,12 @@ export default function TripComments({
           Add your review
         </Typograph>
         <div className="small-text d-flex justify-content-between">
-          <div className="text">
+          <div className="text d-flex gap-2">
             <Typograph variant="small" color={colors.Neutrals[4]}>
-              Be the first to review
+              Kindly add your honest review 
             </Typograph>
             <Typograph variant="small" color={colors.Neutrals[2]}>
-              {tripName}
+              { "  "+tripName}
             </Typograph>
           </div>
           <div className="rate-stars">
