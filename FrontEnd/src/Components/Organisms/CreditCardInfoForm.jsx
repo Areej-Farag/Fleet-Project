@@ -2,7 +2,7 @@ import React from "react";
 import InputField from "../Atoms/InputField";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
-
+import { Link } from "react-router-dom";
 
 export default function CreditCardInfoForm() {
   return (
@@ -51,10 +51,11 @@ export default function CreditCardInfoForm() {
       </div>
         <Typograph variant="h5">Message the host</Typograph>
         <textarea placeholder="Additional Notes" cols={40} rows={7}></textarea>
-        <Button color="blue" size="default" shape="default">
+        <Link to="/paymentConfirmation/:bookingId"> <Button color="blue" size="default" shape="default">
           {" "}
           Confirm and pay
-        </Button>
+        </Button> </Link>
+        
       </form>
     </div>
   );

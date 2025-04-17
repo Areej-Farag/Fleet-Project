@@ -8,16 +8,12 @@ import Line from "../Atoms/Lines";
 import Icon from "../Atoms/Icons";
 import { companies } from "../../Mocks/Companies";
 import { AiOutlineHome } from "react-icons/ai";
-import { CiStar } from "react-icons/ci";
-import { CiTwitter } from "react-icons/ci";
-import { CiFacebook } from "react-icons/ci";
+import { CiStar, CiTwitter, CiFacebook, CiFlag1 } from "react-icons/ci";
 import { IoLogoInstagram } from "react-icons/io";
 import { FiUpload } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
-import { CiFlag1 } from "react-icons/ci";
 import Rate from "../Atoms/Rate";
 import { RiGlobalLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 export default function HostCard({
   AvatarSrc,
@@ -31,6 +27,7 @@ export default function HostCard({
   const handleBtnClick = (link) => {
     window.open(link, "_blank");
   };
+
   return (
     <>
       <div className="hostcard-container">
@@ -40,7 +37,7 @@ export default function HostCard({
               src={require("../../assets/Images/avatar.png")}
               alt="Avatar"
               size="medium"
-            ></Avatar>
+            />
           </div>
           <div className="host-info">
             <Typograph variant={"h5"} color={colors.Neutrals[2]}>
@@ -56,6 +53,7 @@ export default function HostCard({
             </div>
           </div>
         </div>
+
         <div className="hostcard-body">
           <div className="host-review d-flex">
             <Icon
@@ -77,6 +75,7 @@ export default function HostCard({
               </Typograph>
             </Icon>
           </div>
+
           <div className="hostcard-description">
             <Typograph variant={"small"} color={colors.Neutrals[4]}>
               {hostDescription}
@@ -86,16 +85,19 @@ export default function HostCard({
           <div className="hostcard-contactinfo">
             <div className="website-section">
               <Icon IconContetnt={<RiGlobalLine />} color={colors.Neutrals[4]}>
-                {" "}
-                <Link to={companies[0].socialLinks.website}>
-                  {companies[0].socialLinks.website}{" "}
-                </Link>
+                <a
+                  href={socialLinks.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {socialLinks.website}
+                </a>
               </Icon>
             </div>
+
             <div className="contactbtns d-flex align-items-center gap-2">
               <Button color="black" size="small" shape="default">
-                {" "}
-                contact{" "}
+                contact
               </Button>
               <Button
                 color="trans"
@@ -114,6 +116,7 @@ export default function HostCard({
                 iconcolor={colors.Neutrals[4]}
               />
             </div>
+
             <div className="socialmedia-links d-flex align-items-center gap-2">
               <Button
                 color="trans"
@@ -121,34 +124,35 @@ export default function HostCard({
                 shape="small-circle"
                 icon={<CiTwitter />}
                 iconcolor={colors.Neutrals[4]}
-                onClick={handleBtnClick(socialLinks.twitter)}
-              ></Button>
+                onClick={() => handleBtnClick(socialLinks.twitter)}
+              />
               <Button
                 color="trans"
                 size="small"
                 shape="small-circle"
                 icon={<CiFacebook />}
                 iconcolor={colors.Neutrals[4]}
-                onClick={handleBtnClick(socialLinks.facebook)}
-              ></Button>
+                onClick={() => handleBtnClick(socialLinks.facebook)}
+              />
               <Button
                 color="trans"
                 size="small"
                 shape="small-circle"
                 icon={<IoLogoInstagram />}
                 iconcolor={colors.Neutrals[4]}
-                onClick={handleBtnClick(socialLinks.instagram)}
-              ></Button>
+                onClick={() => handleBtnClick(socialLinks.instagram)}
+              />
             </div>
           </div>
         </div>
+
         <Line />
-        <div className="hostcard-footer  ">
+
+        <div className="hostcard-footer">
           <Typograph variant={"h6"} color={colors.Neutrals[2]}>
             {JoinDate || "joined on 11/12/2022"}
           </Typograph>
           <Icon size={24} color={colors.Neutrals[4]} IconContetnt={<CiFlag1 />}>
-            {" "}
             <Typograph variant={"small"} color={colors.Neutrals[4]}>
               report this host
             </Typograph>

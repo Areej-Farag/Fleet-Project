@@ -14,34 +14,28 @@ import BookingDetails from "../Molecules/BookingDetails";
 import Select from "../Atoms/Select";
 import { trips } from "../../Mocks/Trips";
 import Button from "../Atoms/Button";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-const bookingData = [
-  {
-    title: "$119 x 7 nights",
-    value: "$833",
-  },
-  {
-    title: "10% campaign discount",
-    value: "-$125",
-  },
-  {
-    title: "Service fee",
-    value: "$103",
-  },
-  {
-    title: "Total",
-    value: "$833",
-  },
-];
 export default function TripPaymentDetailes({
-  BookingData = bookingData,
   trip = trips[0],
 }) {
   const [selectedDate, setSelectedDate] = useState("");
   const [availableSeats, setAvailableSeats] = useState(0);
   const [selectedGuests, setSelectedGuests] = useState("");
-
+  const bookingData = [
+    {
+      title: "Initial price",
+      value: `$${+trip.price}`,
+    },
+    {
+      title: "Discount amount",
+      value: `-$${+trip.price - +trip.discount}`,
+    },
+    {
+      title: "Total price",
+      value: `$${trip.discount}`,
+    },
+  ];
   const handleDateChange = (date) => {
     setSelectedDate(date);
     const found = trip.availableDates.find((d) => d.date === date);
@@ -66,10 +60,10 @@ export default function TripPaymentDetailes({
             PropertyName={"Villa in the Forest"}
           />
           <div className="d-flex rate-container">
-            <Rate rating={"4.8"} />
+            <Rate rating={trip.rating} />
             <div className="d-flex review-count">
               <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                (12 reviews)
+                {`${trip .reviews.length} reviews`}
               </Typograph>
             </div>
           </div>
@@ -121,7 +115,7 @@ export default function TripPaymentDetailes({
         </Typograph>
         <div className="paymment-details">
           <div className="Price-details">
-            {BookingData.map((item, index) => (
+            {bookingData.map((item, index) => (
               <BookingDetails
                 key={index}
                 icon={item.icon}
