@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/AirSleepDreamSection.css';
+import '../Styles/Organisms.css';
 import ChooseGovernorate from '../Templates/choosegover';
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
