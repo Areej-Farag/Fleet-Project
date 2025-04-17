@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 import { cities as governates } from '../../Mocks/Governates'
 import TripCommentsSection from "../Templates/TripCommentsSec"
+import HeroSection from "../Organisms/Herosection";
+
 const TripPage = () => {
   const { tripId } = useParams();
   const trip = trips.find((t) => t.id === tripId);
@@ -21,7 +23,8 @@ const TripPage = () => {
             governorates={governates}
             sectionTitle="Explore Trips In Egypt"
           />
-          <TripCommentsSection/>
+          <TripCommentsSection trip={trip}/>
+          <HeroSection/>
     </div>
 
   );

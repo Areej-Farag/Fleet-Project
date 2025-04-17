@@ -10,8 +10,6 @@ function App() {
       <Navbar />
       <Outlet /> {/* هنا هتتعرض كل صفحة حسب الراوت */}
       <Footer />
-     
-
     </>
   );
 }
