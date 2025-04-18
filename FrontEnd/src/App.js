@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <App2 />
+      {/* <App2 /> */}
       <Navbar />
       <Outlet /> {/* هنا هتتعرض كل صفحة حسب الراوت */}
       <Footer />
