@@ -56,7 +56,7 @@ const CardCarousel = ({ governorates, sliderRef }) => {
             >
               <div className="carousel-card-wrapper">
                 <DetailedCard
-                  imageSrc={img1}
+                  imageSrc={gov.image || img1}
                   title={gov.name}
                   badgeText={`${gov.trips.length} Available Trips`}
                   badgeColor="black"

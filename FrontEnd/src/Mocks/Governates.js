@@ -2,8 +2,9 @@ export const cities = [
   {
     name: "Cairo",
     id: "A001",
-    image: "cairo_city.jpg",
-    description: "The bustling capital of Egypt, home to ancient pyramids, historic mosques, and vibrant markets.",
+    image: "https://wallpapercave.com/wp/wp1999679.jpg",
+    description:
+      "The bustling capital of Egypt, home to ancient pyramids, historic mosques, and vibrant markets.",
     video: "cairo_promo.mp4",
     trips: [
       { id: "T001", name: "Trip to Giza Pyramids and Sphinx" },
@@ -21,8 +22,9 @@ export const cities = [
   {
     name: "Giza",
     id: "A002",
-    image: "giza_city.jpg",
-    description: "Famous for the Great Pyramids and the Sphinx, a must-visit for history lovers.",
+    image: "https://wallpapercave.com/wp/wp9116314.jpg",
+    description:
+      "Famous for the Great Pyramids and the Sphinx, a must-visit for history lovers.",
     video: "giza_promo.mp4",
     trips: [
       { id: "T011", name: "Great Pyramids and Sphinx Tour" },
@@ -40,8 +42,9 @@ export const cities = [
   {
     name: "Alexandria",
     id: "A003",
-    image: "alexandria_city.jpg",
-    description: "The Pearl of the Mediterranean, known for its ancient library and stunning coastline.",
+    image: "https://wallpapercave.com/wp/wp11896325.jpg",
+    description:
+      "The Pearl of the Mediterranean, known for its ancient library and stunning coastline.",
     video: "alexandria_promo.mp4",
     trips: [
       { id: "T021", name: "Qaitbay Citadel and Library Tour" },
@@ -58,8 +61,10 @@ export const cities = [
   {
     name: "Suez",
     id: "A004",
-    image: "suez_city.jpg",
-    description: "A key city on the Suez Canal, blending history with natural beauty.",
+    image:
+      "https://th.bing.com/th/id/R.672794b65550206f766243bd1263d604?rik=t5YkhbZnxA9QKA&riu=http%3a%2f%2ffile.mahalo.cz%2f2013%2f03%2fsuez.jpg&ehk=pGNYGpnlcsMSR4ggRyUy03mCgkIJAH0MuqM0SRWI4Jw%3d&risl=&pid=ImgRaw&r=0",
+    description:
+      "A key city on the Suez Canal, blending history with natural beauty.",
     video: "suez_promo.mp4",
     trips: [
       { id: "T030", name: "Suez Canal Tour" },
@@ -77,7 +82,7 @@ export const cities = [
   {
     name: "North Sinai",
     id: "A005",
-    image: "north_sinai_city.jpg",
+    image: "https://wallpapercave.com/wp/wp4708896.jpg",
     description: "A region with a rich Bedouin culture and historical sites.",
     video: "north_sinai_promo.mp4",
     trips: [
@@ -95,8 +100,9 @@ export const cities = [
   {
     name: "Sharm El Sheikh",
     id: "A006",
-    image: "sharm_el_sheikh_city.jpg",
-    description: "A premier resort destination with world-class diving and beaches.",
+    image: "https://wallpaperaccess.com/full/1946049.jpg",
+    description:
+      "A premier resort destination with world-class diving and beaches.",
     video: "sharm_promo.mp4",
     trips: [
       { id: "T049", name: "Diving Trip in Sharm El Sheikh" },
@@ -108,8 +114,10 @@ export const cities = [
   {
     name: "Dahab",
     id: "A007",
-    image: "dahab_city.jpg",
-    description: "A laid-back coastal town known for its diving and snorkeling spots.",
+    image:
+      "https://www.weseektravel.com/wp-content/uploads/2022/05/blue-lagoon-dahab-14-1024x683.jpg",
+    description:
+      "A laid-back coastal town known for its diving and snorkeling spots.",
     video: "dahab_promo.mp4",
     trips: [
       { id: "T053", name: "Snorkeling in Dahab" },
@@ -119,8 +127,9 @@ export const cities = [
   {
     name: "South Sinai",
     id: "A008",
-    image: "south_sinai_city.jpg",
-    description: "A region known for Mount Sinai and St. Catherine Monastery, perfect for spiritual adventures.",
+    image: "https://cdn.wallpapersafari.com/98/67/DlUMCm.jpg",
+    description:
+      "A region known for Mount Sinai and St. Catherine Monastery, perfect for spiritual adventures.",
     video: "south_sinai_promo.mp4",
     trips: [
       { id: "T055", name: "Mount Sinai Sunrise Hike" },
@@ -131,7 +140,8 @@ export const cities = [
   {
     name: "Fayoum",
     id: "A009",
-    image: "fayoum_city.jpg",
+    image:
+      "https://th.bing.com/th/id/R.32b8ea1f6680c95ef64653ef374b5a25?rik=m1YhwFuvj4QgfA&pid=ImgRaw&r=0",
     description: "An oasis region with lakes, waterfalls, and ancient ruins.",
     video: "fayoum_promo.mp4",
     trips: [
@@ -147,8 +157,10 @@ export const cities = [
   {
     name: "Minya",
     id: "A010",
-    image: "minya_city.jpg",
-    description: "A region with ancient archaeological sites and a rich history.",
+    image:
+      "https://www.egypttoursportal.com/images/2020/10/2-Days-El-Minya-Tour-from-Cairo-Egypt-Tours-Portal.jpg",
+    description:
+      "A region with ancient archaeological sites and a rich history.",
     video: "minya_promo.mp4",
     trips: [
       { id: "T065", name: "Beni Hassan Tombs Tour" },
@@ -159,8 +171,9 @@ export const cities = [
   {
     name: "Asyut",
     id: "A011",
-    image: "asyut_city.jpg",
-    description: "A region on the Nile with historical and religious significance.",
+    image: "https://wallpapercave.com/wp/wp9116172.jpg",
+    description:
+      "A region on the Nile with historical and religious significance.",
     video: "asyut_promo.mp4",
     trips: [
       { id: "T068", name: "Asyut City Tour" },
@@ -172,7 +185,7 @@ export const cities = [
   {
     name: "Qena",
     id: "A012",
-    image: "qena_city.jpg",
+    image: "https://www.10wallpaper.com/wallpaper/1440x900/2410/Temple_of_Hathor_Dendera_Temple_Qena_Egypt_Bing_4K_1440x900.jpg",
     description: "A region with ancient temples and a rich cultural heritage.",
     video: "qena_promo.mp4",
     trips: [
@@ -183,8 +196,10 @@ export const cities = [
   {
     name: "Aswan",
     id: "A013",
-    image: "aswan_city.jpg",
-    description: "A serene city on the Nile, famous for its ancient temples and beautiful landscapes.",
+    image:
+      "https://th.bing.com/th/id/R.a8924f15a57cdf0e6ca9023f544eafe2?rik=box1AQyZrKKdwQ&pid=ImgRaw&r=0",
+    description:
+      "A serene city on the Nile, famous for its ancient temples and beautiful landscapes.",
     video: "aswan_promo.mp4",
     trips: [
       { id: "T074", name: "Philae Temple Tour" },
@@ -201,8 +216,9 @@ export const cities = [
   {
     name: "Luxor",
     id: "A014",
-    image: "luxor_city.jpg",
-    description: "The city of history and civilization, where pharaonic wonders meet the beauty of the Nile.",
+    image: "https://wallpapercave.com/wp/wp3722098.jpg",
+    description:
+      "The city of history and civilization, where pharaonic wonders meet the beauty of the Nile.",
     video: "luxor_promo.mp4",
     trips: [
       { id: "T083", name: "Karnak Temple Tour" },
@@ -219,8 +235,9 @@ export const cities = [
   {
     name: "Hurghada",
     id: "A015",
-    image: "hurghada_city.jpg",
-    description: "A vibrant coastal city with stunning beaches and coral reefs, perfect for diving.",
+    image: "https://wallpaperaccess.com/full/1676131.jpg",
+    description:
+      "A vibrant coastal city with stunning beaches and coral reefs, perfect for diving.",
     video: "hurghada_promo.mp4",
     trips: [
       { id: "T092", name: "Hurghada Snorkeling Trip" },
@@ -235,28 +252,28 @@ export const cities = [
   {
     name: "El Gouna",
     id: "A016",
-    image: "el_gouna_city.jpg",
-    description: "A luxurious resort town with lagoons, beaches, and a vibrant marina.",
+    image: "https://file.mahalo.cz/2013/03/el-gouna.jpg",
+    description:
+      "A luxurious resort town with lagoons, beaches, and a vibrant marina.",
     video: "el_gouna_promo.mp4",
-    trips: [
-      { id: "T099", name: "El Gouna City Tour" },
-    ],
+    trips: [{ id: "T099", name: "El Gouna City Tour" }],
   },
   {
     name: "Red Sea",
     id: "A017",
-    image: "red_sea_city.jpg",
-    description: "A coastal region with additional beach destinations like Makadi Bay.",
+    image:
+      "https://kundutirthoovraman.com/wp-content/uploads/2024/04/historical-egypt-red-sea-gallery-2.jpg",
+    description:
+      "A coastal region with additional beach destinations like Makadi Bay.",
     video: "red_sea_promo.mp4",
-    trips: [
-      { id: "T100", name: "Makadi Bay Beach Day" },
-    ],
+    trips: [{ id: "T100", name: "Makadi Bay Beach Day" }],
   },
   {
     name: "New Valley",
     id: "A018",
     image: "new_valley_city.jpg",
-    description: "A desert region with oases, ancient ruins, and unique landscapes.",
+    description:
+      "A desert region with oases, ancient ruins, and unique landscapes.",
     video: "new_valley_promo.mp4",
     trips: [
       { id: "T101", name: "Kharga Oasis Tour" },
@@ -273,8 +290,10 @@ export const cities = [
   {
     name: "Matrouh",
     id: "A019",
-    image: "matrouh_city.jpg",
-    description: "A Mediterranean region with pristine beaches and a relaxed vibe.",
+    image:
+      "https://www.ra2d.com/images/wallpapers/city/ra2d.com.aspx?w=1920&h=1080&img=Egypt-Marsa-Matrouh-Cleopatra-Nature-Ra2D.jpg",
+    description:
+      "A Mediterranean region with pristine beaches and a relaxed vibe.",
     video: "matrouh_promo.mp4",
     trips: [
       { id: "T110", name: "Mersa Matrouh Beach Day" },
