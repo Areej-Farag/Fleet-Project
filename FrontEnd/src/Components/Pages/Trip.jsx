@@ -7,6 +7,11 @@ import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 import { cities as governates } from '../../Mocks/Governates'
 import TripCommentsSection from "../Templates/TripCommentsSec"
 import HeroSection from "../Organisms/Herosection";
+import ImageGridTemplate from "../Templates/ImageGridTemplate";
+import img1 from "../../assets/Images/img1.PNG";
+import img2 from "../../assets/Images/img2.PNG";
+import img3 from "../../assets/Images/img3.PNG";
+import primary from "../../assets/Images/primary img.png";
 
 const TripPage = () => {
   const { tripId } = useParams();
@@ -17,7 +22,11 @@ const TripPage = () => {
   }
 
   return (
+  
     <div>
+        <div className="trip-grid-Photos"> 
+        <ImageGridTemplate mainImage={[primary]} smallImages={[img1, img2, img3]} />
+    </div>
       <TripDetailsTemplate trip={trip} />
       <NearbyGovernoratesSectionTemplate
             governorates={governates}

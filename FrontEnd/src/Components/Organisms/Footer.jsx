@@ -4,7 +4,7 @@ import logo from '../../assets/Images/logo.png';
 import ImageComponent from '../Atoms/ImageComponent';
 import Typography from '../Atoms/Typograph';
 import NewsletterForm from '../Molecules/NewsLetterForm';
-import '../Styles/Footer.css';
+import '../Styles/organisms.css';
 
 const Footer = () => {
   return (
