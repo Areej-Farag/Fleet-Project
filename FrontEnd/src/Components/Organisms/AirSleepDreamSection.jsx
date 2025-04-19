@@ -53,22 +53,26 @@ const AirSleepDreamSection = ({
           </div>
 
           {searchVisible && (
-            <div className="search-box">
-              <div className="location-box">
+            <div className="search-box d-flex ">
+              <div className="location-box ">
                 <label className="location-label">
                   <FaMapMarkerAlt style={{ marginRight: "6px" }} />
                   Location
                 </label>
                 <p className="location-sub">Where are you going?</p>
               </div>
-
-              <div className="select-wrapper">
+              <div className="select-wrapper d-flex align-items-center">
                 <ChooseGovernorate onChange={handleSelect} />
+                <Button
+                  shape="small-circle"
+                  size="default"
+                  color="blue"
+                  icon={<FaSearch />}
+                  iconSize={20}
+                  
+                >
+                </Button>
               </div>
-
-              <button className="icon-btn">
-                <FaSearch />
-              </button>
             </div>
           )}
         </div>

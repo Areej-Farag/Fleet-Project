@@ -1,11 +1,15 @@
 import React from "react";
 import CardCarousel from "../Organisms/CardCarousel";
-import { cities } from "../../Mocks/Governates";
+import { cities as governates } from '../../Mocks/Governates'
+import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 
-const SuggestedPlacesTemplate = ({ suggestions = cities }) => {
+const SuggestedPlacesTemplate = ({ suggestions = governates }) => {
   return (
     <div className="suggested-places-template py-5">
-      <CardCarousel sectionTitle="You may also like" cities={suggestions} />
+        <NearbyGovernoratesSectionTemplate
+            governorates={governates}
+            sectionTitle="Explore Trips In Egypt"
+          />
     </div>
   );
 };

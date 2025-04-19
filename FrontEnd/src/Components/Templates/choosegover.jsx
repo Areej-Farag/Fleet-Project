@@ -23,9 +23,8 @@ const GovernatesPage = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Select A City </h1>
-      <div style={{ marginBottom: "1.5rem" }}>
+    <div style={{ padding: "20px" , width: "100%"}}>
+      <div >
         <select
           className="governate-selector"
           value={selectedGovernate}

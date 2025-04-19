@@ -1,37 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import WishlistHeaderTemplate from "../Templates/wishlistHeaderTemplate";
 import SuggestedPlacesTemplate from "../Templates/suggestedplacetemplate";
+import { users } from "../../Mocks/Users";
+import { trips } from "../../Mocks/Trips";
+import { useParams } from "react-router";
+
 
 const WishlistPage = () => {
-  const bookings = [
-    {
-      id: 1,
-      airline: "Emirates",
-      from: "AKL",
-      to: "SGN",
-      departure: "5:45 AM",
-      arrival: "9:45 AM",
-    },
-    {
-      id: 2,
-      airline: "Emirates",
-      from: "AKL",
-      to: "SGN",
-      departure: "5:45 AM",
-      arrival: "9:45 AM",
-    },
-  ];
+  const [wishlist, setWishlist] = useState([]);
+  const { userId } = useParams();
 
-  const suggestions = [
-    { title: "Nature house", image: "img1.jpg", price: "$82,006" },
-    { title: "Nature house", image: "img2.jpg", price: "$82,006" },
-    { title: "Nature house", image: "img3.jpg", price: "$82,006" },
-  ];
+  useEffect(() => {
+    const user = users.find((user) => user.id === userId);
+    if (user && user.wishlist) {
+      const userWishlist = user.wishlist.map((item) =>
+        trips.find((trip) => trip.id === item.id)
+      ).filter(Boolean); 
+      setWishlist(userWishlist);
+    }
+  }, [userId]);
+console.log(wishlist);
 
   return (
     <div>
-      <WishlistHeaderTemplate bookings={bookings} />
-      <SuggestedPlacesTemplate suggestions={suggestions} />
+      <WishlistHeaderTemplate trips={wishlist} />
+      <SuggestedPlacesTemplate />
     </div>
   );
 };

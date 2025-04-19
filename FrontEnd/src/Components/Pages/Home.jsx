@@ -1,6 +1,5 @@
 import React from "react";
 import HeroSection from "../Organisms/Herosection";
-import GovernatesPage from "../Templates/choosegover";
 import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 import { cities as governates } from "../../Mocks/Governates";
