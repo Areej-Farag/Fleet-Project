@@ -10,9 +10,11 @@ export default function Home() {
     <>
       <div>
         {" "}
-        <AirSleepDreamSection  />
+        <AirSleepDreamSection />
       </div>
-      <HowItWorksSection />
+      <div style={{ marginTop: "110px" }}>
+        <HowItWorksSection />
+      </div>
       <div className="mt-5">
         <NearbyGovernoratesSectionTemplate
           governorates={governates}
