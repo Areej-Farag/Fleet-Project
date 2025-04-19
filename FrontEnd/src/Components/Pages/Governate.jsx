@@ -23,11 +23,14 @@ const TripsPage = () => {
 
   return (
     <div className="trips-page">
-      <AirSleepDreamSection sectionTitle={selectedGovernate?.name} HomeImg={selectedGovernate?.image || houseImage} searchVisible={false} />
+      <AirSleepDreamSection sectionTitle={selectedGovernate?.name} HomeImg={selectedGovernate?.image || houseImage} searchVisible={false}  centerText={true}/>
       <NavigationBar />
       <FilterSection onFilterChange={handleFilterChange} />
       <Lines />
-      <TripTemplate selectedCategory={selectedCategory} />
+      <div className="trips-container container-fluid">
+              <TripTemplate selectedCategory={selectedCategory} />
+
+      </div>
       <NearbyGovernoratesSectionTemplate
         governorates={governates}
         sectionTitle="Explore Trips In Egypt"
