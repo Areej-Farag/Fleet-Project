@@ -1,0 +1,206 @@
+.air-sleep-dream {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 47px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  padding: 60px 30px;
+  position: relative;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 96px;
+  letter-spacing: -2%;
+  color: var(--color-neutral-2);
+  margin-left: 50%;
+}
+
+.text-content p {
+  font-size: 24px;
+  margin: 16px 0;
+  line-height: 32px;
+}
+.text-content button {
+  border-color: transparent !important;
+  outline: none;
+}
+.search-button {
+  background-color: var(--color-primary-1);
+  color: var(--color-neutral-8);
+  padding: 10px 20px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === Search Box Style === */
+.search-box {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background: var(--color-neutral-7);
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  max-width: 1800px;
+  z-index: 10;
+  gap: 20px;
+}
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; /* خلي المحتوى يطلع فوق */
+  height: 100%; /* ياخد كل ارتفاع السيرش بوكس */
+  padding-top: 8px; /* مسافة بسيطة من فوق */
+}
+
+.location-label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  margin-bottom: 4px;
+  color: var(--text-dark);
+}
+
+.location-sub {
+  font-size: 19px;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.select-wrapper {
+  justify-self: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.icon-btn {
+  background-color: var(--color-primary-1);
+  color: var(--color-neutral-8);
+  border: none;
+  border-radius: 50%;
+  padding: 10px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-self: end;
+}
+
+/* === Responsive Style === */
+@media (max-width: 768px) {
+  .air-sleep-dream {
+    height: auto;
+    margin: 1rem;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .overlay {
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    border-radius: 25px;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* وسّط المحتوى */
+    gap: 1.5rem;
+  }
+
+  .text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-left: 0;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px;
+  }
+
+  .search-box {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    max-width: 500px;
+    z-index: 10;
+    gap: 20px;
+  
+  }
+
+  .location-box {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .select-wrapper {
+    width: 100%;
+  }
+
+  .icon-btn {
+    align-self: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+.text-content {
+  transition: all 0.3s ease-in-out;
+}
+
+/* الوضع الافتراضي على الشمال */
+.text-content.left {
+  text-align: left;
+  margin-left: 0;
+}
+
+
+/* لو تم اختيار محافظة يكون في النص */
+.text-content.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
