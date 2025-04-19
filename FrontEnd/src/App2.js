@@ -1,14 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import WishlistPage from "./Components/Pages/Wishlist.jsx";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<WishlistPage />} />
-      </Routes>
-    </Router>
+ <>
+ </>
   );
 }
 

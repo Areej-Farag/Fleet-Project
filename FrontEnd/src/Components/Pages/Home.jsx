@@ -1,6 +1,5 @@
 import React from "react";
 import HeroSection from "../Organisms/Herosection";
-import GovernatesPage from "../Templates/choosegover";
 import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 import { cities as governates } from "../../Mocks/Governates";
@@ -12,7 +11,7 @@ export default function Home() {
         {" "}
         <AirSleepDreamSection  />
       </div>
-      <div className="mt-5">
+      <div style={{marginTop: "110px"}}>
         <NearbyGovernoratesSectionTemplate
           governorates={governates}
           sectionTitle="Explore Trips In Egypt"
