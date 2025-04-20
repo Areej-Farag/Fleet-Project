@@ -223,66 +223,6 @@
   border: none;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1225px) {
-  .city-overview {
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .overview-left,
-  .overview-right {
-    width: 416px;
-    max-width: 100%;
-  }
-
-  .video-container {
-    max-height: unset;
-  }
-
-  .video-iframe {
-    height: 440px;
-    width: 416px;
-  }
-}
-
-@media (max-width: 768px) {
-  .city-overview {
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: auto;
-  }
-  .overview-left {
-    height: 406px;
-  }
-
-  .overview-title {
-    margin-bottom: 32px;
-  }
-  .overview-left,
-  .overview-right {
-    width: 311px;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .video-container {
-    height: 360px;
-    width: 311px;
-  }
-
-  .video-iframe {
-    height: 100%;
-    width: 100%;
-    border-radius: 12px;
-  }
-}
-
 /*--------random governates card---------------*/
 
 .nearby-governorates-section {
@@ -341,7 +281,59 @@
   display: none;
 }
 
+/*---------card temp----------*/
+
+.trip-template {
+  width: 100%;
+  padding: 80px 42px 136px 42px;
+  direction: ltr;
+}
+
+.card-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5;
+}
+.section-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.trip-details-template {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  gap: 48px;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1225px) {
+  .city-overview {
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .overview-left,
+  .overview-right {
+    width: 416px;
+    max-width: 100%;
+  }
+
+  .video-container {
+    max-height: unset;
+  }
+
+  .video-iframe {
+    height: 440px;
+    width: 416px;
+  }
   .nearby-governorates-section {
     margin-left: 40px;
     margin-right: 40px;
@@ -349,6 +341,38 @@
 }
 
 @media (max-width: 768px) {
+  .city-overview {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+  }
+  .overview-left {
+    height: 406px;
+  }
+
+  .overview-title {
+    margin-bottom: 32px;
+  }
+  .overview-left,
+  .overview-right {
+    width: 311px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .video-container {
+    height: 360px;
+    width: 311px;
+  }
+
+  .video-iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+  }
   .nearby-governorates-section {
     margin-left: 32px;
     margin-right: 32px;
@@ -369,44 +393,7 @@
     justify-content: flex-start;
     margin-top: 20px;
   }
-
-  .trip-template {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
-/*---------card temp----------*/
-
-.trip-template {
-  width: 100%;
-  padding: 80px 140px 136px 140px;
-  direction: ltr;
-}
-
-.card-head {
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 5;
-}
-.section-title {
-  margin-bottom: 24px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.trip-details-template {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto 80px auto;
-  gap: 48px;
-}
-
 /*image grid template*/
 .image-grid-template {
   display: flex;

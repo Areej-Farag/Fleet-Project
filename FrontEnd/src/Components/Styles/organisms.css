@@ -1159,7 +1159,6 @@
     width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
   }
 }
-
 /*------------card section----------*/
 
 .card-section {
@@ -1190,25 +1189,13 @@
   margin-top: 48px;
 }
 
-/* Responsive  */
-@media screen and (min-width: 600px) and (max-width: 1225px) {
-  .cards-wrapper {
-    justify-content: center;
-  }
-
-  .trip-template {
-    padding: 40px 70px 68px 70px;
-  }
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (max-width: 599px) {
-  .cards-wrapper {
-    justify-content: center;
-  }
-
-  .trip-template {
-    padding: 20px 20px 40px 20px;
-  }
+.card-link:hover {
+  text-decoration: none;
 }
 
 /*------------card carousal--------------------*/
@@ -1269,21 +1256,17 @@
   padding: 20px;
 }
 
-/* Responsive Adjustments: Keep the same width */
-@media screen and (min-width: 600px) and (max-width: 1225px) {
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
+.governate-card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (max-width: 599px) {
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
-  .card-carousel {
-    margin-bottom: 40px;
-  }
+.governate-card-link:hover {
+  text-decoration: none;
 }
+
+
+
 
 /*-------------navigation bar-------------------*/
 
@@ -1340,7 +1323,28 @@
   border-radius: 50px;
 }
 
-@media (max-width: 769px) {
+
+
+/* Responsive  */
+@media screen and (min-width: 769px) and (max-width: 1225px) {
+  .cards-wrapper {
+    justify-content: center;
+  }
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    justify-content: center;
+  }
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
+  .card-carousel {
+    margin-bottom: 40px;
+  }
   .navigation-bar {
     display: flex;
     align-items: center;
@@ -1364,26 +1368,6 @@
     width: 100%;
     max-width: 300px;
   }
-}
-
-/*------------cardsection--------------------- */
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link:hover {
-  text-decoration: none;
-}
-
-/*-----------card carsual---------------*/
-.governate-card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.governate-card-link:hover {
-  text-decoration: none;
 }
 
 /*-----------trip details-------------*/
