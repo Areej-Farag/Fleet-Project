@@ -1581,3 +1581,129 @@
     transform: translateY(-10px);
   }
 }
+/* Adventure Section */
+.adventure-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.adventure-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.adventure-subtitle {
+  font-size: 1rem;
+  color: var(--color-neutral-4);
+  margin-bottom: 3rem;
+}
+
+.adventure-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.adventure-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  background-color: var(--color-neutral-8);
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.card-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.places-badge {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+  color: var(--color-neutral-3);
+}
+
+.adventure-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-button {
+  background-color: var(--color-neutral-8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-neutral-1);
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .adventure-cards {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .adventure-card {
+    display: none;
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .adventure-card.active {
+    display: flex;
+  }
+}
+/* إخفاء الأسهم في الديسكتوب */
+.adventure-nav {
+  display: none;
+}
+
+/* إظهار الأسهم فقط في الموبايل */
+@media (max-width: 768px) {
+  .adventure-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .adventure-card {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .adventure-card.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+    
