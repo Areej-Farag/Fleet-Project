@@ -1493,7 +1493,10 @@
 
 .card-icon {
   background: var(--color-stroke);
-  border-radius: 48px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
   padding: 15px;
   color: var(--color-stroke);
   font-size: 28px;
@@ -1690,4 +1693,14 @@
     transform: translateX(0);
   }
 }
-    
+.adventure-cards img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+
+}
+.step-card .card-icon-wrapper:hover{
+  transform: rotate(0deg);
+  transform: scale(1.1);
+
+
+}
