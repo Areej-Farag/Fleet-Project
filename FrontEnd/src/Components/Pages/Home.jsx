@@ -4,6 +4,7 @@ import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
 import { cities as governates } from "../../Mocks/Governates";
 import HowItWorksSection from "../Organisms/HowItWorksSection";
+import AdventureSection from "../Organisms/AdventureSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <div style={{ marginTop: "110px" }}>
         <HowItWorksSection />
+        <AdventureSection />
       </div>
       <div className="mt-5">
         <NearbyGovernoratesSectionTemplate
