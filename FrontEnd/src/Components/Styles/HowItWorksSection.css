@@ -1,92 +1,137 @@
-/* HowItWorksSection */
-/* استيراد خط Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-
-:root {
-    --gray-900: #333333;   /* رمادي داكن جدًا - غالبًا للعناوين أو النصوص الأساسية */
-    --gray-700: #666666;   /* رمادي متوسط - للنصوص الثانوية */
-    --gray-100: #f8f9fc;   /* خلفية فاتحة جدًا */
-    --green-100: #e6f4e5;  /* خلفية خضراء هادية */
-    --green-500: #34a853;  /* أخضر أساسي - أزرار نجاح أو حالة إيجابية */
-    --blue-100: #e3edfc;   /* خلفية زرقاء هادية */
-    --blue-500: #4285f4;   /* أزرق أساسي - أزرار أو روابط */
-    --purple-100: #f3e5f5; /* خلفية بنفسجية هادية */
-    --purple-500: #9c27b0; /* بنفسجي أساسي - أزرار أو تمييز */
-    --white: rgb(255, 255, 255);
-
+.how-it-works-section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    background: var(--color-neutral-8);
+    overflow: hidden;
   }
   
-body {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  background-color: var(--gray-100);
-  margin: 0;
-  padding: 0;
-}
-
-.how-it-works {
-  padding: 50px 20px;
-}
-
-h2 {
-  font-size: 24px;
-  color: var(--gray-900);
-}
-
-p {
-  color: var(--gray-700);
-  font-size: 14px;
-}
-
-.steps-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.step {
-  background: var(--white);
-  padding: 25px ;
-  border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  width: 270px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.step:hover {
-  transform: translateY(-5px);
-}
-
-/* أيقونات بنفس الألوان */
-.icon {
-  font-size: 50px; /* نفس الحجم الكبير اللي بالصورة */
-  padding: 25px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-/* لون الأيقونات */
-.green-bg {
-  background: var(--green-100);
-  color: var(--green-500);
-}
-
-.blue-bg {
-  background: var(--blue-100);
-  color: var(--blue-500);
-}
-
-.purple-bg {
-  background: var(--purple-100);
-  color: var(--purple-500);
-}
-
-h3 {
-  font-size: 20px;
-  color: var(--gray-900);
-  margin-bottom: 10px;
-}
+  .how-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--color-neutral-2);
+  }
+  
+  .how-subtitle {
+    font-size: 18px;
+    color: var(--color-neutral-4);
+    margin-bottom: 60px;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .step-card {
+    width: 250px;
+    text-align: center;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .card-icon-wrapper {
+    background-color: var(--color-neutral-7);
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin: 0 auto 20px;
+    transform: rotate(-15deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .card-icon {
+    background: var(--color-stroke);
+    border-radius: 48px;
+    padding: 15px;
+    color: var(--color-stroke);
+    font-size: 28px;
+    transform: rotate(15deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--color-neutral-2);
+    font-weight: 600;
+  }
+  
+  .step-description {
+    font-size: 14px;
+    color: var(--color-neutral-4);
+    margin-top: 8px;
+  }
+  
+  .dotted-line {
+    position: absolute;
+    top: 190px;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    border-top: 2px dotted var(--color-stroke);
+    z-index: 0;
+  }
+  
+  /* Floating decorative elements */
+  .floating {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .purple {
+    background-color: #9b59b6;
+    top: 30%;
+    left: 10%;
+  }
+  
+  .yellow {
+    background-color: #f1c40f;
+    top: 40%;
+    left: 50%;
+  }
+  
+  .red {
+    background-color: #e74c3c;
+    top: 60%;
+    right: 20%;
+  }
+  
+  .blue {
+    background-color: #3498db;
+    top: 25%;
+    right: 10%;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
