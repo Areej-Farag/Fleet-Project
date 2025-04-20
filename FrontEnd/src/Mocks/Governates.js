@@ -2,7 +2,7 @@ export const cities = [
   {
     name: "Cairo",
     id: "A001",
-    image: "https://wallpapercave.com/wp/wp1999679.jpg",
+    image: "https://wallpaperaccess.com/full/1736774.jpg",
     description:
       "The bustling capital of Egypt, home to ancient pyramids, historic mosques, and vibrant markets.",
     video: "cairo_promo.mp4",
