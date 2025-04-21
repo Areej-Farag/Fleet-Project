@@ -478,7 +478,8 @@
 }
 
 .select-box-container {
-  display: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   background: var(--color-neutral-8);

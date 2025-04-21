@@ -12,7 +12,7 @@ import { trips } from "../../Mocks/Trips";
 import Line from "../Atoms/Lines";
 export default function TripComments({
   tripName,
-  reviewsCont,
+  tripRate,
   tripReviews = trips[0].reviews,
 }) {
   return (

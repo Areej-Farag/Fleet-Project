@@ -23,7 +23,7 @@ const TripPage = () => {
 
   return (
   
-    <div>
+    <div className="trip-page-container flex-column justify-content-center">
         <div className="trip-grid-Photos"> 
         <ImageGridTemplate mainImage={[primary]} smallImages={[img1, img2, img3]} />
     </div>
