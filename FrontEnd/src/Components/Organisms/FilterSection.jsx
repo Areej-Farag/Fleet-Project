@@ -34,7 +34,7 @@ const FilterSection = ({ onFilterChange }) => {
   return (
     <div className="filter-section">
       <Typograph variant="h2" bold="True" className="filter-title">
-        
+      Places to visit
       </Typograph>
       <SelectBox
         label=""
