@@ -128,12 +128,12 @@ export default function TripPaymentDetailes({
       </div>
       <div className="buttonsCont">
         <Link to={`/payment/${trip.id}`}>
-          <Button color="blue" size="default" shape="default">
+          <Button color="blue" size="defaultt" shape="default">
             {" "}
             Book{" "}
           </Button>
         </Link>
-        <Button color="black" size="default" shape="default">
+        <Button color="black" size="defaultt" shape="default">
           {" "}
           + Save{" "}
         </Button>

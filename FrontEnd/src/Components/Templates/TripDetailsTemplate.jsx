@@ -6,6 +6,7 @@ import "../Styles/templates.css";
 
 const TripDetailsTemplate = ({ trip }) => {
   return (
+  
     <div className="trip-details-template">
       <div className="trip-details-left">
         <TripDetails trip={trip} />
@@ -14,6 +15,7 @@ const TripDetailsTemplate = ({ trip }) => {
         <TripPaymentDetailes trip={trip} />
       </div>
     </div>
+
   );
 };
 

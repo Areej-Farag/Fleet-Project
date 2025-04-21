@@ -101,7 +101,7 @@ export default function HostCard({
               </Button>
               <Button
                 color="trans"
-                size="default"
+                size="small"
                 shape="small-circle"
                 icon={<FiUpload />}
                 iconSize={18}
@@ -109,7 +109,7 @@ export default function HostCard({
               />
               <Button
                 color="trans"
-                size="default"
+                size="small"
                 shape="small-circle"
                 icon={<BsThreeDots />}
                 iconSize={16}

@@ -2,14 +2,24 @@ import React from 'react';
 import "../Styles/templates.css";
 import Typograph from "../Atoms/Typograph";
 
-
 const convertToEmbedUrl = (url) => {
-    if (url.includes("youtu.be")) {
-      const videoId = url.split("youtu.be/")[1];
-      return `https://www.youtube.com/embed/${videoId}`;
-    }
-    return url;
-  };
+  if (!url) return ""; 
+  if (url.includes("youtube.com/embed")) return url; 
+
+  if (url.includes("youtu.be")) {
+    const videoId = url.split("youtu.be/")[1]?.split("?")[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  }
+
+  if (url.includes("youtube.com/watch")) {
+    const videoId = url.split("v=")[1]?.split("&")[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  }
+
+  return "";
+};
+
+
 
 const CityOverview = ({ description, videoUrl }) => {
   return (

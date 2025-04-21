@@ -4,8 +4,8 @@ export const cities = [
     id: "A001",
     image: "https://wallpaperaccess.com/full/1736774.jpg",
     description:
-      "The bustling capital of Egypt, home to ancient pyramids, historic mosques, and vibrant markets.",
-    video: "cairo_promo.mp4",
+     "Cairo, the vibrant capital of Egypt, is a city where ancient history and modern life intertwine seamlessly. Home to the iconic Giza Pyramids and the enigmatic Sphinx, Cairo offers a glimpse into the wonders of ancient Egypt. Explore the treasures of the Egyptian Museum, wander through the bustling Khan El Khalili Bazaar, or enjoy a serene Nile River cruise. With its historic mosques, Coptic churches, and lively street markets, Cairo is a cultural hub that captivates every visitor.",  
+      video: "https://www.youtube.com/embed/VM8KNhP7iCA?si=ZAw6aXuVqTcbRmNE",
     trips: [
       { id: "T001", name: "Trip to Giza Pyramids and Sphinx" },
       { id: "T002", name: "Egyptian Museum Tour" },
@@ -24,8 +24,8 @@ export const cities = [
     id: "A002",
     image: "https://wallpapercave.com/wp/wp9116314.jpg",
     description:
-      "Famous for the Great Pyramids and the Sphinx, a must-visit for history lovers.",
-    video: "giza_promo.mp4",
+      "Giza, just outside Cairo, is world-famous for the Great Pyramids and the Great Sphinx, monumental testaments to Egypt’s ancient civilization. This historic city offers more than just pyramids; visitors can explore the ancient necropolis of Saqqara, ride camels across the desert, or witness the mesmerizing Sound and Light Show at the Pyramids. Giza’s blend of archaeological wonders and desert landscapes makes it a must-visit for history enthusiasts and adventurers alike.",  
+       video: "https://www.youtube.com/embed/u1S9p3IfCV0?si=fr-4nGO8_p3cn3k2",
     trips: [
       { id: "T011", name: "Great Pyramids and Sphinx Tour" },
       { id: "T012", name: "Camel Ride at the Pyramids" },
@@ -44,8 +44,8 @@ export const cities = [
     id: "A003",
     image: "https://wallpapercave.com/wp/wp11896325.jpg",
     description:
-      "The Pearl of the Mediterranean, known for its ancient library and stunning coastline.",
-    video: "alexandria_promo.mp4",
+     "Known as the Pearl of the Mediterranean, Alexandria is a coastal city steeped in history and charm. Once home to the legendary Lighthouse of Alexandria and the Great Library, it now boasts the stunning Bibliotheca Alexandrina, the historic Qaitbay Citadel, and a picturesque corniche. Stroll through Montazah Palace Gardens, explore ancient catacombs, or savor fresh seafood by the sea. Alexandria’s blend of Greco-Roman heritage and vibrant seaside culture makes it a perfect getaway.", 
+      video: "https://www.youtube.com/embed/C2LutvE6YEo?si=6bp79qr4luToQnTw",
     trips: [
       { id: "T021", name: "Qaitbay Citadel and Library Tour" },
       { id: "T022", name: "Montazah Palace Gardens Visit" },
@@ -64,8 +64,8 @@ export const cities = [
     image:
       "https://th.bing.com/th/id/R.672794b65550206f766243bd1263d604?rik=t5YkhbZnxA9QKA&riu=http%3a%2f%2ffile.mahalo.cz%2f2013%2f03%2fsuez.jpg&ehk=pGNYGpnlcsMSR4ggRyUy03mCgkIJAH0MuqM0SRWI4Jw%3d&risl=&pid=ImgRaw&r=0",
     description:
-      "A key city on the Suez Canal, blending history with natural beauty.",
-    video: "suez_promo.mp4",
+      "Suez, strategically located on the Suez Canal, is a city where history meets natural beauty. Famous for its pivotal role in global trade, Suez offers stunning views of the canal, serene beaches at Ain Sokhna, and hiking opportunities in the Galala Mountains. Visitors can explore the Suez National Museum, enjoy a boat ride along the canal, or savor local seafood. Suez is a hidden gem for those seeking a mix of adventure and relaxation.",
+          video: "https://www.youtube.com/embed/0sS4AhpoyQ8?si=qxy667GUgqQUyZjS",
     trips: [
       { id: "T030", name: "Suez Canal Tour" },
       { id: "T031", name: "Ain Sokhna Beach Day" },
@@ -83,7 +83,7 @@ export const cities = [
     name: "North Sinai",
     id: "A005",
     image: "https://wallpapercave.com/wp/wp4708896.jpg",
-    description: "A region with a rich Bedouin culture and historical sites.",
+    description: "North Sinai is a region rich in Bedouin culture and natural beauty, offering a unique blend of desert landscapes and coastal charm. The city of Arish, with its pristine beaches and vibrant markets, is a highlight. Visitors can immerse themselves in Bedouin traditions, enjoy desert camping under the stars, or explore historical sites. North Sinai’s rugged terrain and warm hospitality make it a captivating destination for cultural explorers.",
     video: "north_sinai_promo.mp4",
     trips: [
       { id: "T040", name: "Arish City Tour" },
@@ -102,8 +102,8 @@ export const cities = [
     id: "A006",
     image: "https://wallpaperaccess.com/full/1946049.jpg",
     description:
-      "A premier resort destination with world-class diving and beaches.",
-    video: "sharm_promo.mp4",
+     "Sharm El Sheikh, a premier resort destination on the Red Sea, is renowned for its world-class diving, vibrant coral reefs, and luxurious resorts. Nestled between the desert and the sea, it offers activities like snorkeling in Ras Mohammed National Park, desert safaris, and relaxing on Naama Bay’s beaches. With its lively nightlife and stunning sunsets, Sharm El Sheikh is perfect for both adventure seekers and those looking to unwind.",
+    video: "https://www.youtube.com/embed/4t5sQrhhv2w?si=IM3AeM5499vXC_o4",
     trips: [
       { id: "T049", name: "Diving Trip in Sharm El Sheikh" },
       { id: "T050", name: "Desert Safari in Sharm" },
@@ -115,10 +115,10 @@ export const cities = [
     name: "Dahab",
     id: "A007",
     image:
-      "https://www.weseektravel.com/wp-content/uploads/2022/05/blue-lagoon-dahab-14-1024x683.jpg",
+      "https://img.youm7.com/ArticleImgs/2020/6/19/126182-%D8%B4%D8%A7%D8%B7%D9%89%D8%A1-%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%AF%D9%87%D8%A8.jpg",
     description:
-      "A laid-back coastal town known for its diving and snorkeling spots.",
-    video: "dahab_promo.mp4",
+     "Dahab, a laid-back coastal town on the Red Sea, is a paradise for divers and free spirits. Famous for the Blue Hole and its vibrant snorkeling spots, Dahab offers a relaxed vibe with beachside cafes and stunning desert landscapes. Whether you’re diving into crystal waters, hiking in the Sinai mountains, or simply soaking in the bohemian atmosphere, Dahab is a haven for adventure and tranquility.",
+    video: "https://www.youtube.com/embed/wG3PSFnVP7c?si=hJF6LOCnPnh5fXac",
     trips: [
       { id: "T053", name: "Snorkeling in Dahab" },
       { id: "T054", name: "Blue Hole Diving in Dahab" },
@@ -129,8 +129,8 @@ export const cities = [
     id: "A008",
     image: "https://cdn.wallpapersafari.com/98/67/DlUMCm.jpg",
     description:
-      "A region known for Mount Sinai and St. Catherine Monastery, perfect for spiritual adventures.",
-    video: "south_sinai_promo.mp4",
+      "South Sinai is a spiritual and natural wonder, home to the sacred Mount Sinai and the historic St. Catherine Monastery. Visitors can hike to the summit for a breathtaking sunrise, explore ancient religious sites, or enjoy Bedouin hospitality in the desert. With its dramatic mountains and serene oases, South Sinai offers a unique blend of adventure, spirituality, and cultural immersion.",
+    video: "https://www.youtube.com/embed/vCZClgY9TKk?si=YxxMSWUadR94svXm",
     trips: [
       { id: "T055", name: "Mount Sinai Sunrise Hike" },
       { id: "T056", name: "St. Catherine Monastery Visit" },
@@ -142,8 +142,8 @@ export const cities = [
     id: "A009",
     image:
       "https://th.bing.com/th/id/R.32b8ea1f6680c95ef64653ef374b5a25?rik=m1YhwFuvj4QgfA&pid=ImgRaw&r=0",
-    description: "An oasis region with lakes, waterfalls, and ancient ruins.",
-    video: "fayoum_promo.mp4",
+    description: "Fayoum, an oasis just south of Cairo, is a hidden gem with lush greenery, serene lakes, and ancient ruins. Known for Wadi El Rayan’s waterfalls and Lake Qarun’s birdlife, it’s a haven for nature lovers. Explore Tunis Village’s pottery workshops, visit the Qasr Qarun Temple, or embark on a desert safari. Fayoum’s blend of natural beauty and cultural heritage makes it a perfect escape from the city.",
+    video: "https://www.youtube.com/embed/o5AdFe2Q9bo?si=MpjW_RaFXlnvl9b4",
     trips: [
       { id: "T058", name: "Wadi El Rayan Waterfalls Tour" },
       { id: "T059", name: "Lake Qarun Boat Ride" },
@@ -160,8 +160,8 @@ export const cities = [
     image:
       "https://www.egypttoursportal.com/images/2020/10/2-Days-El-Minya-Tour-from-Cairo-Egypt-Tours-Portal.jpg",
     description:
-      "A region with ancient archaeological sites and a rich history.",
-    video: "minya_promo.mp4",
+      "Minya, often called the ‘Bride of Upper Egypt,’ is a treasure trove of ancient archaeological sites. The Beni Hassan Tombs and Tuna El Gebel offer a glimpse into Egypt’s Middle Kingdom, while the city’s Nile-side charm invites leisurely walks. With its rich history and serene landscapes, Minya is an ideal destination for those seeking off-the-beaten-path adventures in Egypt’s heartland.",
+    video: "https://www.youtube.com/embed/tz1Do_r4O8U?si=8N8GVt9jlXz0bpp9",
     trips: [
       { id: "T065", name: "Beni Hassan Tombs Tour" },
       { id: "T066", name: "Tuna El Gebel Visit" },
@@ -173,8 +173,8 @@ export const cities = [
     id: "A011",
     image: "https://wallpapercave.com/wp/wp9116172.jpg",
     description:
-      "A region on the Nile with historical and religious significance.",
-    video: "asyut_promo.mp4",
+      "Asyut, a historic city along the Nile, is known for its religious significance and ancient heritage. Home to the Deir El Muharraq Monastery and the Meir Tombs, it offers a deep dive into Egypt’s Coptic and pharaonic past. Visitors can enjoy Nile-side strolls, explore local markets, or marvel at the city’s cultural landmarks, making Asyut a rewarding stop for history buffs and spiritual travelers.",
+    video: "https://www.youtube.com/embed/4Z_B-eqGBpc?si=yG45qMe-eHmLyyLS",
     trips: [
       { id: "T068", name: "Asyut City Tour" },
       { id: "T069", name: "Deir El Muharraq Monastery Visit" },
@@ -186,8 +186,8 @@ export const cities = [
     name: "Qena",
     id: "A012",
     image: "https://www.10wallpaper.com/wallpaper/1440x900/2410/Temple_of_Hathor_Dendera_Temple_Qena_Egypt_Bing_4K_1440x900.jpg",
-    description: "A region with ancient temples and a rich cultural heritage.",
-    video: "qena_promo.mp4",
+    description: "Qena, a cultural gem in Upper Egypt, is famous for the stunning Dendera Temple Complex, dedicated to the goddess Hathor. This well-preserved ancient site, with its vibrant reliefs, is a highlight for archaeology enthusiasts. Qena’s vibrant markets, traditional crafts, and Nile-side charm offer a rich cultural experience, making it a must-visit for those exploring Egypt’s ancient heritage.",
+    video: "https://www.youtube.com/embed/3TBEzDze-WE?si=Zc-4SiDXOLo9P3Tm",
     trips: [
       { id: "T072", name: "Dendera Temple Tour" },
       { id: "T073", name: "Hathor Temple Visit" },
@@ -199,8 +199,8 @@ export const cities = [
     image:
       "https://th.bing.com/th/id/R.a8924f15a57cdf0e6ca9023f544eafe2?rik=box1AQyZrKKdwQ&pid=ImgRaw&r=0",
     description:
-      "A serene city on the Nile, famous for its ancient temples and beautiful landscapes.",
-    video: "aswan_promo.mp4",
+      "Aswan, a serene city on the Nile, is renowned for its breathtaking landscapes and ancient temples. From the majestic Philae Temple to the awe-inspiring Abu Simbel, Aswan is a gateway to Egypt’s Nubian heritage. Enjoy a traditional felucca ride, visit vibrant Nubian villages, or relax in the lush Botanical Garden. Aswan’s warm climate and tranquil vibe make it a perfect destination for history lovers and nature enthusiasts alike.",
+    video: "https://www.youtube.com/embed/5Ql8qFKeE-E?si=ZVqAYJ1q3pAtb6Bt",
     trips: [
       { id: "T074", name: "Philae Temple Tour" },
       { id: "T075", name: "Felucca Ride in Aswan" },
@@ -218,8 +218,8 @@ export const cities = [
     id: "A014",
     image: "https://wallpapercave.com/wp/wp3722098.jpg",
     description:
-      "The city of history and civilization, where pharaonic wonders meet the beauty of the Nile.",
-    video: "luxor_promo.mp4",
+      "Luxor, often called the world’s greatest open-air museum, is a city steeped in pharaonic history. Home to the majestic Karnak and Luxor Temples, the Valley of the Kings, and the Temple of Hatshepsut, it offers an unparalleled journey into ancient Egypt. Experience a hot air balloon ride over the Nile, explore the Luxor Museum, or enjoy a sunset cruise. Luxor’s timeless beauty captivates every visitor.",
+    video: "https://www.youtube.com/embed/2XhoWY8ofNE?si=OCgQyYDUuVvnNW2E",
     trips: [
       { id: "T083", name: "Karnak Temple Tour" },
       { id: "T084", name: "Luxor Temple Visit" },
@@ -237,8 +237,8 @@ export const cities = [
     id: "A015",
     image: "https://wallpaperaccess.com/full/1676131.jpg",
     description:
-      "A vibrant coastal city with stunning beaches and coral reefs, perfect for diving.",
-    video: "hurghada_promo.mp4",
+      "Hurghada, a vibrant coastal city on the Red Sea, is a haven for beach lovers and water sports enthusiasts. Its crystal-clear waters and coral reefs make it a top destination for diving and snorkeling. Explore Giftun Island, watch dolphins in the wild, or embark on a desert safari. With its lively nightlife and stunning resorts, Hurghada offers a perfect blend of relaxation and adventure.",
+    video: "https://www.youtube.com/embed/AnvHNxgB80w?si=CVCYMsjMD8Otnr2E",
     trips: [
       { id: "T092", name: "Hurghada Snorkeling Trip" },
       { id: "T093", name: "Giftun Island Beach Day" },
@@ -254,8 +254,8 @@ export const cities = [
     id: "A016",
     image: "https://file.mahalo.cz/2013/03/el-gouna.jpg",
     description:
-      "A luxurious resort town with lagoons, beaches, and a vibrant marina.",
-    video: "el_gouna_promo.mp4",
+      "El Gouna, a luxurious resort town on the Red Sea, is known for its turquoise lagoons, pristine beaches, and upscale marina. Often called the ‘Venice of Egypt,’ it offers water sports, golfing, and vibrant nightlife. Whether you’re relaxing at a beachside cafe, exploring the marina’s boutiques, or diving in the Red Sea, El Gouna is a chic destination for a glamorous getaway.",
+    video: "https://www.youtube.com/embed/xNiwLZDHauY?si=DB7d3Th1QQ3ojDCC",
     trips: [{ id: "T099", name: "El Gouna City Tour" }],
   },
   {
@@ -264,17 +264,17 @@ export const cities = [
     image:
       "https://kundutirthoovraman.com/wp-content/uploads/2024/04/historical-egypt-red-sea-gallery-2.jpg",
     description:
-      "A coastal region with additional beach destinations like Makadi Bay.",
-    video: "red_sea_promo.mp4",
+      "The Red Sea region, encompassing destinations like Makadi Bay, is a coastal paradise with world-class beaches and marine life. Known for its vibrant coral reefs and clear waters, it’s a hotspot for diving and snorkeling. Visitors can relax on pristine beaches, explore nearby desert landscapes, or enjoy water sports. The Red Sea’s natural beauty and laid-back vibe make it a top choice for a beach holiday.",
+    video: "https://www.youtube.com/embed/HwXEtsIAhNM?si=yku6sVILSHAMDDEQ",
     trips: [{ id: "T100", name: "Makadi Bay Beach Day" }],
   },
   {
     name: "New Valley",
     id: "A018",
-    image: "new_valley_city.jpg",
+    image: "https://mediaaws.almasryalyoum.com/news/verylarge/2024/01/09/2294262_0.jpeg",
     description:
-      "A desert region with oases, ancient ruins, and unique landscapes.",
-    video: "new_valley_promo.mp4",
+      "The New Valley, a vast desert region in Egypt’s Western Desert, is home to stunning oases like Kharga and Dakhla. Visitors can explore ancient ruins like the Hibis Temple, soak in hot springs, or camp under the starry desert sky. With its unique landscapes and rich Bedouin culture, the New Valley offers an unforgettable adventure for those seeking solitude and natural beauty.",
+    video: "https://www.youtube.com/embed/5FvPsKSlcTs?si=lhaXHOVQw0dggAI3",
     trips: [
       { id: "T101", name: "Kharga Oasis Tour" },
       { id: "T102", name: "Dakhla Oasis Visit" },
@@ -293,8 +293,8 @@ export const cities = [
     image:
       "https://www.ra2d.com/images/wallpapers/city/ra2d.com.aspx?w=1920&h=1080&img=Egypt-Marsa-Matrouh-Cleopatra-Nature-Ra2D.jpg",
     description:
-      "A Mediterranean region with pristine beaches and a relaxed vibe.",
-    video: "matrouh_promo.mp4",
+"Matrouh, a Mediterranean gem, boasts some of Egypt’s most pristine beaches, including Agiba Beach and Cleopatra’s Bath. Its crystal-clear waters and relaxed vibe make it a favorite for beachgoers. Explore the historic Siwa Oasis, walk along the scenic corniche, or embark on a desert safari. Matrouh’s blend of coastal beauty and cultural attractions offers a refreshing escape from the hustle and bustle.",
+    video: "https://www.youtube.com/embed/k4mSKJvNChA?si=f3cx4_H3V_T8X2vg",
     trips: [
       { id: "T110", name: "Mersa Matrouh Beach Day" },
       { id: "T111", name: "Agiba Beach Visit" },

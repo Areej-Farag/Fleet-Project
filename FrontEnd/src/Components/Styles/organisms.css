@@ -848,6 +848,22 @@
     margin: 30px auto;
     flex-direction: column;
   }
+  /*------------------------------------*/
+  .payment-confirmation-detailes .buttonsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+    /* trip-comments */
+    .trip-comments-container
+    .comment-container-input
+    .input-buttons
+    button
+    small {
+    display: none;
+  }
+  /*-----------------------------*/
   .payment-confirmation-detailes {
     width: 90vw;
     height: fit-content;
@@ -1158,8 +1174,7 @@
   .mt-4.d-flex .w-md-auto {
     width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
   }
-}
-/*------------card section----------*/
+}/*------------card section----------*/
 
 .card-section {
   width: 100%;
@@ -1392,7 +1407,8 @@
   font-size: 14px;
 }
 
-.trip-details-description {
+.trip-details-description,
+.trip-details-program {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 28px;
@@ -1414,7 +1430,8 @@
 }
 .feature-text,
 .trip-meta-item,
-.trip-details-description {
+.trip-details-description,
+.trip-details-program {
   color: var(--color-neutral-4) !important;
 }
 
