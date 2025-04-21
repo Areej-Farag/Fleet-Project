@@ -160,7 +160,6 @@
     justify-content: center !important;
   }
 }
-
 /*-----------city overview--------------*/
 .city-overview {
   display: flex;
@@ -169,7 +168,7 @@
   border-radius: 12px;
   max-width: 1126px;
   gap: 133px;
-  margin: 0px 150px 112px 150px;
+  margin: auto;
   flex-wrap: wrap;
 }
 
@@ -217,7 +216,6 @@
 .video-iframe {
   width: 100%;
   height: 100%;
-
   border-radius: 12px;
   border: none;
 }
@@ -311,67 +309,74 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1225px) {
-  .city-overview {
-    flex-direction: row;
-    align-items: center;
-    gap: 120px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 
-  .overview-left,
-  .overview-right {
-    width: 416px;
-    max-width: 100%;
-  }
-
-  .video-container {
-    max-height: unset;
-  }
-
-  .video-iframe {
-    height: 440px;
-    width: 416px;
-  }
+    .city-overview {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px; 
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .overview-left,
+    .overview-right {
+      flex: 1;
+      max-width: 100%;
+    }
+  
+    .video-container {
+      width: 100%;
+      height: 440px; 
+    }
+  
+    .video-iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+  
   .nearby-governorates-section {
     margin-left: 40px;
     margin-right: 40px;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   .city-overview {
     flex-direction: column;
     align-items: center;
     gap: 48px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 50px; 
     height: auto;
   }
+
   .overview-left {
-    height: 406px;
+    height: auto;
+    width: 100%;
   }
 
   .overview-title {
     margin-bottom: 32px;
   }
+
   .overview-left,
   .overview-right {
-    width: 311px;
+    flex: 1;
     max-width: 100%;
-    overflow: hidden;
+    width: 100%;
   }
 
   .video-container {
-    height: 360px;
-    width: 311px;
+    width: 100%;
+    height: 360px; 
   }
 
   .video-iframe {
-    height: 100%;
     width: 100%;
+    height: 100%;
     border-radius: 12px;
   }
+
   .nearby-governorates-section {
     margin-left: 32px;
     margin-right: 32px;
