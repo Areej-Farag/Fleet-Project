@@ -4,7 +4,7 @@ import CardSection from "../Organisms/CardSection";
 import FilterSection from "../Organisms/FilterSection";
 import { trips } from "../../Mocks/Trips";
 import "../Styles/templates.css";
-
+import colors from "../Atoms/Colors";
 const shuffleAndPick = (array, count) => {
   const shuffled = [...array].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
@@ -41,20 +41,17 @@ const ExploreTripsTemplate = () => {
 
   return (
     <div className="trip-template">
-      <div className="template-header">
-        <Typograph variant="h3" bold="true" className="go-title">
+      <div className="template-header ">
+        <div>
+           <Typograph variant="h3" bold="true" className="go-title">
           Go somewhere
         </Typograph>
-        <Typograph variant="p" className="adventure-sub">
+        <Typograph variant="p" color={colors.Neutrals[4]}>
           Let's go on an adventure
         </Typograph>
-      </div>
-
-      <div className="filters-bar">
-        <FilterSection
-          selectedCategory={selectedCategory}
-          onFilterChange={setSelectedCategory}
-        />
+        </div>
+       
+        <div className="filters-bar ">
         <div className="custom-sort-box">
           <select
             className="selectbox-styled"
@@ -67,6 +64,9 @@ const ExploreTripsTemplate = () => {
           </select>
         </div>
       </div>
+      </div>
+
+ 
 
       <CardSection trips={sortedTrips} />
 

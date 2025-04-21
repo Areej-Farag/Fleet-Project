@@ -40,6 +40,24 @@
   color: var(--neutral-4);
   margin-right: 10px;
 }
+
+/* booking-details-container Sandy Part */
+.booking-details-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.booking-details-container .details-left{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 5px;
+}
+.booking-details-container .details-left svg{
+  color: var(--color-neutral-4);
+
+} 
 /*------card---------*/
 .custom-card {
   width: 352px;
@@ -195,21 +213,6 @@
   gap: 5px;
 }
 
-@media (max-width: 1024px) {
-  .custom-detailed-card {
-    width: 236px; /* Width for tablets and smaller screens */
-    height: 329px; /* Adjust height */
-  }
-  .detailed-card-title {
-    width: 138px;
-    font-size: medium;
-  }
-  .detailed-card-amenities {
-    height: auto;
-    margin-top: 5px;
-  }
-}
-
 /* comment */
 .comment-container {
   display: flex;
@@ -247,7 +250,19 @@
   background-color: transparent !important;
   color: var(--color-neutral-4) !important;
 }
-
+/*governorate-select*/
+.governorate-select-wrapper {
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 16px;
+}
+/* Media queries for mobile */
+@media screen and (max-width: 768px) {
+  .comment-footer {
+    width: 90%;
+  }
+}
+/* Media queries for tablets */
 @media (max-width: 1024px) {
   .custom-card {
     width: 266px;
@@ -282,17 +297,19 @@
     height: auto;
     margin-top: 5px;
   }
-}
-
-/* Media queries for mobile */
-@media screen and (max-width: 768px) {
-  .comment-footer {
-    width: 90%;
+  .custom-detailed-card {
+    width: 236px; /* Width for tablets and smaller screens */
+    height: 329px; /* Adjust height */
+  }
+  .detailed-card-title {
+    width: 138px;
+    font-size: medium;
+  }
+  .detailed-card-amenities {
+    height: auto;
+    margin-top: 5px;
   }
 }
-/*governorate-select*/
-.governorate-select-wrapper {
-  max-width: 400px;
-  margin: 32px auto;
-  padding: 16px;
-}
+
+
+

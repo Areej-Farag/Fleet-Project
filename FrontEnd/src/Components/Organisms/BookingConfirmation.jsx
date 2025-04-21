@@ -76,7 +76,7 @@ export default function BookingConfirmation() {
         </Typograph>
 
         {/*  استدعاءBookingDetails */}
-        <div className="mt-3 d-flex flex-column gap-3">
+        <div className="mt-3 d-flex flex-column gap-3 booking-details-icons">
           <BookingDetails
             icon={<FiHash />}
             title="Booking code:"

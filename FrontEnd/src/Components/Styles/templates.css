@@ -35,131 +35,7 @@
 .trips-comments-section .template-comments-container .trip-comments-container {
   border: none;
 }
-/* Media Queries For Mobile */
-@media screen and (max-width: 768px) {
-  .payment-template-container {
-    flex-direction: column-reverse;
-    width: 90%;
-    /* justify-content: space-between; */
-  }
-  .payment-form-container {
-    width: 100%;
-  }
-  .payment-confirmation-container {
-    width: 100%;
-  }
-  .trips-comments-section {
-    flex-direction: column-reverse;
-  }
-  .trips-comments-section .template-host-container,
-  .trips-comments-section .template-comments-container {
-    width: 100%;
-    margin: auto;
-  }
-}
 
-/* Mobile*/
-@media (max-width: 576px) {
-  .booking-confirmation {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .image-container,
-  .booking-confirmation > div {
-    width: 100% !important;
-  }
-
-  .booking-confirmation button {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-/* Media Queries For Tablets */
-@media screen and (min-width: 760px) and (max-width: 1030px) {
-  .payment-template-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    /* gap: 20px;  */
-
-    .image-grid-template {
-      flex-direction: column;
-    }
-
-    .main-image-container,
-    .side-images {
-      width: 100%;
-    }
-
-    .side-images {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: none;
-      gap: 10px;
-    }
-
-    .image-wrapper {
-      aspect-ratio: 4 / 3;
-    }
-  }
-  .payment-form-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    /* gap: 15px;  */
-  }
-  .payment-form-container .payment-form {
-    width: 100%;
-  }
-  .payment-confirmation-container {
-    width: 50%;
-  }
-  .payment-confirmation-detailes {
-    width: 100%;
-  }
-  .payment-form-container
-    .payment-form
-    .trip-details
-    .detailsIcons
-    .IconContainer {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  /* trips-comment section */
-  .trips-comments-section {
-    width: 98%;
-  }
-  .trips-comments-section .template-host-container {
-    width: 45% !important;
-  }
-  .trips-comments-section .template-comments-container {
-    width: 55%;
-  }
-}
-/* Tablets*/
-@media (min-width: 577px) and (max-width: 768px) {
-  .booking-confirmation {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-  .image-container,
-  .booking-confirmation > div {
-    width: 100% !important;
-  }
-}
-/* Adjust host section spacing */
-@media (max-width: 768px) {
-  .review-count {
-    margin-left: 0 !important;
-  }
-
-  .booking-confirmation .d-flex.justify-content-end {
-    justify-content: center !important;
-  }
-}
 /*-----------city overview--------------*/
 .city-overview {
   display: flex;
@@ -306,109 +182,8 @@
   margin: 0 auto 80px auto;
   max-width: 1146px;
   gap: 48px;
-}/*
-.details-temp{
-  margin: 0 auto 80px auto;
- 
-}*/
-
-@media screen and (min-width: 769px) and (max-width: 1225px) {
-
-    .city-overview {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 40px; 
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  
-    .overview-left,
-    .overview-right {
-      flex: 1;
-      max-width: 100%;
-    }
-  
-    .video-container {
-      width: 100%;
-      height: 440px; 
-    }
-  
-    .video-iframe {
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-    }
-  
-  .nearby-governorates-section {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .trip-details-template {
-    margin: 0 50px 80px ;
-  }
 }
-@media (max-width: 768px) { 
-  .city-overview {
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    margin-left: 50px;
-    margin-right: 50px; 
-    height: auto;
-  }
 
-  .overview-left {
-    height: auto;
-    width: 100%;
-  }
-
-  .overview-title {
-    margin-bottom: 32px;
-  }
-
-  .overview-left,
-  .overview-right {
-    flex: 1;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .video-container {
-    width: 100%;
-    height: 360px; 
-  }
-
-  .video-iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-  }
-  .trip-details-template {
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px 80px 50px ;
-  }
-  .nearby-governorates-section {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    position: relative;
-  }
-  .desktop-arrows {
-    display: none;
-  }
-
-  .mobile-arrows {
-    padding-left: 10px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-  }
-}
 /*image grid template*/
 .image-grid-template {
   display: flex;
@@ -463,24 +238,14 @@
   border: 1px solid #ccc;
 }
 
-
-.template-header {
+.trip-template .template-header {
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1rem;
   padding-left: 1rem;
-}
-
-.go-title {
-  font-weight: bold;
-}
-
-.adventure-sub {
-  font-weight: 300; /* Light font */
-  margin-top: 0.3rem;
-  font-size: 1rem;
-  color: #555;
 }
 
 .filters-bar {
@@ -515,21 +280,225 @@
   font-weight: bold;
   transition: all 0.3s ease;
   border-radius: 90px;
-  
 }
 
 .view-all-btn:hover {
   background-color: #333;
   color: white;
 }
-.selectbox-styled{
-  display: flex ;
-      align-items: left;
-      justify-content: space-between;
-      background: var(--color-neutral-8);
-      border: 2px solid var(--color-neutral-5);
-      border-radius: 10px;
-      padding: 11px 50px;
-      cursor: pointer;
-      margin-left: 0%;
+.selectbox-styled {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background: var(--color-neutral-8);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: 10px;
+  padding: 11px 50px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+/* Media Queries For Mobile */
+@media screen and (max-width: 768px) {
+  .payment-template-container {
+    flex-direction: column-reverse;
+    width: 90%;
+    /* justify-content: space-between; */
+  }
+  .payment-form-container {
+    width: 100%;
+  }
+  .payment-confirmation-container {
+    width: 100%;
+  }
+  .trips-comments-section {
+    flex-direction: column-reverse;
+  }
+  .trips-comments-section .template-host-container,
+  .trips-comments-section .template-comments-container {
+    width: 100%;
+    margin: auto;
+  }
+  .trip-template .template-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .booking-confirmation {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .image-container,
+  .booking-confirmation > div {
+    width: 100% !important;
+  }
+
+  .booking-confirmation button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .review-count {
+    margin-left: 0 !important;
+  }
+
+  .booking-confirmation .d-flex.justify-content-end {
+    justify-content: center !important;
+  }
+  .city-overview {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+  }
+
+  .overview-left {
+    height: auto;
+    width: 100%;
+  }
+
+  .overview-title {
+    margin-bottom: 32px;
+  }
+
+  .overview-left,
+  .overview-right {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 360px;
+  }
+
+  .video-iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  .trip-details-template {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 80px 50px;
+  }
+  .nearby-governorates-section {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  .desktop-arrows {
+    display: none;
+  }
+
+  .mobile-arrows {
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+
+/* Media Queries For Tablets */
+@media screen and (min-width: 760px) and (max-width: 1030px) {
+  .payment-template-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    /* gap: 20px;  */
+
+    .image-grid-template {
+      flex-direction: column;
+    }
+
+    .main-image-container,
+    .side-images {
+      width: 100%;
+    }
+
+    .side-images {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: none;
+      gap: 10px;
+    }
+
+    .image-wrapper {
+      aspect-ratio: 4 / 3;
+    }
+  }
+  .payment-form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px;  */
+  }
+  .payment-form-container .payment-form {
+    width: 100%;
+  }
+  .payment-confirmation-container {
+    width: 50%;
+  }
+  .payment-confirmation-detailes {
+    width: 100%;
+  }
+  .payment-form-container
+    .payment-form
+    .trip-details
+    .detailsIcons
+    .IconContainer {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /* trips-comment section */
+  .trips-comments-section {
+    width: 98%;
+  }
+  .trips-comments-section .template-host-container {
+    width: 45% !important;
+  }
+  .trips-comments-section .template-comments-container {
+    width: 55%;
+  }
+  .city-overview {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .overview-left,
+  .overview-right {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 440px;
+  }
+
+  .video-iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+  .nearby-governorates-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .trip-details-template {
+    margin: 0 50px 80px;
+  }
 }

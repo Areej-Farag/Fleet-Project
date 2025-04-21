@@ -1,5 +1,5 @@
 @import "global.css";
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -431,7 +431,7 @@
 .select-wrapper {
   width: 70%;
 }
-.location-box{
+.location-box {
   width: 30%;
 }
 .select-wrapper select {
@@ -444,7 +444,7 @@
   font-size: 16px;
   cursor: pointer;
 }
-.select-wrapper button{
+.select-wrapper button {
   padding: 20px !important;
 }
 .search-box {
@@ -490,88 +490,6 @@
   margin: 0;
 }
 
-
-
-/* === Responsive Style === */
-@media (max-width: 768px) {
-  .air-sleep-dream {
-    height: auto;
-    margin: 1rem;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .overlay {
-    padding: 20px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-    border-radius: 25px;
-  }
-
-  .content-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* وسّط المحتوى */
-    gap: 1.5rem;
-  }
-
-  .text-content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .text-content h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-left: 0;
-  }
-
-  .text-content p {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 10px;
-  }
-
-  .search-box {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 16px;
-    padding: 16px 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94%;
-    max-width: 500px;
-    z-index: 10;
-    gap: 20px;
-  
-  }
-
-  .location-box {
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .select-wrapper {
-    width: 100%;
-  }
-
-  .icon-btn {
-    align-self: center;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-  }
-}
-
 .text-content {
   transition: all 0.3s ease-in-out;
 }
@@ -582,13 +500,11 @@
   margin-left: 0;
 }
 
-
 /* لو تم اختيار محافظة يكون في النص */
 .text-content.centered {
   text-align: center;
   margin: 0 auto;
 }
-
 
 /* Footer */
 .footer {
@@ -841,341 +757,7 @@
   animation-delay: 1s;
 }
 
-/* Media Queries For Mobile */
-@media screen and (max-width: 768px) {
-  .payment-form {
-    width: 90vw;
-    margin: 30px auto;
-    flex-direction: column;
-  }
-  /*------------------------------------*/
-  .payment-confirmation-detailes .buttonsCont {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-    /* trip-comments */
-    .trip-comments-container
-    .comment-container-input
-    .input-buttons
-    button
-    small {
-    display: none;
-  }
-  /*-----------------------------*/
-  .payment-confirmation-detailes {
-    width: 90vw;
-    height: fit-content;
-    margin: 30px auto;
-  }
-  .photo-container,
-  .host-container {
-    width: 100%;
-  }
-  .payment-confirmation-detailes .photo-container img {
-    margin: auto;
-    height: 180px;
-    width: 90%;
-    object-fit: fill;
-  }
-  .payment-confirmation-detailes
-    .TextedIcons-container
-    .IconContainer:first-child {
-    border-right: none;
-  }
-  .booking-details {
-    justify-content: center;
-  }
-  .rate-container {
-    justify-content: center;
-  }
-  .payment-form .trip-details .detailsIcons {
-    flex-direction: column;
-  }
-  .payment-confirmation-detailes .TextedIcons-container .IconContainer,
-  .payment-form .trip-details .detailsIcons .IconContainer {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  /* .sign-up-form */
-  .sign-up-form,
-  .sign-in-form,
-  .user-confirmation {
-    padding: 20px 0;
-    width: 90vw;
-    height: 60vh;
-    bottom: 0;
-    /* left: 50%; */
-    /* transform: translate(0 , 0 ); */
-    border-radius: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  .sign-in-form {
-    padding: 20px;
-    height: 300px;
-    border-radius: 20px;
-    bottom: 0;
-    /* transform: translate(-50%, 0); */
-  }
-  .sign-buttons {
-    width: 80%;
-  }
-  .sign-in-form .btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sign-in-form .btn-container button {
-    width: 80%;
-  }
-  /* security-container */
-  .security-container {
-    height: 250px;
-    width: 90%;
-    bottom: 0;
-    /* transform: translate(-50%, 0); */
-  }
-  /* user-confirmation */
-  .user-confirmation {
-    height: 320px;
-    width: 90%;
-    bottom: 0;
-    /* transform: translate(-50%, -10px); */
-  }
-  /* air-sleep-dream */
-  .air-sleep-dream {
-    height: auto;
-    margin: 1rem;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .overlay {
-    padding: 30px 20px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0)
-    );
-    border-radius: 25px;
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .text-content {
-    text-align: center;
-  }
-
-  .text-content h1 {
-    font-size: 64px;
-  }
-
-  .text-content p {
-    font-size: 16px;
-  }
-
-  .search-button {
-    background-color: var(--color-primary-1);
-    color: var(--color-neutral-8);
-    padding: 8px 16px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  .search-box {
-    background: var(--color-neutral-8);
-    padding: 16px 20px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 90%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    gap: 10px;
-  }
-
-  .location-box {
-    flex: 1;
-  }
-
-  .icon-btn {
-    background-color: var(--color-primary-1);
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    color: var(--color-neutral-8);
-    font-size: 16px;
-  }
-  /* Footer */
-  .footer-top {
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-  }
-
-  .footer-links {
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-  }
-
-  .footer-bottom {
-    text-align: left;
-    width: 100%;
-    margin-left: 1rem;
-  }
-
-  .footer-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-
-  .footer-logo {
-    margin-left: 0.5rem;
-    margin-top: 4rem;
-  }
-  /* Hero Section */
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-actions {
-    align-items: center;
-  }
-
-  .book-btn {
-    align-self: center;
-  }
-}
-
-/* Media Queries For Tablet */
-@media screen and (min-width: 760px) and (max-width: 1030px) {
-  .payment-form .trip-details .detailsIcons {
-    flex-direction: column;
-  }
-  .payment-form .trip-details .detailsIcons {
-    flex-direction: column;
-  }
-  .payment-form .trip-details .detailsIcons .IconContainer {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  /* trip-comments */
-  .trip-comments-container
-    .comment-container-input
-    .input-buttons
-    button
-    small {
-    display: none;
-  }
-  .reviews-container .comment-footer {
-    width: 280px;
-  }
-  .trip-comments-container .comment-container-input .input-buttons {
-    width: fit-content !important;
-    margin-right: 0px;
-  }
-  .trip-comments-container .comment-container-input .input-buttons button {
-    /* display: none; */
-    width: fit-content;
-  }
-
-  /* trip-comments */
-  .trip-comments-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    height: fit-content;
-    padding: 20px;
-    border: 1px solid var(--color-neutral-6);
-  }
-
-  .trip-comments-container .trip-comments {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .trip-comments-container .comment-container-input .input-buttons {
-    /* justify-content: flex-end;   */
-    width: 18% !important;
-    align-items: start;
-    /* margin-bottom: 20px; */
-  }
-  .trip-comments-container .comment-container-input .input-buttons button {
-    height: fit-content;
-    padding: 4px 5px;
-    font-size: 13px;
-    font-weight: 600;
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    text-align: center;
-  }
-  .trip-comments-container .comment-container-input .input-buttons button svg {
-    padding: 2px;
-    font-size: 15px;
-  }
-  .trip-comments-container .reviews-container {
-    margin-top: 10px;
-    width: 100%;
-  }
-  .reviews-container .comment-footer {
-    width: 300px;
-  }
-  .reviews-container .comment-footer {
-    width: 280px;
-  }
-  .trip-comments-container .comment-container-input .input-buttons {
-    width: fit-content !important;
-    margin-right: 0px;
-  }
-  .trip-comments-container .comment-container-input .input-buttons button {
-    /* display: none; */
-    width: fit-content;
-  }
-}
-
-/*Booking Confirmation*/
-@media (max-width: 576px) {
-  .booking-confirmation-container {
-    padding: 1rem;
-  }
-  .mt-4.d-flex {
-    flex-wrap: wrap;
-    justify-content: space-between; /* تباعد الأزرار بشكل مناسب */
-  }
-
-  .mt-4.d-flex .w-100 {
-    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
-  }
-
-  .mt-4.d-flex .w-md-auto {
-    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
-  }
-}/*------------card section----------*/
-
+/* Cards section */
 .card-section {
   width: 100%;
   margin-top: 24px;
@@ -1280,9 +862,6 @@
   text-decoration: none;
 }
 
-
-
-
 /*-------------navigation bar-------------------*/
 
 .navigation-bar .go-home-link {
@@ -1336,53 +915,6 @@
   width: 256px;
   height: 48px;
   border-radius: 50px;
-}
-
-
-
-/* Responsive  */
-@media screen and (min-width: 769px) and (max-width: 1225px) {
-  .cards-wrapper {
-    justify-content: center;
-  }
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards-wrapper {
-    justify-content: center;
-  }
-  .carousel-card-wrapper {
-    width: 280px !important;
-  }
-  .card-carousel {
-    margin-bottom: 40px;
-  }
-  .navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  .navigation-bar .breadcrumbs {
-    display: none;
-  }
-
-  .filter-section {
-    margin-left: 60px;
-    margin-right: 60px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .filter-section .select-box {
-    width: 100%;
-    max-width: 300px;
-  }
 }
 
 /*-----------trip details-------------*/
@@ -1578,7 +1110,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -1667,7 +1200,308 @@
   background-color: rgba(0, 0, 0, 0.05);
   transform: scale(1.1);
 }
-@media (max-width: 768px) {
+
+/* إخفاء الأسهم في الديسكتوب */
+.adventure-nav {
+  display: none;
+}
+
+.adventure-cards img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.step-card .card-icon-wrapper:hover {
+  transform: rotate(0deg);
+  transform: scale(1.1);
+}
+
+/* Media Queries For Mobile */
+@media screen and (max-width: 768px) {
+  .payment-form {
+    width: 90vw;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  /*------------------------------------*/
+  .payment-confirmation-detailes .buttonsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* trip-comments */
+  .trip-comments-container
+    .comment-container-input
+    .input-buttons
+    button
+    small {
+    display: none;
+  }
+  /*-----------------------------*/
+  .payment-confirmation-detailes {
+    width: 100%;
+    height: fit-content;
+    margin: 30px auto;
+  }
+  .photo-container,
+  .host-container {
+    width: 100%;
+  }
+  .payment-confirmation-detailes .photo-container img {
+    margin: auto;
+    height: 180px;
+    width: 90%;
+    object-fit: fill;
+  }
+  .payment-confirmation-detailes
+    .TextedIcons-container
+    .IconContainer:first-child {
+    border-right: none;
+  }
+  .booking-details {
+    justify-content: center;
+  }
+  .rate-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-confirmation-detailes .TextedIcons-container .IconContainer,
+  .payment-form .trip-details .detailsIcons .IconContainer {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* .sign-up-form */
+  .sign-up-form,
+  .sign-in-form,
+  .user-confirmation {
+    padding: 20px 0;
+    width: 90vw;
+    height: 60vh;
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translate(0 , 0 ); */
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .sign-in-form {
+    padding: 20px;
+    height: 300px;
+    border-radius: 20px;
+    bottom: 0;
+    /* transform: translate(-50%, 0); */
+  }
+  .sign-buttons {
+    width: 80%;
+  }
+  .sign-in-form .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-in-form .btn-container button {
+    width: 80%;
+  }
+  /* security-container */
+  .security-container {
+    height: 250px;
+    width: 90%;
+    bottom: 0;
+    /* transform: translate(-50%, 0); */
+  }
+  /* user-confirmation */
+  .user-confirmation {
+    height: 320px;
+    width: 90%;
+    bottom: 0;
+    /* transform: translate(-50%, -10px); */
+  }
+  /* air-sleep-dream */
+  .air-sleep-dream {
+    height: 80vh;
+    margin: 1rem;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .overlay {
+    padding: 30px 20px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    );
+    border-radius: 25px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 64px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .search-button {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-8);
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    background: var(--color-neutral-8);
+    padding: 16px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    gap: 10px;
+  }
+
+  .location-box {
+    flex: 1;
+  }
+
+  .icon-btn {
+    background-color: var(--color-primary-1);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--color-neutral-8);
+    font-size: 16px;
+  }
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: left;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .footer-logo {
+    margin-left: 0.5rem;
+    margin-top: 4rem;
+  }
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions {
+    align-items: center;
+  }
+
+  .book-btn {
+    align-self: center;
+  }
+  /* .reviews-container .comment-footer */
+  .reviews-container .comment-footer {
+    width: 200px;
+  }
+  .comments-container-header .small-text {
+    flex-direction: column;
+  }
+  .reviews-container .comment-footer button small {
+    display: none;
+  }
+  /*Booking Confirmation*/
+  .booking-confirmation-container {
+    padding: 1rem;
+  }
+  .mt-4.d-flex {
+    flex-wrap: wrap;
+    justify-content: space-between; /* تباعد الأزرار بشكل مناسب */
+  }
+
+  .mt-4.d-flex .w-100 {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+
+  .mt-4.d-flex .w-md-auto {
+    width: 48%; /* تحديد العرض ليكون قريب من نصف الشاشة */
+  }
+  /* Cards section */
+  .cards-wrapper {
+    justify-content: center;
+  }
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
+  .card-carousel {
+    margin-bottom: 40px;
+  }
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .navigation-bar .breadcrumbs {
+    display: none;
+  }
+
+  .filter-section {
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-section .select-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .adventure-cards {
     flex-wrap: nowrap;
     overflow: hidden;
@@ -1682,22 +1516,12 @@
   .adventure-card.active {
     display: flex;
   }
-}
-/* إخفاء الأسهم في الديسكتوب */
-.adventure-nav {
-  display: none;
-}
-
-/* إظهار الأسهم فقط في الموبايل */
-@media (max-width: 768px) {
   .adventure-nav {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
   }
-}
-@media (max-width: 768px) {
   .adventure-card {
     opacity: 0;
     transform: translateX(20px);
@@ -1710,14 +1534,98 @@
     transform: translateX(0);
   }
 }
-.adventure-cards img:hover{
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
 
-}
-.step-card .card-icon-wrapper:hover{
-  transform: rotate(0deg);
-  transform: scale(1.1);
+/* Media Queries For Tablet */
+@media screen and (min-width: 760px) and (max-width: 1030px) {
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-form .trip-details .detailsIcons {
+    flex-direction: column;
+  }
+  .payment-form .trip-details .detailsIcons .IconContainer {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /* trip-comments */
+  .trip-comments-container
+    .comment-container-input
+    .input-buttons
+    button
+    small {
+    display: none;
+  }
+  .reviews-container .comment-footer {
+    width: 280px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons {
+    width: fit-content !important;
+    margin-right: 0px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons button {
+    /* display: none; */
+    width: fit-content;
+  }
 
+  /* trip-comments */
+  .trip-comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid var(--color-neutral-6);
+  }
 
+  .trip-comments-container .trip-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons {
+    /* justify-content: flex-end;   */
+    width: 18% !important;
+    align-items: start;
+    /* margin-bottom: 20px; */
+  }
+  .trip-comments-container .comment-container-input .input-buttons button {
+    height: fit-content;
+    padding: 4px 5px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+  }
+  .trip-comments-container .comment-container-input .input-buttons button svg {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .trip-comments-container .reviews-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .reviews-container .comment-footer {
+    width: 300px;
+  }
+  .reviews-container .comment-footer {
+    width: 280px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons {
+    width: fit-content !important;
+    margin-right: 0px;
+  }
+  .trip-comments-container .comment-container-input .input-buttons button {
+    /* display: none; */
+    width: fit-content;
+  }
+  /* Cards section */
+  .cards-wrapper {
+    justify-content: center;
+  }
+  .carousel-card-wrapper {
+    width: 280px !important;
+  }
 }
