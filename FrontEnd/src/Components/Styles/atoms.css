@@ -108,7 +108,7 @@
   width: fit-content !important;
 }
 
-.button.default {
+.button.defaultt {
   width: 262px;
 }
 
@@ -186,6 +186,15 @@
   align-items: center;
   justify-content: center;
   margin: 0 5px;
+}
+@media (max-width: 768px){
+  .button.large{
+   width: 295px;
+  }
+  .button.defaultt{
+    width: 200px;
+  }
+ 
 }
 
 /* ====== Avatar ====== */

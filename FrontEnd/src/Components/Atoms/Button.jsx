@@ -38,7 +38,7 @@ Button.propTypes = {
   children: PropTypes.node, 
   color: PropTypes.oneOf(["blue", "trans", "white", "black", "trans-no-border "]),
   shape: PropTypes.oneOf(["default", "small-circle", "large-circle"]),
-  size: PropTypes.oneOf(["small", "default", "large"]),
+  size: PropTypes.oneOf(["small", "defaultt", "large"]),
   icon: PropTypes.node,
   iconSize: PropTypes.number, 
   iconPosition: PropTypes.oneOf(["left", "right"]), 

@@ -26,6 +26,15 @@ const TripDetails = ({ trip }) => {
         {trip.description}
       </Typograph>
 
+      <Typograph bold="True" className="amenities-title">Trip Program</Typograph>
+      <div className="trip-details-program">
+          {trip.program.map((step, index) => (
+          <Typograph variant="p" key={index}>
+              {step}
+          </Typograph>
+         ))}
+      </div>
+
 
       <div className="trip-details-amenities">
         <Typograph variant="h5" bold="True" className="amenities-title">

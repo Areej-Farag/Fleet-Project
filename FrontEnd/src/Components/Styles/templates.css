@@ -303,10 +303,14 @@
 .trip-details-template {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto 80px auto;
+  max-width: 1146px;
   gap: 48px;
-}
+}/*
+.details-temp{
+  margin: 0 auto 80px auto;
+ 
+}*/
 
 @media screen and (min-width: 769px) and (max-width: 1225px) {
 
@@ -338,6 +342,9 @@
   .nearby-governorates-section {
     margin-left: 40px;
     margin-right: 40px;
+  }
+  .trip-details-template {
+    margin: 0 50px 80px ;
   }
 }
 @media (max-width: 768px) { 
@@ -376,7 +383,11 @@
     height: 100%;
     border-radius: 12px;
   }
-
+  .trip-details-template {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 80px 50px ;
+  }
   .nearby-governorates-section {
     margin-left: 32px;
     margin-right: 32px;
