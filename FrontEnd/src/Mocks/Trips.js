@@ -8,6 +8,11 @@ export const trips = [
     description:
       "Explore the iconic Giza Pyramids and the Great Sphinx with a guided tour.",
     image: "https://wallpaperaccess.com/full/676889.jpg",
+    detailesImages: [
+      "https://images.pexels.com/photos/2359/sand-desert-statue-pyramid.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/2445852/pexels-photo-2445852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "8:00 AM: Departure from Cairo",
       "9:00 AM: Visit Giza Pyramids",
@@ -47,7 +52,12 @@ export const trips = [
     company: "Pharaoh Tours",
     description:
       "Discover the treasures of the Egyptian Museum in Tahrir Square.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/28978134/pexels-photo-28978134/free-photo-of-grand-egyptian-museum-gallery-interior-in-cairo.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/1270163/pexels-photo-1270163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/2076370/pexels-photo-2076370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/11156259/pexels-photo-11156259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -82,7 +92,12 @@ export const trips = [
     governate: "Cairo",
     company: "Cairo Adventures",
     description: "Shop and explore the historic Khan El Khalili market.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/27730299/pexels-photo-27730299/free-photo-of-a-view-of-a-market-with-many-items-for-sale.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/3627338/pexels-photo-3627338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/17721305/pexels-photo-17721305/free-photo-of-khan-el-khalili-bazaar-in-cairo-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/31311384/pexels-photo-31311384/free-photo-of-bustling-street-market-in-historic-cairo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Explore the bazaar",
@@ -118,7 +133,12 @@ export const trips = [
     company: "Nile Travel",
     description:
       "Visit the historic sites of Old Cairo, including the Coptic Museum.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/13420332/pexels-photo-13420332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/8799566/pexels-photo-8799566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/16078134/pexels-photo-16078134/free-photo-of-mosque-of-muhammad-ali-in-cairo-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/28669651/pexels-photo-28669651/free-photo-of-al-hakim-mosque-at-blue-hour-in-cairo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Hanging Church",
@@ -154,7 +174,14 @@ export const trips = [
     governate: "Cairo",
     company: "Cairo Adventures",
     description: "Enjoy a panoramic view of Cairo from the top of Cairo Tower.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: 
+    "https://images.pexels.com/photos/12607742/pexels-photo-12607742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    
+    detailesImages: [
+      "https://images.pexels.com/photos/17389510/pexels-photo-17389510/free-photo-of-view-of-the-cairo-tower-from-the-sea-cairo-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/16288048/pexels-photo-16288048/free-photo-of-sailboats-in-cairo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/12607743/pexels-photo-12607743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
     program: [
       "3:00 PM: Departure",
       "4:00 PM: Cairo Tower visit",
@@ -189,7 +216,12 @@ export const trips = [
     company: "Nile Luxury",
     description:
       "A luxurious dinner cruise on the Nile River with live entertainment.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/15131485/pexels-photo-15131485/free-photo-of-sailboat-in-water-in-mountains-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/19820428/pexels-photo-19820428/free-photo-of-a-man-reading-on-a-deck-overlooking-the-nile-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/27407537/pexels-photo-27407537/free-photo-of-nile-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/4353816/pexels-photo-4353816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
     program: [
       "6:00 PM: Board the cruise",
       "7:00 PM: Dinner and entertainment",
@@ -223,7 +255,13 @@ export const trips = [
     governate: "Cairo",
     company: "Pharaoh Tours",
     description: "Visit the new museum in Fustat and see the royal mummies.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: 
+    "https://images.pexels.com/photos/4577718/pexels-photo-4577718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/29712588/pexels-photo-29712588/free-photo-of-ancient-egyptian-sarcophagus-in-museum.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/18792764/pexels-photo-18792764/free-photo-of-ancient-egyptian-sculpture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/10210880/pexels-photo-10210880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -259,7 +297,12 @@ export const trips = [
     company: "Cairo Adventures",
     description:
       "Relax at Azhar Park with a beautiful view of Cairo and enjoy dinner.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/1059994/pexels-photo-1059994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://th.bing.com/th/id/OIP.Rl1plB0Uhq2ce1LGs1UbPQHaE7?rs=1&pid=ImgDetMain",
+      "https://images.pexels.com/photos/10157901/pexels-photo-10157901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://i.pinimg.com/originals/76/a7/ed/76a7ed78729b72950d16adbf5428eb38.jpg"
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Explore Azhar Park",
@@ -295,7 +338,12 @@ export const trips = [
     company: "Nile Breeze",
     description:
       "A traditional felucca ride on the Nile with stunning views of Cairo.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/7566888/pexels-photo-7566888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/5727263/pexels-photo-5727263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/27977832/pexels-photo-27977832/free-photo-of-details-for-hand.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/31607988/pexels-photo-31607988/free-photo-of-colorful-nile-boat-with-union-jack-flag.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
     program: [
       "3:00 PM: Start the felucca ride",
       "4:00 PM: Enjoy the views",
@@ -330,7 +378,12 @@ export const trips = [
     company: "Nile Travel",
     description:
       "Explore the historic Islamic Cairo and visit the Sultan Hassan Mosque.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://images.pexels.com/photos/29233230/pexels-photo-29233230/free-photo-of-intricate-islamic-architecture-with-domed-ceiling.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/8051702/pexels-photo-8051702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/28128196/pexels-photo-28128196/free-photo-of-dome.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/5777100/pexels-photo-5777100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Sultan Hassan Mosque",
@@ -368,7 +421,12 @@ export const trips = [
     company: "Pharaoh Tours",
     description:
       "A detailed tour of the Great Pyramids and the Sphinx in Giza.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+      image: "https://wallpaperaccess.com/full/676889.jpg",
+      detailesImages: [
+        "https://images.pexels.com/photos/2359/sand-desert-statue-pyramid.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2445852/pexels-photo-2445852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Great Pyramids",
@@ -405,7 +463,12 @@ export const trips = [
     company: "Desert Riders",
     description:
       "Experience a traditional camel ride around the Giza Pyramids.",
-    image: "camel_ride_giza.jpg",
+    image: "https://images.pexels.com/photos/17809559/pexels-photo-17809559/free-photo-of-people-riding-on-camels-in-giza.jpeg",
+    detailesImages: [
+      "https://images.pexels.com/photos/2402929/pexels-photo-2402929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/7079418/pexels-photo-7079418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3522880/pexels-photo-3522880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: ["9:00 AM: Departure", "10:00 AM: Camel ride", "12:00 PM: Return"],
     features: ["Camel ride", "Tour guide"],
     duration: "3 hours",
@@ -435,7 +498,12 @@ export const trips = [
     governate: "Giza",
     company: "Nile Travel",
     description: "Enjoy the Sound and Light Show at the Giza Pyramids.",
-    image: "sound_light_giza.jpg",
+    image: "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_headers/50519/2000x2000-0-70-7a61abe0693c71f4f80bc804635b1034.jpg",
+    detailesImages: [
+      "https://i.pinimg.com/736x/b2/4a/9a/b24a9a62121dbf1c882eb5811e569f08.jpg",
+      "https://veronikasadventure.com/wp-content/uploads/2024/02/2_sound-and-light-show-at-the-pyramids.jpg",
+      "https://planegypttours.com/files/xlarge/142942190-Sound-and-Light-Show-Pyramids.jpg",
+    ],
     program: ["6:00 PM: Departure", "7:00 PM: Show starts", "8:00 PM: Return"],
     features: ["Show ticket", "Transport"],
     duration: "2 hours",
@@ -465,7 +533,12 @@ export const trips = [
     governate: "Giza",
     company: "Pharaoh Tours",
     description: "Visit the ancient sites of Saqqara and Memphis near Giza.",
-    image: "saqqara_memphis.jpg",
+    image: "https://images.pexels.com/photos/10998833/pexels-photo-10998833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/11054687/pexels-photo-11054687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://touring-egypt.com/wp-content/uploads/2023/06/43-1.jpg",
+      "https://touring-egypt.com/wp-content/uploads/2023/06/43-1.jpg",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Saqqara",
@@ -501,7 +574,12 @@ export const trips = [
     governate: "Giza",
     company: "Nile Travel",
     description: "Explore the Bent Pyramid and Red Pyramid in Dahshur.",
-    image: "dahshur_pyramids.jpg",
+    image: "https://paliparan.com/wp-content/uploads/2024/01/dahshur-3.jpg",
+    detailesImages: [
+      "https://th.bing.com/th/id/OIP.bTeFBpYZ4RSgpoEhOVAfFgHaFj?rs=1&pid=ImgDetMain",
+      "https://cairoprivatetours.com/wp-content/uploads/2020/09/Dahshour-Pyramids-3-1079x490.jpg",
+      "https://www.shutterstock.com/shutterstock/videos/1033381370/thumb/1.jpg?ip=x480",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Visit Bent Pyramid",
@@ -538,7 +616,12 @@ export const trips = [
     company: "Desert Riders",
     description:
       "Hike around the Giza Plateau with stunning views of the pyramids.",
-    image: "giza_hiking.jpg",
+    image: "https://th.bing.com/th/id/R.f1d27ed1ac26e7cf4e003296ee579a48?rik=HaNsgA8j80MmrQ&pid=ImgRaw&r=0",
+    detailesImages: [
+      "https://i.pinimg.com/originals/2b/2b/18/2b2b1861b2355afd187b9d258558b7c5.jpg",
+      "https://ucarecdn.com/cf7cebc3-ed4b-4524-b666-fdce00873256/",
+      "https://ak5.picdn.net/shutterstock/videos/12294275/thumb/1.jpg",
+    ],
     program: [
       "7:00 AM: Departure",
       "8:00 AM: Start hiking",
@@ -566,6 +649,7 @@ export const trips = [
     ],
     category: "Adventure",
   },
+  /*
   {
     id: "T017",
     name: "Sunset at the Pyramids",
@@ -573,6 +657,11 @@ export const trips = [
     company: "Nile Breeze",
     description: "Watch the sunset over the Giza Pyramids with a guided tour.",
     image: "sunset_giza.jpg",
+    detailesImages: [
+      "https://i.pinimg.com/originals/2b/2b/18/2b2b1861b2355afd187b9d258558b7c5.jpg",
+      "https://i.pinimg.com/originals/2b/2b/18/2b2b1861b2355afd187b9d258558b7c5.jpg",
+      "https://ak5.picdn.net/shutterstock/videos/12294275/thumb/1.jpg",
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -599,7 +688,7 @@ export const trips = [
       },
     ],
     category: "Sightseeing",
-  },
+  },*/
   {
     id: "T018",
     name: "Giza Zoo and Picnic",
@@ -607,7 +696,12 @@ export const trips = [
     company: "Cairo Adventures",
     description:
       "A trip to Giza Zoo with a picnic, perfect for a relaxing day out.",
-    image: "giza_zoo.jpg",
+    image: "https://egyptianstreets.com/wp-content/uploads/2023/09/image3-2-704x528.png",
+    detailesImages: [
+      "https://www.globaltimes.cn/Portals/0/attachment/2021/2021-09-17/379d124e-ef43-4ce2-94c6-e628585aa5c2.jpeg",
+      "https://cairoscene.com/Content/Admin/Uploads/Articles/ArticlesMainPhoto/1168020/5cee8674-cdde-42c3-a61b-852ce14f6d44.jpg",
+      "https://th.bing.com/th/id/R.a90eac1f2c31a36c107972a28ad0af80?rik=HvkibEZMg7Q2kA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-TG-ayokWH_g%2fThbwM6yrvVI%2fAAAAAAAAkn8%2fci0WpHlU5DE%2fs1600%2f3886180052_4417a12c37_b.jpg&ehk=RBn%2fVQJ0rgFGSOM0IHsPbAjeniz3yfkDDpmgFup9RhI%3d&risl=&pid=ImgRaw&r=0",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Zoo visit",
@@ -643,7 +737,12 @@ export const trips = [
     company: "Pharaoh Tours",
     description:
       "Visit the Imhotep Museum in Saqqara to learn about ancient Egypt.",
-    image: "imhotep_museum.jpg",
+    image: "https://news.artnet.com/app/news-upload/2023/12/GettyImages-1819253933-1920x1280.jpg",
+    detailesImages: [
+      "https://news.artnet.com/app/news-upload/2023/12/GettyImages-1819253959-1920x1280.jpg",
+      "https://www.inside-egypt.com/img/thumbs/w1200h800q100/news/9aad6ddbc2b9661555d3.jpeg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/15/b7/c3/dd/20181208-135114-largejpg.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -671,6 +770,7 @@ export const trips = [
     ],
     category: "Cultural",
   },
+  /*
   {
     id: "T020",
     name: "Pyramids Photography Tour",
@@ -678,6 +778,11 @@ export const trips = [
     company: "Nile Travel",
     description: "A guided photography tour around the Giza Pyramids.",
     image: "pyramids_photography.jpg",
+    detailesImages: [
+      "https://news.artnet.com/app/news-upload/2023/12/GettyImages-1819253959-1920x1280.jpg",
+      "https://www.inside-egypt.com/img/thumbs/w1200h800q100/news/9aad6ddbc2b9661555d3.jpeg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/15/b7/c3/dd/20181208-135114-largejpg.jpg",
+    ],
     program: [
       "7:00 AM: Departure",
       "8:00 AM: Photography session",
@@ -704,7 +809,7 @@ export const trips = [
       },
     ],
     category: "Photography",
-  },
+  },*/
   // Alexandria Trips (T021 - T029)
   {
     id: "T021",
@@ -713,7 +818,12 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Explore the historic Qaitbay Citadel and the modern Bibliotheca Alexandrina.",
-    image: "qaitbay_citadel.jpg",
+    image: "https://www.youregypttours.com/storage/1082/1678607223.jpg",
+    detailesImages: [
+      "https://jakadatoursegypt.com/wp-content/uploads/2020/12/Citadel-of-Qaitbay.jpg",
+      "https://saudiarabiatours.net/wp-content/uploads/2023/05/image-26.png",
+      "https://unitedguidestravel.com/wp-content/uploads/2022/04/top-view-of-qaitbay-citadel-800x450.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Visit Qaitbay Citadel",
@@ -753,7 +863,12 @@ export const trips = [
     company: "Alexandria Adventures",
     description:
       "Relax in the beautiful Montazah Palace Gardens with stunning sea views.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://live.staticflickr.com/65535/52196295755_b46d678e2e_h.jpg",
+    detailesImages: [
+      "https://media-cdn.tripadvisor.com/media/photo-s/04/84/c5/ae/montazah-palace-gardens.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/04/84/c2/93/montazah-palace-gardens.jpg",
+      "https://th.bing.com/th/id/OIP.9a8Iw99urWQv8tAOWiZayAHaFj?rs=1&pid=ImgDetMain",
+    ],
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Explore Montazah Gardens",
@@ -789,7 +904,12 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Discover the history of Alexandria at the Alexandria National Museum.",
-    image: "alexandria_museum.jpg",
+    image: "https://th.bing.com/th/id/OIP.PvpLP6M7q1gSie-dgfQEHwHaJ4?w=500&h=667&rs=1&pid=ImgDetMain",
+    detailesImages: [
+      "https://th.bing.com/th/id/R.aea8c8ff40793211e8e47df858e7546e?rik=UZ4KUP8NFQ13IQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-YhRfRUSJTas%2fTn741Ac6D2I%2fAAAAAAAAAM8%2fqkQj0UXe-SQ%2fs1600%2falexandria-national-museum-1024x768.jpg&ehk=y06S5sZd7MT%2fzYV72CXHEyVGDVsaLbnwrhOxzR%2f%2fQzk%3d&risl=&pid=ImgRaw&r=0",
+      "https://veronikasadventure.com/wp-content/uploads/2024/07/1_skip-the-line-ticket-to-national-museum-of-egyptian-civilization.jpg",
+      "https://www.inside-egypt.com/img/thumbs/w1200h800q85/news/0cfc6a9baeb391ac3fbc.jpeg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
