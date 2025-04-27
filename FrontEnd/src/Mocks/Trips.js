@@ -825,7 +825,13 @@ export const trips = [
     company: "Alexandria Adventures",
     description:
       "A relaxing walk along the Corniche and Stanley Bridge with sea views.",
-    image: "stanley_bridge.jpg",
+    image:
+      "https://images.pexels.com/photos/17408308/pexels-photo-17408308/free-photo-of-view-of-the-stanley-bridge-in-alexandria-egypt.jpeg",
+    detailsImages: [
+      "https://images.pexels.com/photos/10632137/pexels-photo-10632137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/15330648/pexels-photo-15330648/free-photo-of-traffic-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/25323282/pexels-photo-25323282/free-photo-of-citadel-of-qaitbay-in-alexandria-seen-from-bay.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "3:00 PM: Departure",
       "4:00 PM: Walk along the Corniche",
@@ -861,7 +867,13 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Explore the ancient Catacombs of Kom El Shoqafa, a unique archaeological site.",
-    image: "kom_el_shoqafa.jpg",
+    image:
+      "https://mlrhpz8jmuut.i.optimole.com/cb:w8qn.502d1/w:710/h:429/q:mauto/f:best/ig:avif/id:d6b6be244ac72b7f29944e4982a4cd21/https://www.egypttoursplus.com/the-catacombs-of-kom-el-shoqafa.jpg",
+    detailsImages: [
+      "https://img.freepik.com/premium-photo/inside-view-ancient-catacombs-kom-el-shoqafa-alexandria-egypt_759575-10910.jpg",
+      "https://unitedguidestravel.com/wp-content/uploads/2022/04/inside-catacombs-of-kom-el-shoqafa-800x450.jpg",
+      "",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Catacombs tour",
@@ -896,7 +908,13 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Visit the iconic Pompey's Pillar and the ancient Serapeum site.",
-    image: "pompeys_pillar.jpg",
+    image:
+      "https://www.worldatlas.com/r/w960-q80/upload/bb/cd/66/shutterstock-700348600.jpg",
+    detailsImages: [
+      "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,dpr=1/tour_img/05a41b91937dbe75.jpeg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIh5Rx1kjtwFEKztyXT_zbvja5c2rImvx4gkQ94qG8uB4_rm6_bcox_mCjPxhVEEykGswBQCeEEe2Bpc0R35KIQ0Ggp_dL-fyjpZN9-nZkEf-td3ROcVtpBZsOHOkCmOBAzGtgKV6P-28/s1600/P1190918.JPG",
+      "https://www.worldatlas.com/r/w1200/upload/bb/cd/66/shutterstock-700348600.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Visit Pompey's Pillar",
@@ -932,7 +950,13 @@ export const trips = [
     company: "Alexandria Adventures",
     description:
       "Enjoy a delicious seafood lunch with a stunning view of the Mediterranean.",
-    image: "seafood_alexandria.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AkqFZ_P3eMSPF9pIe-Nu9JppLF74_tP2QQ&s",
+    detailsImages: [
+      "https://images.pexels.com/photos/2410602/pexels-photo-2410602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/28962526/pexels-photo-28962526/free-photo-of-gourmet-dining-with-pasta-and-octopus-dishes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/11653557/pexels-photo-11653557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "12:00 PM: Departure",
       "1:00 PM: Seafood lunch",
@@ -967,7 +991,13 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Watch a beautiful sunset at Abu Qir Bay with a relaxing evening by the sea.",
-    image: "abu_qir_sunset.jpg",
+    image:
+      "https://images.pexels.com/photos/31708849/pexels-photo-31708849/free-photo-of-serene-sunset-over-nha-trang-bay-in-vietnam.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailsImages: [
+      "https://images.pexels.com/photos/6346645/pexels-photo-6346645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/9256417/pexels-photo-9256417.jpeg",
+      "https://images.pexels.com/photos/3560166/pexels-photo-3560166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -1002,7 +1032,13 @@ export const trips = [
     company: "Mediterranean Tours",
     description:
       "Visit the ancient Roman Amphitheater in Alexandria, a well-preserved historical site.",
-    image: "roman_amphitheater.jpg",
+    image:
+      "https://images.pexels.com/photos/24513996/pexels-photo-24513996/free-photo-of-hierapolis-ancient-theater-in-pamukkale-turkey.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/29800614/pexels-photo-29800614/free-photo-of-ancient-roman-amphitheater-in-hierapolis.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3290074/pexels-photo-3290074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/11571098/pexels-photo-11571098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Amphitheater tour",
@@ -1038,7 +1074,13 @@ export const trips = [
     company: "Canal Adventures",
     description:
       "A guided tour to see the iconic Suez Canal and learn about its history.",
-    image: "suez_canal.jpg",
+    image:
+      "https://images.pexels.com/photos/17881029/pexels-photo-17881029/free-photo-of-suez-docks-first-light.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/17868109/pexels-photo-17868109/free-photo-of-tugboats-on-the-suez.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/16750112/pexels-photo-16750112/free-photo-of-a-motorboat-swimming-in-port-in-istanbul.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/18115096/pexels-photo-18115096/free-photo-of-tanker-ship-sailing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Suez Canal tour",
@@ -1075,7 +1117,13 @@ export const trips = [
     company: "Suez Getaways",
     description:
       "Spend a relaxing day at Ain Sokhna Beach with swimming and beach activities.",
-    image: "ain_sokhna_beach.jpg",
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/1440x1440/466987140.jpg?k=86e0e97d9e88123651dafe2df3ecef3a6bfd713077b6bd79859d5c122c435004&o=",
+    detailesImages: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/16/e2/47/porto-sokhna-beach-resort.jpg?w=1400&h=1400&s=1",
+      "https://www.ahstatic.com/photos/b4m7_ho_00_p_1024x768.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/95666653.jpg?k=dcb06630afcf88b5ffb23b2e531e1415e8585110e0c405fa640a0d5a783a23ae&o=&hp=1",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Ain Sokhna Beach",
@@ -1111,7 +1159,12 @@ export const trips = [
     company: "Canal Adventures",
     description:
       "Explore the Suez National Museum and learn about the region's history.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://mainlymuseums.com/images/posts/922/Original-boat.JPG",
+    detailesImages: [
+      "https://film-fixers.com/wp-content/uploads/2022/09/Filming_the_Suez_National_Museum.jpg",
+      "https://pbs.twimg.com/media/D9AqovfWwAA3lr-.jpg",
+      "https://www.happyegypt.com/storage/10521/conversions/egyptian-museum-webp.webp",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Museum tour",
@@ -1145,7 +1198,14 @@ export const trips = [
     governate: "Suez",
     company: "Suez Getaways",
     description: "Hike in the scenic Galala Mountain with stunning views.",
-    image: "galala_mountain.jpg",
+    image:
+      "https://images.pexels.com/photos/31805881/pexels-photo-31805881/free-photo-of-mountain-trail-runner-in-scenic-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/9048795/pexels-photo-9048795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/9048788/pexels-photo-9048788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/29241628/pexels-photo-29241628/free-photo-of-hikers-traverse-rocky-mountain-path-under-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
+
     program: [
       "7:00 AM: Departure",
       "8:00 AM: Start hiking",
@@ -1180,7 +1240,14 @@ export const trips = [
     company: "Canal Adventures",
     description:
       "Enjoy a beautiful sunset at Suez Bay with a relaxing evening.",
-    image: "suez_bay_sunset.jpg",
+    image:
+      "https://images.pexels.com/photos/22643843/pexels-photo-22643843/free-photo-of-view-of-a-seashore-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailsImages: [
+      "https://images.pexels.com/photos/10832151/pexels-photo-10832151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/27706846/pexels-photo-27706846/free-photo-of-a-boat-is-sailing-in-the-ocean-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/189187/pexels-photo-189187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
+
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -1215,7 +1282,13 @@ export const trips = [
     company: "Suez Getaways",
     description:
       "A boat ride along the Suez Canal to see ships passing through.",
-    image: "suez_canal_boat.jpg",
+    image:
+      "https://flagshipamsterdam.com/wp-content/uploads/2025/03/IMG_3130-bewerkt-8-4-scaled.jpg",
+    detailesImages: [
+      "https://tmhmedia.themodernhouse.com/uploads/TMH_H.Goldsmith_MaidaVale-105.jpg",
+      "https://caitypfohl.com/wp-content/uploads/2019/04/844835CE-DC23-4DA3-BFD8-C006375EE936-1.jpg",
+      "https://intaka.co.za/wp-content/uploads/2023/12/intake-boat-rides-1200x676.jpg",
+    ],
     program: ["10:00 AM: Departure", "11:00 AM: Boat ride", "1:00 PM: Return"],
     features: ["Boat ride", "Tour guide"],
     duration: "3 hours",
@@ -1246,7 +1319,13 @@ export const trips = [
     company: "Canal Adventures",
     description:
       "A historical tour of Suez, including its landmarks and history.",
-    image: "suez_historical.jpg",
+    image:
+      "https://cdn.britannica.com/73/175673-050-B8E544E8/Ships-Suez-Canal-Egypt-world-shipping-lanes.jpg",
+    detailesImages: [
+      "https://www.supplychainbrain.com/ext/resources/2024/01/17/RED-SEA-SUEZ-CANAL-SHIPS-iStock--IgorSPb--517876694.jpg?t=1735670328&width=1080",
+      "https://www.freshplaza.com/remote/https/agfstorage.blob.core.windows.net/misc/FP_com/2024/05/15/Abor.jpg?preset=OgImage",
+      "https://www.logisticsmiddleeast.com/cloud/2023/04/13/ofzo0s8c-delivered-blog-world-maritime-day-sustainable-shipping-for-a-sustainable-planet-1200x773-1.jpeg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Visit historical sites",
@@ -1282,7 +1361,13 @@ export const trips = [
     company: "Suez Getaways",
     description:
       "Enjoy a delicious seafood lunch featuring local flavors of Suez.",
-    image: "suez_seafood.jpg",
+    image:
+      "https://images.pexels.com/photos/2827263/pexels-photo-2827263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/27670192/pexels-photo-27670192/free-photo-of-a-table-with-food-and-drinks-on-it-overlooking-the-water.jpeg",
+      "https://images.pexels.com/photos/10398943/pexels-photo-10398943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/30120290/pexels-photo-30120290/free-photo-of-spicy-seafood-soup-with-fresh-shellfish.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "12:00 PM: Departure",
       "1:00 PM: Seafood lunch",
@@ -1317,7 +1402,12 @@ export const trips = [
     company: "Canal Adventures",
     description:
       "A full-day trip from Cairo to Suez, including the Suez Canal and key landmarks.",
-    image: "suez_day_trip.jpg",
+    image: "https://media.tacdn.com/media/photo-m/1280/2e/c0/db/93/caption.jpg",
+    detailesImages: [
+      "https://veronikasadventure.com/wp-content/uploads/2024/06/1_exploring-egypts-heart-cairo-to-suez-canal-day-expedition.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/63/10/52/caption.jpg?w=1200&h=-1&s=1",
+      "https://portnews.ru/upload/news/rtf/rtfimage_95766759862_ebx.jpg",
+    ],
     program: [
       "7:00 AM: Departure from Cairo",
       "9:00 AM: Suez Canal tour",
@@ -1354,7 +1444,13 @@ export const trips = [
     company: "Suez Getaways",
     description:
       "A photography tour capturing the beauty of the Suez Canal and its surroundings.",
-    image: "suez_photography.jpg",
+    image:
+      "https://images.pexels.com/photos/19820485/pexels-photo-19820485/free-photo-of-a-man-is-standing-on-the-deck-of-a-sailboat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    detailesImages: [
+      "https://images.pexels.com/photos/19820485/pexels-photo-19820485/free-photo-of-a-man-is-standing-on-the-deck-of-a-sailboat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/19820157/pexels-photo-19820157/free-photo-of-a-boat-with-an-egyptian-flag-on-it-near-a-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/19820488/pexels-photo-19820488/free-photo-of-a-group-of-people-in-a-small-boat-on-the-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    ],
     program: [
       "7:00 AM: Departure",
       "8:00 AM: Photography session",
@@ -1389,7 +1485,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "A tour of Arish city, exploring its culture and history.",
-    image: "arish_city.jpg",
+    image:
+      "https://www.egypttoday.com/siteimages/ArticleImgs/2023/1/14/115041-p3.jpg",
+    detailesImages: [
+      "https://beta.sis.gov.eg/media/381346/wonderful-picture-palm-trees-beach-al-arish-northern-egypt-784462-44.jpg",
+      "https://www.egypttoday.com/siteimages/ArticleImgs/2023/1/14/146641-p6.jpg",
+      "https://www.arabcont.com/Images/ProjectImage/Aresh7.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: City tour",
@@ -1424,7 +1526,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Immerse yourself in Bedouin culture with a local experience.",
-    image: "bedouin_experience.jpg",
+    image:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/e8/4c.jpg",
+    detailesImages: [
+      "https://media.istockphoto.com/id/1401473312/photo/young-saudi-man-saddling-camel-for-trek-in-desert.webp?a=1&b=1&s=612x612&w=0&k=20&c=6DuNGT5WmWq8Vl5RTwJ07f7lDBdcBQrTsvteXXy_c2M=",
+      "https://images.pexels.com/photos/4099907/pexels-photo-4099907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://plus.unsplash.com/premium_photo-1699533133565-aea24c6041f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Meet Bedouin community",
@@ -1459,7 +1567,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Relax on the beautiful beaches of North Sinai.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image:
+      "https://images.unsplash.com/photo-1600843221331-294e4eb65e6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detailesImages: [
+      "https://images.unsplash.com/photo-1625968266695-44033d3a87d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Tm9ydGglMjBTaW5haSUyMEJlYWNoZXMlMjBWaXNpdHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1573720008065-0d385c64466f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1694308721895-0c0da35ba4b1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at the beach",
@@ -1495,7 +1609,13 @@ export const trips = [
     company: "Sinai Adventures",
     description:
       "A tour of historical sites in North Sinai, including ancient landmarks.",
-    image: "north_sinai_historical.jpg",
+    image:
+      "https://www.egypttoursportal.com/images/2023/08/Best-Mount-Sinai-Tours-Packages-Egypt-Tours-Portal.jpg",
+    detailesImages: [
+      "https://blueskygroup.net/media/k2/galleries/250/mount-sinai-st-catherine-monastery-day-tour-sharm-el-sheikh-trip-excursion-day-tours-egypt.jpg",
+      "https://www.youregypttours.com/storage/283/1536836176.jpg",
+      "https://english.book-tour-egypt.com/public/images/items/7729e9d53919b6a291d9c5754552c8ab.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Visit historical sites",
@@ -1530,7 +1650,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Watch a beautiful sunset at Arish Beach.",
-    image: "arish_beach_sunset.jpg",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e0/ce/85/sunset-beach.jpg?w=1200&h=-1&s=1",
+    detailesImages: [
+      "https://images.pexels.com/photos/5743442/pexels-photo-5743442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://c4.wallpaperflare.com/wallpaper/442/10/327/sea-of-arish-wallpaper-preview.jpg",
+      "https://i.pinimg.com/736x/96/77/6b/96776bb308ede6feab795a60aff572d6.jpg",
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -1564,7 +1690,14 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Experience a night of camping in the North Sinai desert.",
-    image: "north_sinai_camping.jpg",
+    image:
+      "https://images.unsplash.com/photo-1560017523-7a3ff6adffd0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detailesImages: [
+      "https://media.istockphoto.com/id/1170091194/photo/camp-in-the-morning-in-the-desert-mhamid-zagora-morocco-north-africa.webp?a=1&s=612x612&w=0&k=20&c=eEDEAcrZZNtmdJ_XIlL7q4OPsVAL365eluAUbdrrQSs=",
+      "https://images.unsplash.com/photo-1644098580135-9a94c0539050?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1591373894845-53da22b7c487?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
+
     program: [
       "3:00 PM: Departure",
       "4:00 PM: Set up camp",
@@ -1600,7 +1733,13 @@ export const trips = [
     company: "Sinai Adventures",
     description:
       "Explore the local market in Arish and shop for traditional goods.",
-    image: "arish_market.jpg",
+    image:
+      "https://images.unsplash.com/photo-1648501909236-6d15a74c5cfb?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detailesImages: [
+      "https://plus.unsplash.com/premium_photo-1686529896385-8a8d581d0225?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TG9jYWwlMjBNYXJrZXQlMjBpbiUyMEFyaXNofGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1628335271813-aa29807776b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1606576554147-35ec2734c770?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Explore the market",
@@ -1634,7 +1773,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Enjoy a traditional Bedouin dinner in the desert.",
-    image: "bedouin_dinner.jpg",
+    image:
+      "https://scenenow.com/Content/editor_api/images/19120777_320469135042667_8390993463490904064_n-f5c0a21b-eca8-48e1-81bf-65508d5b806e.jpg",
+    detailesImages: [
+      "https://plus.unsplash.com/premium_photo-1683121543713-ed2cfa599129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/b6/e4/50/traditional-bedouin-dinner.jpg",
+      "https://www.shouf.io/cdn/shop/products/ScreenShot2023-10-30at5.39.07PM-927466_750x.png?v=1707574121",
+    ],
     program: [
       "5:00 PM: Departure",
       "6:00 PM: Dinner with Bedouins",
@@ -1668,7 +1813,13 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Hike through the scenic landscapes of North Sinai.",
-    image: "north_sinai_hiking.jpg",
+    image:
+      "https://www.muchbetteradventures.com/magazine/content/images/size/w2000/2019/09/10134140/Trekking-in-Morocco-1.jpg",
+    detailesImages: [
+      "https://holidaytours.one/wp-content/uploads/2022/12/530161_10151448450427178_1576948380_n.jpg",
+      "https://toubkal-trekking.com/wp-content/uploads/2017/08/2-days-toubkal-climb-4-550x550-1.jpg",
+      "https://media.cnn.com/api/v1/images/stellar/prod/180111095042-09-hiking-sinai.jpg?q=w_1110,c_fill",
+    ],
     program: [
       "7:00 AM: Departure",
       "8:00 AM: Start hiking",
@@ -3401,10 +3552,10 @@ export const trips = [
     image:
       "https://images.pexels.com/photos/22643850/pexels-photo-22643850/free-photo-of-sahl-hasheesh-bay-on-coastline-of-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     detailesImages: [
-     "https://www.bestereistijd.nl/uploads/2019/05/4024961-1200x675.jpg",
-     "https://images.pexels.com/photos/28682229/pexels-photo-28682229/free-photo-of-aerial-view-of-red-sea-coastline-in-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://www.propertyfinder.eg/blog/wp-content/uploads/2020/02/sahl-hasheesh-600x355.jpeg"
-],
+      "https://www.bestereistijd.nl/uploads/2019/05/4024961-1200x675.jpg",
+      "https://images.pexels.com/photos/28682229/pexels-photo-28682229/free-photo-of-aerial-view-of-red-sea-coastline-in-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.propertyfinder.eg/blog/wp-content/uploads/2020/02/sahl-hasheesh-600x355.jpeg",
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -3529,9 +3680,9 @@ export const trips = [
     image: "https://media.tuicontent.nl/p/header/all-inclusive-el-gouna.jpg",
     detailesImages: [
       "https://images.pexels.com/photos/20401331/pexels-photo-20401331/free-photo-of-el-gouna-festival-plaza-hurghada-egypt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-       "https://thumbs.dreamstime.com/b/el-gouna-bungalows-egypt-january-hotel-buildings-red-sea-holiday-resort-142754495.jpg",
-       "https://thumbs.dreamstime.com/b/waterfront-el-gouna-city-egypt-view-new-marina-boats-267875476.jpg"]
-       ,
+      "https://thumbs.dreamstime.com/b/el-gouna-bungalows-egypt-january-hotel-buildings-red-sea-holiday-resort-142754495.jpg",
+      "https://thumbs.dreamstime.com/b/waterfront-el-gouna-city-egypt-view-new-marina-boats-267875476.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "9:30 AM: Explore the lagoons",
@@ -3574,9 +3725,9 @@ export const trips = [
       "http://www.beach-on-map.com/img/2/egypt-hurghada-makadi-bay-beach-parasols-orig.jpg",
     detailesImages: [
       "https://thumbs.dreamstime.com/b/makadi-bay-beach-egypt-blue-sea-188011678.jpg",
-       "https://www.fischer.cz/Images/000398/egypt-egypt-hurghada-makadi-bay-2_1200x0.jpg",
-       "https://mlrhpz8jmuut.i.optimole.com/cb:L9rW~500be/w:auto/h:auto/q:mauto/https://www.egypttoursplus.com/wp-content/uploads/2014/04/Temple-of-Hibis.jpg"
-],
+      "https://www.fischer.cz/Images/000398/egypt-egypt-hurghada-makadi-bay-2_1200x0.jpg",
+      "https://mlrhpz8jmuut.i.optimole.com/cb:L9rW~500be/w:auto/h:auto/q:mauto/https://www.egypttoursplus.com/wp-content/uploads/2014/04/Temple-of-Hibis.jpg",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Makadi Bay",
@@ -3616,10 +3767,10 @@ export const trips = [
       "Explore the Kharga Oasis, known for its historical sites and natural beauty.",
     image: "https://www.youregypttours.com/storage/990/1674545713.jpg",
     detailesImages: [
-       "https://images.memphistours.com/large/1308040690_el%20kharga%203.jpg",
-       "https://images.memphistours.com/large/3358046_al-Bagawat,%20Christian%20necropolis,%204th-6th%20cents.,%20Kharga%20Oasis.jpg",
-       "https://www.flyingcarpettours.com/files/xlarge/412311915-Kharga-Oasis.jpg"
-],
+      "https://images.memphistours.com/large/1308040690_el%20kharga%203.jpg",
+      "https://images.memphistours.com/large/3358046_al-Bagawat,%20Christian%20necropolis,%204th-6th%20cents.,%20Kharga%20Oasis.jpg",
+      "https://www.flyingcarpettours.com/files/xlarge/412311915-Kharga-Oasis.jpg",
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Kharga Oasis",
