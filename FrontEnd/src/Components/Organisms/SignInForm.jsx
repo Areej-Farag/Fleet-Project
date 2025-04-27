@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import InputField from "../Atoms/InputField";
 import Button from "../Atoms/Button";
 import Typograph from "../Atoms/Typograph";
@@ -6,12 +6,20 @@ import colors from "../Atoms/Colors";
 import { FaRegEye } from "react-icons/fa";
 import '../Styles/organisms.css'
 import { RxCross2 } from "react-icons/rx";
+import { useAuthModal } from "../../Context/AuthModalContext";
 
 export default function SignInForm() {
+  const { switchAuthType, closeModal, isModalOpen } = useAuthModal(); 
+  const [isActive, setIsActive] = useState(isModalOpen); 
+  const handleSwitchToSignIn = () => {
+    closeModal();
+    switchAuthType("signup");
+  };
   return (
-    <div className="Sign-In-overlay">
+    <div className={`Sign-In-Container ${isActive ? 'active' : ''}`}>
+    <div className="Sign-In-overlay" >
       <div className="sign-in-form">
-      <button className="close-button"><RxCross2 />
+      <button className="close-button" onClick={closeModal}><RxCross2 />
       </button>
         <Typograph variant="lead" color={colors.Neutrals[2]} bold={true}>
           Sign in
@@ -26,13 +34,22 @@ export default function SignInForm() {
           }
         />
         <div className="btn-container">
-        <Button color="blue" size="large" shape="default" >Login</Button>
+        <Button color="blue" size="large" shape="default">Login</Button>
 
         </div>
         <Typograph variant="p" color={colors.Neutrals[2]}>
           Forgot Password?
       </Typograph>
+      <Typograph variant="p" color={colors.Neutrals[2]}>
+          don't have an account?  <button 
+            onClick={handleSwitchToSignIn}
+            style={{ background: 'none', border: 'none', color: 'blue', cursor: 'pointer' }}
+          >
+            Sign Up
+          </button>
+      </Typograph>
       </div>
+    </div>
     </div>
   );
 }

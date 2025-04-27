@@ -10,6 +10,7 @@ import Badge from "../Atoms/Badge";
 import logo from "../../assets/Images/logo.png";
 import UserButtonList from "../Molecules/UserButtonList";
 import "../Styles/Navbar.css";
+import { useAuthModal } from "../../Context/AuthModalContext";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,6 +21,12 @@ const Navbar = () => {
   const [language, setLanguage] = useState("EN");
   const [toggleLang, setToggleLang] = useState(false);
   const [toggleProfile, setToggleProfile] = useState(false);
+  const { switchAuthType, openModal } = useAuthModal();
+
+const handleSwitchToSignIn = () => {
+  openModal();
+  switchAuthType("signin");
+}
   const ShowProfile = () => {
     setToggleProfile(!toggleProfile);
   };
@@ -47,6 +54,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  const [user, setUser] = useState(null);
 
   return (
     <nav className="navbar-container border-bottom bg-white">
@@ -93,7 +101,7 @@ const Navbar = () => {
               </Button>
               <div
                 className="languageDropdown"
-                style={{ opacity: toggleLang ? "0" : "1" }}
+                style={{ opacity: toggleLang ? "1" : "0" }}
               >
                 <ul className="list-unstyled mb-0">
                   <li>
@@ -156,19 +164,27 @@ const Navbar = () => {
 
           {/* Avatar */}
           <div className="Avatar-holder">
-          <button className="Avatar-button"
-            onClick={ShowProfile}
-          >
-            {" "}
-            <Avatar src={ava} alt="User" size="small" />{" "}
-          </button>
-          <div
-            className="profileDropdown" 
-            style={{ opacity: toggleProfile ? "0" : "1" }}
-          >
-            <UserButtonList />
-          </div>
-          </div>
+  {user ? (
+    <>
+      <button className="Avatar-button" onClick={ShowProfile}>
+        <Avatar src={ava} alt="User" size="small" />
+      </button>
+      <div
+        className="profileDropdown"
+        style={{
+          opacity: toggleProfile ? "1" : "0",
+          visibility: toggleProfile ? "visible" : "hidden"
+        }}
+      >
+        <UserButtonList />
+      </div>
+    </>
+  ) : (
+      <Button color="blue" size="small" shape="default" onClick={handleSwitchToSignIn}>Sign In</Button>
+
+  )}
+</div>
+
          
           {/* Mobile Menu */}
           <div className="d-md-none" onClick={toggleMobileMenu}>
