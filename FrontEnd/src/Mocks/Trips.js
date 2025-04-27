@@ -1605,6 +1605,7 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "A tour of Arish city, exploring its culture and history.",
+
     image:
       "https://www.egypttoday.com/siteimages/ArticleImgs/2023/1/14/115041-p3.jpg",
     detailesImages: [
@@ -1933,6 +1934,7 @@ export const trips = [
     governate: "North Sinai",
     company: "Sinai Adventures",
     description: "Hike through the scenic landscapes of North Sinai.",
+
     image:
       "https://www.muchbetteradventures.com/magazine/content/images/size/w2000/2019/09/10134140/Trekking-in-Morocco-1.jpg",
     detailesImages: [
@@ -1975,7 +1977,12 @@ export const trips = [
     company: "Red Sea Divers",
     description:
       "Dive into the vibrant coral reefs of Sharm El Sheikh with a professional guide.",
-    image: "sharm_diving.jpg",
+    image: "https://travelhouse.com.cy/wp-content/uploads/2024/04/scuba2.jpg",
+    detailesImages: [
+      "https://circle.b-cdn.net//photos/media-items/home%20banner_32f40_lg.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUA2yYcczLDJZktp0MWcB8drMdBMWGfmT1A&s",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/ff/ba/9b/diving-in-sharm-el-sheikh.jpg?w=1200&h=-1&s=1"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at diving site",
@@ -2016,7 +2023,11 @@ export const trips = [
     company: "Sinai Adventures",
     description:
       "Experience an exhilarating desert safari with quad biking and a Bedouin tea stop.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://hhtoursegypt.com/wp-content/uploads/2024/04/5b388f62-4ce5-4f36-b639-940515ffee51-1024x1024.jpg",
+    detailesImages: ["https://www.fourseasons.com/alt/img-opt/~60..1376,5140-0,0000-1602,4000-2003,0000/author/content/dam/fourseasons/images/web/DJB/DJB_995_original.jpg",
+      "https://www.redseareisen.com/fomibun/2021/08/a-camel-ride-and-hike-through-the-desert-of-dubai-at-sunset.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQXZJNgxr6PtwnjIGQ01LuG7AI1Xsx8jBXw&s"
+    ],
     program: [
       "2:00 PM: Departure",
       "3:00 PM: Quad biking in the desert",
@@ -2052,7 +2063,11 @@ export const trips = [
     company: "Red Sea Divers",
     description:
       "Explore Ras Mohammed National Park with snorkeling and scenic views.",
-    image: "ras_mohammed.jpg",
+    image: "https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_1920,h_1008,c_fill,q_auto,g_center/t_cnnarabic_watermark_logo_v5/cnnarabic/2021/08/25/images/191897.jpg",
+    detailesImages: ["https://travilia.com/uploads/0000/8/2023/11/14/steptodowncom494207.jpg",
+      "https://www.pelago.com/img/products/EG-Egypt/ras-muhammad-national-park-snorkeling-tour-with-white-island/0a818fb8-8a30-4e78-9edc-431372172e2c_ras-muhammad-national-park-snorkeling-tour-with-white-island-xlarge.jpg",
+      "https://images.myguide-cdn.com/sharmelsheikh/companies/sharm-el-sheikh-ras-mohamed-white-island-trip-with-lunch/large/sharm-el-sheikh-ras-mohamed-white-island-trip-with-lunch-3658508.jpg"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Ras Mohammed",
@@ -2089,7 +2104,11 @@ export const trips = [
     governate: "Sharm El Sheikh",
     company: "Sinai Adventures",
     description: "Enjoy a relaxing sunset at Naama Bay with stunning views.",
-    image: "naama_bay_sunset.jpg",
+    image: "https://a.loveholidays.com/media-library/~production/0e56ac7c7e6aab54709432b9d6a5911b6af0e816-3872x2592.jpg?auto=avif%2Cwebp&quality=45&dpr=2&optimize=high&fit=crop&width=2000",
+    detailesImages: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVO8IRsTcwTyjbp3godDIUxhZhlFpCb59Zw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XZdpZ54bumyKALmoc3Yvtp7yGb9SP9L4cw&s",
+      "https://st2.depositphotos.com/41097114/44135/i/1600/depositphotos_441354346-stock-photo-night-lights-downtown-naama-bay.jpg"
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing at Naama Bay",
@@ -2125,7 +2144,11 @@ export const trips = [
     company: "Dahab Divers",
     description:
       "Snorkel in the crystal-clear waters of Dahab and explore its coral reefs.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgmRqlu8wRBiYlKaUCK70hiMBTe6OEsnHqA&s",
+    detailesImages: ["https://budgetwayfarers.com/wp-content/uploads/2018/05/sea-79606_1920-min.jpg",
+      "https://d2p1cf6997m1ir.cloudfront.net/media/thumbnails/9c/db/9cdb3e391a1d7ce04dde389dc391bf92.webp",
+      "https://budgetwayfarers.com/wp-content/uploads/2018/05/egypt-683042_1920-min.jpg"
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Snorkeling session",
@@ -2161,7 +2184,11 @@ export const trips = [
     company: "Dahab Divers",
     description:
       "Dive at the famous Blue Hole, one of the world’s top diving spots.",
-    image: "blue_hole_dahab.jpg",
+    image: "https://static.vecteezy.com/system/resources/previews/047/515/230/large_2x/the-blue-hole-in-dahab-egypt-photo.jpg",
+    detailesImages: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFndZ1IQlMRnn8nY_AN3m-HR0cRT2sQYCYJA&s",
+      "https://www.alexinwanderland.com/wp-content/uploads/2018/10/DahabDiving_002.jpg",
+      "https://redseatribe.com/wp-content/uploads/2019/02/red-sea-tribe-turtle-e1549014638441.jpg"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Blue Hole",
@@ -2199,7 +2226,12 @@ export const trips = [
     company: "Sinai Spiritual",
     description:
       "Hike Mount Sinai to watch a breathtaking sunrise from the summit.",
-    image: "mount_sinai_sunrise.jpg",
+    image: "https://images.pexels.com/photos/28322813/pexels-photo-28322813.jpeg?cs=srgb&dl=pexels-ahmed-zaki-173186242-28322813.jpg&fm=jpg",
+    detailesImages: [
+      "https://beninwanderland.com/wp-content/uploads/2020/02/Ben-on-Mt-Sinai-Egypt-looking-down-following-sunrise-scaled.jpg",
+      "https://viajeroslowcosteros.com/wp-content/uploads/2022/10/amanecer-monte-sinai-scaled.jpg",
+      "https://i.redd.it/mount-sinai-egypt-night-hike-to-watch-the-sunrise-v0-2gnhyoeuic0e1.jpg?width=3024&format=pjpg&auto=webp&s=59dc1202f2a6dc5a3fd137d09813eef12a0f96f7"
+    ],
     program: [
       "1:00 AM: Departure",
       "2:00 AM: Start hiking",
@@ -2236,7 +2268,11 @@ export const trips = [
     company: "Sinai Spiritual",
     description:
       "Visit the historic St. Catherine Monastery at the base of Mount Sinai.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://c8.alamy.com/comp/BHTNG5/church-of-the-transfiguration-bell-tower-at-the-st-catherine-monastery-BHTNG5.jpg",
+    detailesImages: ["https://wheelchairtravel.org/content/images/wp-content/uploads/2019/06/st-catherines-city-entrance-sign.jpg",
+      "https://redseatribe.com/wp-content/uploads/2021/02/dahab-diving-red-sea-tribe-safari-61.jpg",
+      "https://thumbs.dreamstime.com/z/belltower-saint-catherine-s-monastery-sinai-ancient-bell-tower-st-one-oldest-working-christian-monasteries-world-against-99446383.jpg",
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Monastery tour",
@@ -2308,7 +2344,11 @@ export const trips = [
     company: "Oasis Tours",
     description:
       "Visit the stunning Wadi El Rayan Waterfalls and surrounding lakes.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_EaJv8ufkJdwPIa11gMevtZ0j_2mPJoEyg&s",
+    detailesImages: ["https://holidaytours.one/wp-content/uploads/2020/10/peter-ragheb-naYLQxASRTE-unsplash.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Sunset_on_a_charming_LAKE%21%21.jpg",
+      "https://www.shutterstock.com/shutterstock/photos/1215827476/display_1500/stock-photo-wadi-el-rayan-waterfall-1215827476.jpg"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Wadi El Rayan",
@@ -2345,7 +2385,11 @@ export const trips = [
     company: "Oasis Tours",
     description:
       "Enjoy a boat ride on Lake Qarun with scenic views of the Fayoum oasis.",
-    image: "lake_qarun.jpg",
+    image: "https://tourismdaily.news/wp-content/uploads/2023/05/ol-33.jpg",
+    detailesImages: ["https://ineciatours.com/storage/tours/e85VWcJl4g4hgvbtedCnQpLXpK8Lxpvw0khg0U4q.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwZJ_FWDuLxKJ7AtUOJEVkLUn9Nm2qk9FCg&s",
+      "https://www.realfayoum.com/wp-content/uploads/2020/12/General-13-1.jpg"
+    ],
     program: [
       "10:00 AM: Departure",
       "11:00 AM: Boat ride on Lake Qarun",
@@ -2379,7 +2423,13 @@ export const trips = [
     governate: "Fayoum",
     company: "Fayoum Cultural Tours",
     description: "Learn the art of pottery in the artistic Tunis Village.",
-    image: "tunis_village.jpg",
+    image: "https://i0.wp.com/fayoumegypt.com/wp-content/uploads/2014/03/1381843_524361540983399_864390035_n.jpg?resize=768%2C577&ssl=1",
+    detailesImages: [
+      "https://i0.wp.com/fayoumegypt.com/wp-content/uploads/2014/03/sedky-203.jpg?resize=768%2C512&ssl=1",
+      "https://i0.wp.com/fayoumegypt.com/wp-content/uploads/2014/03/20211125_225840.jpg?resize=768%2C513&ssl=1",
+      "https://i0.wp.com/fayoumegypt.com/wp-content/uploads/2014/03/10959744_803066866446197_1930030617556319198_n.jpg?resize=768%2C512&ssl=1",
+
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Pottery workshop",
@@ -2414,7 +2464,11 @@ export const trips = [
     governate: "Fayoum",
     company: "Oasis Tours",
     description: "Explore the Fayoum Oasis with a 4x4 desert safari adventure.",
-    image: "fayoum_safari.jpg",
+    image: "https://media.tacdn.com/media/photo-m/1280/2e/04/c0/b8/caption.jpg",
+    detailesImages: ["https://www.egypttailormade.net/media/k2/galleries/396/Mudawara%20Mountain.JPG",
+      "https://www.pelago.com/img/products/EG-Egypt/over-day-safari-trip-to-whales-valley-fayoum-oasis/7ec13d29-276e-4beb-ac54-96fa0320b9d5_over-day-safari-trip-to-whales-valley-fayoum-oasis.jpg",
+      
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Start safari",
@@ -2449,7 +2503,12 @@ export const trips = [
     governate: "Fayoum",
     company: "Oasis Tours",
     description: "Visit the ancient Qasr Qarun Temple in the Fayoum region.",
-    image: "qasr_qarun.jpg",
+    image: "https://www.realfayoum.com/wp-content/uploads/2018/03/Capture-1-0000-1024x679.png",
+    detailesImages: [ "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwr7DHjR0D23Cnwxz3J83uGm3Lk8ba-pxUxzBX1YYGCgrWsaqjWdVBTYcmsOKdBRuronKUXICQqyx6NS8ROhZPs7q-bxsU5t-c7UjCQcm_beG1k-p_dJwglmrfHtxyQlbc21GZuMUQ68eIFY7EHx5VMFPQ6Y2VNHTedPgJGIrpNgajWH1dqI1jSPdmY7k/w640-h640-rw/437929795_4564061847153339_4710002633489688810_n.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB6z2BDJDo_EVY1eIB2Qf2cfQyBO1_BQk1BCZl9DZWrfswau-FOGuNpFHo6i5xTSqzbVpGu5MAa6zvUf95QZ__rrb0BTz1AIvtYObWaNnYUVTkw0ajsRyKV2ziP1vS4OREyQ8hJELIyI1pm-YAsM9AYzt50yR_1oKD8G0zPo21xAYkWOTdEyd1fmSE-_Q/w640-h480-rw/46482667_2250959108248306_7908773454826962944_n.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNnl2x47ZeOQK6sEjPvh2wEF4X5oSV8nt3EZZHIfJ_gCb_fzVNtSqUxJe5MslQWfJ_rM8jUsTo6vBCawxC6YB9GlG93pYmaHs0asajBMDZ4mxyRpSSYyfKLXsKY1QoBaK3xAENP9VUuWNpgi4fzjSXXrvZ3GMAMI7c4Y3RB-sBKp_-yf_uwIsJT2Anvr4/w640-h426-rw/25542307_1646587078760834_1355478548552454199_o.jpg",
+
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Temple tour",
@@ -2484,7 +2543,12 @@ export const trips = [
     company: "Fayoum Cultural Tours",
     description:
       "A bird-watching tour at Lake Qarun, a haven for migratory birds.",
-    image: "lake_qarun_birds.jpg",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSUbQQfwYDaI0-JiApG42EMFCjZ0JQn3Bq6KeLuW5TmFa6GNl2A1_Zg2Hpmwe0uG9-Q_fvtNLRGkVcCxYhVfplS7gBXZ1w-dMNR_CnGYZxWh8jPISsUl4zbZt7aiLCM-8LRvbyKOIDUOoTAvOkLi6dqinCG8SauR7b5PcMJp3GYdHlaXCuynGmioGr/s2178/Screen%20Shot%202022-06-29%20at%209.59.31%20AM.png",
+    detailesImages: [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhmPW3568JeaEJQHpMdNOXUcUOpFxmZJMH5VYsqGuMmTGkFOlismmKhAOFSFk4NbRI1Z7ul3T10pNt98osONlTd_Sgt4psOjqAkBqtXGHv1LgS__OiMNXHCNDu8W6JOqojureCG8NZM32BahHSoo8AYLtdYCI-7j-CXzyN7ziybCRE78dEHgYeDwm/s2162/Screen%20Shot%202022-06-29%20at%2010.00.29%20AM.png",
+      "https://www.privatetour.com/uploads/tour/review/279417313_379105137475250_5824789341935224591_n.jpg",
+      "https://www.ramassidetours.com/uploaded/tours-1609850139large.jpg"
+    ],
     program: [
       "6:00 AM: Departure",
       "7:00 AM: Bird watching session",
@@ -2519,7 +2583,11 @@ export const trips = [
     company: "Oasis Tours",
     description:
       "Watch a beautiful sunset at Wadi El Rayan with stunning views.",
-    image: "wadi_el_rayan_sunset.jpg",
+    image: "https://i.pinimg.com/736x/21/dd/8b/21dd8b1de60a89d74d9fb4f23b9be977.jpg",
+    detailesImages: ["https://live.staticflickr.com/4324/35285968134_20040636a8_h.jpg",
+      "https://www.happyegypt.com/storage/images/11cec9c291e768b0e805f8e0b24f7065.jpg",
+      "https://egypt-evisa.net/images/Know-All-About-The-One-&-Only-Waterfall-In-Egypt.jpg"
+    ],
     program: [
       "4:00 PM: Departure",
       "5:00 PM: Sunset viewing",
@@ -2555,7 +2623,12 @@ export const trips = [
     company: "Nile Heritage Tours",
     description:
       "Explore the ancient rock-cut tombs of Beni Hassan, dating back to the Middle Kingdom.",
-    image: "beni_hassan_tombs.jpg",
+    image: "https://www.mdpi.com/arts/arts-11-00059/article_deploy/html/images/arts-11-00059-g001.png",
+    detailesImages: ["https://www.privatetoursinegypt.com/uploads/Beni-Hassan-Tombs.jpg",
+      "https://www.cleopatraegypttours.com/wp-content/uploads/2018/08/Beni-Hasan-1200x1091.jpg",
+      "https://media.sketchfab.com/models/f9d1b53bbbce4e0c9f0ce32e1951937b/thumbnails/64d9b4f334cd4b71ba3abf973e2bd876/e1dc8db64d624587be2b0e3a69614711.jpeg",
+
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Beni Hassan",
@@ -2595,7 +2668,11 @@ export const trips = [
     company: "Nile Heritage Tours",
     description:
       "Visit Tuna El Gebel, an ancient necropolis with catacombs and the Tomb of Petosiris.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmyOAAGf7X8hkYtD7ijea_scgzdtu-b5msvA&s",
+    detailesImages: ["https://www.egypttoursportal.com/images/2025/04/Tuna-El-Gebel-Egypt-Tours-Portal.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/18/89/c2/tomb-of-isadora-at-tuna.jpg?w=1200&h=-1&s=1",
+      "https://travel-n-architecture.com/wp-content/uploads/2017/09/Egypt-Minya-Tuna-el-Gebel-4865.jpg"
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: Explore Tuna El Gebel",
@@ -2668,7 +2745,11 @@ export const trips = [
     company: "Nile Heritage Tours",
     description:
       "A guided tour of Asyut city, exploring its culture and landmarks.",
-    image: "asyut_city.jpg",
+    image: "https://c8.alamy.com/comp/CWDC88/overview-of-asyut-downtown-with-apartment-buildings-and-nile-in-background-CWDC88.jpg",
+    detailesImages: ["https://as2.ftcdn.net/jpg/04/74/79/73/1000_F_474797334_dSKd5NGMxt0YvFeYuC60VnsERWBrziMJ.jpg",
+      "https://media.gemini.media/img/Original/2019/12/31/2019_12_31_14_44_50_122.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/39/49/ab/meir-monumental-tombs.jpg?w=500&h=400&s=1"
+    ],
     program: [
       "9:00 AM: Departure",
       "10:00 AM: City tour",
@@ -2704,7 +2785,10 @@ export const trips = [
     company: "Nile Spiritual Tours",
     description:
       "Visit the historic Deir El Muharraq Monastery, a significant Coptic site.",
-    image: "https://wallpaperaccess.com/full/676889.jpg",
+    image: "https://al-muharraq.com/wp-content/uploads/2019/09/Webp.net-resizeimage171.jpg",
+    detailesImages: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DeirMuharraqGeneralGate.jpg/960px-DeirMuharraqGeneralGate.jpg",
+      "https://holyfamilyegypt.com/wp-content/uploads/2017/07/ns_173.jpg"
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Monastery tour",
@@ -2740,7 +2824,12 @@ export const trips = [
     company: "Nile Adventures",
     description:
       "A scenic walk along the Nile in Asyut, followed by a sunset view.",
-    image: "nile_asyut_sunset.jpg",
+    image: "https://www.encirclephotos.com/wp-content/uploads/Egypt-Kom-Ombo-River-Nile-Nile-Lechwe-Walk-Sunset-1440x960.jpg",
+    detailesImages: [
+      "https://media.istockphoto.com/id/1563227902/photo/traditional-egyptian-felucca-boat-on-the-nile-river-luxor-egypt.jpg?s=612x612&w=0&k=20&c=ItbbKwGmYOLAjjhyWcyQY9FCwEm4Ea8HoFeCzqbqteM=",
+      "https://media.istockphoto.com/id/1499024298/video/beautiful-landscape-with-felucca-boats-on-the-nile-river-in-aswan-egypt.jpg?s=640x640&k=20&c=3fb9LpVp91Q4teYvncYna3SEZMwfRLYUo-_9IpTYGDQ=",
+      "https://c0.wallpaperflare.com/preview/169/551/814/egypt-luxor-river-sunset.jpg"
+    ],
     program: [
       "4:00 PM: Departure",
       "4:30 PM: Walk along the Nile",
@@ -2776,7 +2865,12 @@ export const trips = [
     company: "Nile Heritage Tours",
     description:
       "Explore the ancient Meir Tombs, showcasing Old Kingdom rock-cut tombs.",
-    image: "meir_tombs.jpg",
+    image: "https://mota.gov.eg/media/u4jizgqg/%D9%85%D9%8A%D8%B1-2.jpg?rxy=0.46509082950317354,0.1947008907565752&width=1240&height=524&rnd=133460710311670000",
+    detailesImages: [
+      "https://egymonuments.com/storage/events/September2024/HqOGulTtUb5luXiRrvOy.png",
+      "https://www.etltravel.com/wp-content/uploads/2021/10/meir-asyut-egypt-050.jpg",
+
+    ],
     program: [
       "8:00 AM: Departure",
       "9:00 AM: Arrive at Meir",
