@@ -45,6 +45,7 @@
   max-width: 1126px;
   gap: 133px;
   margin: auto;
+  padding-bottom: 136px;
   flex-wrap: wrap;
 }
 
