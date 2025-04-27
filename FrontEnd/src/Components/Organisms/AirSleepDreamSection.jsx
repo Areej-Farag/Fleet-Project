@@ -6,7 +6,7 @@ import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 import houseImage from "../../assets/Images/house.png";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
-
+import SelectBox from "../Atoms/SearchableSelect";
 const AirSleepDreamSection = ({
   sectionTitle,
   HomeImg = "https://wallpapercave.com/wp/wp9116727.jpg",
