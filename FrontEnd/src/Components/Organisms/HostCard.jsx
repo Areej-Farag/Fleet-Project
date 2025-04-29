@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
 import Avatar from "../Atoms/Avatar";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import "../Styles/organisms.css";
 import Line from "../Atoms/Lines";
 import Icon from "../Atoms/Icons";
@@ -14,7 +14,7 @@ import { FiUpload } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
 import Rate from "../Atoms/Rate";
 import { RiGlobalLine } from "react-icons/ri";
-
+import { ColorContext } from '../../Context/ColorContext';
 export default function HostCard({
   AvatarSrc,
   HostName = companies[0].name,
@@ -27,7 +27,7 @@ export default function HostCard({
   const handleBtnClick = (link) => {
     window.open(link, "_blank");
   };
-
+  const colors = useContext(ColorContext);
   return (
     <>
       <div className="hostcard-container">

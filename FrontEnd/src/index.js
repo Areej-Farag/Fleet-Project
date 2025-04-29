@@ -15,6 +15,7 @@ import UserConfirmation from "./Components/Organisms/UserConfirmation";
 import SecurityCode from "./Components/Organisms/SecurityCode";
 import Home from "./Components/Pages/Home";
 import WishlistPage from "./Components/Pages/Wishlist.jsx";
+document.body.classList.add("dark");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,14 +1,16 @@
 // في UserConfirmation.jsx
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
 import { Radio } from "antd";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import { useAuthModal } from "../../Context/AuthModalContext";
-import { RxCross2 } from "react-icons/rx"; // أيقونة للإغلاق
+import { RxCross2 } from "react-icons/rx"; 
+import { ColorContext } from '../../Context/ColorContext';
 
 export default function UserConfirmation() {
+  const colors = useContext(ColorContext);
   const { switchAuthType, closeModal, isModalOpen } = useAuthModal();
   const [isActive, setIsActive] = useState(isModalOpen);
   const [value, setValue] = useState(1);

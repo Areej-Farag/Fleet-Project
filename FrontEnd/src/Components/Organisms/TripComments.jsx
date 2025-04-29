@@ -1,5 +1,5 @@
-import React from "react";
-import colors from "../Atoms/Colors";
+import React , {useContext} from "react";
+// import colors from "../Atoms/Colors";
 import Typograph from "../Atoms/Typograph";
 import { Rate } from "antd";
 import InputField from "../Atoms/InputField";
@@ -10,11 +10,13 @@ import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import Comment from "../Molecules/Comment";
 import { trips } from "../../Mocks/Trips";
 import Line from "../Atoms/Lines";
+import { ColorContext } from '../../Context/ColorContext';
 export default function TripComments({
   tripName,
   tripRate,
   tripReviews = trips[0].reviews,
 }) {
+  const colors = useContext(ColorContext);
   return (
     <div className="trip-comments-container">
       <div className="comments-container-header">

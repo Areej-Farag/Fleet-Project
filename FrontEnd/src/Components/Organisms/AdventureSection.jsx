@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import Typography from '../Atoms/Typograph';
 import Button from '../Atoms/Button';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
@@ -6,7 +6,7 @@ import seaImg from '../../assets/Images/sea.png';
 import campingImg from '../../assets/Images/camping.png';
 import snowImg from '../../assets/Images/snow.png';
 import '../Styles/organisms.css';
-
+import { ColorContext } from '../../Context/ColorContext';
 const cards = [
   {
     title: 'Luxury resort at the sea',
@@ -26,6 +26,7 @@ const cards = [
 ];
 
 const AdventureSection = () => {
+  const colors = useContext(ColorContext);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {

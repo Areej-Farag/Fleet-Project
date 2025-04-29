@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Typograph from "../Atoms/Typograph";
 import colors from "../Atoms/Colors";
 import "../Styles/molecules.css";
-
+import { ColorContext } from '../../Context/ColorContext';
 const BookingDetails = ({ icon, title, value }) => {
+  const colors = useContext(ColorContext);
   return (
     <div className="booking-details-container">
       <div className="details-left">

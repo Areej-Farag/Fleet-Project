@@ -1,10 +1,11 @@
-import React from "react";
+import React , {useContext} from "react";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import "../Styles/templates.css";
 import CardSection from "../Organisms/CardSection";
-
+import { ColorContext } from '../../Context/ColorContext';
 const WishlistHeaderTemplate = ({ trips }) => {
+  const colors = useContext(ColorContext);
   return (
     <div className="wishlist-header-template p-4">
       <Typograph variant="h4" bold color={colors.Neutrals[1]}>

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import Avatar from "../Atoms/Avatar";
 import Rate from "../Atoms/Rate";
 import { trips } from "../../Mocks/Trips";
@@ -9,6 +9,7 @@ import "../Styles/molecules.css";
 import { FaHeart } from "react-icons/fa";
 import Button from "../Atoms/Button";
 import { BiCommentDetail } from "react-icons/bi";
+import { ColorContext } from '../../Context/ColorContext';
 
 export default function Comment({
   userProfile,
@@ -18,6 +19,7 @@ export default function Comment({
   userName,
   ...props
 }) {
+  const colors = useContext(ColorContext);
   return (
     <div className="comment-container">
       <div className="avatar-holder">

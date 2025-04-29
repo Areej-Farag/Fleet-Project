@@ -1,9 +1,9 @@
-import React from "react"; 
+import React, { useContext } from "react"; 
 import "../Styles/molecules.css";
 import ImageComponent from "../Atoms/ImageComponent";
 import Badge from "../Atoms/Badge";
 import Typograph from "../Atoms/Typograph";
-
+import { ColorContext } from '../../Context/ColorContext';
 
 const DetailedCard = ({
   imageSrc,
@@ -13,6 +13,7 @@ const DetailedCard = ({
   title,
   amenities,
 }) => {
+  const colors = useContext(ColorContext);
   return (
     <div className="custom-detailed-card">
       

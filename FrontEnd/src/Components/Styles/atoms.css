@@ -427,7 +427,7 @@
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #23262F;
+  color: var(--color-neutral-2);
 }
 
 .review-count {

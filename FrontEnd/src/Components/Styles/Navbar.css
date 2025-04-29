@@ -1,14 +1,18 @@
 @import "./global.css";
 .navbar {
-  background-color: var(--color-neutral-8);
+  background-color: var(--color-neutral-8) !important;
   padding: 12px 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
-  color: var(--color-neutral-2);
+  color: var(--color-neutral-2) !important;
 }
-
+.lightMode{
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
 .navbar__content {
   display: flex;
   justify-content: space-between;

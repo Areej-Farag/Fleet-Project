@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { ColorContext } from "../../Context/ColorContext"; // عدلي حسب مكانك
 
 const Typograph = ({ variant, children, className, color, bold }) => {
+  const colors = useContext(ColorContext);
+
   const variants = {
     h1: "h1 display-1",
     h2: "h2 display-2",
@@ -19,8 +22,11 @@ const Typograph = ({ variant, children, className, color, bold }) => {
   };
 
   const Tag = variants[variant] ? variant : "p";
+
+  const defaultColor = colors.Neutrals[1]; // أو اختاري Primary[1] لو حابة
+
   const styles = {
-    color: color || "inherit",
+    color: color || defaultColor,
     fontWeight: bold ? "bold" : "normal",
     fontFamily: "Poppins, sans-serif",
   };

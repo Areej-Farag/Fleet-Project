@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useContext} from "react";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import HostSection from "../Molecules/HostSection";
 import Rate from "../Atoms/Rate";
 import { SlCalender } from "react-icons/sl";
@@ -10,8 +10,9 @@ import { FiHash } from "react-icons/fi";
 import { LuCalendarClock } from "react-icons/lu";
 import BookingDetails from "../Molecules/BookingDetails";
 import "../Styles/organisms.css";
-
+import { ColorContext } from '../../Context/ColorContext';
 export default function BookingConfirmation() {
+  const colors = useContext(ColorContext);
   return (
     <div className="col-12 col-md-6 p-3  d-flex flex-column justify-content-between w-100">
       <div>

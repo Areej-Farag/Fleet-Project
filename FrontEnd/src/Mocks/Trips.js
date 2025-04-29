@@ -1,4 +1,5 @@
-export const trips = [
+export const trips = 
+[
   // Cairo Trips (T001 - T010)
   {
     id: "T001",
