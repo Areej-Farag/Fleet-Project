@@ -493,6 +493,7 @@
   max-width: 1800px;
   z-index: 10;
   gap: 20px;
+  color: var(--color-neutral-2);
 }
 
 .location-box {
@@ -772,12 +773,16 @@
 
 .hero-text p {
   animation-delay: 0.2s;
+  color: var(--color-neutral-3);
+
 }
 .hero-text h1 {
   animation-delay: 0.4s;
+  color: var(--color-neutral-2)
 }
 .hero-description {
   animation-delay: 0.6s;
+  color: var(--color-neutral-3);
 }
 .hero-actions {
   animation-delay: 0.8s;

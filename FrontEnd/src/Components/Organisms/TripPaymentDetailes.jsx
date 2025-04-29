@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
 import "../Styles/organisms.css";
 import ImageComponent from "../Atoms/ImageComponent";
 import LocationPhoto from "../../assets/Images/primary img.png";
@@ -6,7 +6,7 @@ import HostSection from "../Molecules/HostSection";
 import AvatarPhoto from "../../assets/Images/avatar.png";
 import Rate from "../Atoms/Rate";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import Icon from "../Atoms/Icons";
 import { SlCalender } from "react-icons/sl";
 import { IoPersonOutline } from "react-icons/io5";
@@ -15,10 +15,11 @@ import Select from "../Atoms/Select";
 import { trips } from "../../Mocks/Trips";
 import Button from "../Atoms/Button";
 import { Link, useParams } from "react-router-dom";
-
+import { ColorContext } from '../../Context/ColorContext';
 export default function TripPaymentDetailes({
   trip = trips[0],
 }) {
+  const colors = useContext(ColorContext);
   const [selectedDate, setSelectedDate] = useState("");
   const [availableSeats, setAvailableSeats] = useState(0);
   const [selectedGuests, setSelectedGuests] = useState("");

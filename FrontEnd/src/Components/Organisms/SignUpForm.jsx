@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../Atoms/Button";
 import InputField from "../Atoms/InputField";
 import Typograph from "../Atoms/Typograph";
 import { TiVendorApple } from "react-icons/ti";
 import { IoLogoGoogle } from "react-icons/io";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import "../Styles/organisms.css";
 import { RxCross2 } from "react-icons/rx";
 import { useAuthModal } from "../../Context/AuthModalContext";
-
+import { ColorContext } from '../../Context/ColorContext';
 export default function SignUpForm() {
   const { switchAuthType, closeModal, isModalOpen } = useAuthModal();
   const [isActive, setIsActive] = useState(isModalOpen);
@@ -17,6 +17,7 @@ export default function SignUpForm() {
     closeModal();
     switchAuthType("signin");
   };
+  const colors = useContext(ColorContext);
   return (
     <>
       <div className={`Sign-In-Container ${isActive ? "active" : ""}`}>

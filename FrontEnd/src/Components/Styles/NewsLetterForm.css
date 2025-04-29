@@ -1,3 +1,4 @@
+@import "./global.css";
 .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@
   .newsletter-title {
     font-size: 1rem;
     font-weight: 720;
-    color: #1c1c1c;
+    color: var(--color-neutral-2);
     margin-top: 1.5rem;
     margin-right: 6rem;
   }
@@ -18,11 +19,11 @@
   .newsletter-input-wrapper {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-neutral-4);
     border-radius: 30px;
     overflow: hidden;
     padding: 0.25rem 0.5rem;
-    background: #f9f9f9;
+    background: var(--color-neutral-7);
   }
   
   .newsletter-input {
@@ -32,13 +33,13 @@
     background: transparent;
     outline: none;
     font-size: 0.9rem;
-    color: #333;
+    color: var(--color-neutral-2);
     margin-right: 6rem;
   }
   
   .newsletter-btn {
-    background: #0066ff;
-    color: white;
+    background: var(--color-primary-1);
+    color: var(--color-neutral-8);
     border: none;
     border-radius: 50%;
     padding: 0.5rem;
@@ -52,6 +53,6 @@
   }
   
   .newsletter-btn:hover {
-    background: #004dcc;
+    background: var(--color-hover-blue);
   }
   

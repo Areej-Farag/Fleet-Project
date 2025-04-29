@@ -1,7 +1,7 @@
-import React from "react";
+import React , {useContext} from "react";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import Line from "../Atoms/Lines";
 import Icon from "../Atoms/Icons";
 import TextWithBtn from "../Molecules/TextWithBtn";
@@ -10,9 +10,10 @@ import Button from "../Atoms/Button";
 import CreditCardInfoForm from "./CreditCardInfoForm";
 import Select from "../Atoms/Select";
 // import { FaBold } from "react-icons/fa";
-
+import { ColorContext } from '../../Context/ColorContext';
 
 export default function PaymentForm() {
+  const colors = useContext(ColorContext);
   return (
     <div className="payment-form col-12 ">
       <div className="title-container">

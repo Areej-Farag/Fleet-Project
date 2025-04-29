@@ -1,4 +1,4 @@
-import React from "react"; 
+import React, { useContext } from "react"; 
 import "../Styles/molecules.css";
 import ImageComponent from "../Atoms/ImageComponent";
 import Badge from "../Atoms/Badge";
@@ -6,6 +6,7 @@ import Typograph from "../Atoms/Typograph";
 import Line from "../Atoms/Lines";
 import Rate from "../Atoms/Rate";
 import PriceBox from "../Atoms/PriceBox"; 
+import { ColorContext } from '../../Context/ColorContext';
 
 const Card = ({
   imageSrc,
@@ -20,6 +21,7 @@ const Card = ({
   priceNow,
   amenities,
 }) => {
+   const colors = useContext(ColorContext);
   return (
     <div className="custom-card">
       <div className="card-cover">

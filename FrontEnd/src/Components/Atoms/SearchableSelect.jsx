@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , useContext} from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
 import Typograph from "./Typograph";
-import colors from "./Colors";
+// import colors from "./Colors";
+import { ColorContext } from '../../Context/ColorContext';
 
 export default function SelectBox({ label, value, options, onChange }) {
   const [inputValue, setInputValue] = useState(value);
   const [filteredOptions, setFilteredOptions] = useState(options);
   const [showSuggestions, setShowSuggestions] = useState(false);
-
+  const colors = useContext(ColorContext);
   useEffect(() => {
     setFilteredOptions(
       options.filter((option) =>

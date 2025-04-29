@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
 import PropTypes from "prop-types";
 import "../Styles/atoms.css";
 import { IoIosArrowDown } from "react-icons/io";
 import Typograph from "./Typograph";
-import colors from "./Colors";
+// import colors from "./Colors";
+import { ColorContext } from '../../Context/ColorContext';
 
 export default function SelectBox({ label, value, options, onChange }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  const colors = useContext(ColorContext);
   return (
     <div className="select-box">
       {label && <label className="select-box-label">{label}</label>}
-
       <div className="select-box-container" onClick={() => setIsOpen(!isOpen)}>
         <span className="select-box-value">{value}</span>
         <span className="select-box-icon">

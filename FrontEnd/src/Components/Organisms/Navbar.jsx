@@ -11,8 +11,12 @@ import logo from "../../assets/Images/logo.png";
 import UserButtonList from "../Molecules/UserButtonList";
 import "../Styles/Navbar.css";
 import { useAuthModal } from "../../Context/AuthModalContext";
+import useDarkMode from "../../Hooks/useDarkMood";
+import { MdSunny } from "react-icons/md";
+import { LuSunMoon } from "react-icons/lu";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useDarkMode();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [notifications] = useState(0);
   const [showNotifications, setShowNotifications] = useState(false);
@@ -23,10 +27,10 @@ const Navbar = () => {
   const [toggleProfile, setToggleProfile] = useState(false);
   const { switchAuthType, openModal } = useAuthModal();
 
-const handleSwitchToSignIn = () => {
-  openModal();
-  switchAuthType("signin");
-}
+  const handleSwitchToSignIn = () => {
+    openModal();
+    switchAuthType("signin");
+  };
   const ShowProfile = () => {
     setToggleProfile(!toggleProfile);
   };
@@ -79,12 +83,9 @@ const handleSwitchToSignIn = () => {
 
         {/* Right Section */}
         <div className="d-flex align-items-center gap-3">
-          {/* Support */}
-          <div className="d-none d-md-block">
-            <Link to="/support" className="text-decoration-none text-dark">
-              Support
-            </Link>
-          </div>
+          <button  className="lightMode" onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? <MdSunny /> : <LuSunMoon />}
+          </button>
 
           {/* Language */}
           <div className="d-none d-md-flex align-items-center gap-1">
@@ -105,13 +106,23 @@ const handleSwitchToSignIn = () => {
               >
                 <ul className="list-unstyled mb-0">
                   <li>
-                    <Button color="trans" size="default" shape="default" onClick={() => setLanguage("EN")}>
+                    <Button
+                      color="trans"
+                      size="default"
+                      shape="default"
+                      onClick={() => setLanguage("EN")}
+                    >
                       {" "}
                       English
                     </Button>
                   </li>
                   <li>
-                    <Button color="trans" size="default" shape="default" onClick={() => setLanguage("AR")}>
+                    <Button
+                      color="trans"
+                      size="default"
+                      shape="default"
+                      onClick={() => setLanguage("AR")}
+                    >
                       {" "}
                       Arabic
                     </Button>
@@ -164,28 +175,33 @@ const handleSwitchToSignIn = () => {
 
           {/* Avatar */}
           <div className="Avatar-holder">
-  {user ? (
-    <>
-      <button className="Avatar-button" onClick={ShowProfile}>
-        <Avatar src={ava} alt="User" size="small" />
-      </button>
-      <div
-        className="profileDropdown"
-        style={{
-          opacity: toggleProfile ? "1" : "0",
-          visibility: toggleProfile ? "visible" : "hidden"
-        }}
-      >
-        <UserButtonList />
-      </div>
-    </>
-  ) : (
-      <Button color="blue" size="small" shape="default" onClick={handleSwitchToSignIn}>Sign In</Button>
+            {user ? (
+              <>
+                <button className="Avatar-button" onClick={ShowProfile}>
+                  <Avatar src={ava} alt="User" size="small" />
+                </button>
+                <div
+                  className="profileDropdown"
+                  style={{
+                    opacity: toggleProfile ? "1" : "0",
+                    visibility: toggleProfile ? "visible" : "hidden",
+                  }}
+                >
+                  <UserButtonList />
+                </div>
+              </>
+            ) : (
+              <Button
+                color="blue"
+                size="small"
+                shape="default"
+                onClick={handleSwitchToSignIn}
+              >
+                Sign In
+              </Button>
+            )}
+          </div>
 
-  )}
-</div>
-
-         
           {/* Mobile Menu */}
           <div className="d-md-none" onClick={toggleMobileMenu}>
             <FaBars size={22} color="#333" />

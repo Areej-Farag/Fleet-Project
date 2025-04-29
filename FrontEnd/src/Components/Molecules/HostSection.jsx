@@ -1,14 +1,16 @@
-import React from "react";
+import React ,{useContext} from "react";
 import Avatar from "../Atoms/Avatar";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import "../Styles/molecules.css";
 import Line from "../Atoms/Lines";
-
+import { ColorContext } from '../../Context/ColorContext';
 
 
 export default function HostSection({AvatarSrc, HostName, AvatarSize , PropertyName , childern}) {
+  const colors = useContext(ColorContext);
   return (
+
     <>
         <div className="host-section-container">
         <div className="Property-item">

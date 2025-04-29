@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , useContext } from "react";
 import Typograph from "../Atoms/Typograph";
 import CardSection from "../Organisms/CardSection";
 import FilterSection from "../Organisms/FilterSection";
 import { trips } from "../../Mocks/Trips";
 import "../Styles/templates.css";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
+import { ColorContext } from '../../Context/ColorContext';
 const shuffleAndPick = (array, count) => {
   const shuffled = [...array].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
 
 const ExploreTripsTemplate = () => {
+  const colors = useContext(ColorContext);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("Recently Added");
   const [randomTrips, setRandomTrips] = useState([]);

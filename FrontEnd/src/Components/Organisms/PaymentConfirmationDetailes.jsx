@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "../Styles/organisms.css";
 import ImageComponent from "../Atoms/ImageComponent";
 import LocationPhoto from "../../assets/Images/primary img.png";
@@ -6,12 +6,12 @@ import HostSection from "../Molecules/HostSection";
 import AvatarPhoto from "../../assets/Images/avatar.png";
 import Rate from "../Atoms/Rate";
 import Typograph from "../Atoms/Typograph";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import Icon from "../Atoms/Icons";
 import { SlCalender } from "react-icons/sl";
 import { IoPersonOutline } from "react-icons/io5";
 import BookingDetails from "../Molecules/BookingDetails";
-
+import { ColorContext } from '../../Context/ColorContext';
 const bookingData = [
   {
     title: "$119 x 7 nights",
@@ -33,6 +33,7 @@ const bookingData = [
 export default function PaymentConfirmationDetailes({
   BookingData = bookingData,
 }) {
+  const colors = useContext(ColorContext);
   return (
     <div className="payment-confirmation-detailes">
       <div className="Photo-and-host-sec row d-flex">

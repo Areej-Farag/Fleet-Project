@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
 import Typograph from "../Atoms/Typograph";
 import "../Styles/organisms.css";
 import DigitedInput from "../Atoms/DigitedInput";
-import colors from "../Atoms/Colors";
+// import colors from "../Atoms/Colors";
 import { RxCross2 } from "react-icons/rx";
 import { useAuthModal } from "../../Context/AuthModalContext";
+import { ColorContext } from '../../Context/ColorContext';
 export default function SecurityCode() {
   const { switchAuthType, closeModal, isModalOpen } = useAuthModal();
   const [isActive, setIsActive] = useState(isModalOpen);
   const [PhoneNumber, setPhoneNumber] = React.useState("+1 234 567 890");
+  const colors = useContext(ColorContext);
   return (
     <>
       {" "}
