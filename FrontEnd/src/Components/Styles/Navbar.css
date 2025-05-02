@@ -325,6 +325,6 @@ button.outline {
 }
 
 .notification-dropdown li:hover {
-  background-color: #f8f9fa;
+  background-color: var(--color-neutral-8);
   cursor: pointer;
 }
