@@ -6,6 +6,8 @@ import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
 import { IoIosArrowBack } from "react-icons/io";
+import AnimatedSection from "../Atoms/AnimationSection"
+
 
 const NavigationBar = () => {
   const { governateId } = useParams();
@@ -15,6 +17,7 @@ const NavigationBar = () => {
   );
 
   return (
+    <AnimatedSection delay={0.1}>
     <div className="navigation-bar">
       
       <Link to="/" className="go-home-link">
@@ -29,6 +32,7 @@ const NavigationBar = () => {
         </Link>{" "}
       </div>
     </div>
+    </AnimatedSection>
   );
 };
 
