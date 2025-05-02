@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 import { FaBars, FaBell } from "react-icons/fa";
@@ -61,7 +62,7 @@ const Navbar = () => {
   const [user, setUser] = useState(null);
 
   return (
-    <nav className="navbar-container border-bottom bg-white">
+    <nav className="navbar-container border-bottom ">
       <div className="container d-flex justify-content-between align-items-center py-2">
         {/* Logo & Travelers */}
         <div className="d-flex align-items-center gap-3">
@@ -70,13 +71,13 @@ const Navbar = () => {
             className="navbar-logo d-flex align-items-center gap-2 text-decoration-none"
           >
             <img src={logo} alt="Fleet Logo" height={32} />
-            <span className="brand-text fw-semibold text-dark fs-5">fleet</span>
+            <span className="brand-text fw-semibold  fs-5">fleet</span>
           </Link>
 
           {/* Travelers Dropdown */}
-          <div className="d-none d-md-block">
-            <Button color="trans">
-              Travelers <span className="ms-1">▾</span>
+          <div className="d-none d-md-flex travelerContainer ">
+            <Button color="trans" >
+              <span>Travelers</span> <span className="ms-1">▾</span>
             </Button>
           </div>
         </div>
@@ -97,8 +98,7 @@ const Navbar = () => {
                 shape="default"
                 onClick={languageClick}
               >
-                {" "}
-                Language{" "}
+                <span>Language</span>
               </Button>
               <div
                 className="languageDropdown"
@@ -112,7 +112,7 @@ const Navbar = () => {
                       shape="default"
                       onClick={() => setLanguage("EN")}
                     >
-                      {" "}
+                      
                       English
                     </Button>
                   </li>
@@ -213,14 +213,14 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <>
           <div className="drawer-overlay" onClick={toggleMobileMenu}></div>
-          <div className="drawer bg-white shadow-sm">
+          <div className="drawer shadow-sm">
             <div className="drawer__header d-flex justify-content-between align-items-center mb-3">
               <Link
                 to="/"
                 className="d-flex align-items-center gap-2 text-decoration-none"
               >
                 <img src={logo} alt="Fleet Logo" height={28} />
-                <span className="fw-semibold text-dark">fleet</span>
+                <span className="fw-semibold ">fleet</span>
               </Link>
               <span className="fs-4" onClick={toggleMobileMenu} role="button">
                 &times;
