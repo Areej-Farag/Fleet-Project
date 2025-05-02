@@ -7,6 +7,8 @@ import houseImage from "../../assets/Images/house.png";
 import Typograph from "../Atoms/Typograph";
 import Button from "../Atoms/Button";
 import SelectBox from "../Atoms/SearchableSelect";
+import AnimatedSection from "../Atoms/AnimationSection"
+
 const AirSleepDreamSection = ({
   sectionTitle,
   HomeImg = "https://wallpapercave.com/wp/wp9116727.jpg",
@@ -45,26 +47,36 @@ const AirSleepDreamSection = ({
     >
       <div className="overlay" style={centerText ? CenterStyle : {}}>
         <div className="content-wrapper">
+        
           <div className="text-content">
+          <AnimatedSection delay={0.2}>
+            <div>
             <Typograph variant="h2">
               {sectionTitle
                 ? `${sectionTitle}`
                 : "Wander Egypt Like Never Before"}
             </Typograph>
+            </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.3}>
             <p>
               {sectionTitle
                 ? `Explore amazing places in ${sectionTitle}.`
                 : "Find and book a great experience."}
             </p>
-
+           </AnimatedSection>
+           <AnimatedSection delay={0.4}>
             {searchVisible && (
               <Button shape="default" size="default" color="black">
                 Start your search
               </Button>
             )}
+            </AnimatedSection>
           </div>
+       
 
           {searchVisible && (
+            <AnimatedSection delay={0.4}>
             <div className="search-box d-flex ">
               <div className="location-box ">
                 <label className="location-label">
@@ -84,6 +96,7 @@ const AirSleepDreamSection = ({
                 ></Button>
               </div>
             </div>
+            </AnimatedSection>
           )}
         </div>
       </div>

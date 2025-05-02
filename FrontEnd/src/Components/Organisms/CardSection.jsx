@@ -1,6 +1,7 @@
 // src/Components/Organisms/CardSection.js
 import { useState } from "react";
-import { Link } from "react-router-dom"; // استيراد Link
+import AnimatedSection from "../Atoms/AnimationSection";
+import { Link } from "react-router-dom"; 
 import Card from "../Molecules/Card";
 import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
@@ -11,7 +12,7 @@ const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
 
   const staysData = trips.map((trip) => ({
-    id: trip.id, // إضافة الـ id لكل كارد
+    id: trip.id, 
     imageSrc: trip.image,
     title: trip.name,
     totalPrice: trip.price,
@@ -48,29 +49,41 @@ const CardSection = ({ trips }) => {
     <>
       <section className="card-section">
         <div className="cards-wrapper">
-          {cardsToShow.map((stay) => (
-            <Link key={stay.id} to={`/trip/${stay.id}`} className="card-link">
+        {cardsToShow.map((stay, index) => (
+          <AnimatedSection key={stay.id} delay={index * 0.1}>
+            <Link to={`/trip/${stay.id}`} className="card-link">
               <Card {...stay} />
             </Link>
-          ))}
+          </AnimatedSection>
+        ))}
+
+
+
         </div>
       </section>
-      <div className="bttn">
-        {staysData.length > visibleCards && (
-          <div>
-            <Button color="trans" size="small" onClick={handleShowMore}>
-             <Typograph variant="button"> Show More </Typograph>
-            </Button>
-          </div>
-        )}
-        {visibleCards > 9 && (
-          <div>
-            <Button color="black" size="small" onClick={handleShowLess}>
-              <Typograph variant="button">Show Less </Typograph>
-            </Button>
-          </div>
-        )}
-      </div>
+
+
+
+  <AnimatedSection delay={0.4}>
+    <div className="bttn">
+      {staysData.length > visibleCards && (
+        <div>
+          <Button color="trans" size="small" onClick={handleShowMore}>
+            <Typograph variant="button"> Show More </Typograph>
+          </Button>
+        </div>
+      )}
+      {visibleCards > 9 && (
+        <div>
+          <Button color="black" size="small" onClick={handleShowLess}>
+            <Typograph variant="button">Show Less </Typograph>
+          </Button>
+        </div>
+      )}
+    </div>
+  </AnimatedSection>
+
+
     </>
   );
 };

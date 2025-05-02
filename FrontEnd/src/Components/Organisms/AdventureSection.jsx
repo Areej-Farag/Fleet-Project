@@ -7,6 +7,8 @@ import campingImg from '../../assets/Images/camping.png';
 import snowImg from '../../assets/Images/snow.png';
 import '../Styles/organisms.css';
 import { ColorContext } from '../../Context/ColorContext';
+import AnimatedSection from "../Atoms/AnimationSection"
+
 const cards = [
   {
     title: 'Luxury resort at the sea',
@@ -39,15 +41,19 @@ const AdventureSection = () => {
 
   return (
     <section className="adventure-section">
-      <Typography type="h2" className="adventure-title">
-        Let’s go on an adventure
-      </Typography>
-      <Typography type="p" className="adventure-subtitle">
-        Find and book a great experience.
-      </Typography>
-
+        <AnimatedSection delay={0.1}>
+          <div>
+              <Typography type="h2" className="adventure-title">
+                Let’s go on an adventure
+              </Typography>
+              <Typography type="p" className="adventure-subtitle">
+                Find and book a great experience.
+              </Typography>
+          </div>
+          </AnimatedSection>
       <div className="adventure-cards">
         {cards.map((card, index) => (
+          <AnimatedSection delay={0.2 + index * 0.2}>
           <div
             key={index}
             className={`adventure-card ${index === currentIndex ? 'active' : ''}`}
@@ -58,6 +64,7 @@ const AdventureSection = () => {
               <div className="places-badge">{card.places}</div>
             </div>
           </div>
+          </AnimatedSection>
         ))}
       </div>
 

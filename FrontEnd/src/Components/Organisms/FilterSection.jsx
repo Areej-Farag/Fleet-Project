@@ -6,6 +6,7 @@ import { trips } from "../../Mocks/Trips";
 import { cities as governates } from "../../Mocks/Governates";
 import { useParams } from "react-router-dom";
 import "../Styles/organisms.css";
+import AnimatedSection from "../Atoms/AnimationSection";
 
 const FilterSection = ({ onFilterChange }) => {
   const { governateId } = useParams();
@@ -32,6 +33,7 @@ const FilterSection = ({ onFilterChange }) => {
   };
 
   return (
+    <AnimatedSection delay={0.2}>
     <div className="filter-section">
       <Typograph variant="h2" bold="True" className="filter-title">
       Places to visit
@@ -43,6 +45,7 @@ const FilterSection = ({ onFilterChange }) => {
         onChange={handleCategoryChange}
       />
     </div>
+    </AnimatedSection>
   );
 };
 
