@@ -49,10 +49,6 @@ body.dark {
   --page-background: var(--color-neutral-8);
 }
 
-
-
-
-
 body {
   margin: 0;
   background-color: var(--page-background);
