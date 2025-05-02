@@ -1,6 +1,8 @@
 import React from 'react';
 import "../Styles/templates.css";
 import Typograph from "../Atoms/Typograph";
+import AnimatedSection from "../Atoms/AnimationSection";
+
 
 const convertToEmbedUrl = (url) => {
   if (!url) return ""; 
@@ -24,13 +26,15 @@ const convertToEmbedUrl = (url) => {
 const CityOverview = ({ description, videoUrl }) => {
   return (
     <section className="city-overview">
+      <AnimatedSection delay={0.1}>
       <div className="overview-left">
         <Typograph variant="h5" className="overview-title">CityScape</Typograph>
         <Typograph variant="h5" className="overview-description">
           {description}
         </Typograph>
       </div>
-
+      </AnimatedSection>
+      
       <div className="overview-right">
         <div className="video-container">
           <iframe
@@ -44,6 +48,7 @@ const CityOverview = ({ description, videoUrl }) => {
           ></iframe>
         </div>
       </div>
+ 
     </section>
   );
 };
