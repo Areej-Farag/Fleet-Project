@@ -163,7 +163,7 @@
 }
 .button.white {
   background-color: var(--color-neutral-8);
-
+  color: var(--color-neutral-1);
   transition: all 0.3s ease;
 }
 
