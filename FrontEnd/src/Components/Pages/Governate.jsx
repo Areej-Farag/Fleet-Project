@@ -8,7 +8,7 @@ import NavigationBar from "../Organisms/NavigationBar";
 import FilterSection from "../Organisms/FilterSection";
  import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import houseImage from '../../assets/Images/house.png';
-
+import AnimatedSection from "../Atoms/AnimationSection";
 import { useParams } from "react-router";
 
 const TripsPage = () => {
@@ -35,10 +35,12 @@ const TripsPage = () => {
         governorates={governates}
         sectionTitle="Explore Trips In Egypt"
       />
+       <AnimatedSection delay={.1}>
       <CityOverview
         description={selectedGovernate?.description || "No description available for this governorate."}
         videoUrl={selectedGovernate?.video || ""}
       />
+      </AnimatedSection>
     </div>
   );
 };
