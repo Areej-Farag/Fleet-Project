@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const reviewSchema = require("./review.model");
+// const reviewSchema = require("./review.model");
 
 const availableDateSchema = new mongoose.Schema({
-  date: { type: String, required: true }, // برضه ممكن نخليه Date لو حابة
+  date: { type: String, required: true }, 
   availableSeats: { type: Number, required: true },
 });
 
@@ -22,7 +22,7 @@ const tripSchema = new mongoose.Schema({
   price: { type: Number, required: true },
   discount: { type: Number },
   rating: { type: Number, default: 0 },
-  reviews: [reviewSchema],
+  reviews: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review' }],
   category: { type: String },
 });
 
