@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const governorateController = require('../controllers/governorate.Controller');
+
+// POST: إنشاء محافظة
+router.post('/', governorateController.createGovernorate);
+
+// GET: جميع المحافظات
+router.get('/', governorateController.getAllGovernorates);
+
+// GET: محافظة حسب ID
+router.get('/:id', governorateController.getGovernorateById);
+
+module.exports = router;
