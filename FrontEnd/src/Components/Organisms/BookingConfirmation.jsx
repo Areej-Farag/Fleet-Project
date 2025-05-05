@@ -100,7 +100,7 @@ export default function BookingConfirmation() {
       </div>
 
       <div className="mt-4 d-flex flex-column flex-md-row gap-2 justify-content-end">
-        <Button color="white" size="default" className="w-100 w-md-auto">
+        <Button color="trans" size="default" className="w-100 w-md-auto">
           Your trip
         </Button>
         <Button color="blue" size="default" className="w-100 w-md-auto">

@@ -22,7 +22,13 @@
   --color-secondary-3: #FFD166;
   --color-secondary-4: #FA8F54;
   --color-secondary-5: #dc3545;
-
+/*btn*/
+  --color-trans-btn:var(--color-neutral-2);
+  --color-btn-blue:var(--color-neutral-8);
+  --color-btn:var(--color-neutral-8);
+  /*icon*/
+  --icon-color-black:var(--color-neutral-8);
+  --icon-color:var(--color-neutral-1);
   /* Stroke */
   --color-stroke: #E6E8EC;
 /* Shadow */
@@ -44,7 +50,13 @@ body.dark {
   --color-neutral-8: #141416;
   --color-stroke: #353945;
   --shadow:#ffffff90;
-
+  --color-stroke:var(--color-neutral-5) ;
+  /*icon*/
+  --icon-color-black:var(--color-neutral-8);
+  --icon-color:var(--color-neutral-1);
+    /*btn*/
+  --color-trans-btn:var(--color-neutral-1);
+  --color-btn:var(--color-neutral-7);
   /* 👇 دي السطر الصح */
   --page-background: var(--color-neutral-8);
 }
