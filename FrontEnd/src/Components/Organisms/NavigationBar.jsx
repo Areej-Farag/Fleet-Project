@@ -21,7 +21,7 @@ const NavigationBar = () => {
     <div className="navigation-bar">
       
       <Link to="/" className="go-home-link">
-        <Button color="trans" size="small" icon={<IoIosArrowBack />} iconSize={16}iconcolor="black" iconPosition="left" >
+        <Button color="trans" size="small" icon={<IoIosArrowBack />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left" >
           <Typograph variant="button">Go Home</Typograph>
         </Button>
       </Link>

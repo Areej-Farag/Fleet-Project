@@ -7,6 +7,7 @@ import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
 import { AiOutlineCheck } from "react-icons/ai";
+import { LuLoader } from "react-icons/lu";
 
 const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
@@ -68,15 +69,15 @@ const CardSection = ({ trips }) => {
     <div className="bttn">
       {staysData.length > visibleCards && (
         <div>
-          <Button color="trans" size="small" onClick={handleShowMore}>
-            <Typograph variant="button"> Show More </Typograph>
+          <Button color="trans" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left"  onClick={handleShowMore}>
+             Show More 
           </Button>
         </div>
       )}
       {visibleCards > 9 && (
         <div>
-          <Button color="black" size="small" onClick={handleShowLess}>
-            <Typograph variant="button">Show Less </Typograph>
+          <Button color="black" size="small" icon={<LuLoader />} iconSize={16}iconcolor="var(--icon-color-black)" iconPosition="left"  onClick={handleShowLess}>
+          Show Less 
           </Button>
         </div>
       )}
