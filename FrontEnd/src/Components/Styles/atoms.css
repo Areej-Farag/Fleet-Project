@@ -165,6 +165,7 @@
 }
 .button.white {
   background-color: var(--color-neutral-8);
+
   color: var(--color-trans-btn);
   transition: all 0.3s ease;
 }
