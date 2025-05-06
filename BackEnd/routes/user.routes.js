@@ -2,19 +2,15 @@ const express = require('express');
 const userController = require('../controllers/user.controllers');
 const router = express.Router();
 
-// جلب جميع المستخدمين
-router.get('/users', userController.getAllUsers);
 
-// جلب مستخدم بواسطة الـ ID
-router.get('/users/:id', userController.getUserById);
+router.get('/', userController.getAllUsers);
 
-// إضافة مستخدم جديد
-router.post('/users', userController.addUser);
+router.get('/:id', userController.getUserById);
 
-// تحديث بيانات مستخدم
-router.put('/users/:id', userController.updateUser);
+router.post('/', userController.addUser);
 
-// حذف مستخدم
-router.delete('/users/:id', userController.deleteUser);
+router.put('/:id', userController.updateUser);
 
-module.exports = router;
+router.delete('/:id', userController.deleteUser);
+
+module.exports= router;

@@ -7,17 +7,16 @@ const cors = require('cors');
 app.use(cors());
 
 
-const users = require('users');
-app.use(users());
 
-const userRoutes = require('./routes/user.routes')
-// Connect To Database
-connectToDatabase();
+
 
 // Routes
 const tripsRoute = require('./routes/trips.route');
 const governoratesRoute = require('./routes/governorate.route');
+const userRoutes = require('./routes/user.routes')
+const authRoutes = require('./routes/auth.route');
 
+app.use('/api/auth', authRoutes);
 app.use('/api/trips', tripsRoute);
 app.use('/api/governorates', governoratesRoute);
 app.use("/api/users", userRoutes);
@@ -25,12 +24,6 @@ app.use("/api/users", userRoutes);
 // Connect To Database
 connectToDatabase();
 
-// Routes
-const tripsRoute = require('./routes/trips.route');
-const governoratesRoute = require('./routes/governorate.route');
-
-app.use('/api/trips', tripsRoute);
-app.use('/api/governorates', governoratesRoute); 
 
 
 // Connecting The Frontend With The Backend
@@ -47,6 +40,6 @@ app.use(handleError);
 
 app.listen(process.env.PORT , () => {
 
-    console.log('Server is running on port 4000' , http://localhost:${process.env.PORT});
+    console.log('Server is running on port 4000' ,` http://localhost:${process.env.PORT}`);
    
 });
