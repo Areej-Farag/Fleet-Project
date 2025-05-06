@@ -4,10 +4,11 @@ const availableDateSchema = new mongoose.Schema({
   date: { type: String, required: true }, 
   availableSeats: { type: Number, required: true },
 });
+
 const tripSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-  governate: { type: mongoose.Schema.Types.ObjectId, ref: "Governorate", required: true },
+  // governate: { type: mongoose.Schema.Types.ObjectId, ref: "Governorate", required: true },
   company: { type: String, required: true },
   description: { type: String },
   image: { type: String },

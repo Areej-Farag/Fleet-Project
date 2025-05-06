@@ -20,7 +20,6 @@ module.exports.getTrip = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Error retrieving the trip." });
-
   }
 };
 
@@ -36,7 +35,6 @@ module.exports.createTrip = async (req, res) => {
 
 module.exports.updateTrip = async (req, res) => {
   try {
-
     const trip = await Trip.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!trip) return res.status(404).json({ error: 'Trip not found' });
     res.status(200).json(trip);
@@ -49,7 +47,6 @@ module.exports.updateTrip = async (req, res) => {
 module.exports.deleteTrip = async (req, res) => {
   try {
     const trip = await Trip.findByIdAndDelete(req.params.id);
-
     if (!trip) return res.status(404).json({ error: 'Trip not found' });
     res.status(200).json({ message: 'Trip deleted successfully.' });
   } catch (error) {
@@ -88,7 +85,6 @@ module.exports.deleteTrip = async (req, res) => {
       const page = parseInt(req.query.page) || 1;
       const limit = parseInt(req.query.limit) || 10;
       const skip = (page - 1) * limit;
-  
       const filter = category ? { category } : {};
       const trips = await Trip.find(filter)
         .sort({ createdAt: -1 })
