@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 const Governorate = require('../models/Governorate.model');
 
 // إضافة محافظة جديدة
+=======
+const Governorate = require('../models/governorate.model');
+
+>>>>>>> dbb9ce30a56c7e99991c6c773ce6f4b3235c9396
 exports.createGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;
@@ -12,7 +17,10 @@ exports.createGovernorate = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 // جلب كل المحافظات
+=======
+>>>>>>> dbb9ce30a56c7e99991c6c773ce6f4b3235c9396
 exports.getAllGovernorates = async (req, res) => {
   try {
     const governorates = await Governorate.find().populate('trips');
@@ -22,7 +30,10 @@ exports.getAllGovernorates = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 // جلب محافظة بالـ ID
+=======
+>>>>>>> dbb9ce30a56c7e99991c6c773ce6f4b3235c9396
 exports.getGovernorateById = async (req, res) => {
   try {
     const governorate = await Governorate.findById(req.params.id).populate('trips');
@@ -33,7 +44,10 @@ exports.getGovernorateById = async (req, res) => {
   }
   
 };
+<<<<<<< HEAD
 // تعديل محافظة
+=======
+>>>>>>> dbb9ce30a56c7e99991c6c773ce6f4b3235c9396
 exports.updateGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;
@@ -49,7 +63,10 @@ exports.updateGovernorate = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 // حذف محافظة
+=======
+>>>>>>> dbb9ce30a56c7e99991c6c773ce6f4b3235c9396
 exports.deleteGovernorate = async (req, res) => {
   try {
     const deletedGovernorate = await Governorate.findByIdAndDelete(req.params.id);

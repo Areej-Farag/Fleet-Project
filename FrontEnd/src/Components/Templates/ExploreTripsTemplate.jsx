@@ -4,6 +4,7 @@ import CardSection from "../Organisms/CardSection";
 import FilterSection from "../Organisms/FilterSection";
 import { trips } from "../../Mocks/Trips";
 import "../Styles/templates.css";
+import AnimatedSection from "../Atoms/AnimationSection";
 // import colors from "../Atoms/Colors";
 import { ColorContext } from '../../Context/ColorContext';
 const shuffleAndPick = (array, count) => {
@@ -44,6 +45,7 @@ const ExploreTripsTemplate = () => {
   return (
     <div className="trip-template">
       <div className="template-header ">
+      <AnimatedSection delay={0}>
         <div>
            <Typograph variant="h3" bold="true" className="go-title">
           Go somewhere
@@ -52,6 +54,8 @@ const ExploreTripsTemplate = () => {
           Let's go on an adventure
         </Typograph>
         </div>
+        </AnimatedSection>
+        <AnimatedSection delay={0.1}>
        
         <div className="filters-bar ">
         <div className="custom-sort-box">
@@ -66,6 +70,7 @@ const ExploreTripsTemplate = () => {
           </select>
         </div>
       </div>
+      </AnimatedSection>
       </div>
 
  
@@ -73,11 +78,13 @@ const ExploreTripsTemplate = () => {
       <CardSection trips={sortedTrips} />
 
       {!viewAll && (
+        <AnimatedSection delay={0.3}>
         <div className="view-all-btn-container">
           <button className="view-all-btn" onClick={() => setViewAll(true)}>
             View All
           </button>
         </div>
+        </AnimatedSection>
       )}
     </div>
   );
