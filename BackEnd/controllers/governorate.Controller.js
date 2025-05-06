@@ -1,3 +1,4 @@
+
 const Governorate = require('../models/governorate.model');
 
 exports.createGovernorate = async (req, res) => {
@@ -11,6 +12,7 @@ exports.createGovernorate = async (req, res) => {
   }
 };
 
+
 exports.getAllGovernorates = async (req, res) => {
   try {
     const governorates = await Governorate.find().populate('trips');
@@ -19,6 +21,7 @@ exports.getAllGovernorates = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 
 exports.getGovernorateById = async (req, res) => {
   try {
@@ -30,6 +33,7 @@ exports.getGovernorateById = async (req, res) => {
   }
   
 };
+
 exports.updateGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;
