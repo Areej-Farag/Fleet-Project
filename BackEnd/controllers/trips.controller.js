@@ -57,3 +57,92 @@ module.exports.deleteTrip = async (req, res) => {
     res.status(500).json({ error: 'Failed to delete trip.' });
   }};
 
+  
+  module.exports.getPaginatedTrips = async (req, res) => {
+    try {
+      const page = parseInt(req.query.page) || 1;
+      const limit = parseInt(req.query.limit) || 9;
+      const skip = (page - 1) * limit;
+  
+      const trips = await Trip.find()
+        .sort({ createdAt: -1 }) 
+        .skip(skip)
+        .limit(limit);
+  
+      const totalTrips = await Trip.countDocuments();
+      res.status(200).json({
+        trips,
+        totalPages: Math.ceil(totalTrips / limit),
+        currentPage: page,
+        totalTrips,
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Something went wrong while fetching trips.' });
+    }
+  };
+  
+  module.exports.getTripsByCategory = async (req, res) => {
+    try {
+      const { category } = req.query;
+      const page = parseInt(req.query.page) || 1;
+      const limit = parseInt(req.query.limit) || 10;
+      const skip = (page - 1) * limit;
+  
+      const filter = category ? { category } : {};
+      const trips = await Trip.find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit);
+  
+      const totalTrips = await Trip.countDocuments(filter);
+      res.status(200).json({
+        trips,
+        totalPages: Math.ceil(totalTrips / limit),
+        currentPage: page,
+        totalTrips,
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Something went wrong while fetching trips.' });
+    }
+  };
+  
+  module.exports.getSortedTrips = async (req, res) => {
+    try {
+      const { sortBy } = req.query;
+      const page = parseInt(req.query.page) || 1;
+      const limit = parseInt(req.query.limit) || 10;
+      const skip = (page - 1) * limit;
+  
+      let sortOption = {};
+      switch (sortBy) {
+        case 'Rating':
+          sortOption = { rating: -1 }; 
+          break;
+        case 'Price (Low to High)':
+          sortOption = { discount: 1, price: 1 }; 
+          break;
+        case 'Recently Added':
+        default:
+          sortOption = { createdAt: -1 }; 
+          break;
+      }
+  
+      const trips = await Trip.find()
+        .sort(sortOption)
+        .skip(skip)
+        .limit(limit);
+  
+      const totalTrips = await Trip.countDocuments();
+      res.status(200).json({
+        trips,
+        totalPages: Math.ceil(totalTrips / limit),
+        currentPage: page,
+        totalTrips,
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Something went wrong while fetching trips.' });
+    }
+  };
