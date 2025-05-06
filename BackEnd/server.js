@@ -11,7 +11,7 @@ connectToDatabase();
 
 // Routes
 const tripsRoute = require('./routes/trips.route');
-const governoratesRoute = require('./routes/governorate.Routes');
+const governoratesRoute = require('./routes/governorate.route');
 
 app.use('/api/trips', tripsRoute);
 app.use('/api/governorates', governoratesRoute); 

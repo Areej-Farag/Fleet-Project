@@ -1,4 +1,4 @@
-const Governorate = require('../models/Governorate.model');
+const Governorate = require('../models/governorate.model');
 
 exports.createGovernorate = async (req, res) => {
   try {
@@ -30,7 +30,6 @@ exports.getGovernorateById = async (req, res) => {
   }
   
 };
-// تعديل محافظة
 exports.updateGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;
@@ -46,7 +45,6 @@ exports.updateGovernorate = async (req, res) => {
   }
 };
 
-// حذف محافظة
 exports.deleteGovernorate = async (req, res) => {
   try {
     const deletedGovernorate = await Governorate.findByIdAndDelete(req.params.id);
