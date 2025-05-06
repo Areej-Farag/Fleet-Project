@@ -1,7 +1,7 @@
 const connectToDatabase = require("./config/db");
 const express = require("express");
 const app = express();
-const reviewRoutes = require("./routes/review.route");
+
 app.use(express.json());
 require("dotenv").config();
 const cors = require("cors");
@@ -14,8 +14,6 @@ connectToDatabase();
 const tripsRoute = require("./routes/trips.route");
 
 app.use("/trips", tripsRoute);
-
-app.use("/api", reviewRoutes);
 
 // Connecting The Frontend With The Backend
 app.use(
