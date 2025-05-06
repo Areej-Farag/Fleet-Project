@@ -135,7 +135,7 @@
 
 .button.blue {
   background-color: var(--color-primary-1);
-  color: var(--color-neutral-8);
+  color: var(--color-btn-blue);
 }
 
 .button.blue:hover {
@@ -146,6 +146,7 @@
   background-color: transparent;
   border: 2px solid var(--color-stroke);
   transition: all 0.3s ease;
+  color: var(--color-trans-btn);
 }
 
 .button.trans:hover {
@@ -156,6 +157,7 @@
 .button.trans-no-border {
   background-color: transparent;
   transition: all 0.3s ease;
+  color: var(--color-trans-btn);
 }
 
 .button.trans-no-border:hover {
@@ -163,7 +165,8 @@
 }
 .button.white {
   background-color: var(--color-neutral-8);
-  color: var(--color-neutral-1);
+
+  color: var(--color-trans-btn);
   transition: all 0.3s ease;
 }
 
@@ -175,7 +178,7 @@
   background-color: var(--color-neutral-1);
   border: 2px solid var(--color-stroke);
   transition: all 0.3s ease;
-  color: var(--color-neutral-8);
+  color: var(--color-btn)!important;
 }
 
 .button.black:hover {

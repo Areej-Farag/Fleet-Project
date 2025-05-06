@@ -28,4 +28,31 @@ exports.getGovernorateById = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+  
+};
+// تعديل محافظة
+exports.updateGovernorate = async (req, res) => {
+  try {
+    const { name, image, description, video } = req.body;
+    const updatedGovernorate = await Governorate.findByIdAndUpdate(
+      req.params.id,
+      { name, image, description, video },
+      { new: true }
+    );
+    if (!updatedGovernorate) return res.status(404).json({ message: 'Governorate not found' });
+    res.json(updatedGovernorate);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+// حذف محافظة
+exports.deleteGovernorate = async (req, res) => {
+  try {
+    const deletedGovernorate = await Governorate.findByIdAndDelete(req.params.id);
+    if (!deletedGovernorate) return res.status(404).json({ message: 'Governorate not found' });
+    res.json({ message: 'Governorate deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
