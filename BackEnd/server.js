@@ -1,16 +1,24 @@
 const connectToDatabase = require("./config/db");
 const express = require("express");
 const app = express();
-
 app.use(express.json());
 require("dotenv").config();
 const cors = require("cors");
 app.use(cors());
-
 // Routes
 const tripsRoute = require("./routes/trips.route");
+const governorateRoute = require("./routes/governorate.route");
+const userRoute = require("./routes/user.routes");
+const authRoute = require("./routes/auth.route");
+const reviewRoute = require("./routes/review.route");
 
-app.use("/trips", tripsRoute);
+app.use("/api/trips", tripsRoute);
+app.use("/api/governorates", governorateRoute);
+app.use("/api/users", userRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/reviews", reviewRoute);
+
+connectToDatabase();
 
 // Connecting The Frontend With The Backend
 app.use(
