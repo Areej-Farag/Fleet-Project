@@ -1,6 +1,5 @@
 const Governorate = require('../models/Governorate.model');
 
-// إضافة محافظة جديدة
 exports.createGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;
@@ -12,7 +11,6 @@ exports.createGovernorate = async (req, res) => {
   }
 };
 
-// جلب كل المحافظات
 exports.getAllGovernorates = async (req, res) => {
   try {
     const governorates = await Governorate.find().populate('trips');
@@ -22,7 +20,6 @@ exports.getAllGovernorates = async (req, res) => {
   }
 };
 
-// جلب محافظة بالـ ID
 exports.getGovernorateById = async (req, res) => {
   try {
     const governorate = await Governorate.findById(req.params.id).populate('trips');

@@ -13,7 +13,7 @@ const governorateSchema = new mongoose.Schema({
     type: String
   },
   video: {
-    type: String // ← رابط الفيديو
+    type: String 
   },
   trips: [{
     type: mongoose.Schema.Types.ObjectId,

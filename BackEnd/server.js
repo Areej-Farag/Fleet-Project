@@ -11,10 +11,10 @@ connectToDatabase();
 
 // Routes
 const tripsRoute = require('./routes/trips.route');
-const governoratesRoute = require('./routes/governorate.Routes'); // إضافة الـ governorates route هنا
+const governoratesRoute = require('./routes/governorate.Routes');
 
-app.use('/trips', tripsRoute);
-app.use('/api/governorates', governoratesRoute); // إضافة المسار الخاص بالمحافظات
+app.use('/api/trips', tripsRoute);
+app.use('/api/governorates', governoratesRoute); 
 
 // Connecting The Frontend With The Backend
 app.use(cors({
