@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-// const reviewSchema = require("./review.model");
-
 const availableDateSchema = new mongoose.Schema({
   date: { type: String, required: true }, 
   availableSeats: { type: Number, required: true },
@@ -10,7 +8,8 @@ const availableDateSchema = new mongoose.Schema({
 const tripSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-  governate: { type: Schema.Types.ObjectId, ref: "Governate", required: true },
+
+  governate: { type: mongoose.Schema.Types.ObjectId, ref: "Governorate", required: true },
   company: { type: String, required: true },
   description: { type: String },
   image: { type: String },

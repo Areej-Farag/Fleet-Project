@@ -7,9 +7,6 @@ require("dotenv").config();
 const cors = require("cors");
 app.use(cors());
 
-// Connect To Database
-connectToDatabase();
-
 // Routes
 const tripsRoute = require("./routes/trips.route");
 
