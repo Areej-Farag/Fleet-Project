@@ -27,6 +27,11 @@ export default function SignInForm() {
             Sign in
           </Typograph>
           <InputField
+
+            type={"email"}
+            placeholder={"Email"}
+          />
+          <InputField
             type={"password"}
             placeholder={"Password"}
             hasButton={true}
@@ -40,7 +45,7 @@ export default function SignInForm() {
               ></Button>
             }
           />
-          <div className="btn-container">
+          <div className="btn-container py-3">
             <Button color="blue" size="large" shape="default">
               Login
             </Button>
