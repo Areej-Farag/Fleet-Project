@@ -1,5 +1,5 @@
 
-const Governorate = require('../models/Governorate.model');
+const Governorate = require('../models/governorate.model');
 
 exports.createGovernorate = async (req, res) => {
   try {

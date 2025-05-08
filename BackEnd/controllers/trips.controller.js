@@ -2,6 +2,7 @@ const Trip = require("../models/trip.model");
 
 module.exports.getAllTrips = async (req, res) => {
   try {
+    // console.log("trips")
     const trips = await Trip.find();
     res.status(200).json(trips);
   } catch (error) {
