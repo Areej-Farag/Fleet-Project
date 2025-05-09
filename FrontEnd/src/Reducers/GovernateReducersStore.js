@@ -88,13 +88,15 @@ const useGovernateStore = create((set) => ({
   },
 
   // Fetch all trips for a governorate by its ID
-  getTripsByGovernateId: async (id) => {
+getTripsByGovernateId: async (id) => {
     set({ loading: true, error: null });
     try {
       const response = await axios.get(`${API_URL}/${id}/trips`);
+      console.log('API Response (getTripsByGovernateId):', response.data);
       set({ trips: response.data, loading: false });
     } catch (error) {
-      set({ error: error.message, loading: false });
+      console.error('Error fetching trips:', error);
+      set({ error: error.message, loading: false, trips: [] });
     }
   },
 }));

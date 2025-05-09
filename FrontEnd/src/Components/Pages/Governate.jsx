@@ -13,14 +13,24 @@ import houseImage from '../../assets/Images/house.png';
 
 const GovernatePage = () => {
   const { governateId } = useParams();
-  const { governorates, selectedGovernorate, getAll, getOneById, loading, error } = useGovernateStore();
+  const {
+    governorates,
+    selectedGovernorate,
+    trips,
+    getAll,
+    getOneById,
+    getTripsByGovernateId,
+    loading,
+    error,
+  } = useGovernateStore();
   const [selectedCategory, setSelectedCategory] = React.useState("All");
 
-  // Fetch governorate details and all governorates
+  // Fetch governorate details, all governorates, and trips
   useEffect(() => {
     getOneById(governateId); // Fetch the specific governorate
     getAll(); // Fetch all governorates for NearbyGovernoratesSectionTemplate
-  }, [governateId, getOneById, getAll]);
+    getTripsByGovernateId(governateId); // Fetch trips for the governorate
+  }, [governateId, getOneById, getAll, getTripsByGovernateId]);
 
   const handleFilterChange = (category) => {
     setSelectedCategory(category);
@@ -42,10 +52,12 @@ const GovernatePage = () => {
           <FilterSection onFilterChange={handleFilterChange} />
           <Lines />
           <div className="trips-container container-fluid">
-            <TripTemplate selectedCategory={selectedCategory} />
+            <TripTemplate
+              trips={trips} // Pass all trips
+              selectedCategory={selectedCategory}
+            />
           </div>
           <NearbyGovernoratesSectionTemplate
-            governorates={governorates} // Use governorates from store
             sectionTitle="Explore Trips In Egypt"
           />
           <AnimatedSection delay={0.1}>

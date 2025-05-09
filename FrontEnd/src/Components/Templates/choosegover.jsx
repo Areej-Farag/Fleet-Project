@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-import { cities as governates } from '../../Mocks/Governates'
+import useGovernateStore from '../../Reducers/GovernateReducersStore';
 
 const GovernatesPage = () => {
   const [selectedGovernate, setSelectedGovernate] = useState("");
   const navigate = useNavigate();
+  const { governorates, getAll, loading, error } = useGovernateStore();
 
-
-  const uniqueGovernates = governates.map((gov) => ({
-    name: gov.name,
-    id: gov.id || gov.gov_id,
-  }));
-
+  useEffect(() => {
+    getAll();
+  }, [getAll]);
 
   const handleGovernateChange = (e) => {
     const governateId = e.target.value;
@@ -23,21 +20,25 @@ const GovernatesPage = () => {
   };
 
   return (
-    <div style={{ padding: "20px" , width: "100%"}}>
-      <div >
-        <select
-          className="governate-selector"
-          value={selectedGovernate}
-          onChange={handleGovernateChange}
-        >
-          <option value="">Select A City</option>
-          {uniqueGovernates.map((gov, i) => (
-            <option key={i} value={gov.id}>
-              {gov.name}
-            </option>
-          ))}
-        </select>
-      </div>
+    <div style={{ padding: "20px", width: "100%" }}>
+      {loading && <p>Loading ...</p>}
+      {error && <p>Error: {error}</p>}
+      {!loading && !error && (
+        <div>
+          <select
+            className="governate-selector"
+            value={selectedGovernate}
+            onChange={handleGovernateChange}
+          >
+            <option value="">Choose Governate </option>
+            {governorates.map((gov) => (
+              <option key={gov._id} value={gov._id}>
+                {gov.name}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
     </div>
   );
 };
