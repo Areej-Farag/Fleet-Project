@@ -1,19 +1,35 @@
 // src/Components/Organisms/CardSection.js
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimatedSection from "../Atoms/AnimationSection";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import Card from "../Molecules/Card";
 import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
 import { AiOutlineCheck } from "react-icons/ai";
 import { LuLoader } from "react-icons/lu";
+import useTripsStore from "../../Reducers/TripsStore";
+import { useParams } from "react-router-dom";
 
-const CardSection = ({ trips }) => {
-  const [visibleCards, setVisibleCards] = useState(9);
+const CardSection = () => {
+  const { trips, loading, error, totalPages, currentPage, fetchTripsByGovernorate, fetchPaginatedTrips, fetchSortedTrips } = useTripsStore();
+  const { governateId } = useParams();
+  const [sortBy, setSortBy] = useState("Recently Added");
+
+  useEffect(() => {
+    if (governateId) {
+      fetchTripsByGovernorate(governateId, currentPage);
+    } else {
+      if (sortBy === "Recently Added") {
+        fetchPaginatedTrips(currentPage);
+      } else {
+        fetchSortedTrips(sortBy, currentPage);
+      }
+    }
+  }, [governateId, currentPage, sortBy, fetchTripsByGovernorate, fetchPaginatedTrips, fetchSortedTrips]);
 
   const staysData = trips.map((trip) => ({
-    id: trip.id, 
+    id: trip._id,
     imageSrc: trip.image,
     title: trip.name,
     totalPrice: trip.price,
@@ -36,55 +52,64 @@ const CardSection = ({ trips }) => {
     badgeTextColor: "red",
   }));
 
-  const cardsToShow = staysData.slice(0, visibleCards);
-
-  const handleShowMore = () => {
-    setVisibleCards(visibleCards + 6);
+  const handleSortChange = (newSortBy) => {
+    setSortBy(newSortBy);
   };
 
-  const handleShowLess = () => {
-    setVisibleCards(9);
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      useTripsStore.setState({ currentPage: newPage });
+    }
   };
+
+  if (loading) return <div>Loading trips...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <>
       <section className="card-section">
+        <div className="sort-controls">
+          <Typograph variant="h6">Sort by:</Typograph>
+          <select value={sortBy} onChange={(e) => handleSortChange(e.target.value)}>
+            <option value="Recently Added">Recently Added</option>
+            <option value="Rating">Rating</option>
+            <option value="Price (Low to High)">Price (Low to High)</option>
+          </select>
+        </div>
         <div className="cards-wrapper">
-        {cardsToShow.map((stay, index) => (
-          <AnimatedSection key={stay.id} delay={index * 0.1}>
-            <Link to={`/trip/${stay.id}`} className="card-link">
-              <Card {...stay} />
-            </Link>
-          </AnimatedSection>
-        ))}
-
-
-
+          {staysData.map((stay, index) => (
+            <AnimatedSection key={stay.id} delay={index * 0.1}>
+              <Link to={`/trip/${stay.id}`} className="card-link">
+                <Card {...stay} />
+              </Link>
+            </AnimatedSection>
+          ))}
         </div>
       </section>
 
-
-
-  <AnimatedSection delay={0.4}>
-    <div className="bttn">
-      {staysData.length > visibleCards && (
-        <div>
-          <Button color="trans" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left"  onClick={handleShowMore}>
-             Show More 
+      <AnimatedSection delay={0.4}>
+        <div className="pagination">
+          <Button
+            color="trans"
+            size="small"
+            disabled={currentPage === 1}
+            onClick={() => handlePageChange(currentPage - 1)}
+          >
+            Previous
+          </Button>
+          <Typograph variant="body1">
+            Page {currentPage} of {totalPages}
+          </Typograph>
+          <Button
+            color="trans"
+            size="small"
+            disabled={currentPage === totalPages}
+            onClick={() => handlePageChange(currentPage + 1)}
+          >
+            Next
           </Button>
         </div>
-      )}
-      {visibleCards > 9 && (
-        <div>
-          <Button color="black" size="small" icon={<LuLoader />} iconSize={16}iconcolor="var(--icon-color-black)" iconPosition="left"  onClick={handleShowLess}>
-          Show Less 
-          </Button>
-        </div>
-      )}
-    </div>
-  </AnimatedSection>
-
-
+      </AnimatedSection>
     </>
   );
 };
