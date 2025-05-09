@@ -8,11 +8,11 @@ export const AuthModalProvider = ({ children }) => {
 
   const switchAuthType = (type) => {
     setAuthType(type);
-    setIsModalOpen(true);  // يتم فتح المودال عندما يتغير authType
+    setIsModalOpen(true);  
   };
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);  // دالة لغلق المودال
+  const closeModal = () => setIsModalOpen(false); 
 
   return (
     <AuthModalContext.Provider value={{

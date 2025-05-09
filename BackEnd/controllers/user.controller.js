@@ -41,7 +41,6 @@ exports.addUser = async (req, res) => {
   }
 };
 
-// تحديث بيانات مستخدم
 exports.updateUser = async (req, res) => {
   try {
     const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, {
@@ -62,7 +61,6 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-// حذف مستخدم
 exports.deleteUser = async (req, res) => {
   try {
     const deletedUser = await User.findByIdAndDelete(req.params.id);

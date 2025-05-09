@@ -8,8 +8,7 @@ const availableDateSchema = new mongoose.Schema({
 const tripSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-
-  governate: { type: mongoose.Schema.Types.ObjectId, ref: "Governorate", required: true },
+  // governate: { type: mongoose.Schema.Types.ObjectId, ref: "Governorate", required: true },
   company: { type: String, required: true },
   description: { type: String },
   image: { type: String },

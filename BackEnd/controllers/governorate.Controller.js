@@ -1,5 +1,5 @@
 
-const Governorate = require('../models/Governorate.model');
+const Governorate = require('../models/governorate.model');
 
 exports.createGovernorate = async (req, res) => {
   try {
@@ -22,7 +22,6 @@ exports.getAllGovernorates = async (req, res) => {
   }
 };
 
-
 exports.getGovernorateById = async (req, res) => {
   try {
     const governorate = await Governorate.findById(req.params.id).populate('trips');
@@ -33,7 +32,6 @@ exports.getGovernorateById = async (req, res) => {
   }
   
 };
-
 exports.updateGovernorate = async (req, res) => {
   try {
     const { name, image, description, video } = req.body;

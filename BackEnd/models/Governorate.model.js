@@ -16,8 +16,13 @@ const governorateSchema = new mongoose.Schema({
     type: String 
   },
   trips: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Trip'
+    TripId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Trip'
+    },
+    name: {
+      type: String
+    }
   }]
 }, { timestamps: true });
 

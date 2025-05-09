@@ -1,48 +1,63 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router";
+import useGovernateStore from "../../Reducers/GovernateReducersStore";
 import TripTemplate from "../Templates/CardTemp";
 import NearbyGovernoratesSectionTemplate from "../Templates/RandomGovern-Card";
-import { cities as governates } from '../../Mocks/Governates'
 import CityOverview from "../Templates/CityOverview";
-import Lines from "../Atoms/Lines"
+import Lines from "../Atoms/Lines";
 import NavigationBar from "../Organisms/NavigationBar";
 import FilterSection from "../Organisms/FilterSection";
- import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
-import houseImage from '../../assets/Images/house.png';
+import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import AnimatedSection from "../Atoms/AnimationSection";
-import { useParams } from "react-router";
+import houseImage from '../../assets/Images/house.png';
 
-const TripsPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+const GovernatePage = () => {
   const { governateId } = useParams();
-  const selectedGovernate = governates.find(
-    (gov) => (gov.id || gov.gov_id) === governateId
-  )
+  const { governorates, selectedGovernorate, getAll, getOneById, loading, error } = useGovernateStore();
+  const [selectedCategory, setSelectedCategory] = React.useState("All");
+
+  // Fetch governorate details and all governorates
+  useEffect(() => {
+    getOneById(governateId); // Fetch the specific governorate
+    getAll(); // Fetch all governorates for NearbyGovernoratesSectionTemplate
+  }, [governateId, getOneById, getAll]);
+
   const handleFilterChange = (category) => {
     setSelectedCategory(category);
   };
 
   return (
     <div className="trips-page">
-      <AirSleepDreamSection sectionTitle={selectedGovernate?.name} HomeImg={selectedGovernate?.image || houseImage} searchVisible={false}  centerText={true}/>
-      <NavigationBar />
-      <FilterSection onFilterChange={handleFilterChange} />
-      <Lines />
-      <div className="trips-container container-fluid">
-              <TripTemplate selectedCategory={selectedCategory} />
-
-      </div>
-      <NearbyGovernoratesSectionTemplate
-        governorates={governates}
-        sectionTitle="Explore Trips In Egypt"
-      />
-       <AnimatedSection delay={.1}>
-      <CityOverview
-        description={selectedGovernate?.description || "No description available for this governorate."}
-        videoUrl={selectedGovernate?.video || ""}
-      />
-      </AnimatedSection>
+      {loading && <p>جاري التحميل...</p>}
+      {error && <p>خطأ: {error}</p>}
+      {!loading && !error && (
+        <>
+          <AirSleepDreamSection
+            sectionTitle={selectedGovernorate?.name || "Governorate"}
+            HomeImg={selectedGovernorate?.image || houseImage}
+            searchVisible={false}
+            centerText={true}
+          />
+          <NavigationBar />
+          <FilterSection onFilterChange={handleFilterChange} />
+          <Lines />
+          <div className="trips-container container-fluid">
+            <TripTemplate selectedCategory={selectedCategory} />
+          </div>
+          <NearbyGovernoratesSectionTemplate
+            governorates={governorates} // Use governorates from store
+            sectionTitle="Explore Trips In Egypt"
+          />
+          <AnimatedSection delay={0.1}>
+            <CityOverview
+              description={selectedGovernorate?.description || "No description available for this governorate."}
+              videoUrl={selectedGovernorate?.video || ""}
+            />
+          </AnimatedSection>
+        </>
+      )}
     </div>
   );
 };
 
-export default TripsPage;
+export default GovernatePage;

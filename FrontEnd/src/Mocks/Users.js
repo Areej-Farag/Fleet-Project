@@ -43,7 +43,7 @@ export const users = [
       id: "U002",
       name: "Sara Ali",
       email: "sara.ali@gmail.com",
-      profilePicture: "https://example.com/users/sara_profile.jpg", // رابط صورة المستخدم
+      profilePicture: "https://example.com/users/sara_profile.jpg", 
       paymentMethods: [
         {
           type: "MasterCard",
@@ -72,8 +72,8 @@ export const users = [
         preferredCategory: "Youth",
         notifications: false
       },
-      points: 20, // نقاط أقل لأنها حجزت رحلة واحدة بس
-      wishlist: [ // قايمة الرحلات المفضلة
+      points: 20,
+      wishlist: [ 
         { id: "T005", name: "Trip to Hurghada" },
         { id: "T008", name: "Trip to Qaitbay Citadel and Library" }
       ],
