@@ -22,12 +22,12 @@ app.use("/api/auth", authRoute);
 
 
 // Connecting The Frontend With The Backend
-// app.use(
-//   cors({
-//     origin: "http://localhost:3000",
-//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-//   })
-// );
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  })
+);
 
 const handleError = (err, req, res, next) => {
   console.log(err.message);
