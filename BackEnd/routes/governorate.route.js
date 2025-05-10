@@ -12,4 +12,6 @@ router.put('/:id', governorateController.updateGovernorate);
 
 router.delete('/:id', governorateController.deleteGovernorate);
 
+router.get('/:id/trips', governorateController.getGovernorateTrips);
+
 module.exports = router;

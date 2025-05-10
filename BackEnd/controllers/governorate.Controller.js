@@ -56,3 +56,14 @@ exports.deleteGovernorate = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+exports.getGovernorateTrips = async (req, res) => {
+  try {
+    const governorate = await Governorate.findById(req.params.id).populate('trips');
+    if (!governorate) return res.status(404).json({ message: 'Governorate not found' });
+    
+    // Return the populated trips array
+    res.json(governorate.trips);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
