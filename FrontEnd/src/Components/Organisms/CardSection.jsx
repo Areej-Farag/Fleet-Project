@@ -8,7 +8,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { LuLoader } from "react-icons/lu";
 import useTripsStore from "../../Reducers/TripsStore";
 import { useParams } from "react-router-dom";
-
+/*
 const CardSection = () => {
   const [visibleCards, setVisibleCards] = useState(9);
   const { trips, loading, error, fetchTripsByGovernorate } = useTripsStore();
@@ -112,6 +112,88 @@ const CardSection = () => {
           )}
         </div>
       </AnimatedSection>
+    </>
+  );
+};
+
+export default CardSection;*/
+
+const CardSection = ({ trips }) => {
+  const [visibleCards, setVisibleCards] = useState(9);
+
+  const staysData = trips.map((trip) => ({
+    id: trip.id, 
+    imageSrc: trip.image,
+    title: trip.name,
+    totalPrice: trip.price,
+    priceNow: trip.discount ? trip.discount : trip.price,
+    priceBefore: trip.discount ? trip.price : null,
+    rating: trip.rating,
+    reviewCount: trip.reviews?.length || 0,
+    amenities: trip.features?.length > 0
+      ? [
+          {
+            icon: <AiOutlineCheck style={{ color: "green", size: "20px" }} />,
+            text: trip.features.reduce((shortest, current) =>
+              current.length < shortest.length ? current : shortest
+            ),
+          },
+        ]
+      : [],
+    badgeText: trip.category,
+    badgeColor: "white",
+    badgeTextColor: "red",
+  }));
+
+  const cardsToShow = staysData.slice(0, visibleCards);
+
+  const handleShowMore = () => {
+    setVisibleCards(visibleCards + 6);
+  };
+
+  const handleShowLess = () => {
+    setVisibleCards(9);
+  };
+
+  return (
+    <>
+      <section className="card-section">
+        <div className="cards-wrapper">
+        {cardsToShow.map((stay, index) => (
+          <AnimatedSection key={stay.id} delay={index * 0.1}>
+            <Link to={`/trip/${stay.id}`} className="card-link">
+              <Card {...stay} />
+            </Link>
+          </AnimatedSection>
+        ))}
+
+
+
+        </div>
+      </section>
+
+
+
+      <AnimatedSection delay={0.4}>
+    <div className="bttn">
+      {staysData.length > visibleCards && (
+        <div>
+          <Button color="trans" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left"  onClick={handleShowMore}>
+             Show More 
+          </Button>
+        </div>
+      )}
+      {visibleCards > 9 && (
+        <div>
+          <Button color="black" size="small" icon={<LuLoader />} iconSize={16}iconcolor="var(--icon-color-black)" iconPosition="left"  onClick={handleShowLess}>
+          Show Less 
+          </Button>
+        </div>
+      )}
+    </div>
+  </AnimatedSection>
+
+
     </>
   );
 };
