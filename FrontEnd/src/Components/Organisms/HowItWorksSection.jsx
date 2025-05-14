@@ -29,24 +29,24 @@ const HowItWorksSection = () => {
   return (
     <section className="how-it-works-section">
       <AnimatedSection delay={0.1}>
-      <div>
-      <Typograph variant="h2" className="how-title">How it work</Typograph>
-      <Typograph variant="subtitle" className="how-subtitle">Keep calm & travel on</Typograph>
-      </div>
+        <div>
+          <Typograph variant="h2" className="how-title">How it work</Typograph>
+          <Typograph variant="subtitle" className="how-subtitle">Keep calm & travel on</Typograph>
+        </div>
       </AnimatedSection>
 
       <div className="steps-container">
         {steps.map((step, index) => (
-           <AnimatedSection delay={0.2 + index * 0.2}>
-          <div className="step-card" key={index} style={{ animationDelay: `${index * 0.3}s` }}>
-            <div className="card-icon-wrapper">
-              <div className="card-icon" style={{ backgroundColor: step.color }}>
-                {step.icon}
+          <AnimatedSection key={step.title} delay={0.2 + index * 0.2}>
+            <div className="step-card" key={index} style={{ animationDelay: `${index * 0.3}s` }}>
+              <div className="card-icon-wrapper">
+                <div className="card-icon" style={{ backgroundColor: step.color }}>
+                  {step.icon}
+                </div>
               </div>
+              <Typograph variant="h2" className="step-title">{step.title}</Typograph>
+              <Typograph variant="body" className="step-description">{step.description}</Typograph>
             </div>
-            <Typograph variant="h2" className="step-title">{step.title}</Typograph>
-            <Typograph variant="body" className="step-description">{step.description}</Typograph>
-          </div>
           </AnimatedSection>
         ))}
       </div>
@@ -54,18 +54,18 @@ const HowItWorksSection = () => {
       <div className="dotted-line"></div>
 
       {/* Decorative floating shapes */}
-      
+
       <AnimatedSection delay={0.2}>
         <div className="floating purple"></div>
-        </AnimatedSection>
-        <AnimatedSection delay={0.3}>
-      <div className="floating yellow"></div>
+      </AnimatedSection>
+      <AnimatedSection delay={0.3}>
+        <div className="floating yellow"></div>
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
-      <div className="floating red"></div>
+        <div className="floating red"></div>
       </AnimatedSection>
       <AnimatedSection delay={0.5}>
-      <div className="floating blue"></div>
+        <div className="floating blue"></div>
       </AnimatedSection>
     </section>
   );

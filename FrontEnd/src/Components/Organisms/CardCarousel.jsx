@@ -93,6 +93,8 @@ const getRandomGovernorates = (governorates, count = 10) => {
 };
 
 const CardCarousel = ({ governorates, sliderRef }) => {
+  console.log(governorates);
+
   const randomGovernorates = getRandomGovernorates(governorates, 10);
 
   const sliderSettings = {

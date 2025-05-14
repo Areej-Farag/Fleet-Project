@@ -1,4 +1,4 @@
-import React, { useState , useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import Typography from '../Atoms/Typograph';
 import Button from '../Atoms/Button';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
@@ -41,29 +41,29 @@ const AdventureSection = () => {
 
   return (
     <section className="adventure-section">
-        <AnimatedSection delay={0.1}>
-          <div>
-              <Typography type="h2" className="adventure-title">
-                Let’s go on an adventure
-              </Typography>
-              <Typography type="p" className="adventure-subtitle">
-                Find and book a great experience.
-              </Typography>
-          </div>
-          </AnimatedSection>
+      <AnimatedSection delay={0.1}>
+        <div>
+          <Typography type="h2" className="adventure-title">
+            Let’s go on an adventure
+          </Typography>
+          <Typography type="p" className="adventure-subtitle">
+            Find and book a great experience.
+          </Typography>
+        </div>
+      </AnimatedSection>
       <div className="adventure-cards">
         {cards.map((card, index) => (
-          <AnimatedSection delay={0.2 + index * 0.2}>
-          <div
-            key={index}
-            className={`adventure-card ${index === currentIndex ? 'active' : ''}`}
-          >
-            <img src={card.image} alt={card.title} className="card-image" />
-            <div className="card-text-content">
-              <Typography type="p" className="card-title">{card.title}</Typography>
-              <div className="places-badge">{card.places}</div>
+          <AnimatedSection key={card.title} delay={0.2 + index * 0.2}>
+            <div
+              key={index}
+              className={`adventure-card ${index === currentIndex ? 'active' : ''}`}
+            >
+              <img src={card.image} alt={card.title} className="card-image" />
+              <div className="card-text-content">
+                <Typography type="p" className="card-title">{card.title}</Typography>
+                <div className="places-badge">{card.places}</div>
+              </div>
             </div>
-          </div>
           </AnimatedSection>
         ))}
       </div>
