@@ -1,18 +1,19 @@
 
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { cities as governates } from "../../Mocks/Governates";
+// import { cities as governates } from "../../Mocks/Governates";
 import Button from "../Atoms/Button";
 import "../Styles/organisms.css";
 import Typograph from "../Atoms/Typograph";
 import { IoIosArrowBack } from "react-icons/io";
 import AnimatedSection from "../Atoms/AnimationSection"
+import useGovernateStore from "../../Reducers/GovernateReducersStore";
 
 
 const NavigationBar = () => {
   const { governateId } = useParams();
-
-  const selectedGovernate = governates.find(
+  const { governates, getAll } = useGovernateStore();
+  const selectedGovernate = governates && governates?.find(
     (gov) => (gov.id || gov.gov_id) === governateId
   );
 

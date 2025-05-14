@@ -122,7 +122,7 @@ const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
 
   const staysData = trips.map((trip) => ({
-    id: trip.id, 
+    id: trip._id,
     imageSrc: trip.image,
     title: trip.name,
     totalPrice: trip.price,
@@ -132,13 +132,13 @@ const CardSection = ({ trips }) => {
     reviewCount: trip.reviews?.length || 0,
     amenities: trip.features?.length > 0
       ? [
-          {
-            icon: <AiOutlineCheck style={{ color: "green", size: "20px" }} />,
-            text: trip.features.reduce((shortest, current) =>
-              current.length < shortest.length ? current : shortest
-            ),
-          },
-        ]
+        {
+          icon: <AiOutlineCheck style={{ color: "green", size: "20px" }} />,
+          text: trip.features.reduce((shortest, current) =>
+            current.length < shortest.length ? current : shortest
+          ),
+        },
+      ]
       : [],
     badgeText: trip.category,
     badgeColor: "white",
@@ -159,13 +159,14 @@ const CardSection = ({ trips }) => {
     <>
       <section className="card-section">
         <div className="cards-wrapper">
-        {cardsToShow.map((stay, index) => (
-          <AnimatedSection key={stay.id} delay={index * 0.1}>
-            <Link to={`/trip/${stay.id}`} className="card-link">
-              <Card {...stay} />
-            </Link>
-          </AnimatedSection>
-        ))}
+          {cardsToShow.map((stay, index) => (
+            <AnimatedSection key={stay.id} delay={index * 0.1}>
+              <Link to={`/trip/${stay.id}`} className="card-link">\
+                {console.log("staystaystaystaystay", stay)}
+                <Card {...stay} />
+              </Link>
+            </AnimatedSection>
+          ))}
 
 
 
@@ -175,23 +176,23 @@ const CardSection = ({ trips }) => {
 
 
       <AnimatedSection delay={0.4}>
-    <div className="bttn">
-      {staysData.length > visibleCards && (
-        <div>
-          <Button color="trans" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left"  onClick={handleShowMore}>
-             Show More 
-          </Button>
+        <div className="bttn">
+          {staysData.length > visibleCards && (
+            <div>
+              <Button color="trans" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color)" iconPosition="left" onClick={handleShowMore}>
+                Show More
+              </Button>
+            </div>
+          )}
+          {visibleCards > 9 && (
+            <div>
+              <Button color="black" size="small" icon={<LuLoader />} iconSize={16} iconcolor="var(--icon-color-black)" iconPosition="left" onClick={handleShowLess}>
+                Show Less
+              </Button>
+            </div>
+          )}
         </div>
-      )}
-      {visibleCards > 9 && (
-        <div>
-          <Button color="black" size="small" icon={<LuLoader />} iconSize={16}iconcolor="var(--icon-color-black)" iconPosition="left"  onClick={handleShowLess}>
-          Show Less 
-          </Button>
-        </div>
-      )}
-    </div>
-  </AnimatedSection>
+      </AnimatedSection>
 
 
     </>

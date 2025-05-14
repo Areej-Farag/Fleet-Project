@@ -92,8 +92,10 @@ const getRandomGovernorates = (governorates, count = 10) => {
   return shuffled.slice(0, Math.min(count, governorates.length));
 };
 
-const CardCarousel = ({ governorates, sliderRef }) => {
-  console.log(governorates);
+const CardCarousel = ({ sliderRef }) => {
+  const { governorates, loading, error, getAll } = useGovernateStore();
+
+  console.log("governorates", governorates);
 
   const randomGovernorates = getRandomGovernorates(governorates, 10);
 
@@ -132,7 +134,7 @@ const CardCarousel = ({ governorates, sliderRef }) => {
           {randomGovernorates.map((gov, index) => (
             <Link
               key={`${gov.id || gov.gov_id}-${index}`}
-              to={`/governate/${gov.id || gov.gov_id}`}
+              to={`/governate/${gov._id}`}
               className="governate-card-link"
             >
               <div className="carousel-card-wrapper">
