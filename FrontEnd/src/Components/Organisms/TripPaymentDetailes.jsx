@@ -19,6 +19,24 @@ import { ColorContext } from '../../Context/ColorContext';
 export default function TripPaymentDetailes({
   trip = trips[0],
 }) {
+  const [bookingInfo, setBookingInfo] = useState({
+    tripId: trip._id,
+    name: trip,   
+    date: "",
+    guests: "",
+  });
+  const handleDateSelect = (date) => {
+    setBookingInfo({
+      ...bookingInfo,
+      date: date,
+    });
+  }
+  const handleGuestSelect = (guests) => {
+    setBookingInfo({
+      ...bookingInfo,
+      guests: guests,
+    });
+  }
   const colors = useContext(ColorContext);
   const [selectedDate, setSelectedDate] = useState("");
   const [availableSeats, setAvailableSeats] = useState(0);
@@ -41,7 +59,7 @@ export default function TripPaymentDetailes({
     setSelectedDate(date);
     const found = trip.availableDates.find((d) => d.date === date);
     setAvailableSeats(found ? found.availableSeats : 0);
-    setSelectedGuests(""); // إعادة تعيين الضيوف لما التاريخ يتغير
+    setSelectedGuests(""); 
   };
 
   const handleGuestChange = (guests) => {
@@ -50,21 +68,21 @@ export default function TripPaymentDetailes({
   return (
     <div className="payment-confirmation-detailes">
       <div className="Photo-and-host-sec row d-flex">
-        <div className="photo-container col-12  p-2">
-          <ImageComponent src={LocationPhoto} title={"Image Title"} />
+        <div className="photo-container p-2">
+          <ImageComponent src={trip.image} title={"Image Title"} />
         </div>
-        <div className="host-container col-12 p-2">
+        <div className="host-container p-2">
           <HostSection
             AvatarSrc={AvatarPhoto}
-            HostName={"Anastasia"}
+            HostName={trip.company}
             AvatarSize={"small"}
-            PropertyName={"Villa in the Forest"}
+            PropertyName={trip.name}
           />
           <div className="d-flex rate-container">
             <Rate rating={trip.rating} />
             <div className="d-flex review-count">
               <Typograph variant={"small"} color={colors.Neutrals[4]}>
-                {`${trip .reviews.length} reviews`}
+                {`${trip.reviews.length} reviews`}
               </Typograph>
             </div>
           </div>
@@ -81,7 +99,8 @@ export default function TripPaymentDetailes({
             label="Select a date"
             value={selectedDate}
             options={trip.availableDates.map((dateObj) => dateObj.date)}
-            onChange={handleDateChange}
+            onChange={(date) => {handleDateChange(date) ; handleDateSelect(date)
+            } }
           />
         </Icon>
         <Icon
@@ -99,7 +118,7 @@ export default function TripPaymentDetailes({
                   { length: availableSeats },
                   (_, i) => `${i + 1}`
                 )}
-                onChange={handleGuestChange}
+                onChange={(guests ) => {handleGuestChange(guests) ; handleGuestSelect(guests)} }
               />
             </>
           ) : (
@@ -128,7 +147,7 @@ export default function TripPaymentDetailes({
         </div>
       </div>
       <div className="buttonsCont">
-        <Link to={`/payment/${trip.id}`}>
+        <Link to={`/payment/${trip._id}`}>
           <Button color="blue" size="defaultt" shape="default">
             {" "}
             Book{" "}

@@ -2,8 +2,11 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Button from '../Atoms/Button'
 import '../Styles/Navbar.css'
+import useUserStore from "../../Reducers/UserReducerStore";
+
 
 export default function UserButtonList() {
+    const { logout } = useUserStore();
     const { userId } = useParams();
   return (
     <div>
@@ -21,7 +24,7 @@ export default function UserButtonList() {
                 </Link>
               </li>
               </ul>
-                <Button color="black" size="default" shape="default" >
+                <Button color="black" size="default" shape="default" onClick={logout} >
                   {" "}
                   Logout
                 </Button>

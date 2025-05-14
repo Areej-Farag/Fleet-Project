@@ -7,6 +7,7 @@ export default function InputField({
   placeholder,
   hasButton,
   type,
+  name,
   iconContent,
   buttonContent,
   large= false,
@@ -17,7 +18,7 @@ export default function InputField({
     <div className={`input-field ${large ? "large" : ""} ${rounded ? "rounded" : ""}`}>
       <label className="input-label" >{labelTitle}</label>
       <div className="input-container">
-      <input type={type} placeholder={placeholder} onChange={ChangeHandler}/>
+      <input type={type} placeholder={placeholder} onChange={ChangeHandler} name={name}/>
       <div className="input-buttons">
         {hasIcon && <span className="input-icon">{iconContent}</span>}
         {hasButton && <button className="input-button">{buttonContent}</button>}
