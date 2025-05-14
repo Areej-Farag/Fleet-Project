@@ -3,7 +3,7 @@ import PaymentConfirmationDetailes from '../Organisms/PaymentConfirmationDetaile
 import PaymentForm from '../Organisms/PaymentForm'
 import '../Styles/templates.css'
 
-export default function PaymentTemplate() {
+export default function PaymentTemplate( {trip} ) {
   return (
     <div className="payment-template-container d-flex">
      <div className='payment-form-container'><PaymentForm /></div>

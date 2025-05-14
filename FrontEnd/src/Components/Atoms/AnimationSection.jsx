@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const AnimatedSection = ({ children, delay = 0 }) => (
   <motion.div
+    className="animated-section"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true, amount: 0.2 }}

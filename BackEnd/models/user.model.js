@@ -34,9 +34,9 @@ const preferencesSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
   id: { type: String, unique: true }, 
-  name: { type: String, required: true },
+  name: { type: String },
   email: { type: String, required: true, unique: true },
-  password: { type: String }, 
+  password: { type: String , required: true , minLength: 8 }, 
   profilePicture: String,
   paymentMethods: [paymentMethodSchema],
   phoneNumber: String,

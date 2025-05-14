@@ -179,12 +179,22 @@
 
 .trip-details-template {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0 auto 80px auto;
   max-width: 1146px;
   gap: 48px;
 }
-
+.trip-details-template .animated-section{
+  width: 100%;
+  display: flex;
+}
+.trip-details-template .trip-details-right {
+  width: 49%;
+}
+.trip-details-template .trip-details-left {
+  width: 49%;
+}
 /*image grid template*/
 .image-grid-template {
   display: flex;
