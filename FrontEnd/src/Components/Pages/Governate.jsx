@@ -73,6 +73,7 @@ const [filteredTrips, setFilteredTrips] = useState([]);
           </div>
           <NearbyGovernoratesSectionTemplate
             sectionTitle="Explore Trips In Egypt"
+            governorates={governorates}
           />
           <AnimatedSection delay={0.1}>
             <CityOverview

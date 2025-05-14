@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import SelectBox from "../Atoms/SearchableSelect"; // مسار الـ Atom
-import { cities } from "../../Mocks/Governates";
+// import { cities } from "../../Mocks/Governates";
 // مسار الداتا
 
 export default function GovernorateSelect({ onGovernorateChange }) {
   const [selectedGovernorate, setSelectedGovernorate] = useState("");
-
+  const { governates: cities, getAll } = useGovernateStore();
   const handleSelect = (governorateName) => {
     setSelectedGovernorate(governorateName);
     const selected = cities.find((gov) => gov.name === governorateName);

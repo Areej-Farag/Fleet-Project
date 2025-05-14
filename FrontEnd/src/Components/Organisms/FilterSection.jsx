@@ -19,7 +19,8 @@ const FilterSection = ({ onFilterChange }) => {
     if (selectedGovernorate?.trips?.length) {
       const fetchTrips = async () => {
         const tripPromises = selectedGovernorate.trips.map((trip) =>
-          fetchTripById(trip.TripId).then(() => trip) // Fetch trip details
+          // console.log(trip.id),
+          fetchTripById(trip.id).then(() => trip) // Fetch trip details
         );
         const trips = await Promise.all(tripPromises);
         setTripDetails(trips);

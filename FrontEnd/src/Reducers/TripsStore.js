@@ -31,6 +31,8 @@ const useTripsStore = create((set) => ({
   fetchTripById: async (id) => {
     set({ loading: true, error: null });
     try {
+      console.log(`Fetching trip with ID: ${id}`);
+
       const response = await axios.get(`${API_URL}/${id}`);
       console.log('API Response (fetchTripById):', response.data); // Debug
       set({ trip: response.data, loading: false });
