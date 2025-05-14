@@ -12,7 +12,6 @@ import UserButtonList from "../Molecules/UserButtonList";
 import "../Styles/Navbar.css";
 import { useAuthModal } from "../../Context/AuthModalContext";
 import useDarkMode from "../../Hooks/useDarkMood";
-
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkMode();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,6 +24,17 @@ const Navbar = () => {
   const [toggleProfile, setToggleProfile] = useState(false);
   const { switchAuthType, openModal } = useAuthModal();
   const [user, setUser] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsAuthenticated(true);
+    }
+    else {
+      setIsAuthenticated(false);
+    }
+  }, []);
 
   const handleSwitchToSignIn = () => {
     openModal();
@@ -137,7 +147,7 @@ const Navbar = () => {
 
           {/* Avatar */}
           <div className="Avatar-holder">
-            {user ? (
+            {isAuthenticated ? (
               <>
                 <button className="Avatar-button" onClick={ShowProfile}>
                   <Avatar src={ava} alt="User" size="small" />
