@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const governorateController = require('../controllers/governorate.controller');
+const governorateController = require('../controllers/governorate.Controller');
 
 router.post('/', governorateController.createGovernorate);
 
@@ -12,6 +12,8 @@ router.put('/:id', governorateController.updateGovernorate);
 
 router.delete('/:id', governorateController.deleteGovernorate);
 
-router.get('/:id/trips', governorateController.getGovernorateTrips);
+router.get('/by-name/:name/trips', governorateController.getTripsByGovernorateName);
+// router.get('/:id/trips', governorateController.getGovernorateTrips);
+
 
 module.exports = router;

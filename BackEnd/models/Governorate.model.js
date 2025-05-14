@@ -4,26 +4,21 @@ const governorateSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
   image: {
-    type: String
+    type: String,
   },
   description: {
-    type: String
+    type: String,
   },
   video: {
-    type: String 
+    type: String,
   },
   trips: [{
-    TripId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Trip'
-    },
-    name: {
-      type: String
-    }
-  }]
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Trip',
+  }],
 }, { timestamps: true });
 
 module.exports = mongoose.model('Governorate', governorateSchema);
