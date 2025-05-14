@@ -19,7 +19,7 @@ const TripTemplate = ({ trips, selectedCategory }) => {
             : "No Trips Found"}
         </Typograph>
       </div>
-      <CardSection trips={filteredTrips} />
+      <CardSection TripsApi={filteredTrips} />
     </div>
   );
 };

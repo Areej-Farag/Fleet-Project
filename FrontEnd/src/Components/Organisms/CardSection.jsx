@@ -9,21 +9,24 @@ import { LuLoader } from "react-icons/lu";
 import useTripsStore from "../../Reducers/TripsStore";
 import { useParams } from "react-router-dom";
 
-const CardSection = () => {
+const CardSection = ({ TripsApi }) => {
   const [visibleCards, setVisibleCards] = useState(9);
-  const { trips, loading, error, fetchTripsByGovernorate } = useTripsStore();
+  const { trips , loading, error, fetchTripsByGovernorate } = useTripsStore();
   const { governateId } = useParams(); // Ensure this matches your route param
 
   // Fetch trips for the governorate when the component mounts or governateId changes
   useEffect(() => {
     if (governateId) {
       console.log("Fetching trips for governorate:", governateId); // Debug
+      console.log("Trips Store: ", trips);
+      console.log("Trips API: ", TripsApi);
+      
       fetchTripsByGovernorate(governateId);
     }
   }, [governateId, fetchTripsByGovernorate]);
 
   // Map trips to the format expected by the Card component
-  const staysData = trips.map((trip) => ({
+  const staysData = TripsApi?.map((trip) => ({
     id: trip._id,
     imageSrc: trip.image,
     title: trip.name,

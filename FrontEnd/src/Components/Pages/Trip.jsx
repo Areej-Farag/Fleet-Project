@@ -17,6 +17,7 @@ const TripPage = () => {
   const { tripId } = useParams();
   useEffect(() => {
    fetchTripById(tripId); 
+   console.log('tripId:', trip);
   }, [ tripId, fetchTripById ]);
   // const trip = trips.find((t) => t._id === tripId);
 useEffect(() => {

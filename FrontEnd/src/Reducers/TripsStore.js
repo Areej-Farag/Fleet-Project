@@ -94,24 +94,24 @@ const useTripsStore = create((set) => ({
   },
 
   // Fetch paginated trips
-  fetchPaginatedTrips: async (page = 1, limit = 9) => {
-    set({ loading: true, error: null });
-    try {
-      const response = await axios.get(`${API_URL}/paginated?page=${page}&limit=${limit}`);
-      console.log('API Response (fetchPaginatedTrips):', response.data); // Debug
-      set({
-        trips: response.data.trips,
-        totalPages: response.data.totalPages,
-        currentPage: response.data.currentPage,
-        totalTrips: response.data.totalTrips,
-        loading: false,
-      });
-    } catch (error) {
-      const errorMessage = error.response?.data?.error || 'Failed to fetch paginated trips';
-      console.error('Error fetching paginated trips:', error);
-      set({ error: errorMessage, loading: false });
-    }
-  },
+  // fetchPaginatedTrips: async (page = 1, limit = 9) => {
+  //   set({ loading: true, error: null });
+  //   try {
+  //     const response = await axios.get(`${API_URL}/paginated?page=${page}&limit=${limit}`);
+  //     console.log('API Response (fetchPaginatedTrips):', response.data); // Debug
+  //     set({
+  //       trips: response.data.trips,
+  //       totalPages: response.data.totalPages,
+  //       currentPage: response.data.currentPage,
+  //       totalTrips: response.data.totalTrips,
+  //       loading: false,
+  //     });
+  //   } catch (error) {
+  //     const errorMessage = error.response?.data?.error || 'Failed to fetch paginated trips';
+  //     console.error('Error fetching paginated trips:', error);
+  //     set({ error: errorMessage, loading: false });
+  //   }
+  // },
 
   // Fetch trips by governorate
   fetchTripsByGovernorate: async (governorateId, page = 1, limit = 9) => {

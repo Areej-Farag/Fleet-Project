@@ -26,7 +26,7 @@ const NavigationBar = () => {
         </Button>
       </Link>
       <div className="breadcrumbs">
-        <Link to="/">Home</Link> >{" "}
+        <Link to="/">Home</Link> {" "}
         <Link to={`/governate/${governateId}`}>
           {selectedGovernate?.name || "Governate"}
         </Link>{" "}

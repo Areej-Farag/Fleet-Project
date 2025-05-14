@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import useGovernateStore from "../../Reducers/GovernateReducersStore";
 import TripTemplate from "../Templates/CardTemp";
@@ -10,27 +10,41 @@ import FilterSection from "../Organisms/FilterSection";
 import AirSleepDreamSection from "../Organisms/AirSleepDreamSection";
 import AnimatedSection from "../Atoms/AnimationSection";
 import houseImage from '../../assets/Images/house.png';
-
+import useTripsStore from "../../Reducers/TripsStore";
 const GovernatePage = () => {
   const { governateId } = useParams();
+  // const {fetchAllTrips , trips} = useTripsStore();
   const {
+    trips,
     governorates,
     selectedGovernorate,
-    trips,
-    getAll,
     getOneById,
-    getTripsByGovernateId,
+    getTripsByGovernatename,
     loading,
     error,
   } = useGovernateStore();
-  const [selectedCategory, setSelectedCategory] = React.useState("All");
+const [selectedCategory, setSelectedCategory] = React.useState("All");
 
+const [filteredTrips, setFilteredTrips] = useState([]);
   // Fetch governorate details, all governorates, and trips
   useEffect(() => {
-    getOneById(governateId); // Fetch the specific governorate
-    getAll(); // Fetch all governorates for NearbyGovernoratesSectionTemplate
-    getTripsByGovernateId(governateId); // Fetch trips for the governorate
-  }, [governateId, getOneById, getAll, getTripsByGovernateId]);
+    getOneById(governateId);
+    console.log('selectedGovernorate:', selectedGovernorate?.name);
+    // fetchAllTrips();
+    selectedGovernorate && getTripsByGovernatename(selectedGovernorate?.name); // Fetch trips for the governorate
+    console.log("Trips: ", trips);
+  }, [governateId]);
+  useEffect(() => {
+    // CheckTrips();
+  }, [governateId]);
+  // const CheckTrips =()=>{
+  //  if (trips){
+  //  const TT = trips.filter((trip) => trip.governorate === selectedGovernorate.name);
+  //  setFilteredTrips(TT);
+  //   }
+  //   console.log('filteredTrips:', filteredTrips);
+  // }
+
 
   const handleFilterChange = (category) => {
     setSelectedCategory(category);
@@ -38,8 +52,8 @@ const GovernatePage = () => {
 
   return (
     <div className="trips-page">
-      {loading && <p>جاري التحميل...</p>}
-      {error && <p>خطأ: {error}</p>}
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
       {!loading && !error && (
         <>
           <AirSleepDreamSection
