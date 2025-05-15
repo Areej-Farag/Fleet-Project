@@ -56,6 +56,7 @@ const GovernatePage = () => {
               trips={trips} // Pass all trips
               selectedCategory={selectedCategory}
             />
+            {console.log("trips from gov", trips)}
           </div>
           <NearbyGovernoratesSectionTemplate
             sectionTitle="Explore Trips In Egypt"

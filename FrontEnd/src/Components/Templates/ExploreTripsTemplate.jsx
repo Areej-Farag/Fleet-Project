@@ -2,7 +2,8 @@ import React, { useState, useEffect , useContext } from "react";
 import Typograph from "../Atoms/Typograph";
 import CardSection from "../Organisms/CardSection";
 import FilterSection from "../Organisms/FilterSection";
-import { trips } from "../../Mocks/Trips";
+// import { trips } from "../../Mocks/Trips";
+import useTripsStore from "../../Reducers/TripsStore";
 import "../Styles/templates.css";
 import AnimatedSection from "../Atoms/AnimationSection";
 // import colors from "../Atoms/Colors";
@@ -13,12 +14,15 @@ const shuffleAndPick = (array, count) => {
 };
 
 const ExploreTripsTemplate = () => {
+  const {trips , fetchAllTrips} = useTripsStore();
   const colors = useContext(ColorContext);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("Recently Added");
   const [randomTrips, setRandomTrips] = useState([]);
-  const [viewAll, setViewAll] = useState(false);
-
+  const [viewAll, setViewAll] = useState(true);
+  useEffect(() => {
+    fetchAllTrips();
+  } , [])
   useEffect(() => {
     const pickedTrips = shuffleAndPick(trips, 9);
     setRandomTrips(pickedTrips);

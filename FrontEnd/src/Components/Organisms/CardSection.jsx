@@ -8,6 +8,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { LuLoader } from "react-icons/lu";
 import useTripsStore from "../../Reducers/TripsStore";
 import { useParams } from "react-router-dom";
+// import useTripsStore from "../../Reducers/TripsStore";
 /*
 const CardSection = () => {
   const [visibleCards, setVisibleCards] = useState(9);
@@ -120,9 +121,10 @@ export default CardSection;*/
 
 const CardSection = ({ trips }) => {
   const [visibleCards, setVisibleCards] = useState(9);
+  console.log("CardSection trips:", trips); 
 
-  const staysData = trips.map((trip) => ({
-    id: trip._id,
+  const staysData = trips?.map((trip) => ({
+    id: trip._id || trip.id,
     imageSrc: trip.image,
     title: trip.name,
     totalPrice: trip.price,

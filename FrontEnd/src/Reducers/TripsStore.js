@@ -42,7 +42,21 @@ const useTripsStore = create((set) => ({
       set({ error: errorMessage, loading: false });
     }
   },
+  fetchTripByIdWithReturn: async (id) => {
+    set({ loading: true, error: null });
+    try {
+      console.log(`Fetching trip with ID: ${id}`);
 
+      const response = await axios.get(`${API_URL}/${id}`);
+      console.log('API Response (fetchTripById):', response.data); // Debug
+      set({ trip: response.data, loading: false });
+      return response.data
+    } catch (error) {
+      const errorMessage = error.response?.data?.error || 'Failed to fetch trip';
+      console.error('Error fetching trip:', error);
+      set({ error: errorMessage, loading: false });
+    }
+  },
   // Create a new trip
   createTrip: async (tripData) => {
     set({ loading: true, error: null });

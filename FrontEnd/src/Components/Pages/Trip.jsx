@@ -30,7 +30,7 @@ const TripPage = () => {
 
     <div className="trip-page-container flex-column justify-content-center">
       <div className="trip-grid-Photos">
-        <ImageGridTemplate mainImage={trip.image} smallImages={trip.detailesImages} />
+        <ImageGridTemplate mainImage={trip.image} smallImages={trip.detailesImages.length > 0 ? trip.detailesImages : trip.detailsImages} />
       </div>
       <TripDetailsTemplate trip={trip} />
       <NearbyGovernoratesSectionTemplate
