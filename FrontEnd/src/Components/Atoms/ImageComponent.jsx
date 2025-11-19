@@ -2,7 +2,12 @@ import React from "react";
 import "../Styles/atoms.css";
 import proptypes from "prop-types";
 
-const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => {
+const ImageComponent = ({
+  src,
+  title,
+  type = "fullyRounded",
+  badgeContent,
+}) => {
   const typeClasses = {
     wallpaper: "img-wallpaper",
     topRounded: "img-top-rounded",
@@ -14,7 +19,7 @@ const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => 
     <div className={`image-container ${typeClasses[type]} position-relative`}>
       {badgeContent && (
         <div className="badge-custom position-absolute top-0 start-0 m-2">
-          {badgeContent} 
+          {badgeContent}
         </div>
       )}
       <img src={src} alt={title} className="img-fluid d-block" />
@@ -25,9 +30,14 @@ const ImageComponent = ({ src, title, type = "fullyRounded", badgeContent }) => 
 ImageComponent.propTypes = {
   src: proptypes.string.isRequired,
   title: proptypes.string.isRequired,
-  type: proptypes.oneOf(["wallpaper", "topRounded", "fullyRounded", "circular"]),
-  badgeContent: proptypes.node
-}
+  type: proptypes.oneOf([
+    "wallpaper",
+    "topRounded",
+    "fullyRounded",
+    "circular",
+  ]),
+  badgeContent: proptypes.node,
+};
 
 export default ImageComponent;
 
