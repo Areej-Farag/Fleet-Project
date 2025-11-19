@@ -1,9 +1,8 @@
-import { create } from 'zustand';
-import axios from 'axios';
+import { create } from "zustand";
+import axios from "axios";
 
 // Corrected base URL for your local API
-const API_URL = 'http://localhost:4000/api/governorates';
-
+const API_URL = "https://fleet-backend-seven.vercel.app/api/governorates";
 
 // Zustand store for governorates
 const useGovernateStore = create((set) => ({
@@ -20,12 +19,12 @@ const useGovernateStore = create((set) => ({
     set({ loading: true, error: null });
     try {
       const response = await axios.get(API_URL);
-      console.log('API Response:', response.data); // Debug the response
+      console.log("API Response:", response.data); // Debug the response
       // Ensure response.data is an array
       const data = Array.isArray(response.data) ? response.data : [];
       set({ governorates: data, loading: false });
     } catch (error) {
-      console.error('Error fetching governorates:', error); // Debug the error
+      console.error("Error fetching governorates:", error); // Debug the error
       set({ error: error.message, loading: false, governorates: [] });
     }
   },
@@ -88,14 +87,14 @@ const useGovernateStore = create((set) => ({
   },
 
   // Fetch all trips for a governorate by its ID
-getTripsByGovernateId: async (id) => {
+  getTripsByGovernateId: async (id) => {
     set({ loading: true, error: null });
     try {
       const response = await axios.get(`${API_URL}/${id}/trips`);
-      console.log('API Response (getTripsByGovernateId):', response.data);
+      console.log("API Response (getTripsByGovernateId):", response.data);
       set({ trips: response.data, loading: false });
     } catch (error) {
-      console.error('Error fetching trips:', error);
+      console.error("Error fetching trips:", error);
       set({ error: error.message, loading: false, trips: [] });
     }
   },

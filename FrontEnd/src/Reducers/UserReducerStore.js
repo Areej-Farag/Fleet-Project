@@ -2,7 +2,9 @@ import { create } from "zustand";
 import axios from "axios";
 import instance from "../Utilis/AxiosInterceptor";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000/api/users";
+const API_URL =
+  process.env.REACT_APP_API_URL ||
+  "https://fleet-backend-seven.vercel.app/api/users";
 
 const useUserStore = create((set) => ({
   users: [],
@@ -17,7 +19,10 @@ const useUserStore = create((set) => ({
     }
     set({ loading: true, error: null });
     try {
-      const response = await axios.post(`${API_URL}/login`, { email, password });
+      const response = await axios.post(`${API_URL}/login`, {
+        email,
+        password,
+      });
       localStorage.setItem("token", response.data.token);
       set({ user: response.data, loading: false });
     } catch (error) {
@@ -40,7 +45,10 @@ const useUserStore = create((set) => ({
     }
     set({ loading: true, error: null });
     try {
-      const response = await axios.post(`${API_URL}/register`, { email, password });
+      const response = await axios.post(`${API_URL}/register`, {
+        email,
+        password,
+      });
       localStorage.setItem("token", response.data.token); // If token is returned
       set({ user: response.data, loading: false });
     } catch (error) {
